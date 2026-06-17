@@ -1,0 +1,23 @@
+# AI POD — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core AI / ML ─────────────────────────────────────────────
+sentence-transformers>=2.7.0   # Embeddings (all-MiniLM-L6-v2)
+faiss-cpu>=1.8.0               # Vector similarity search
+groq>=0.9.0                    # Groq API client (Llama models)
+numpy>=1.26.0                  # Numerical operations
+
+# ── PDF Extraction ───────────────────────────────────────────
+pymupdf>=1.24.0                # PDF text extraction — handles Arabic/RTL correctly
+# (replaces PyPDF2 which misorders Arabic glyphs)
+
+# ── Web Interface ────────────────────────────────────────────
+streamlit>=1.35.0              # Web UI framework
+
+# ── Utilities ────────────────────────────────────────────────
+python-dotenv>=1.0.0           # Load .env file for API keys
+tqdm>=4.66.0                   # Progress bars during ingestion
+
+# ── Optional — better language detection ─────────────────────
+# langdetect>=1.0.9            # More robust than regex-based detection
+#                              # Uncomment if you need to detect mixed-language text

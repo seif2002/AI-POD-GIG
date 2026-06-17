@@ -1,0 +1,142 @@
+﻿[
+  {
+    "question": "how many days off do i get?",
+    "answer": "Summary:\n- You are entitled to 21 annual leave days per calendar year.  Please verify with official documentation.\n- You have 10 sick leave days per year for personal illness or medical appointments.\n- You also get a weekly off on the 2nd Saturday of every month.\n\nSource:\n- HR_Policies_english 1.pdf\n- HR data 1.txt",
+    "timestamp": "2026-06-16T20:09:25.412284",
+    "language": "en",
+    "confidence": 0.6614352464675903,
+    "answer_style": "summary",
+    "match_type": "exact_match",
+    "response_time": 1.0639848709106445,
+    "sources": [
+      {
+        "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+        "similarity": 0.6614352464675903,
+        "metadata": {
+          "department": "Multi-Department",
+          "document": "HR_Policies_english 1",
+          "file_name": "HR_Policies_english 1.pdf",
+          "file_type": "pdf",
+          "ingested_at": "2026-06-16T12:40:29.389735",
+          "source": "Internal Documents",
+          "language": "en",
+          "chunk_id": 203,
+          "chunk_hash": "2715a9c8",
+          "char_length": 995,
+          "word_count": 177,
+          "created_at": "2026-06-16T12:40:29.390951"
+        },
+        "chunk_id": 216
+      },
+      {
+        "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+        "similarity": 0.5759732723236084,
+        "metadata": {
+          "department": "Multi-Department",
+          "document": "HR data 1",
+          "file_name": "HR data 1.txt",
+          "file_type": "txt",
+          "ingested_at": "2026-06-16T12:40:28.944689",
+          "source": "Internal Documents",
+          "language": "en",
+          "chunk_id": 0,
+          "chunk_hash": "7df9a47c",
+          "char_length": 980,
+          "word_count": 146,
+          "created_at": "2026-06-16T12:40:28.945316"
+        },
+        "chunk_id": 1
+      },
+      {
+        "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+        "similarity": 0.5490810871124268,
+        "metadata": {
+          "department": "Multi-Department",
+          "document": "HR data 1",
+          "file_name": "HR data 1.txt",
+          "file_type": "txt",
+          "ingested_at": "2026-06-16T12:40:28.944689",
+          "source": "Internal Documents",
+          "language": "en",
+          "chunk_id": 0,
+          "chunk_hash": "60c507e5",
+          "char_length": 896,
+          "word_count": 150,
+          "created_at": "2026-06-16T12:40:28.945257"
+        },
+        "chunk_id": 0
+      }
+    ],
+    "cached": false
+  },
+  {
+    "question": "how many days off do i get?",
+    "answer": "Summary:\n- You are entitled to 21 annual leave days per calendar year.\n- You have 10 sick leave days per year for personal illness or medical appointments.\n\nDetails:\n- **Annual Leave**\n  • You are entitled to 21 annual leave days per calendar year.  Please verify with official documentation.\n  • Annual leave accrues at a rate of 1.75 days per month of service.\n  • Leave requests must be submitted at least two weeks in advance through the HR portal.\n  • Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n  • Any leave beyond this limit will be forfeited unless special approval is obtained from senior management.\n- **Sick Leave**\n  • You have 10 sick leave days per year for personal illness or medical appointments.\n  • Sick leave does not accrue and unused days do not carry over.\n  • For absences exceeding 3 consecutive days, a medical certificate must be provided.\n  • The company reserves the right to request medical documentation for any sick leave taken.\n\nSource:\n- HR data 1.txt (Section 1: Leave Policies, 1.1 Annual Leave and 1.2 Sick Leave)\n- HR data 1.txt (Human Resources Policy Manual, Comprehensive Edition)",
+    "timestamp": "2026-06-16T20:09:36.179009",
+    "language": "en",
+    "confidence": 0.6614352464675903,
+    "answer_style": "detailed",
+    "match_type": "exact_match",
+    "response_time": 1.0908198356628418,
+    "sources": [
+      {
+        "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+        "similarity": 0.6614352464675903,
+        "metadata": {
+          "department": "Multi-Department",
+          "document": "HR_Policies_english 1",
+          "file_name": "HR_Policies_english 1.pdf",
+          "file_type": "pdf",
+          "ingested_at": "2026-06-16T12:40:29.389735",
+          "source": "Internal Documents",
+          "language": "en",
+          "chunk_id": 203,
+          "chunk_hash": "2715a9c8",
+          "char_length": 995,
+          "word_count": 177,
+          "created_at": "2026-06-16T12:40:29.390951"
+        },
+        "chunk_id": 216
+      },
+      {
+        "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+        "similarity": 0.5759732723236084,
+        "metadata": {
+          "department": "Multi-Department",
+          "document": "HR data 1",
+          "file_name": "HR data 1.txt",
+          "file_type": "txt",
+          "ingested_at": "2026-06-16T12:40:28.944689",
+          "source": "Internal Documents",
+          "language": "en",
+          "chunk_id": 0,
+          "chunk_hash": "7df9a47c",
+          "char_length": 980,
+          "word_count": 146,
+          "created_at": "2026-06-16T12:40:28.945316"
+        },
+        "chunk_id": 1
+      },
+      {
+        "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+        "similarity": 0.5490810871124268,
+        "metadata": {
+          "department": "Multi-Department",
+          "document": "HR data 1",
+          "file_name": "HR data 1.txt",
+          "file_type": "txt",
+          "ingested_at": "2026-06-16T12:40:28.944689",
+          "source": "Internal Documents",
+          "language": "en",
+          "chunk_id": 0,
+          "chunk_hash": "60c507e5",
+          "char_length": 896,
+          "word_count": 150,
+          "created_at": "2026-06-16T12:40:28.945257"
+        },
+        "chunk_id": 0
+      }
+    ],
+    "cached": false
+  }
+]

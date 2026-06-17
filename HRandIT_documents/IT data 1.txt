@@ -1,0 +1,439 @@
+=== LANGUAGE: EN ===
+# GIG EGYPT LIFE TAKAFUL - IT POLICIES COMPREHENSIVE MANUAL
+
+## 1.0 IT SECURITY POLICIES
+
+### 1.1 Password Management Policy
+All employees must adhere to the following password requirements:
+- Minimum 12 characters for standard users, 16 for administrators
+- Must include uppercase, lowercase, numbers, and special characters
+- Passwords expire every 90 days and cannot be reused for 5 cycles
+- Multi-factor authentication required for all remote access
+- Failed login attempts: Account locks after 5 attempts for 30 minutes
+
+### 1.2 Data Classification and Handling
+Data is classified into four categories with specific handling requirements:
+
+1. **Highly Confidential** (Red)
+   - Customer financial data, health records, trade secrets
+   - Encryption at rest and in transit required
+   - Access logging with 7-year retention
+   - No external sharing without CISO approval
+
+2. **Confidential** (Orange)
+   - Employee records, internal financials, strategic plans
+   - Encryption in transit required
+   - Access limited to department heads and above
+   - External sharing requires manager approval
+
+3. **Internal Use** (Yellow)
+   - Internal communications, project documentation
+   - Basic access controls
+   - Can be shared with partners under NDA
+
+4. **Public** (Green)
+   - Marketing materials, public reports
+   - No special protection required
+
+### 1.3 Remote Work Security
+Employees working remotely must:
+- Use company-provided VPN with split tunneling disabled
+- Install and maintain endpoint protection software
+- Secure home Wi-Fi with WPA3 encryption
+- Never use public Wi-Fi for company data without VPN
+- Enable full disk encryption on all devices
+- Report lost or stolen devices within 2 hours
+
+### 1.4 Incident Response Protocol
+Security incidents must be reported immediately:
+- **Level 1 (Critical)**: Data breach affecting >1000 records
+  - Response time: 15 minutes
+  - Escalation: CISO + Executive Committee
+  - External notification: Within 72 hours as per regulations
+  
+- **Level 2 (Major)**: System compromise without data loss
+  - Response time: 1 hour
+  - Escalation: IT Director + Security Team
+  
+- **Level 3 (Minor)**: Policy violations, minor breaches
+  - Response time: 4 hours
+  - Escalation: Department Manager
+
+## 2.0 HARDWARE AND SOFTWARE POLICIES
+
+### 2.1 Device Procurement and Management
+- All hardware purchases require IT pre-approval
+- Laptop refresh cycle: 3 years for standard users, 2 years for developers
+- Mobile device management mandatory for all company phones
+- Lost devices must be reported immediately for remote wipe
+
+### 2.2 Software Installation and Licensing
+- Only IT-approved software from company app store
+- Open-source software requires security review
+- All software must have valid licenses; violations result in disciplinary action
+- Developers may install dev tools with manager approval
+
+### 2.3 Bring Your Own Device (BYOD)
+BYOD is permitted under strict conditions:
+- Device must support MDM enrollment
+- Company data containerization required
+- Remote wipe capability must be accepted
+- IT support limited to company applications only
+- Personal devices cannot access highly confidential data
+
+## 3.0 NETWORK POLICIES
+
+### 3.1 Network Access Control
+- Zero Trust architecture implemented
+- Role-based access control (RBAC) for all systems
+- Regular access reviews quarterly
+- Privileged access requires justification and time limits
+
+### 3.2 Wireless Network Usage
+- Corporate Wi-Fi: WPA3-Enterprise with 802.1X authentication
+- Guest Wi-Fi: Segmented network with internet-only access
+- Personal hotspots prohibited for company data transfer
+- Rogue access point detection enabled
+
+### 3.3 Internet Usage Policy
+Acceptable use includes:
+- Business-related research
+- Professional development
+- Communication with clients
+
+Prohibited activities:
+- Accessing illegal or inappropriate content
+- Downloading pirated software/media
+- High-bandwidth streaming during work hours
+- Accessing personal email/file sharing on company devices
+
+## 4.0 DATA MANAGEMENT AND RETENTION
+
+### 4.1 Backup and Recovery
+- Critical systems: Real-time replication + hourly backups
+- Important systems: Daily incremental + weekly full backups
+- Standard systems: Weekly backups
+- Retention: 30 days for dailies, 1 year for weeklies, 7 years for monthlies
+- Recovery Time Objective (RTO): 4 hours for critical systems
+- Recovery Point Objective (RPO): 15 minutes for critical data
+
+### 4.2 Data Retention Schedule
+- Financial records: 10 years
+- Employee records: 7 years after termination
+- Email: 3 years for standard, 7 years for executives
+- Project documentation: 5 years after project closure
+- Security logs: 7 years
+- CCTV footage: 90 days
+
+### 4.3 Cloud Storage Policies
+- Approved cloud providers: Microsoft Azure, AWS, Google Cloud
+- Data sovereignty: Egyptian data must remain in MENA region
+- Encryption required for all cloud data
+- Regular access reviews and compliance audits
+
+## 5.0 EMAIL AND COMMUNICATION POLICIES
+
+### 5.1 Email Usage Guidelines
+- Company email for business purposes only
+- Auto-encryption for emails containing confidential data
+- No mass internal emails without HR/IT approval
+- Email signature standards: Name, title, department, company logo
+
+### 5.2 Instant Messaging and Collaboration
+- Approved tools: Microsoft Teams, Slack for specific projects
+- All business communications subject to monitoring and retention
+- File sharing via approved cloud services only
+- End-to-end encryption required for sensitive discussions
+
+## 6.0 PHYSICAL SECURITY
+
+### 6.1 Data Center Access
+- Biometric authentication + smart card required
+- Two-person rule for critical infrastructure access
+- 24/7 CCTV monitoring with 90-day retention
+- All visitors must be escorted and logged
+
+### 6.2 Office Security
+- Badge access for all offices
+- Clean desk policy enforced
+- Locking cabinets for confidential documents
+- Shredding of sensitive papers through approved vendor
+
+## 7.0 COMPLIANCE AND AUDITING
+
+### 7.1 Regulatory Compliance
+Must comply with:
+- Egyptian Data Protection Law (Law No. 151 of 2020)
+- ISO 27001 Information Security Standard
+- PCI DSS for payment processing
+- HIPAA for health-related data (if applicable)
+
+### 7.2 Internal Audits
+- Quarterly vulnerability assessments
+- Annual penetration testing by third party
+- Monthly access control reviews
+- Continuous security monitoring
+
+## 8.0 USER RESPONSIBILITIES
+
+### 8.1 Acceptable Use Agreement
+All employees must sign and acknowledge:
+- Protecting company assets and information
+- Reporting security incidents immediately
+- Completing annual security training
+- Complying with all IT policies
+
+### 8.2 Training Requirements
+- New employees: 2-hour security orientation
+- Annual refresher: 1-hour mandatory training
+- Developers: Additional secure coding training
+- Managers: Data protection and compliance training
+
+## 9.0 VENDOR AND THIRD-PARTY MANAGEMENT
+
+### 9.1 Vendor Security Requirements
+All vendors must:
+- Pass security assessment before engagement
+- Sign confidentiality agreements
+- Provide evidence of security controls
+- Allow security audits upon request
+
+### 9.2 Cloud Service Providers
+- SOC 2 Type II certification required
+- Data breach notification within 24 hours
+- Right-to-audit clause in all contracts
+- Data return/deletion upon contract termination
+
+## 10.0 BUSINESS CONTINUITY AND DISASTER RECOVERY
+
+### 10.1 BCP Requirements
+- Critical functions identified with RTO/RPO
+- Alternate work locations identified
+- Communication trees established
+- Quarterly BCP testing required
+
+### 10.2 Disaster Recovery
+- DR site in different geographical region
+- Failover testing semi-annually
+- Critical system recovery within 4 hours
+- Data loss tolerance: Maximum 15 minutes
+
+=== LANGUAGE: AR ===
+# شركة جيج مصر للتكافل - دليل سياسات تكنولوجيا المعلومات الشامل
+
+## ١.٠ سياسات أمن تكنولوجيا المعلومات
+
+### ١.١ سياسة إدارة كلمات المرور
+يجب على جميع الموظفين الالتزام بمتطلبات كلمات المرور التالية:
+- الحد الأدنى ١٢ حرفًا للمستخدمين العاديين، ١٦ حرفًا للمسؤولين
+- يجب أن تشمل أحرف كبيرة وصغيرة وأرقامًا ورموزًا خاصة
+- تنتهي صلاحية كلمات المرور كل ٩٠ يومًا ولا يمكن إعادة استخدامها لمدة ٥ دورات
+- المصادقة متعددة العوامل مطلوبة لجميع عمليات الوصول عن بُعد
+- محاولات تسجيل الدخول الفاشلة: يتم قفل الحساب بعد ٥ محاولات لمدة ٣٠ دقيقة
+
+### ١.٢ تصنيف البيانات والتعامل معها
+يتم تصنيف البيانات إلى أربع فئات بمتطلبات تعامل محددة:
+
+١. **سري للغاية** (أحمر)
+   - البيانات المالية للعملاء، السجلات الصحية، الأسرار التجارية
+   - التشفير أثناء التخزين والنقل مطلوب
+   - تسجيل الوصول مع الاحتفاظ لمدة ٧ سنوات
+   - لا يسمح بالمشاركة الخارجية دون موافقة مدير أمن المعلومات
+
+٢. **سري** (برتقالي)
+   - سجلات الموظفين، البيانات المالية الداخلية، الخطط الاستراتيجية
+   - التشفير أثناء النقل مطلوب
+   - الوصول مقصور على رؤساء الأقسام فما فوق
+   - المشاركة الخارجية تتطلب موافقة المدير
+
+٣. **للاستخدام الداخلي** (أصفر)
+   - الاتصالات الداخلية، وثائق المشاريع
+   - ضوابط وصول أساسية
+   - يمكن مشاركتها مع الشركاء بموجب اتفاقية عدم إفشاء
+
+٤. **عام** (أخضر)
+   - مواد التسويق، التقارير العامة
+   - لا توجد حماية خاصة مطلوبة
+
+### ١.٣ أمن العمل عن بُعد
+يجب على الموظفين العاملين عن بُعد:
+- استخدام شبكة VPN المقدمة من الشركة مع تعطيل النفق المقسم
+- تثبيت وصيانة برنامج حماية نقاط النهاية
+- تأمين شبكة Wi-Fi المنزلية بتشفير WPA3
+- عدم استخدام شبكة Wi-Fi العامة لبيانات الشركة بدون VPN
+- تمكين تشفير القرص بالكامل على جميع الأجهزة
+- الإبلاغ عن الأجهزة المفقودة أو المسروقة خلال ساعتين
+
+### ١.٤ بروتوكول الاستجابة للحوادث
+يجب الإبلاغ عن حوادث الأمان فورًا:
+- **المستوى ١ (حرج)**: خرق بيانات يؤثر على >١٠٠٠ سجل
+  - وقت الاستجابة: ١٥ دقيقة
+  - التصعيد: مدير أمن المعلومات + اللجنة التنفيذية
+  - الإخطار الخارجي: خلال ٧٢ ساعة وفقًا للوائح
+  
+- **المستوى ٢ (كبير)**: اختراق النظام دون فقدان البيانات
+  - وقت الاستجابة: ساعة واحدة
+  - التصعيد: مدير تكنولوجيا المعلومات + فريق الأمان
+  
+- **المستوى ٣ (بسيط)**: انتهاكات السياسات، خروقات طفيفة
+  - وقت الاستجابة: ٤ ساعات
+  - التصعيد: مدير القسم
+
+## ٢.٠ سياسات الأجهزة والبرمجيات
+
+### ٢.١ سياسات شراء وإدارة الأجهزة
+- جميع مشتريات الأجهزة تتطلب موافقة تكنولوجيا المعلومات المسبقة
+- دورة تجديد أجهزة اللابتوب: ٣ سنوات للمستخدمين العاديين، سنتان للمطورين
+- إدارة الأجهزة المحمولة إلزامية لجميع هواتف الشركة
+- يجب الإبلاغ عن الأجهزة المفقودة فورًا للمسح عن بُعد
+
+### ٢.٢ تثبيت البرمجيات والتراخيص
+- برامج معتمدة من تكنولوجيا المعلومات فقط من متجر تطبيقات الشركة
+- البرامج مفتوحة المصدر تتطلب مراجعة أمنية
+- يجب أن تحتوي جميع البرامج على تراخيص سارية؛ تؤدي المخالفات إلى إجراء تأديبي
+- يمكن للمطورين تثبيت أدوات التطوير بموافقة المدير
+
+### ٢.٣ سياسة إحضار جهازك الخاص (BYOD)
+يُسمح بـ BYOD بشروط صارمة:
+- يجب أن يدعم الجهاز تسجيل MDM
+- مطلوب تجميع بيانات الشركة
+- يجب قبول قدرة المسح عن بُعد
+- دعم تكنولوجيا المعلومات مقصور على تطبيقات الشركة فقط
+- لا يمكن للأجهزة الشخصية الوصول إلى البيانات السرية للغاية
+
+## ٣.٠ سياسات الشبكات
+
+### ٣.١ التحكم في الوصول إلى الشبكة
+- تطبيق هيكلية Zero Trust
+- التحكم في الوصول القائم على الأدوار (RBAC) لجميع الأنظمة
+- مراجعات وصول منتظمة ربع سنوية
+- الوصول المميز يتطلب مبررًا وحدود زمنية
+
+### ٣.٢ استخدام الشبكة اللاسلكية
+- شبكة Wi-Fi للشركة: WPA3-Enterprise مع مصادقة 802.1X
+- شبكة Wi-Fi للضيوف: شبكة مجزأة مع وصول للإنترنت فقط
+- النقاط الساخنة الشخصية محظورة لنقل بيانات الشركة
+- تمكين كشف نقاط الوصول غير المصرح بها
+
+### ٣.٣ سياسة استخدام الإنترنت
+الاستخدام المقبول يشمل:
+- البحث المتعلق بالأعمال
+- التطوير المهني
+- التواصل مع العملاء
+
+الأنشطة المحظورة:
+- الوصول إلى محتوى غير قانوني أو غير لائق
+- تنزيل برامج/وسائط مسروقة
+- البث عالي النطاق الترددي خلال ساعات العمل
+- الوصول إلى البريد الإلكتروني الشخصي/مشاركة الملفات على أجهزة الشركة
+
+## ٤.٠ إدارة البيانات والاحتفاظ بها
+
+### ٤.١ النسخ الاحتياطي والاستعادة
+- الأنظمة الحرجة: تكرار فوري + نسخ احتياطي كل ساعة
+- الأنظمة المهمة: نسخ احتياطي تدريجي يومي + نسخ احتياطي كامل أسبوعي
+- الأنظمة القياسية: نسخ احتياطي أسبوعي
+- الاحتفاظ: ٣٠ يومًا للنسخ اليومية، سنة واحدة للنسخ الأسبوعية، ٧ سنوات للنسخ الشهرية
+- هدف وقت الاستعادة (RTO): ٤ ساعات للأنظمة الحرجة
+- هدف نقطة الاستعادة (RPO): ١٥ دقيقة للبيانات الحرجة
+
+### ٤.٢ جدول الاحتفاظ بالبيانات
+- السجلات المالية: ١٠ سنوات
+- سجلات الموظفين: ٧ سنوات بعد إنهاء الخدمة
+- البريد الإلكتروني: ٣ سنوات للمعيارية، ٧ سنوات للمديرين التنفيذيين
+- وثائق المشروع: ٥ سنوات بعد إغلاق المشروع
+- سجلات الأمان: ٧ سنوات
+- لقطات CCTV: ٩٠ يومًا
+
+### ٤.٣ سياسات التخزين السحابي
+- مزودو السحابة المعتمدون: Microsoft Azure، AWS، Google Cloud
+- سيادة البيانات: يجب أن تبقى البيانات المصرية في منطقة الشرق الأوسط وشمال أفريقيا
+- التشفير مطلوب لجميع البيانات السحابية
+- مراجعات وصول منتظمة ومراجعات الامتثال
+
+## ٥.٠ سياسات البريد الإلكتروني والاتصالات
+
+### ٥.١ إرشادات استخدام البريد الإلكتروني
+- بريد الشركة الإلكتروني للأغراض التجارية فقط
+- التشفير التلقائي للرسائل الإلكترونية التي تحتوي على بيانات سرية
+- لا رسائل إلكترونية جماعية داخلية دون موافقة الموارد البشرية/تكنولوجيا المعلومات
+- معايير توقيع البريد الإلكتروني: الاسم، المنصب، القسم، شعار الشركة
+
+### ٥.٢ المراسلة الفورية والتعاون
+- الأدوات المعتمدة: Microsoft Teams، Slack لمشاريع محددة
+- جميع الاتصالات التجارية تخضع للمراقبة والاحتفاظ
+- مشاركة الملفات عبر خدمات السحابة المعتمدة فقط
+- التشفير من طرف إلى طرف مطلوب للمناقشات الحساسة
+
+## ٦.٠ الأمان المادي
+
+### ٦.١ الوصول إلى مركز البيانات
+- المصادقة الحيوية + البطاقة الذكية مطلوبة
+- قاعدة شخصين للوصول إلى البنية التحتية الحرجة
+- مراقبة CCTV على مدار الساعة مع الاحتفاظ لمدة ٩٠ يومًا
+- يجب مرافقة جميع الزوار وتسجيلهم
+
+### ٦.٢ أمان المكاتب
+- وصول بالبطاقة لجميع المكاتب
+- تنفيذ سياسة المكتب النظيف
+- خزائن قابلة للقفل للوثائق السرية
+- تمزيق الأوراق الحساسة عبر البائع المعتمد
+
+## ٧.٠ الامتثال والمراجعة
+
+### ٧.١ الامتثال التنظيمي
+يجب الامتثال لـ:
+- قانون حماية البيانات المصري (القانون رقم ١٥١ لسنة ٢٠٢٠)
+- معيار الأمن المعلوماتي ISO 27001
+- PCI DSS لمعالجة الدفع
+- HIPAA للبيانات المتعلقة بالصحة (إن وجد)
+
+### ٧.٢ المراجعات الداخلية
+- تقييمات الضعف ربع السنوية
+- اختبار الاختراق السنوي بواسطة طرف ثالث
+- مراجعات التحكم في الوصول الشهرية
+- المراقبة الأمنية المستمرة
+
+## ٨.٠ مسؤوليات المستخدم
+
+### ٨.١ اتفاقية الاستخدام المقبول
+يجب على جميع الموظفين التوقيع والتأكيد على:
+- حماية أصول ومعلومات الشركة
+- الإبلاغ عن حوادث الأمان فورًا
+- إكمال التدريب الأمني السنوي
+- الامتثال لجميع سياسات تكنولوجيا المعلومات
+
+### ٨.٢ متطلبات التدريب
+- الموظفون الجدد: توجيه أمني لمدة ساعتين
+- تجديد سنوي: تدريب إلزامي لمدة ساعة
+- المطورون: تدريب إضافي على الترميز الآمن
+- المديرون: تدريب على حماية البيانات والامتثال
+
+## ٩.٠ إدارة البائعين والأطراف الثالثة
+
+### ٩.١ متطلبات أمن البائعين
+يجب على جميع البائعين:
+- اجتياز التقييم الأمني قبل التعاقد
+- توقيع اتفاقيات السرية
+- تقديم أدلة على ضوابط الأمان
+- السماح بمراجعات الأمان عند الطلب
+
+### ٩.٢ مزودو الخدمات السحابية
+- شهادة SOC 2 النوع الثاني مطلوبة
+- إخطار خرق البيانات خلال ٢٤ ساعة
+- بند الحق في المراجعة في جميع العقود
+- إرجاع/حذف البيانات عند انتهاء العقد
+
+## ١٠.٠ استمرارية الأعمال والتعافي من الكوارث
+
+### ١٠.١ متطلبات خطة استمرارية الأعمال
+- تحديد الوظائف الحرجة مع أهداف RTO/RPO
+- تحديد مواقع العمل البديلة
+- إنشاء أشجار الاتصالات
+- اختبار خطة استمرارية الأعمال ربع السنوي مطلوب
+
+### ١٠.٢ التعافي من الكوارث
+- موقع DR في منطقة جغرافية مختلفة
+- اختبار التحويل نصف السنوي
+- استعادة النظام الحرج خلال ٤ ساعات
+- تحمل فقدان البيانات: الحد الأقصى ١٥ دقيقة

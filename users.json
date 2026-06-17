@@ -1,0 +1,32 @@
+{
+  "admin": {
+    "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "name": "Administrator",
+    "email": "admin@gig-egypt.com",
+    "role": "admin",
+    "department": "IT",
+    "created_at": "2026-06-16T13:29:12.072100",
+    "last_login": "2026-06-17T10:37:42.332208",
+    "active": true
+  },
+  "hr_manager": {
+    "password": "070a3b5e8d4bd5c46acccb91c9c54614c0cd649e78c4c4719e3a64270bae5ddf",
+    "name": "HR Manager",
+    "email": "hr@gig-egypt.com",
+    "role": "hr",
+    "department": "HR",
+    "created_at": "2026-06-16T13:29:12.072156",
+    "last_login": null,
+    "active": true
+  },
+  "employee": {
+    "password": "e03d3ec8d5035f8721f5dc64546e59ed790dbcb3b7b598fe57057ccd7b683b00",
+    "name": "Employee User",
+    "email": "employee@gig-egypt.com",
+    "role": "employee",
+    "department": "General",
+    "created_at": "2026-06-16T13:29:12.072170",
+    "last_login": "2026-06-17T09:24:41.116105",
+    "active": true
+  }
+}
