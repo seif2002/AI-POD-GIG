@@ -1469,7 +1469,15 @@ st.markdown("""
     /* Hide Streamlit branding */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: visible;}
+    header {visibility: hidden;}
+    [data-testid="stToolbar"],
+    [data-testid="stDecoration"],
+    [data-testid="stStatusWidget"],
+    [data-testid="stDeployButton"],
+    button[title="View app menu"] {
+        display: none !important;
+        visibility: hidden !important;
+    }
     
     /* Sidebar */
     .css-1d391kg {
