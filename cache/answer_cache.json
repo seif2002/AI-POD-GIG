@@ -11,5 +11,520 @@
       "language": "en",
       "response_time": 8.014676094055176
     }
+  },
+  "0087eae89dfa647f30a82397e9d7e761a88e68cefaded0d8fef12d0c150af4e9": {
+    "created_at": "2026-06-23T10:28:37.190266",
+    "question": "how many annual days do i have",
+    "answer_style": "summary",
+    "result": {
+      "answer": "[_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf]\n\nاﳌﻄﻠﻮب\n \nﺗﺤﺪﻳﺪ ﺣﺠﻢ اﻟﻌاﻟﺔ اﳌﻄﻠﻮب\n   . اﻟﺤﻞ\n: \nﻋﺪد اﻟﺴﺎﻋﺎت اﳌﻄﻠﻮب ﻋﻤﻠﻬﺎ ﺷﻬﺮﻳﺎً \n   =\n      10,000\n \n ﺑﺪﻟﻪ\n× 2\n1\n \n ﺳﺎﻋﺔ\n= 5,000\n ﺳﺎﻋﺔ\n  \n        \nﺣﺠﻢ اﻟﻌاﻟﺔ اﳌﻄﻠﻮب \n= 000\n,5 \n ﺳﺎﻋﺔ\n  =\n25\n \nًﻋﺎﻣﻼ\n  \n                              \n          200\n    \n \n \n وﺣﻴﺚ أن اﻟﺘﺨﻄﻴﻂ ﻳﻜﻮن ﻟﻔﱰة ﻣﺴـﺘﻘﺒﻠﻴﺔ ﻓﺈﻧـﻪ ﻳﻨﺒﻐـﻲ أﺧـﺬ ﻋﻤﻠﻴـﺔ اﻟﺘﻨﺒـﺆ ﺑﺎﳌﺒﻴﻌـﺎت أو ﺑﺎﻹﻧﺘـﺎج ﰲ\nاﻟﺤﺴﺒﺎن، وﻳﺘﻢ اﺳﺘﺨﺪام اﻟﻌﺪﻳﺪ ﻣﻦ اﻟﻄﺮق ﰲ اﻟﺘﻨﺒﺆ ﻣﻦ أﻫﻤﻬﺎ\n   :\n-\n \n ﺗﺤﻠﻴﻞ اﻟﺴﻼﺳﻞ اﻟﺰﻣﻨﻴﺔ\n/ \nاﳌﺘﻮﺳﻄﺎت اﳌﺘﺤﺮﻛﺔ\n \n Time Series / Moving Averages  \n \n اﻟﺴﻠﺴﺔ اﻟﺰﻣﻨﻴﺔ ﻫ\nﻲ ﻣﺠﻤﻮﻋﺔ ﻣﻦ اﳌﺸﺎﻫﺪات ﳌﺘﻐر ﻣﻌن ﺛـﻢ ﺗﺴـﺠﻴﻠﻬﺎ ﻋـﲆ ﻓـﱰات زﻣﻨﻴـﺔ ﻣﺘﺘﺎﻟﻴـﺔ\n)7( \n ﺣﻴﺚ ﺗﻬﺪف ﻫﺬه اﻟﻌﻤ",
+      "confidence": 0.5392796993255615,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 1.4792542457580566
+    }
+  },
+  "819e56275e51320b3b1f7afbe79eb93f8ce3ee04843058ebefd526b0ae1f9b99": {
+    "created_at": "2026-06-23T10:29:17.946457",
+    "question": "how many annual leave days",
+    "answer_style": "summary",
+    "result": {
+      "answer": "[HR data 1.txt]\n\nHuman Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual le",
+      "confidence": 0.7755200862884521,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.3701438903808594
+    }
+  },
+  "108bf3fa297776c4c190584231706f263271ae353a5f41ce3015012afb78e551": {
+    "created_at": "2026-06-23T10:45:16.950820",
+    "question": "how many days off do i get a year?",
+    "answer_style": "summary",
+    "result": {
+      "answer": "[HR_Policies_english 1.pdf]\n\nd) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers o",
+      "confidence": 0.5864580869674683,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.485790491104126
+    }
+  },
+  "e706f79f79468ab9f7d579b6f19fd6e1cbe7f9ede068e72b182d7210e731d374": {
+    "created_at": "2026-06-23T11:10:11.136875",
+    "question": "how many days off do i get a year",
+    "answer_style": "summary",
+    "result": {
+      "answer": "[HR_Policies_english 1.pdf]\n\nd) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers o",
+      "confidence": 0.6136005520820618,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.42061519622802734
+    }
+  },
+  "d3df93008901fabe76a3fd6a6d59aa371c6e224e52aea973e00193e1da71d123": {
+    "created_at": "2026-06-23T11:20:29.738251",
+    "question": "how many off a day do i get",
+    "answer_style": "summary",
+    "result": {
+      "answer": "[HR_Policies_english 1.pdf]\n\nd) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers o",
+      "confidence": 0.564741849899292,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.36336493492126465
+    }
+  },
+  "4d17be6b288dd536c6f34043f82e29bc038eb14503513585a678142be36b0fd1": {
+    "created_at": "2026-06-23T11:22:11.793675",
+    "question": "how many days of maturnity leave do i get",
+    "answer_style": "summary",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- Human Resources Policy Manual (Comprehensive Edition) Section 1: Leave Policies 1.1 Annual Leave Employees are entitled to 21 annual leave days per calendar year.\n- Annual leave accrues at a rate of 1.75 days per month of service.\n- Leave requests must be submitted at least two weeks in advance through the HR portal.\n- Emergency leave requests will be considered on a case-by-case basis with proper documentation.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.8402704977989197,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.7069149017333984
+    }
+  },
+  "eedada02f86e83a7ff7368d43d45fbd68d48e15c26c37b4f4e6b3ecbf24516a3": {
+    "created_at": "2026-06-23T11:23:06.823636",
+    "question": "how many days of maturnity leave do i get",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- Human Resources Policy Manual (Comprehensive Edition) Section 1: Leave Policies 1.1 Annual Leave Employees are entitled to 21 annual leave days per calendar year.\n- Annual leave accrues at a rate of 1.75 days per month of service.\n- Leave requests must be submitted at least two weeks in advance through the HR portal.\n- Emergency leave requests will be considered on a case-by-case basis with proper documentation.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.8402704977989197,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.6878764629364014
+    }
+  },
+  "0710a921c26ba5299c1478115d6b5cc044f89dc27a0a0ae0ff561aa2ee06a9f4": {
+    "created_at": "2026-06-23T11:28:23.335986",
+    "question": "كم يوم إجازة أمومة أحصل عليه؟",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nهذه هي المعلومات ذات الصلة حسب السياسة المتاحة.\n\nالتفاصيل:\n- a) Female Employee with over one-year continuous service shall be entitled to 26 weeks maternity leave subject to production of medical certificate being their pregnant and the probable date of confinement.\n\nملاحظات إضافية:\n- إذا كانت المعلومات غير كافية، يرجى الرجوع إلى الموارد البشرية أو تكنولوجيا المعلومات للتأكيد.",
+      "confidence": 0.5029280781745911,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 0.41794586181640625
+    }
+  },
+  "b25ab01d6c6606959226bdd7e8d570e254da3b1d9f1eda296e84098062166cb6": {
+    "created_at": "2026-06-23T11:36:14.325704",
+    "question": "كم يوم إجازة أمومة أحصل عليه؟",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nهذه هي المعلومات ذات الصلة حسب السياسة المتاحة.\n\nالتفاصيل:\n- a) Female Employee with over one-year continuous service shall be entitled to 26 weeks maternity leave subject to production of medical certificate being their pregnant and the probable date of confinement.\n\nملاحظات إضافية:\n- إذا كانت المعلومات غير كافية، يرجى الرجوع إلى الموارد البشرية أو تكنولوجيا المعلومات للتأكيد.",
+      "confidence": 0.5029280781745911,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 0.469149112701416
+    }
+  },
+  "04ac2059d570c2d8e94906f28a7abdb7c877fbea825190ffcac86be00616d42c": {
+    "created_at": "2026-06-23T11:43:22.466574",
+    "question": "كم يوم إجازة أمومة أحصل عليه؟",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nهذه هي المعلومات ذات الصلة حسب السياسة المتاحة.\n\nالتفاصيل:\n- a) Female Employee with over one-year continuous service shall be entitled to 26 weeks maternity leave subject to production of medical certificate being their pregnant and the probable date of confinement.\n\nملاحظات إضافية:\n- إذا كانت المعلومات غير كافية، يرجى الرجوع إلى الموارد البشرية أو تكنولوجيا المعلومات للتأكيد.",
+      "confidence": 0.5029280781745911,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 0.4099421501159668
+    }
+  },
+  "9faf2aed77b1ed0829678405c26a2128eb611e4b6cb7b5b525efa2917482a290": {
+    "created_at": "2026-06-23T11:50:58.275809",
+    "question": "كم يوم إجازة أمومة أحصل عليه",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nتستحق الموظفة 14 أسبوعاً من إجازة الأمومة المدفوعة وفقاً للسياسة.\n\nالتفاصيل:\nإجازة الأمومة:\n- 14 أسبوعاً مدفوعة الأجر.\n- يمكن تقسيمها إلى 6 أسابيع قبل الولادة و8 أسابيع بعد الولادة، مع مرونة حسب المشورة الطبية.\n- يمكن الحصول على 4 أسابيع إضافية غير مدفوعة الأجر بموافقة المدير.\n\nإجازات مرتبطة:\n- إجازة التبني: 10 أسابيع للوالد أو الوالدة الأساسي في حالة التبني.\n- إجازة الأبوة: 5 أيام مدفوعة الأجر، مع إمكانية إجازة إضافية غير مدفوعة لمدة أسبوعين.\n\nملاحظات إضافية:\n- يجب إخطار الموارد البشرية قبل موعد الولادة المتوقع بثلاثة أشهر على الأقل.\n- قد تتوفر برامج للعودة التدريجية إلى العمل بعد الإجازة.",
+      "confidence": 0.4732588529586792,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 0.5347785949707031
+    }
+  },
+  "b75f2a245202c6ce3b66b4888d37e831340d0ef001bdac359162ef09e4a61068": {
+    "created_at": "2026-06-23T11:51:21.194103",
+    "question": "how many maternity dayys do i have",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nFemale employees are entitled to 14 weeks of paid maternity leave.\n\nDetails:\nMaternity Leave:\n- 14 weeks of paid leave.\n- This may be split as 6 weeks before delivery and 8 weeks after delivery, with flexibility based on medical advice.\n- An additional 4 weeks of unpaid leave may be available with manager approval.\n\nRelated Leave:\n- Adoption leave: 10 weeks for the primary adopting parent.\n- Paternity leave: 5 paid days, with an additional 2 weeks of unpaid leave available.\n\nAdditional Notes:\n- Employees must notify HR at least 3 months before the expected due date.\n- Return-to-work transition programs may be available.",
+      "confidence": 0.53750519156456,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.37712836265563965
+    }
+  },
+  "66effbf3686e5567ddd51ade95c55b2116a79fae92517ae405a198a2e02338d5": {
+    "created_at": "2026-06-23T11:55:54.761153",
+    "question": "how many annual leave days?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+      "confidence": 0.9898065376281738,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.31280517578125
+    }
+  },
+  "3bb687fdc27c155d1bc5e1c381c21fc72b843c37f15dd68166013bc894083554": {
+    "created_at": "2026-06-23T11:56:43.845017",
+    "question": "how many annual days?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- However, under the Factories Act, 1948, they must be paid for those days and should be paid for overtime.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.6275156855583192,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.35845375061035156
+    }
+  },
+  "e1bf4e8b764c7fb507f062b50e05e4fa29fb608b259911817d6e239381eb874e": {
+    "created_at": "2026-06-23T12:03:34.961406",
+    "question": "how many annual leave days?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+      "confidence": 0.9898065376281738,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.3315606117248535
+    }
+  },
+  "c00dfa63cfb6dd7c23c8c48d8cc9b2760dbe9e31fcef972ace9ee5e188b1edf0": {
+    "created_at": "2026-06-23T12:10:15.980623",
+    "question": "how many annual leave days?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+      "confidence": 0.9898065376281738,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.35802698135375977
+    }
+  },
+  "01013afe0d6d2028e920d08bd3b68cc9e54aca7234ca85c4464e9799cac8a338": {
+    "created_at": "2026-06-23T12:17:13.633627",
+    "question": "كم يوم إجازة أمومة أحصل عليه",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nتستحق الموظفة 14 أسبوعاً من إجازة الأمومة المدفوعة وفقاً للسياسة.\n\nالتفاصيل:\nإجازة الأمومة:\n- 14 أسبوعاً مدفوعة الأجر.\n- يمكن تقسيمها إلى 6 أسابيع قبل الولادة و8 أسابيع بعد الولادة، مع مرونة حسب المشورة الطبية.\n- يمكن الحصول على 4 أسابيع إضافية غير مدفوعة الأجر بموافقة المدير.\n\nإجازات مرتبطة:\n- إجازة التبني: 10 أسابيع للوالد أو الوالدة الأساسي في حالة التبني.\n- إجازة الأبوة: 5 أيام مدفوعة الأجر، مع إمكانية إجازة إضافية غير مدفوعة لمدة أسبوعين.\n\nملاحظات إضافية:\n- يجب إخطار الموارد البشرية قبل موعد الولادة المتوقع بثلاثة أشهر على الأقل.\n- قد تتوفر برامج للعودة التدريجية إلى العمل بعد الإجازة.",
+      "confidence": 0.4732588529586792,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 0.42328810691833496
+    }
+  },
+  "f10e2f284be59c98fb92489d2e9b1ae6f2461daf453f76b3537d518d04ff543b": {
+    "created_at": "2026-06-23T13:20:31.309252",
+    "question": "when can i expect a salary raise",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- Section 4: Compensation, Benefits, and Rewards 4.1 Comprehensive Salary Structure Salaries are reviewed annually during performance appraisal cycles.\n- Salary increments are based on individual performance, company performance, and market benchmarks.\n- Compensation Philosophy: Base salary at 60th percentile of market Variable compensation up to 30% of base Equity grants for Director+ levels Signing bonuses for critical hires Pay Transparency: Salary ranges posted for all positions Promotion increase: 8-15% Merit increase range: 3-8% 4.2 Health and Wellness Benefits Medical Insurance: PPO and HSA options available Company pays 85% of premium for employees 75% of premium for dependents $500 deductible, $2000 out-of-pocket maximum Additional Coverage: Dental: 100% preventive, 80% basic, 50% major Vision: Annual exams and $150 frame allowance Mental health: 20 therapy sessions covered annually\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.5467572927474976,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 1.013875961303711
+    }
+  },
+  "5f208371b8d7d697e53aca0994bd27e0173a2682e24b5185fef2ca56cd2b2f01": {
+    "created_at": "2026-06-23T13:21:04.039451",
+    "question": "how do i get sick leave?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- 1.2 Sick Leave Employees have 10 sick leave days per year for personal illness or medical appointments.\n- Sick leave does not accrue and unused days do not carry over.\n- The company reserves the right to request medical documentation for any sick leave taken.\n- Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave Maternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.8902111911773681,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.3156559467315674
+    }
+  },
+  "33e45ce656b6e5f8a174f512fd773548ff658c72d81c950d486d4bef471fe6c9": {
+    "created_at": "2026-06-23T13:21:55.569980",
+    "question": "kam youm agaza?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nI could not produce a confirmed English answer from the available policy information.\n\nDetails:\n- Please rephrase the question with a more specific HR or IT policy topic.\n- I will not show raw or mixed-language document excerpts.\n\nAdditional Notes:\n- For urgent or personal cases, please contact HR or IT directly.",
+      "confidence": 0.3278178596496582,
+      "mode": "general_fallback",
+      "match_type": "none",
+      "language": "en",
+      "response_time": 0.43580126762390137
+    }
+  },
+  "9ae77ff4c8486915a789c21a22f8fde4e68b6e533e70acbfb7e5202e1b9fe8ae": {
+    "created_at": "2026-06-23T13:23:52.855193",
+    "question": "سياسة  تغيير كلمة السر",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nلم أتمكن من صياغة إجابة عربية مؤكدة من المعلومات المتاحة لهذا السؤال.\n\nالتفاصيل:\n- يرجى إعادة صياغة السؤال بشكل أكثر تحديداً، مثل نوع السياسة أو نوع الإجازة أو إجراء تكنولوجيا المعلومات المطلوب.\n- لن أعرض نصوصاً خاماً أو مقتطفات غير منسقة من المستندات.\n\nملاحظات إضافية:\n- إذا كان الأمر عاجلاً أو خاصاً بحالتك الشخصية، يرجى الرجوع إلى الموارد البشرية أو تكنولوجيا المعلومات للتأكيد.",
+      "confidence": 0.6737059688568116,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 0.3112986087799072
+    }
+  },
+  "889b87570971fc5e713aeefb48f7e348f9bde6cbe5bcb02a6b1c6a310f1f7722": {
+    "created_at": "2026-06-23T13:24:23.815148",
+    "question": "سياسة العمل عن بعد",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nلم أتمكن من صياغة إجابة عربية مؤكدة من المعلومات المتاحة لهذا السؤال.\n\nالتفاصيل:\n- يرجى إعادة صياغة السؤال بشكل أكثر تحديداً، مثل نوع السياسة أو نوع الإجازة أو إجراء تكنولوجيا المعلومات المطلوب.\n- لن أعرض نصوصاً خاماً أو مقتطفات غير منسقة من المستندات.\n\nملاحظات إضافية:\n- إذا كان الأمر عاجلاً أو خاصاً بحالتك الشخصية، يرجى الرجوع إلى الموارد البشرية أو تكنولوجيا المعلومات للتأكيد.",
+      "confidence": 0.6609292364120484,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 0.3594400882720947
+    }
+  },
+  "44c18321dcf5b44ddb04cf6e27ded9c7c55a3b7c6ce11ff8cad0d9304be5abd7": {
+    "created_at": "2026-06-23T13:24:49.244058",
+    "question": "عدد الاجازات السنويه؟",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nتستحق إجازة سنوية وإجازة مرضية وأيام راحة أسبوعية وشهرية حسب ما ينطبق عليك.\n\nالتفاصيل:\nالإجازة السنوية:\n- 21 يوماً سنوياً للموظفين من 0 إلى 2 سنة خدمة.\n- 25 يوماً سنوياً للموظفين من 3 إلى 5 سنوات خدمة.\n- 30 يوماً سنوياً للموظفين من 6 إلى 10 سنوات خدمة.\n- 35 يوماً سنوياً للموظفين أكثر من 10 سنوات خدمة.\n\nالإجازة المرضية:\n- 10 أيام سنوياً للمرض الشخصي أو المواعيد الطبية.\n\nأيام الراحة الأسبوعية:\n- يوم الأحد هو يوم الراحة الأسبوعية.\n- السبت الثاني من كل شهر هو يوم راحة أيضاً.\n\nملاحظات إضافية:\n- يمكن للإدارة إلغاء الراحة الأسبوعية حسب متطلبات العمل.\n- لا توفر السياسة إجمالياً موحداً يجمع كل الإجازات وأيام الراحة في رقم واحد.",
+      "confidence": 0.5435883140563965,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 0.47914791107177734
+    }
+  },
+  "340ae0dac7a651c1ef8a548f9d9ca1be69b2bb90bca32885a945a4641befbe57": {
+    "created_at": "2026-06-23T13:28:29.113024",
+    "question": "notes period",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nI could not find enough clear policy information to answer this question confidently.\n\nDetails:\n- Please ask about a more specific HR or IT policy topic.\n- I will not show raw document text or unreadable OCR excerpts.\n\nAdditional Notes:\n- For urgent or personal cases, please contact HR or IT directly.\n\nNote: These results are related but may not directly answer your question.",
+      "confidence": 0.39806009411811827,
+      "mode": "related_match",
+      "match_type": "related_match",
+      "language": "en",
+      "response_time": 0.541914701461792
+    }
+  },
+  "e0060576eca50e4f0f2eecef5df09bda8312f31258656def203b676d7ea9108c": {
+    "created_at": "2026-06-23T13:28:39.778934",
+    "question": "notice period",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- PROBATION AND CONFIRMATION POLICY When a new employee is on board they are usually kept on a probation period.\n- Probation periods are mandatory for all employees of an organization.\n- The policy must include the probation time period, as well as procedures, post the confirmation also, it should include the code of conduct, the performance expectations and goals of the employee for the company.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.5421839475631715,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.4488530158996582
+    }
+  },
+  "91597e4e778bb36fc67131cfb9dbba03baa91bae2dfcff5c3e29dc17a53983b3": {
+    "created_at": "2026-06-23T13:29:25.968361",
+    "question": "how long is notice period",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- PROBATION AND CONFIRMATION POLICY When a new employee is on board they are usually kept on a probation period.\n- Probation periods are mandatory for all employees of an organization.\n- The policy must include the probation time period, as well as procedures, post the confirmation also, it should include the code of conduct, the performance expectations and goals of the employee for the company.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.6260889291763306,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.2955050468444824,
+      "sources": [
+        {
+          "text": "PROBATION AND CONFIRMATION POLICY \n  \n When a new employee is on board they are usually kept on a probation period. Which \ncommonly lasts for six months. It gives the company time to judge an employee’s \nperformance and also the conditions under which the employee will be confirmed into the \ncompany. Probation periods are mandatory for all employees of an organization. Therefore, \nthis means that the employee gets a chance to understand the work environment and the \nworkload of a company. The policy must include the probation time period, as well as procedures, post the \nconfirmation also, it should include the code of conduct, the performance expectations and \ngoals of the employee for the company. WORK FROM HOME POLICY \n  \n A Work from the Home policy is an agreement between an employer and employee to grant \nthe employee the privilege of working from home. It should clearly specify the work timings, \ndeliverables and clear procedures.",
+          "similarity": 0.6260889291763306,
+          "raw_similarity": 0.5510889291763306,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "47b3b89e",
+            "char_length": 951,
+            "word_count": 152,
+            "created_at": "2026-06-23T10:02:35.475258"
+          },
+          "chunk_id": 227
+        },
+        {
+          "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+          "similarity": 0.5940262877941132,
+          "raw_similarity": 0.47902628779411316,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "519fbbfc",
+            "char_length": 985,
+            "word_count": 155,
+            "created_at": "2026-06-23T10:02:35.474983"
+          },
+          "chunk_id": 215
+        },
+        {
+          "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+          "similarity": 0.5382876515388489,
+          "raw_similarity": 0.4632876515388489,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "60c507e5",
+            "char_length": 896,
+            "word_count": 150,
+            "created_at": "2026-06-23T10:02:35.062100"
+          },
+          "chunk_id": 0
+        }
+      ]
+    }
+  },
+  "a7ceb736f6b05e9c5daaef2d0832cd3923192ab5a56428a0726c2dcd0cfea9a7": {
+    "created_at": "2026-06-23T14:04:00.928283",
+    "question": "how many days off",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nYou are entitled to annual leave, sick leave, weekly offs, and the monthly 2nd Saturday off where applicable.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nSick Leave:\n- 10 days per year for personal illness or medical appointments.\n\nWeekly Offs:\n- Sunday is the weekly off day.\n- The 2nd Saturday of every month is also off.\n\nAdditional Notes:\n- Weekly offs may be cancelled by management depending on business requirements.\n- The policy does not provide one combined annual total for all leave days and weekly/monthly offs.",
+      "confidence": 0.8184751391410828,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.4860849380493164,
+      "sources": [
+        {
+          "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+          "similarity": 0.8184751391410828,
+          "raw_similarity": 0.7434751391410828,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "2715a9c8",
+            "char_length": 995,
+            "word_count": 177,
+            "created_at": "2026-06-23T10:02:35.475008"
+          },
+          "chunk_id": 216
+        },
+        {
+          "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+          "similarity": 0.7151332998275757,
+          "raw_similarity": 0.6001332998275757,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "519fbbfc",
+            "char_length": 985,
+            "word_count": 155,
+            "created_at": "2026-06-23T10:02:35.474983"
+          },
+          "chunk_id": 215
+        },
+        {
+          "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+          "similarity": 0.6929689168930054,
+          "raw_similarity": 0.6179689168930054,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "7df9a47c",
+            "char_length": 980,
+            "word_count": 146,
+            "created_at": "2026-06-23T10:02:35.062307"
+          },
+          "chunk_id": 1
+        },
+        {
+          "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+          "similarity": 0.6716364145278931,
+          "raw_similarity": 0.5966364145278931,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f4f50c37",
+            "char_length": 934,
+            "word_count": 159,
+            "created_at": "2026-06-23T10:02:35.474869"
+          },
+          "chunk_id": 210
+        },
+        {
+          "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+          "similarity": 0.6560904502868653,
+          "raw_similarity": 0.5810904502868652,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "60c507e5",
+            "char_length": 896,
+            "word_count": 150,
+            "created_at": "2026-06-23T10:02:35.062100"
+          },
+          "chunk_id": 0
+        }
+      ]
+    }
   }
 }

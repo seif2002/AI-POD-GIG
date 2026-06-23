@@ -93,7 +93,7 @@ This reads all documents, creates semantic chunks (with overlap), generates embe
 **Web UI (recommended):**
 
 ```bash
-streamlit run web_interface.py
+python -m streamlit run web_interface.py
 ```
 
 **CLI (for testing):**

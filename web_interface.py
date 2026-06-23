@@ -18,9 +18,9 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import from config and query system
 try:
-    from query_system import AIPodQuerySystem, detect_language
+    from query_system import AIPodQuerySystem, detect_language, wants_bilingual_response
     from config import AIPodConfig
-    from auth import AuthManager, init_session_state, login_required, logout, show_user_profile, check_permission
+    from auth import AuthManager, init_session_state, login_required, logout, check_permission
     AI_POD_AVAILABLE = True
 except ImportError as e:
     st.error(f"Failed to import: {e}")
@@ -55,7 +55,7 @@ if "session_id" not in st.session_state:
     ).hexdigest()[:8]
 
 if "answer_style" not in st.session_state:
-    st.session_state.answer_style = "summary"
+    st.session_state.answer_style = "detailed"
 
 if "theme_mode" not in st.session_state:
     st.session_state.theme_mode = "light"
@@ -74,7 +74,7 @@ ANSWER_CACHE_PATH = os.path.join(CACHE_DIR, "answer_cache.json")
 CHAT_HISTORY_DIR = os.path.join(CACHE_DIR, "chat_history")
 CHAT_SESSIONS_DIR = os.path.join(CACHE_DIR, "chat_sessions")
 ANSWER_CACHE_MAX_ITEMS = 500
-ANSWER_FORMAT_VERSION = "organized-v3"
+ANSWER_FORMAT_VERSION = "compact-answer-format-v1"
 
 
 def _ensure_cache_dirs():
@@ -270,12 +270,31 @@ def _cache_key(question: str, answer_style: str, ai_pod) -> str:
 
 def get_cached_answer(question: str, answer_style: str, ai_pod):
     cache = _load_json(ANSWER_CACHE_PATH, {})
-    item = cache.get(_cache_key(question, answer_style, ai_pod))
+    key = _cache_key(question, answer_style, ai_pod)
+    item = cache.get(key)
     if not item:
         return None
     result = item.get("result")
     if not isinstance(result, dict):
         return None
+    answer = result.get("answer", "")
+    question_lang = detect_language(question)
+    bilingual = wants_bilingual_response(question)
+    if not bilingual and question_lang == "ar" and re.search(r"[A-Za-z]", answer):
+        return None
+    if not bilingual and question_lang == "en" and re.search(r"[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]", answer):
+        return None
+
+    if not result.get("sources") and ai_pod and hasattr(ai_pod, "search_semantic"):
+        try:
+            sources = ai_pod.search_semantic(question)[:AIPodConfig.TOP_K_RESULTS]
+            result["sources"] = sources
+            item["result"] = result
+            cache[key] = item
+            _save_json(ANSWER_CACHE_PATH, cache)
+        except Exception:
+            result["sources"] = []
+
     result["cached"] = True
     result["response_time"] = 0.0
     return result
@@ -294,6 +313,7 @@ def save_cached_answer(question: str, answer_style: str, ai_pod, result: dict):
             "match_type": result.get("match_type", "none"),
             "language": result.get("language", "en"),
             "response_time": float(result.get("response_time", 0)),
+            "sources": result.get("sources", []),
         },
     }
     if len(cache) > ANSWER_CACHE_MAX_ITEMS:
@@ -310,6 +330,100 @@ def format_inline(text: str) -> str:
     return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", escaped)
 
 
+def clean_display_text(text: str) -> str:
+    """Remove characters that can confuse Markdown/HTML rendering."""
+    if text is None:
+        return ""
+    text = str(text)
+    return "".join(
+        ch
+        for ch in text
+        if ch in "\n\t" or ord(ch) >= 32
+    )
+
+
+def clean_response_markdown(answer_text: str) -> str:
+    """Normalize assistant markdown before rendering it as chat HTML."""
+    text = clean_display_text(answer_text)
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n[ \t]+", "\n", text)
+
+    section_names = [
+        "Direct Answer",
+        "Details",
+        "Additional Notes",
+        "Important Notes",
+        "Annual Leave",
+        "Sick Leave",
+        "Weekly Offs",
+        "Maternity Leave",
+        "Paternity Leave",
+        "Related Leave",
+        "Accrual and Carryover",
+        "الإجابة المباشرة",
+        "التفاصيل",
+        "ملاحظات إضافية",
+        "ملاحظات مهمة",
+        "الإجازة السنوية",
+        "الإجازة المرضية",
+        "أيام الراحة الأسبوعية",
+        "إجازة الأمومة",
+        "إجازات مرتبطة",
+    ]
+    for name in section_names:
+        text = re.sub(rf"(?<!\n)({re.escape(name)}:)", r"\n\1", text)
+
+    cleaned_lines = []
+    seen_bullets = set()
+    last_blank = False
+    last_heading = None
+
+    for raw_line in text.split("\n"):
+        line = raw_line.strip()
+        line = re.sub(r"^#{1,6}\s*", "", line).strip()
+        line = re.sub(r"^\s*[-*•]\s*[-*•\s]*$", "", line).strip()
+        line = re.sub(r"^\s*\d+[\.\)]\s*$", "", line).strip()
+
+        bullet_match = re.match(r"^([-*•]|\d+[\.\)])\s*(.*)$", line)
+        if bullet_match:
+            marker = "-" if bullet_match.group(1) in {"-", "*", "•"} else bullet_match.group(1)
+            body = bullet_match.group(2).strip()
+            body = re.sub(r"^[-*•\s]+", "", body).strip()
+            if not body:
+                continue
+            bullet_key = re.sub(r"\s+", " ", body.lower())
+            if bullet_key in seen_bullets:
+                continue
+            seen_bullets.add(bullet_key)
+            line = f"{marker} {body}"
+
+        heading_candidate = line.rstrip(":").strip("*").strip()
+        is_heading = bool(line.endswith(":") and len(heading_candidate) <= 60 and not bullet_match)
+        if is_heading:
+            heading_key = heading_candidate.lower()
+            if heading_key == last_heading:
+                continue
+            last_heading = heading_key
+            line = f"{heading_candidate}:"
+        elif line:
+            last_heading = None
+
+        if not line:
+            if cleaned_lines and not last_blank:
+                cleaned_lines.append("")
+                last_blank = True
+            continue
+
+        cleaned_lines.append(line)
+        last_blank = False
+
+    text = "\n".join(cleaned_lines).strip()
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r"(?m)^([^:\n]{3,60}):\n\n+", r"\1:\n", text)
+    return text
+
+
 def format_bullet_text(text: str) -> str:
     """Format bullet text and bold a short leading label before a colon."""
     cleaned = text.strip()
@@ -323,7 +437,7 @@ def format_bullet_text(text: str) -> str:
 
 def normalize_answer_text(answer_text: str) -> str:
     """Repair common LLM markdown spacing issues before HTML formatting."""
-    text = answer_text.replace("\r\n", "\n").replace("\r", "\n")
+    text = clean_response_markdown(answer_text)
     text = re.sub(r"(?<!\n)\s+(\*?\*\*[A-Z][A-Za-z /&()'-]{1,50}:\*\*)", r"\n\n\1", text)
     text = re.sub(r"(?<!\n)\s+(\*[A-Z][A-Za-z /&()'-]{1,50}:\*\*)", r"\n\n\1", text)
     return text
@@ -402,18 +516,23 @@ def format_answer(answer_text: str) -> str:
         
         # Handle numbered list (1., 2., etc)
         if re.match(r"^\d+[\.\)]", line):
+            clean_line = re.sub(r"^\d+[\.\)]\s*", "", line).strip()
+            if not clean_line:
+                continue
             if not bullet_mode:
                 html_output += "<ul class='bullet-list'>"
                 bullet_mode = True
-            clean_line = re.sub(r"^\d+[\.\)]\s*", "", line)
             html_output += f"<li>{format_bullet_text(clean_line)}</li>"
         
         # Handle dash/star list
         elif line.startswith("-") or line.startswith("*") or line.startswith("•"):
+            clean_line = line[1:].strip()
+            clean_line = re.sub(r"^[-*•\s]+", "", clean_line).strip()
+            if not clean_line:
+                continue
             if not bullet_mode:
                 html_output += "<ul class='bullet-list'>"
                 bullet_mode = True
-            clean_line = line[1:].strip()
             html_output += f"<li>{format_bullet_text(clean_line)}</li>"
         
         # Handle bullet points already in text
@@ -426,13 +545,22 @@ def format_answer(answer_text: str) -> str:
                 if part.strip():
                     html_output += f"<li>{format_bullet_text(part.strip())}</li>"
         
-        # Handle section headers (ends with colon)
-        elif line.endswith(':') and len(line) < 60:
+        # Handle section headers
+        elif (line.endswith(':') or line in {"Direct Answer", "Details", "Additional Notes", "Important Notes"}) and len(line) < 60:
             if bullet_mode:
                 html_output += "</ul>"
                 bullet_mode = False
-            line = line.strip("*")
+            line = line.strip("*").rstrip(":")
             html_output += f"<h4 class='section-header'>{format_inline(line)}</h4>"
+
+        # Handle "Heading: text" on one line
+        elif re.match(r"^[^:]{3,45}:\s+\S+", line):
+            heading, rest = line.split(":", 1)
+            if bullet_mode:
+                html_output += "</ul>"
+                bullet_mode = False
+            html_output += f"<h4 class='section-header'>{format_inline(heading.strip())}</h4>"
+            html_output += f"<p>{format_inline(rest.strip())}</p>"
         
         # Regular paragraph
         else:
@@ -449,44 +577,175 @@ def format_answer(answer_text: str) -> str:
     return html_output
 
 
+def format_source_names(sources) -> str:
+    """Return a compact, de-duplicated source label for chat metadata."""
+    names = []
+    if isinstance(sources, list):
+        for source in sources:
+            if not isinstance(source, dict):
+                continue
+            metadata = source.get("metadata") or {}
+            name = metadata.get("file_name") or metadata.get("document")
+            if name and name not in names:
+                names.append(str(name))
+    return ", ".join(names[:3]) if names else "Source unavailable"
+
+
+def format_response_time(seconds) -> str:
+    try:
+        seconds = float(seconds)
+    except (TypeError, ValueError):
+        seconds = 0.0
+    if seconds < 0.01:
+        return "cached"
+    return f"{seconds:.2f}s"
+
+
 def render_chat_history():
     """Render the full conversation thread."""
+    force_follow = st.session_state.pop("force_chat_follow", False)
+    force_attr = "true" if force_follow else "false"
     if not st.session_state.chat_history:
         st.markdown(
-            """
-            <div class="empty-chat">
-                <div class="empty-chat-title">How can I help?</div>
-                <div class="empty-chat-subtitle">Ask about HR, IT, or company policy documents.</div>
+            f"""
+            <div class="chat-scroll" id="aiPodChatScroll" data-chat-follow="true" data-force-follow="{force_attr}">
+                <div class="empty-chat">
+                    <div class="empty-chat-title">How can I help?</div>
+                    <div class="empty-chat-subtitle">Ask about HR, IT, or company policy documents.</div>
+                </div>
+                <div id="aiPodChatBottom" class="chat-bottom-anchor"></div>
             </div>
+            <button id="aiPodScrollLatest" class="scroll-latest-button" type="button">Scroll to latest</button>
             """,
             unsafe_allow_html=True
         )
+        render_chat_autoscroll_script()
         return
 
+    chat_markup = [f'<div class="chat-scroll" id="aiPodChatScroll" data-chat-follow="true" data-force-follow="{force_attr}">']
     for idx, chat in enumerate(st.session_state.chat_history):
-        formatted_question = format_inline(chat.get("question", ""))
+        formatted_question = format_inline(clean_display_text(chat.get("question", "")))
         formatted_answer = format_answer(chat.get("answer", ""))
-        meta = (
-            f"Mode: {chat.get('answer_style', 'summary').title()} | "
-            f"Confidence: {chat.get('confidence', 0):.1%} | "
-            f"Match: {chat.get('match_type', 'none').replace('_', ' ').title()} | "
-            f"{'Cached | ' if chat.get('cached') else ''}"
-            f"{chat.get('response_time', 0):.2f}s"
+        chat_lang = chat.get("language") or detect_language(chat.get("question", ""))
+        direction = "rtl" if chat_lang == "ar" else "ltr"
+        lang_class = "arabic-answer" if chat_lang == "ar" else "english-answer"
+        source_label = format_inline(format_source_names(chat.get("sources", [])))
+        time_label = format_inline(format_response_time(chat.get("response_time", 0)))
+        chat_markup.append(f'<div class="chat-row user-row"><div class="user-bubble {lang_class}" dir="{direction}">{formatted_question}</div></div>')
+        chat_markup.append(
+            '<div class="chat-row assistant-row"><div class="assistant-bubble">'
+            f'<div class="answer-box {lang_class}" dir="{direction}">{formatted_answer}</div>'
+            f'<div class="chat-meta {lang_class}" dir="{direction}">Source: {source_label} | Time: {time_label}</div>'
+            '</div></div>'
         )
-        st.markdown(
-            f"""
-            <div class="chat-row user-row">
-                <div class="user-bubble">{formatted_question}</div>
-            </div>
-            <div class="chat-row assistant-row">
-                <div class="assistant-bubble">
-                    <div class="answer-box">{formatted_answer}</div>
-                    <div class="chat-meta">{format_inline(meta)}</div>
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+    chat_markup.append('<div id="aiPodChatBottom" class="chat-bottom-anchor"></div></div>')
+    chat_markup.append('<button id="aiPodScrollLatest" class="scroll-latest-button" type="button">Scroll to latest</button>')
+    st.markdown("".join(chat_markup), unsafe_allow_html=True)
+    render_chat_autoscroll_script()
+
+
+def render_chat_autoscroll_script():
+    """Keep the chat pinned to the newest message unless the user scrolls up."""
+    components.html(
+        """
+        <script>
+        (() => {
+            const FOLLOW_KEY = "aiPodChatAutoFollow";
+            const LAST_HEIGHT_KEY = "aiPodChatLastScrollHeight";
+            const NEAR_BOTTOM_PX = 48;
+            const root = window.parent.document;
+
+            const install = (attempt = 0) => {
+                const scroll = root.getElementById("aiPodChatScroll");
+                const button = root.getElementById("aiPodScrollLatest");
+                if (!scroll || !button) {
+                    if (attempt < 40) window.parent.setTimeout(() => install(attempt + 1), 75);
+                    return;
+                }
+
+                if (window.parent.__aiPodChatAutoScrollCleanup) {
+                    window.parent.__aiPodChatAutoScrollCleanup();
+                }
+
+                let storedFollow = window.parent.sessionStorage.getItem(FOLLOW_KEY);
+                let autoFollow = storedFollow === null ? true : storedFollow === "true";
+                const lastHeight = Number(window.parent.sessionStorage.getItem(LAST_HEIGHT_KEY) || 0);
+                const contentChanged = scroll.scrollHeight !== lastHeight;
+                const forceFollow = scroll.dataset.forceFollow === "true";
+                if (forceFollow) {
+                    autoFollow = true;
+                    window.parent.sessionStorage.setItem(FOLLOW_KEY, "true");
+                }
+                let programmaticScroll = false;
+
+                const distanceFromBottom = () => scroll.scrollHeight - scroll.scrollTop - scroll.clientHeight;
+                const isNearBottom = () => distanceFromBottom() <= NEAR_BOTTOM_PX;
+                const setButtonVisible = (visible) => {
+                    button.classList.toggle("is-visible", visible);
+                };
+                const setAutoFollow = (value) => {
+                    autoFollow = value;
+                    window.parent.sessionStorage.setItem(FOLLOW_KEY, String(value));
+                    scroll.dataset.chatFollow = String(value);
+                    setButtonVisible(!value && !isNearBottom());
+                };
+                const scrollToBottom = (behavior = "smooth") => {
+                    programmaticScroll = true;
+                    scroll.scrollTo({ top: scroll.scrollHeight, behavior });
+                    window.parent.setTimeout(() => {
+                        programmaticScroll = false;
+                        window.parent.sessionStorage.setItem(LAST_HEIGHT_KEY, String(scroll.scrollHeight));
+                        if (isNearBottom()) setAutoFollow(true);
+                    }, behavior === "smooth" ? 500 : 75);
+                };
+                const handleScroll = () => {
+                    if (programmaticScroll) return;
+                    if (isNearBottom()) {
+                        setAutoFollow(true);
+                    } else {
+                        setAutoFollow(false);
+                    }
+                };
+                const handleLatestClick = () => {
+                    setAutoFollow(true);
+                    scrollToBottom("smooth");
+                };
+
+                scroll.addEventListener("scroll", handleScroll, { passive: true });
+                button.addEventListener("click", handleLatestClick);
+
+                const observer = new MutationObserver(() => {
+                    window.parent.sessionStorage.setItem(LAST_HEIGHT_KEY, String(scroll.scrollHeight));
+                    if (autoFollow || isNearBottom()) {
+                        setAutoFollow(true);
+                        scrollToBottom("smooth");
+                    } else {
+                        setButtonVisible(true);
+                    }
+                });
+                observer.observe(scroll, { childList: true, subtree: true, characterData: true });
+
+                window.parent.requestAnimationFrame(() => {
+                    if (forceFollow || autoFollow || isNearBottom() || (contentChanged && storedFollow === null)) {
+                        scrollToBottom(contentChanged ? "smooth" : "auto");
+                    } else {
+                        setButtonVisible(true);
+                    }
+                    window.parent.sessionStorage.setItem(LAST_HEIGHT_KEY, String(scroll.scrollHeight));
+                });
+
+                window.parent.__aiPodChatAutoScrollCleanup = () => {
+                    scroll.removeEventListener("scroll", handleScroll);
+                    button.removeEventListener("click", handleLatestClick);
+                    observer.disconnect();
+                };
+            };
+            install();
+        })();
+        </script>
+        """,
+        height=0,
+    )
 
 # --------------------------------------------------
 # Custom CSS - ChatGPT Style Premium UI
@@ -584,6 +843,10 @@ st.markdown(f"""
         visibility: visible !important;
     }}
 
+    [data-testid="stSidebarContent"] {{
+        overflow-y: auto !important;
+    }}
+
     button[data-testid="collapsedControl"],
     button[data-testid="baseButton-headerNoPadding"] {{
         background: var(--button-bg) !important;
@@ -611,9 +874,71 @@ st.markdown("""
 <style>
     .block-container {
         max-width: 980px;
+        height: 100vh;
+        overflow: hidden;
         padding-top: 1.5rem;
-        padding-bottom: 2rem;
+        padding-bottom: 0.8rem;
         color: var(--text-main);
+    }
+
+    .chat-scroll {
+        position: relative;
+        height: calc(100vh - 34rem);
+        min-height: 140px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0.25rem 0.35rem 1rem 0;
+        margin-bottom: 0.9rem;
+        scrollbar-color: var(--border) transparent;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    }
+
+    .chat-bottom-anchor {
+        width: 100%;
+        height: 1px;
+    }
+
+    .scroll-latest-button {
+        display: none;
+        position: fixed;
+        left: 50%;
+        bottom: 9.2rem;
+        transform: translateX(-50%);
+        z-index: 50;
+        background: var(--button-bg);
+        color: var(--text-main);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.5rem 0.9rem;
+        font-size: 0.86rem;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: var(--shadow);
+        transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .scroll-latest-button.is-visible {
+        display: block;
+    }
+
+    .scroll-latest-button:hover {
+        background: var(--button-hover);
+        color: #FFFFFF;
+        transform: translateX(-50%) translateY(-1px);
+    }
+
+    .chat-scroll::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .chat-scroll::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .chat-scroll::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 999px;
     }
 
     .chat-row {
@@ -648,10 +973,36 @@ st.markdown("""
         overflow-wrap: anywhere;
     }
 
+    .answer-box.arabic-answer,
+    .user-bubble.arabic-answer {
+        direction: rtl;
+        text-align: right;
+        unicode-bidi: plaintext;
+    }
+
+    .answer-box.english-answer,
+    .user-bubble.english-answer {
+        direction: ltr;
+        text-align: left;
+    }
+
     .chat-meta {
         color: var(--text-muted);
         font-size: 0.78rem;
-        margin-top: 0.4rem;
+        margin-top: 0.65rem;
+        border-top: 1px solid var(--border);
+        padding-top: 0.45rem;
+        line-height: 1.4;
+    }
+
+    .chat-meta.arabic-answer {
+        text-align: right;
+        direction: rtl;
+    }
+
+    .chat-meta.english-answer {
+        text-align: left;
+        direction: ltr;
     }
 
     @media (max-width: 700px) {
@@ -662,7 +1013,7 @@ st.markdown("""
     }
 
     .empty-chat {
-        min-height: 38vh;
+        min-height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -683,7 +1034,8 @@ st.markdown("""
     }
 
     .composer-shell {
-        margin: 1.25rem auto 0 auto;
+        flex: 0 0 auto;
+        margin: 0 auto;
         padding: 0;
         border: none;
         background: transparent;
@@ -694,6 +1046,10 @@ st.markdown("""
         color: var(--text-muted);
         font-size: 0.82rem;
         margin: 0.25rem 0 0.7rem 0.2rem;
+    }
+
+    div[data-testid="stForm"] {
+        margin-bottom: 0 !important;
     }
 
     /* Main header - Premium gradient */
@@ -725,7 +1081,7 @@ st.markdown("""
         box-shadow: none;
         margin: 0;
         font-size: 1.05rem;
-        line-height: 1.8;
+        line-height: 1.6;
         color: var(--text-main);
     }
     
@@ -735,7 +1091,7 @@ st.markdown("""
     
     /* Paragraphs */
     .answer-box p {
-        margin-bottom: 1.2rem;
+        margin: 0.35rem 0 0.75rem 0;
         color: var(--text-main);
     }
 
@@ -746,26 +1102,49 @@ st.markdown("""
     
     /* Bullet lists - Real HTML bullets */
     .answer-box ul.bullet-list {
-        margin: 1.2rem 0;
+        margin: 0.35rem 0 0.85rem 0;
         padding-left: 1.8rem;
         list-style-type: disc;
     }
+
+    .answer-box:dir(rtl) ul.bullet-list {
+        padding-left: 0;
+        padding-right: 1.8rem;
+        text-align: right;
+        direction: rtl;
+    }
     
     .answer-box ul.bullet-list li {
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.35rem;
         color: var(--text-main);
-        line-height: 1.7;
+        line-height: 1.55;
         padding-left: 0.5rem;
+    }
+
+    .answer-box:dir(rtl) ul.bullet-list li {
+        padding-left: 0;
+        padding-right: 0.5rem;
+        text-align: right;
     }
     
     /* Section headers */
     .answer-box h4.section-header {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         font-weight: 600;
         color: var(--section);
-        margin: 1.8rem 0 0.8rem 0;
-        border-bottom: 2px solid var(--border);
-        padding-bottom: 0.5rem;
+        margin: 1rem 0 0.35rem 0;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .answer-box h4.section-header:first-child {
+        margin-top: 0;
+    }
+
+    .answer-box.arabic-answer h4.section-header,
+    .answer-box.arabic-answer p,
+    .answer-box.arabic-answer li {
+        text-align: right;
     }
 
     .answer-table {
@@ -891,10 +1270,14 @@ st.markdown("""
         color: var(--text-main) !important;
         border: 1px solid var(--border) !important;
         box-shadow: none !important;
-        min-height: 2.4rem !important;
-        padding: 0.45rem 0.75rem !important;
+        min-height: 2.35rem !important;
+        padding: 0.35rem 0.8rem !important;
         border-radius: 999px !important;
         white-space: nowrap !important;
+        margin-top: 0 !important;
+        pointer-events: auto !important;
+        position: relative !important;
+        z-index: 3 !important;
     }
 
     div[data-testid="stForm"] button:hover,
@@ -925,8 +1308,8 @@ st.markdown("""
         color: white;
         border: none;
         font-weight: 600;
-        padding: 12px 28px;
-        border-radius: 40px;
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
         box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
     }
     
@@ -938,30 +1321,31 @@ st.markdown("""
     
     /* Text input - Clean and modern */
     .stTextInput > div > input {
-        font-size: 1.05rem;
-        padding: 1rem 1.2rem;
-        border-radius: 50px;
-        border: 2px solid var(--border);
+        font-size: 0.98rem;
+        padding: 0.55rem 0.35rem;
+        border-radius: 0;
+        border: none;
         transition: all 0.2s ease;
         background: var(--input-bg);
         color: var(--text-main);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        box-shadow: none;
     }
 
     div[data-testid="stForm"] input,
     div[data-testid="stTextInput"] input,
     .stTextInput input {
-        background: var(--input-bg) !important;
+        background: transparent !important;
         color: var(--text-main) !important;
-        border: 1px solid var(--border) !important;
+        border: none !important;
         box-shadow: none !important;
     }
 
     div[data-testid="stForm"] input:focus,
     div[data-testid="stTextInput"] input:focus,
     .stTextInput input:focus {
-        border-color: var(--accent) !important;
-        box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.18) !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+        outline: none !important;
     }
 
     div[data-testid="stForm"] input::placeholder,
@@ -972,8 +1356,8 @@ st.markdown("""
     }
     
     .stTextInput > div > input:focus {
-        border-color: var(--accent);
-        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        border-color: transparent;
+        box-shadow: none;
     }
     
     .stTextInput > div > input::placeholder {
@@ -985,9 +1369,96 @@ st.markdown("""
     .stForm {
         background-color: var(--composer);
         border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 0.9rem;
-        box-shadow: var(--shadow);
+        border-radius: 24px;
+        padding: 0.55rem 0.7rem;
+        box-shadow: 0 10px 28px rgba(17, 24, 39, 0.08);
+    }
+
+    div[data-testid="stForm"] [data-testid="stHorizontalBlock"] {
+        gap: 0.55rem;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    div[data-testid="stForm"] [data-testid="stTextInput"] {
+        margin-bottom: 0;
+    }
+
+    div[data-testid="stForm"] [data-testid="stTextInput"] > div {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    div[data-testid="stForm"] [data-testid="stTextInput"] div,
+    div[data-testid="stForm"] [data-testid="stTextInput"] div:focus,
+    div[data-testid="stForm"] [data-testid="stTextInput"] div:focus-within {
+        border-color: transparent !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+    div[data-testid="stForm"] [data-testid="column"] {
+        display: flex;
+        align-items: center;
+    }
+
+    div[data-testid="stForm"] [data-testid="column"] > div {
+        width: 100%;
+    }
+
+    div[data-testid="stForm"] [data-baseweb="input"],
+    div[data-testid="stForm"] [data-baseweb="input"]:focus,
+    div[data-testid="stForm"] [data-baseweb="input"]:focus-within {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+    div[data-testid="stForm"] [data-baseweb="input"] > div,
+    div[data-testid="stForm"] [data-baseweb="input"] > div:focus-within,
+    div[data-testid="stForm"] [data-baseweb="input"] div[role="presentation"] {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+
+    div[data-testid="stForm"] input[aria-invalid],
+    div[data-testid="stForm"] input[aria-invalid="true"],
+    div[data-testid="stForm"] input[aria-invalid="false"],
+    div[data-testid="stForm"] input:focus-visible {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    @media (max-width: 700px) {
+        .block-container {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .main-header {
+            font-size: 2.1rem;
+        }
+
+        .sub-header {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .chat-scroll {
+            height: calc(100vh - 31rem);
+            min-height: 120px;
+        }
+
+        .scroll-latest-button {
+            bottom: 8.7rem;
+            font-size: 0.8rem;
+            padding: 0.45rem 0.75rem;
+        }
     }
 
     /* Divider */
@@ -1020,18 +1491,6 @@ st.markdown("""
         margin: 1.1rem 0 0.35rem 0;
     }
 
-    .rail-footer {
-        border-top: 1px solid var(--border);
-        margin-top: 1rem;
-        padding-top: 0.85rem;
-        color: var(--text-main);
-        font-size: 0.9rem;
-    }
-
-    .rail-footer-sub {
-        color: var(--text-muted);
-        font-size: 0.78rem;
-    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -1044,11 +1503,12 @@ if not st.session_state.get('authenticated', False):
     st.stop()
 
 load_persisted_chat_history()
+st.session_state.answer_style = "detailed"
 
 # --------------------------------------------------
 # Load AI POD (only for authenticated users)
 # --------------------------------------------------
-AI_POD_CACHE_VERSION = "local-embedding-loader-v4"
+AI_POD_CACHE_VERSION = "local-embedding-loader-v16-compact-answer-format"
 
 @st.cache_resource
 def load_ai_pod(cache_version: str):
@@ -1068,13 +1528,13 @@ ai_pod = None
 # --------------------------------------------------
 # Header (for authenticated users)
 # --------------------------------------------------
-header_left, new_chat_col, header_right = st.columns([5, 1, 1])
+header_left, new_chat_col, theme_col = st.columns([5, 1, 1])
 with new_chat_col:
     if st.button("New Chat", use_container_width=True, key="new_chat_top"):
         start_new_chat(ai_pod)
         st.rerun()
 
-with header_right:
+with theme_col:
     next_theme = "light" if st.session_state.theme_mode == "dark" else "dark"
     toggle_label = "Light" if st.session_state.theme_mode == "dark" else "Dark"
     if st.button(toggle_label, use_container_width=True, key="theme_toggle"):
@@ -1088,17 +1548,23 @@ st.markdown(
 )
 
 # --------------------------------------------------
-# Sidebar - With User Profile
+# Sidebar
 # --------------------------------------------------
 with st.sidebar:
     st.markdown('<div class="sidebar-brand">AI POD</div>', unsafe_allow_html=True)
-    if st.button("Reset Sidebar", use_container_width=True):
-        st.session_state.sidebar_state = "expanded"
-        st.rerun()
-    # User Profile
-    show_user_profile()
+    user = st.session_state.get("user") or {}
+    st.markdown(
+        f"""
+        <div style="line-height: 1.35; margin: 0.25rem 0 0.75rem 0;">
+            <strong>{user.get('name', 'User')}</strong><br>
+            <span style="color: var(--text-muted); font-size: 0.82rem;">{user.get('role', 'employee').title()}</span>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    if st.button("Logout", use_container_width=True, key="logout_sidebar"):
+        logout()
 
-    st.markdown("---")
     if st.button("New Chat", use_container_width=True, type="primary", key="new_chat_sidebar"):
         start_new_chat(ai_pod)
         st.rerun()
@@ -1140,17 +1606,6 @@ with st.sidebar:
     else:
         st.caption("No recent chats yet.")
 
-    user = st.session_state.get("user") or {}
-    st.markdown(
-        f"""
-        <div class="rail-footer">
-            <strong>{user.get('name', 'User')}</strong>
-            <div class="rail-footer-sub">{user.get('role', 'employee').title()}</div>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-    
     # st.markdown("---")
     #
     # # System Status
@@ -1191,62 +1646,6 @@ with st.sidebar:
     #     else:
     #         st.error("Offline")
     #         st.code("python ingest_documents.py")
-
-    st.markdown("---")
-    
-    # Quick Questions - Role-based access
-    st.subheader("Quick Questions")
-    
-    quick_q = {
-        "Annual Leave": "How many annual leave days?",
-        "Sick Leave": "What is sick leave policy?",
-        "Confidential": "Are HR policies confidential?",
-        "Bonus": "What is bonus policy?",
-    }
-    
-    # IT questions only for IT department or admin
-    current_user = st.session_state.get("user") or {}
-    if check_permission(['admin', 'it']) or current_user.get('department') == 'IT':
-        quick_q["Password"] = "What is password policy?"
-        quick_q["Remote Work"] = "What is remote work policy?"
-    
-    for label, q in quick_q.items():
-        if st.button(label, use_container_width=True, key=f"en_{label}"):
-            st.session_state.question = q
-            st.rerun()
-    
-    st.markdown("**العربية**")
-    ar_quick_q = {
-        "إجازة سنوية": "كم يوم إجازة سنوية؟",
-        "إجازة مرضية": "ما هي سياسة الإجازة المرضية؟",
-        "السرية": "هل سياسات الموارد البشرية سرية؟",
-        "مكافأة": "ما هي سياسة المكافآت؟",
-    }
-    
-    for label, q in ar_quick_q.items():
-        if st.button(label, use_container_width=True, key=f"ar_{label}"):
-            st.session_state.question = q
-            st.rerun()
-    
-    st.markdown("---")
-    
-    # Chat History
-    if st.session_state.chat_history:
-        st.subheader("Recent Questions")
-        for i, chat in enumerate(reversed(st.session_state.chat_history[-5:])):
-            if st.button(f"Q: {chat['question'][:40]}...", 
-                        key=f"hist_{i}", 
-                        use_container_width=True):
-                st.session_state.question = chat['question']
-                st.rerun()
-    
-    # Clear History
-    if st.session_state.chat_history:
-        st.markdown("---")
-        if st.button("New Chat", use_container_width=True, type="secondary"):
-            start_new_chat(ai_pod)
-            st.rerun()
-
 # --------------------------------------------------
 # Main Area - Only for authenticated users
 # --------------------------------------------------
@@ -1257,70 +1656,39 @@ with tab1:
     render_chat_history()
 
     st.markdown('<div class="composer-shell">', unsafe_allow_html=True)
-    st.markdown(
-        f'<div class="composer-mode">Response style: {st.session_state.answer_style.title()}</div>',
-        unsafe_allow_html=True
-    )
 
     # Clean, simple interface - no Enter hint needed
     with st.form(key="ask_form", clear_on_submit=False):
         
-        # st.text_input = ENTER submits automatically! Perfect for chat
-        question = st.text_input(
-            "Ask your question:",
-            value=st.session_state.question,
-            placeholder="Example: How many annual leave days? | مثال: كم يوم إجازة سنوية؟",
-            key="question_input",
-            label_visibility="collapsed"
-        )
+        input_col, ask_col = st.columns([8, 1])
 
-        summary_col, detailed_col, ask_col, clear_col, spacer_col = st.columns([1, 1, 1, 1, 4])
-
-        with summary_col:
-            summary_button = st.form_submit_button(
-                "Summary " if st.session_state.answer_style == "summary" else "Summary",
-                use_container_width=True,
-                type="secondary"
-            )
-
-        with detailed_col:
-            detailed_button = st.form_submit_button(
-                "Detailed " if st.session_state.answer_style == "detailed" else "Detailed",
-                use_container_width=True,
-                type="secondary"
+        with input_col:
+            # st.text_input = ENTER submits automatically.
+            question = st.text_input(
+                "Ask your question:",
+                value=st.session_state.question,
+                placeholder="Ask anything about HR, IT, or company policies",
+                key="question_input",
+                label_visibility="collapsed"
             )
         
         with ask_col:
             submit_button = st.form_submit_button(
-                "Ask", 
+                "Ask",
                 type="primary", 
-                use_container_width=True,
-                disabled=not question.strip() or not AI_POD_AVAILABLE
+                use_container_width=True
             )
         
-        with clear_col:
-            clear_button = st.form_submit_button(
-                "Clear", 
-                use_container_width=True,
-                type="secondary"
-            )
-
     st.markdown("</div>", unsafe_allow_html=True)
     
-    if summary_button:
-        st.session_state.answer_style = "summary"
-        st.rerun()
-
-    if detailed_button:
-        st.session_state.answer_style = "detailed"
-        st.rerun()
-
-    # Handle Clear button
-    if clear_button:
+    # Process question when form is submitted (ENTER key or Ask button)
+    if submit_button and not question.strip():
         st.session_state.question = ""
         st.rerun()
-    
-    # Process question when form is submitted (ENTER key or Ask button)
+
+    if submit_button and question.strip() and not AI_POD_AVAILABLE:
+        st.error("AI POD is offline. Check the setup and run ingestion if needed.")
+
     if submit_button and question.strip() and AI_POD_AVAILABLE:
         with st.spinner("Searching policies..."):
             try:
@@ -1335,20 +1703,16 @@ with tab1:
                             ai_pod.memory.add(chat.get("question", ""), chat.get("answer", ""))
                     st.session_state.ai_memory_rehydrated = True
                 # Get answer
-                result = get_cached_answer(question, st.session_state.answer_style, ai_pod)
+                result = get_cached_answer(question, "detailed", ai_pod)
                 if result and hasattr(ai_pod, "memory"):
                     ai_pod.memory.add(question, result.get("answer", ""))
                 if not result:
-                    result = ai_pod.ask(question, answer_style=st.session_state.answer_style)
-                    save_cached_answer(question, st.session_state.answer_style, ai_pod, result)
+                    result = ai_pod.ask(question, answer_style="detailed")
+                    save_cached_answer(question, "detailed", ai_pod, result)
                 lang = detect_language(question)
                 
-                # Extract source if present
-                source_match = re.search(r'\[From: (.*?)\]', result["answer"])
-                source_doc = source_match.group(1) if source_match else "Company Policy"
-                
                 # Clean the answer
-                clean_answer = result["answer"].replace(f"[From: {source_doc}]", "").strip()
+                clean_answer = re.sub(r"\[From:\s*.*?\]", "", result["answer"]).strip()
                 confidence = result["confidence"]
                 
                 # Save to history
@@ -1358,7 +1722,7 @@ with tab1:
                     "timestamp": datetime.now().isoformat(),
                     "language": lang,
                     "confidence": confidence,
-                    "answer_style": st.session_state.answer_style,
+                    "answer_style": "detailed",
                     "match_type": result.get("match_type", "none"),
                     "response_time": result.get("response_time", 0),
                     "sources": result.get("sources", []),
@@ -1366,6 +1730,7 @@ with tab1:
                 })
                 save_persisted_chat_history()
                 st.session_state.question = ""
+                st.session_state.force_chat_follow = True
                 st.rerun()
                 
             except Exception as e:
