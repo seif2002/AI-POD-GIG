@@ -771,41 +771,6 @@ theme_vars = {
     "section": "#93C5FD" if is_dark_mode else "#1E3A8A",
 }
 
-components.html("""
-<style>
-#customSidebarToggle {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 9999;
-    background: #2563EB;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-#customSidebarToggle:hover {
-    background: #1D4ED8;
-}
-</style>
-
-<button id="customSidebarToggle">Menu</button>
-
-<script>
-const toggleBtn = document.getElementById("customSidebarToggle");
-
-toggleBtn.onclick = function() {
-    const btn = document.querySelector('button[data-testid="collapsedControl"]');
-    if (btn) {
-        btn.click();
-    }
-};
-</script>
-""", height=0)
-
 st.markdown(f"""
 <style>
     :root {{
@@ -841,34 +806,124 @@ st.markdown(f"""
         background: var(--surface-soft);
         display: block !important;
         visibility: visible !important;
+        transition: transform 0.2s ease, width 0.2s ease, min-width 0.2s ease;
     }}
 
     [data-testid="stSidebarContent"] {{
         overflow-y: auto !important;
+        padding: 4.5rem 1.25rem 1.25rem 1.25rem;
     }}
 
     button[data-testid="collapsedControl"],
     button[data-testid="baseButton-headerNoPadding"] {{
-        background: var(--button-bg) !important;
-        color: var(--text-main) !important;
-        border: 1px solid var(--border) !important;
-        border-radius: 10px !important;
-        opacity: 1 !important;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
     }}
 
     button[data-testid="collapsedControl"]:hover,
     button[data-testid="baseButton-headerNoPadding"]:hover {{
-        background: var(--button-hover) !important;
-        color: #FFFFFF !important;
-        border-color: var(--accent) !important;
+        opacity: 0 !important;
     }}
 
     [data-testid="stTabs"] button {{
         color: var(--text-main);
     }}
+
+    #aiPodSidebarToggle {{
+        position: fixed;
+        top: 18px;
+        left: 246px;
+        z-index: 9999;
+        width: 28px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        color: var(--text-muted);
+        border: none;
+        border-radius: 999px;
+        cursor: pointer;
+        font-size: 22px;
+        line-height: 1;
+        font-weight: 700;
+        transition: background 0.15s ease, color 0.15s ease, left 0.2s ease;
+    }}
+
+    #aiPodSidebarToggle:hover {{
+        background: var(--button-bg);
+        color: var(--text-main);
+    }}
+
+    body.ai-pod-sidebar-collapsed [data-testid="stSidebar"] {{
+        transform: translateX(-100%) !important;
+        min-width: 0 !important;
+        width: 0 !important;
+        margin-left: 0 !important;
+        overflow: hidden !important;
+    }}
+
+    body.ai-pod-sidebar-collapsed [data-testid="stSidebar"] * {{
+        pointer-events: none !important;
+    }}
+
+    body.ai-pod-sidebar-collapsed #aiPodSidebarToggle {{
+        left: 14px !important;
+    }}
+
 </style>
 """, unsafe_allow_html=True)
+
+components.html("""
+<script>
+(() => {
+    const root = window.parent.document;
+    const STORAGE_KEY = "aiPodSidebarCollapsed";
+    let toggleBtn = root.getElementById("aiPodSidebarToggle");
+
+    if (!toggleBtn) {
+        toggleBtn = root.createElement("button");
+        toggleBtn.id = "aiPodSidebarToggle";
+        toggleBtn.type = "button";
+        toggleBtn.setAttribute("aria-label", "Toggle sidebar");
+        root.body.appendChild(toggleBtn);
+    }
+
+    const sidebarIsOpen = () => {
+        return !root.body.classList.contains("ai-pod-sidebar-collapsed");
+    };
+
+    const positionToggle = () => {
+        const sidebar = root.querySelector('[data-testid="stSidebar"]');
+        const open = sidebarIsOpen();
+        if (open && sidebar) {
+            const rect = sidebar.getBoundingClientRect();
+            toggleBtn.style.left = Math.max(14, rect.right - 34) + "px";
+            toggleBtn.textContent = "«";
+        } else {
+            toggleBtn.style.left = "14px";
+            toggleBtn.textContent = "»";
+        }
+    };
+
+    const setCollapsed = (collapsed) => {
+        root.body.classList.toggle("ai-pod-sidebar-collapsed", collapsed);
+        window.parent.localStorage.setItem(STORAGE_KEY, collapsed ? "true" : "false");
+        positionToggle();
+    };
+
+    toggleBtn.onclick = () => {
+        setCollapsed(sidebarIsOpen());
+    };
+
+    setCollapsed(window.parent.localStorage.getItem(STORAGE_KEY) === "true");
+    positionToggle();
+    window.parent.addEventListener("resize", positionToggle);
+    window.parent.setTimeout(positionToggle, 300);
+    window.parent.setTimeout(positionToggle, 900);
+})();
+</script>
+""", height=0)
 
 st.markdown("""
 <style>
@@ -1466,18 +1521,10 @@ st.markdown("""
         margin: 2rem 0;
     }
     
-    /* Hide Streamlit branding */
-    #MainMenu {visibility: hidden;}
+    /* Keep Streamlit's top taskbar available */
+    #MainMenu {visibility: visible;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
-    [data-testid="stToolbar"],
-    [data-testid="stDecoration"],
-    [data-testid="stStatusWidget"],
-    [data-testid="stDeployButton"],
-    button[title="View app menu"] {
-        display: none !important;
-        visibility: hidden !important;
-    }
+    header {visibility: visible;}
     
     /* Sidebar */
     .css-1d391kg {
@@ -1614,50 +1661,9 @@ with st.sidebar:
     else:
         st.caption("No recent chats yet.")
 
-    # st.markdown("---")
-    #
-    # # System Status
-    # st.subheader("System Status")
-    #
-    # if ai_pod:
-    #     st.success("Online")
-    #
-    #     col1, col2 = st.columns(2)
-    #     with col1:
-    #         st.metric("Knowledge Base", f"{len(ai_pod.chunks)} chunks")
-    #     with col2:
-    #         mode = "AI" if ai_pod.groq_client else "Basic"
-    #         st.metric("Mode", mode)
-    #
-    #     answer_cache = _load_json(ANSWER_CACHE_PATH, {})
-    #     st.caption(f"Answer cache: {len(answer_cache)} saved response(s)")
-    #
-    #     # Show thresholds - Different access levels
-    #     with st.expander("Semantic Thresholds"):
-    #         st.markdown(f"""
-    #         - **High:** > {ai_pod.thresholds['high']:.1%}
-    #         - **Medium:** {ai_pod.thresholds['medium']:.1%} - {ai_pod.thresholds['high']:.1%}
-    #         - **Low:** {ai_pod.thresholds['low']:.1%} - {ai_pod.thresholds['medium']:.1%}
-    #         - **Off-topic:** < {ai_pod.thresholds['low']:.1%}
-    #         """)
-    #
-    #     # Admin section - Only visible to admin
-    #     if check_permission(['admin']):
-    #         with st.expander("Admin Panel"):
-    #             st.info("User management coming soon")
-    #             if st.button("Reset Users", use_container_width=True):
-    #                 os.remove("users.json")
-    #                 st.rerun()
-    # else:
-    #     if AI_POD_AVAILABLE:
-    #         st.info("AI engine loads on first question")
-    #     else:
-    #         st.error("Offline")
-    #         st.code("python ingest_documents.py")
 # --------------------------------------------------
 # Main Area - Only for authenticated users
 # --------------------------------------------------
-# tab1, tab2 = st.tabs(["Ask AI POD", "Analytics"])
 tab1 = st.container()
 
 with tab1:
@@ -1665,13 +1671,10 @@ with tab1:
 
     st.markdown('<div class="composer-shell">', unsafe_allow_html=True)
 
-    # Clean, simple interface - no Enter hint needed
     with st.form(key="ask_form", clear_on_submit=False):
-        
         input_col, ask_col = st.columns([8, 1])
 
         with input_col:
-            # st.text_input = ENTER submits automatically.
             question = st.text_input(
                 "Ask your question:",
                 value=st.session_state.question,
@@ -1679,17 +1682,16 @@ with tab1:
                 key="question_input",
                 label_visibility="collapsed"
             )
-        
+
         with ask_col:
             submit_button = st.form_submit_button(
                 "Ask",
-                type="primary", 
+                type="primary",
                 use_container_width=True
             )
-        
+
     st.markdown("</div>", unsafe_allow_html=True)
-    
-    # Process question when form is submitted (ENTER key or Ask button)
+
     if submit_button and not question.strip():
         st.session_state.question = ""
         st.rerun()
@@ -1710,7 +1712,6 @@ with tab1:
                         if hasattr(ai_pod, "memory"):
                             ai_pod.memory.add(chat.get("question", ""), chat.get("answer", ""))
                     st.session_state.ai_memory_rehydrated = True
-                # Get answer
                 result = get_cached_answer(question, "detailed", ai_pod)
                 if result and hasattr(ai_pod, "memory"):
                     ai_pod.memory.add(question, result.get("answer", ""))
@@ -1718,12 +1719,10 @@ with tab1:
                     result = ai_pod.ask(question, answer_style="detailed")
                     save_cached_answer(question, "detailed", ai_pod, result)
                 lang = detect_language(question)
-                
-                # Clean the answer
+
                 clean_answer = re.sub(r"\[From:\s*.*?\]", "", result["answer"]).strip()
                 confidence = result["confidence"]
-                
-                # Save to history
+
                 st.session_state.chat_history.append({
                     "question": question,
                     "answer": clean_answer,
@@ -1740,61 +1739,9 @@ with tab1:
                 st.session_state.question = ""
                 st.session_state.force_chat_follow = True
                 st.rerun()
-                
+
             except Exception as e:
                 st.error(f"Error: {str(e)[:200]}")
-
-# with tab2:
-#     st.subheader("System Analytics")
-#
-#     if ai_pod and st.session_state.chat_history:
-#         # Key metrics in clean cards
-#         col_m1, col_m2, col_m3 = st.columns(3)
-#
-#         with col_m1:
-#             st.metric("Questions Asked", len(st.session_state.chat_history))
-#
-#         with col_m2:
-#             avg_conf = sum(c.get('confidence', 0) for c in st.session_state.chat_history) / len(st.session_state.chat_history)
-#             st.metric("Avg. Confidence", f"{avg_conf:.1%}")
-#
-#         with col_m3:
-#             st.metric("Knowledge Base", f"{len(ai_pod.chunks)} chunks")
-#
-#         st.divider()
-#
-#         # Language distribution
-#         col_l1, col_l2 = st.columns(2)
-#
-#         with col_l1:
-#             st.write("**Languages**")
-#             lang_counts = {}
-#             for chat in st.session_state.chat_history:
-#                 lang = chat.get('language', 'en')
-#                 lang_counts[lang] = lang_counts.get(lang, 0) + 1
-#
-#             for lang, count in lang_counts.items():
-#                 lang_name = "Arabic" if lang == "ar" else "English"
-#                 st.write(f"• {lang_name}: {count}")
-#
-#         with col_l2:
-#             st.write("**Confidence Distribution**")
-#             confidences = [c.get('confidence', 0) for c in st.session_state.chat_history]
-#             high = sum(1 for c in confidences if c >= 0.7)
-#             medium = sum(1 for c in confidences if 0.4 <= c < 0.7)
-#             low = sum(1 for c in confidences if c < 0.4)
-#
-#             st.write(f"• High (>70%): {high}")
-#             st.write(f"• Medium (40-70%): {medium}")
-#             st.write(f"• Low (<40%): {low}")
-#
-#     elif ai_pod:
-#         st.info("No usage data yet. Start asking questions!")
-#     else:
-#         if AI_POD_AVAILABLE:
-#             st.info("AI engine not loaded yet. Ask a question to start it.")
-#         else:
-#             st.warning("System offline")
 
 # --------------------------------------------------
 # Footer - Clean and minimal
