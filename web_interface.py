@@ -69,6 +69,10 @@ if "current_chat_id" not in st.session_state:
 if "chat_search" not in st.session_state:
     st.session_state.chat_search = ""
 
+if st.session_state.pop("clear_question_input", False):
+    st.session_state.question = ""
+    st.session_state.question_input = ""
+
 CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache")
 ANSWER_CACHE_PATH = os.path.join(CACHE_DIR, "answer_cache.json")
 CHAT_HISTORY_DIR = os.path.join(CACHE_DIR, "chat_history")
@@ -601,11 +605,25 @@ def format_response_time(seconds) -> str:
     return f"{seconds:.2f}s"
 
 
-def render_chat_history():
+TYPE_DELAY_SECONDS = 0.025
+
+
+def stream_text_chunks(text: str, chunk_size: int = 10):
+    """Yield small text chunks for cached/local responses."""
+    text = text or ""
+    for i in range(0, len(text), chunk_size):
+        yield text[i:i + chunk_size]
+
+
+def render_chat_history(transient_chat=None):
     """Render the full conversation thread."""
     force_follow = st.session_state.pop("force_chat_follow", False)
     force_attr = "true" if force_follow else "false"
-    if not st.session_state.chat_history:
+    chat_items = list(st.session_state.chat_history)
+    if transient_chat:
+        chat_items.append(transient_chat)
+
+    if not chat_items:
         st.markdown(
             f"""
             <div class="chat-scroll" id="aiPodChatScroll" data-chat-follow="true" data-force-follow="{force_attr}">
@@ -623,20 +641,27 @@ def render_chat_history():
         return
 
     chat_markup = [f'<div class="chat-scroll" id="aiPodChatScroll" data-chat-follow="true" data-force-follow="{force_attr}">']
-    for idx, chat in enumerate(st.session_state.chat_history):
+    for idx, chat in enumerate(chat_items):
         formatted_question = format_inline(clean_display_text(chat.get("question", "")))
-        formatted_answer = format_answer(chat.get("answer", ""))
+        raw_answer = chat.get("answer", "")
         chat_lang = chat.get("language") or detect_language(chat.get("question", ""))
         direction = "rtl" if chat_lang == "ar" else "ltr"
         lang_class = "arabic-answer" if chat_lang == "ar" else "english-answer"
         source_label = format_inline(format_source_names(chat.get("sources", [])))
         time_label = format_inline(format_response_time(chat.get("response_time", 0)))
+        is_streaming = bool(chat.get("streaming"))
+        if raw_answer:
+            formatted_answer = format_answer(raw_answer)
+            if is_streaming:
+                formatted_answer += '<div class="typing-cursor"></div>'
+        else:
+            formatted_answer = '<div class="typing-indicator"><span></span><span></span><span></span></div>'
         chat_markup.append(f'<div class="chat-row user-row"><div class="user-bubble {lang_class}" dir="{direction}">{formatted_question}</div></div>')
         chat_markup.append(
             '<div class="chat-row assistant-row"><div class="assistant-bubble">'
             f'<div class="answer-box {lang_class}" dir="{direction}">{formatted_answer}</div>'
-            f'<div class="chat-meta {lang_class}" dir="{direction}">Source: {source_label} | Time: {time_label}</div>'
-            '</div></div>'
+            + ("" if is_streaming else f'<div class="chat-meta {lang_class}" dir="{direction}">Source: {source_label} | Time: {time_label}</div>')
+            + '</div></div>'
         )
     chat_markup.append('<div id="aiPodChatBottom" class="chat-bottom-anchor"></div></div>')
     chat_markup.append('<button id="aiPodScrollLatest" class="scroll-latest-button" type="button">Scroll to latest</button>')
@@ -1039,6 +1064,56 @@ st.markdown("""
     .user-bubble.english-answer {
         direction: ltr;
         text-align: left;
+    }
+
+    .typing-indicator {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        min-height: 1.5rem;
+        padding: 0.25rem 0;
+    }
+
+    .typing-indicator span {
+        width: 0.42rem;
+        height: 0.42rem;
+        border-radius: 999px;
+        background: var(--text-muted);
+        animation: typingPulse 1.2s infinite ease-in-out;
+    }
+
+    .typing-indicator span:nth-child(2) {
+        animation-delay: 0.15s;
+    }
+
+    .typing-indicator span:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .typing-cursor {
+        display: inline-block;
+        width: 0.48rem;
+        height: 1rem;
+        margin-left: 0.15rem;
+        border-radius: 999px;
+        background: var(--accent);
+        animation: typingBlink 0.9s infinite;
+        vertical-align: -0.15rem;
+    }
+
+    .arabic-answer .typing-cursor {
+        margin-left: 0;
+        margin-right: 0.15rem;
+    }
+
+    @keyframes typingPulse {
+        0%, 80%, 100% { opacity: 0.35; transform: translateY(0); }
+        40% { opacity: 1; transform: translateY(-2px); }
+    }
+
+    @keyframes typingBlink {
+        0%, 45% { opacity: 1; }
+        46%, 100% { opacity: 0; }
     }
 
     .chat-meta {
@@ -1667,7 +1742,9 @@ with st.sidebar:
 tab1 = st.container()
 
 with tab1:
-    render_chat_history()
+    history_placeholder = st.empty()
+    with history_placeholder.container():
+        render_chat_history()
 
     st.markdown('<div class="composer-shell">', unsafe_allow_html=True)
 
@@ -1702,6 +1779,8 @@ with tab1:
     if submit_button and question.strip() and AI_POD_AVAILABLE:
         with st.spinner("Searching policies..."):
             try:
+                st.session_state.question = ""
+                st.session_state.clear_question_input = True
                 try:
                     ai_pod = load_ai_pod(AI_POD_CACHE_VERSION)
                 except Exception:
@@ -1712,13 +1791,70 @@ with tab1:
                         if hasattr(ai_pod, "memory"):
                             ai_pod.memory.add(chat.get("question", ""), chat.get("answer", ""))
                     st.session_state.ai_memory_rehydrated = True
-                result = get_cached_answer(question, "detailed", ai_pod)
-                if result and hasattr(ai_pod, "memory"):
-                    ai_pod.memory.add(question, result.get("answer", ""))
-                if not result:
-                    result = ai_pod.ask(question, answer_style="detailed")
-                    save_cached_answer(question, "detailed", ai_pod, result)
+
                 lang = detect_language(question)
+                streamed_answer = ""
+                result = None
+                used_cache = False
+                last_render = [0.0]
+
+                def redraw_stream(force=False):
+                    now = time.time()
+                    if not force and now - last_render[0] < 0.05:
+                        return
+                    last_render[0] = now
+                    transient_chat = {
+                        "question": question,
+                        "answer": streamed_answer,
+                        "timestamp": datetime.now().isoformat(),
+                        "language": lang,
+                        "confidence": 0,
+                        "answer_style": "detailed",
+                        "match_type": "streaming",
+                        "response_time": 0,
+                        "sources": [],
+                        "streaming": True,
+                    }
+                    st.session_state.force_chat_follow = True
+                    with history_placeholder.container():
+                        render_chat_history(transient_chat=transient_chat)
+
+                redraw_stream(force=True)
+                result = get_cached_answer(question, "detailed", ai_pod)
+                if result:
+                    used_cache = True
+                    for delta in stream_text_chunks(result.get("answer", "")):
+                        streamed_answer += delta
+                        redraw_stream(force=True)
+                        time.sleep(TYPE_DELAY_SECONDS)
+                    if hasattr(ai_pod, "memory"):
+                        ai_pod.memory.add(question, result.get("answer", ""))
+                elif hasattr(ai_pod, "ask_stream"):
+                    for event in ai_pod.ask_stream(question, answer_style="detailed"):
+                        if not isinstance(event, dict):
+                            continue
+                        if event.get("type") == "delta":
+                            for delta in stream_text_chunks(event.get("text", ""), chunk_size=8):
+                                streamed_answer += delta
+                                redraw_stream(force=True)
+                                time.sleep(TYPE_DELAY_SECONDS)
+                        elif event.get("type") == "done":
+                            result = event.get("result")
+                    if not result:
+                        raise RuntimeError("Streaming ended without a final response.")
+                    streamed_answer = result.get("answer", streamed_answer)
+                    save_cached_answer(question, "detailed", ai_pod, result)
+                else:
+                    result = ai_pod.ask(question, answer_style="detailed")
+                    full_answer = result.get("answer", "")
+                    streamed_answer = ""
+                    for delta in stream_text_chunks(full_answer):
+                        streamed_answer += delta
+                        redraw_stream(force=True)
+                        time.sleep(TYPE_DELAY_SECONDS)
+                    save_cached_answer(question, "detailed", ai_pod, result)
+
+                redraw_stream(force=True)
 
                 clean_answer = re.sub(r"\[From:\s*.*?\]", "", result["answer"]).strip()
                 confidence = result["confidence"]
@@ -1733,7 +1869,7 @@ with tab1:
                     "match_type": result.get("match_type", "none"),
                     "response_time": result.get("response_time", 0),
                     "sources": result.get("sources", []),
-                    "cached": result.get("cached", False)
+                    "cached": result.get("cached", used_cache)
                 })
                 save_persisted_chat_history()
                 st.session_state.question = ""

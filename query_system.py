@@ -287,6 +287,29 @@ class AIPodQuerySystem:
             self.groq_client = self._create_groq_client()
             return self.groq_client.chat.completions.create(**kwargs)
 
+    def _groq_stream(self, **kwargs):
+        """Yield text deltas from Groq while keeping retry behavior centralized."""
+        if not self.groq_client:
+            return
+        yielded_any = False
+        try:
+            stream = self._groq_completion(stream=True, **kwargs)
+            for chunk in stream:
+                delta = chunk.choices[0].delta.content
+                if delta:
+                    yielded_any = True
+                    yield delta
+        except Exception as e:
+            if "client has been closed" not in str(e).lower() or yielded_any:
+                raise
+            print("Groq client was closed during stream; rebuilding client and retrying once")
+            self.groq_client = self._create_groq_client()
+            stream = self.groq_client.chat.completions.create(stream=True, **kwargs)
+            for chunk in stream:
+                delta = chunk.choices[0].delta.content
+                if delta:
+                    yield delta
+
     def _print_info(self):
         langs = {}
         for c in self.chunks:
@@ -327,7 +350,7 @@ class AIPodQuerySystem:
 
     # --------------------------------------------------
 
-    def _call_groq_policy(self, question: str, chunks: List[Dict], answer_style: str = "summary") -> str:
+    def _call_groq_policy(self, question: str, chunks: List[Dict], answer_style: str = "summary", stream: bool = False):
         """
         Answer a policy question strictly from document chunks.
         Friendly tone but answers are grounded ONLY in the provided sources.
@@ -429,15 +452,20 @@ class AIPodQuerySystem:
         messages.append({"role": "user", "content": user_msg})
 
         try:
-            resp = self._groq_completion(
-                model=AIPodConfig.LLM_MODEL_FAST,
-                messages=messages,
-                temperature=0.2,
-                max_tokens=1200 if style == "detailed" else 550,
-            )
+            request = {
+                "model": AIPodConfig.LLM_MODEL_FAST,
+                "messages": messages,
+                "temperature": 0.2,
+                "max_tokens": 1200 if style == "detailed" else 550,
+            }
+            if stream:
+                return self._groq_stream(**request)
+            resp = self._groq_completion(**request)
             return resp.choices[0].message.content.strip()
         except Exception as e:
             print(f"Groq error: {e}")
+            if stream:
+                raise
             return self._basic_policy_answer(question, chunks, answer_style)
 
     def _basic_policy_answer(self, question: str, chunks: List[Dict], answer_style: str = "summary") -> str:
@@ -768,7 +796,7 @@ class AIPodQuerySystem:
             return self._language_safe_answer(lang)
         return answer
 
-    def _call_groq_general(self, question: str) -> str:
+    def _call_groq_general(self, question: str, stream: bool = False):
         """
         Handle general / conversational questions with a friendly response.
         No document grounding needed.
@@ -793,15 +821,20 @@ class AIPodQuerySystem:
         messages.append({"role": "user", "content": question})
 
         try:
-            resp = self._groq_completion(
-                model=AIPodConfig.LLM_MODEL_FAST,
-                messages=messages,
-                temperature=0.5,
-                max_tokens=400,
-            )
+            request = {
+                "model": AIPodConfig.LLM_MODEL_FAST,
+                "messages": messages,
+                "temperature": 0.5,
+                "max_tokens": 400,
+            }
+            if stream:
+                return self._groq_stream(**request)
+            resp = self._groq_completion(**request)
             return resp.choices[0].message.content.strip()
         except Exception as e:
             print(f"Groq error: {e}")
+            if stream:
+                raise
             answer = ABOUT_EN if lang == "en" else ABOUT_AR
             return self._enforce_answer_language(answer, lang, bilingual)
 
@@ -891,6 +924,162 @@ class AIPodQuerySystem:
             print(f"ask() error: {e}")
             import traceback; traceback.print_exc()
             return self._error_response(question)
+
+    # --------------------------------------------------
+
+    def _stream_static_answer(self, answer: str, chunk_size: int = 36):
+        """Stream local/cached-style text in small chunks for a consistent UI."""
+        for i in range(0, len(answer), chunk_size):
+            yield answer[i:i + chunk_size]
+
+    def _stream_interrupted_note(self, lang: str) -> str:
+        return (
+            "\n\nتعذر إكمال الرد بسبب انقطاع مؤقت. يرجى إعادة المحاولة إذا كانت الإجابة غير مكتملة."
+            if lang == "ar"
+            else "\n\nThe response was interrupted. Please try again if the answer is incomplete."
+        )
+
+    def ask_stream(self, question: str, answer_style: str = "summary"):
+        """Yield assistant response events as text is generated."""
+        start = time.time()
+        question = question.strip()
+        if not question:
+            result = self._error_response(question)
+            yield {"type": "done", "result": result}
+            return
+
+        lang = detect_language(question)
+        bilingual = wants_bilingual_response(question)
+        intent = classify_intent(question)
+
+        def emit_static(result: Dict):
+            answer = result.get("answer", "")
+            for delta in self._stream_static_answer(answer):
+                yield {"type": "delta", "text": delta}
+            yield {"type": "done", "result": result}
+
+        if intent == "greeting":
+            answer = GREETING_AR if lang == "ar" else GREETING_EN
+            answer = self._enforce_answer_language(answer, lang, bilingual)
+            self.memory.add(question, answer)
+            yield from emit_static(self._friendly_response(answer, lang, time.time() - start))
+            return
+
+        if intent == "about_bot":
+            answer = ABOUT_AR if lang == "ar" else ABOUT_EN
+            answer = self._enforce_answer_language(answer, lang, bilingual)
+            self.memory.add(question, answer)
+            yield from emit_static(self._friendly_response(answer, lang, time.time() - start))
+            return
+
+        try:
+            results = self.search_semantic(question)
+            if not results:
+                yield from emit_static(self._no_info_response(question))
+                return
+
+            best = results[0]["similarity"]
+            top = results[:max(AIPodConfig.TOP_K_RESULTS, AIPodConfig.MAX_CHUNKS_PER_QUERY)]
+            print(f"stream '{question[:50]}' | best={best:.1%} | high={self.thresholds['high']:.1%} | med={self.thresholds['medium']:.1%}")
+
+            mode = "general_fallback"
+            match_type = "none"
+            answer = ""
+
+            if best >= self.thresholds["high"]:
+                mode = "ai_enhanced"
+                match_type = "exact_match"
+                if self.groq_client:
+                    try:
+                        for delta in self._call_groq_policy(question, top, answer_style, stream=True):
+                            answer += delta
+                            yield {"type": "delta", "text": delta}
+                    except Exception as e:
+                        print(f"Groq stream error: {e}")
+                        if not answer:
+                            answer = self._basic_policy_answer(question, top, answer_style)
+                            for delta in self._stream_static_answer(answer):
+                                yield {"type": "delta", "text": delta}
+                        else:
+                            note = self._stream_interrupted_note(lang)
+                            answer += note
+                            yield {"type": "delta", "text": note}
+                else:
+                    answer = self._basic_policy_answer(question, top, answer_style)
+                    for delta in self._stream_static_answer(answer):
+                        yield {"type": "delta", "text": delta}
+
+            elif best >= self.thresholds["medium"]:
+                mode = "related_match"
+                match_type = "related_match"
+                if self.groq_client:
+                    try:
+                        for delta in self._call_groq_policy(question, top, answer_style, stream=True):
+                            answer += delta
+                            yield {"type": "delta", "text": delta}
+                    except Exception as e:
+                        print(f"Groq stream error: {e}")
+                        if not answer:
+                            answer = self._basic_policy_answer(question, top, answer_style)
+                            for delta in self._stream_static_answer(answer):
+                                yield {"type": "delta", "text": delta}
+                        else:
+                            note = self._stream_interrupted_note(lang)
+                            answer += note
+                            yield {"type": "delta", "text": note}
+                    related_note = (
+                        "\n\nملاحظة: قد لا تكون هذه المعلومات إجابة مباشرة لسؤالك."
+                        if lang == "ar"
+                        else "\n\nNote: These results are related but may not directly answer your question."
+                    )
+                    answer += related_note
+                    yield {"type": "delta", "text": related_note}
+                else:
+                    answer = self._basic_policy_answer(question, top, answer_style)
+                    for delta in self._stream_static_answer(answer):
+                        yield {"type": "delta", "text": delta}
+
+            else:
+                top = []
+                if self.groq_client:
+                    try:
+                        for delta in self._call_groq_general(question, stream=True):
+                            answer += delta
+                            yield {"type": "delta", "text": delta}
+                    except Exception as e:
+                        print(f"Groq stream error: {e}")
+                        if not answer:
+                            result = self._no_info_response(question)
+                            yield from emit_static(result)
+                            return
+                        note = self._stream_interrupted_note(lang)
+                        answer += note
+                        yield {"type": "delta", "text": note}
+                else:
+                    result = self._no_info_response(question)
+                    yield from emit_static(result)
+                    return
+
+            answer = self._enforce_answer_language(answer.strip(), lang, bilingual)
+            self.memory.add(question, answer)
+            yield {
+                "type": "done",
+                "result": {
+                    "answer": answer,
+                    "sources": top,
+                    "confidence": best,
+                    "mode": mode,
+                    "match_type": match_type,
+                    "language": lang,
+                    "response_time": time.time() - start,
+                },
+            }
+
+        except Exception as e:
+            print(f"ask_stream() error: {e}")
+            import traceback; traceback.print_exc()
+            result = self._error_response(question)
+            yield from emit_static(result)
 
     # --------------------------------------------------
 
