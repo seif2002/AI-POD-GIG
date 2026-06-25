@@ -963,8 +963,8 @@ st.markdown("""
 
     .chat-scroll {
         position: relative;
-        height: calc(100vh - 34rem);
-        min-height: 140px;
+        height: calc(100vh - 27rem);
+        min-height: 220px;
         overflow-y: auto;
         overflow-x: hidden;
         padding: 0.25rem 0.35rem 1rem 0;
@@ -1580,8 +1580,8 @@ st.markdown("""
         }
 
         .chat-scroll {
-            height: calc(100vh - 31rem);
-            min-height: 120px;
+            height: calc(100vh - 24rem);
+            min-height: 180px;
         }
 
         .scroll-latest-button {
@@ -1878,15 +1878,3 @@ with tab1:
 
             except Exception as e:
                 st.error(f"Error: {str(e)[:200]}")
-
-# --------------------------------------------------
-# Footer - Clean and minimal
-# --------------------------------------------------
-st.divider()
-footer_user = st.session_state.get("user") or {}
-st.markdown(f"""
-<div style="text-align: center; color: #6B7280; padding: 1rem; font-size: 0.85rem;">
-    <strong>AI POD v{AIPodConfig.VERSION}</strong> • {AIPodConfig.COMPANY_NAME}<br>
-    <span style="font-family: monospace;">User: {footer_user.get('username', 'guest')} | Session: {st.session_state.session_id}</span>
-</div>
-""", unsafe_allow_html=True)

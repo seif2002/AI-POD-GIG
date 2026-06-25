@@ -230,7 +230,69 @@
       "mode": "ai_enhanced",
       "match_type": "exact_match",
       "language": "ar",
-      "response_time": 0.42328810691833496
+      "response_time": 0.42328810691833496,
+      "sources": [
+        {
+          "text": "a) Female Employee with over one-year continuous service shall be entitled to 26 weeks \nmaternity leave subject to production of medical certificate being their pregnant and \nthe probable date of confinement. Not with standing anything the same female \nemployee may be allowed to combine any other kind of leave subject to availability \nof leave title along with the maternity leave provided that the total leave so availed does not exceed 60 days. Maternity leave shall be leave on full pay together with any \nother allowance that may be admissible. b) Employee who are covered under ESIC the maternity leave will be provided by the \nESIC. TERMINATION AND SEPARATION POLICY \n  \nA Termination and Separation Policy is a crucial HR guideline outlining the procedures for \nending an employee’s tenure, whether due to resignation, retirement, or involuntary \ntermination.",
+          "similarity": 0.4732588529586792,
+          "raw_similarity": 0.4732588529586792,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "6f399ca0",
+            "char_length": 868,
+            "word_count": 135,
+            "created_at": "2026-06-23T10:02:35.474960"
+          },
+          "chunk_id": 214
+        },
+        {
+          "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+          "similarity": 0.4574095606803894,
+          "raw_similarity": 0.4574095606803894,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "7df9a47c",
+            "char_length": 980,
+            "word_count": 146,
+            "created_at": "2026-06-23T10:02:35.062307"
+          },
+          "chunk_id": 1
+        },
+        {
+          "text": "اﳌﻄﻠﻮب\n \nﺗﺤﺪﻳﺪ ﺣﺠﻢ اﻟﻌاﻟﺔ اﳌﻄﻠﻮب\n   . اﻟﺤﻞ\n: \nﻋﺪد اﻟﺴﺎﻋﺎت اﳌﻄﻠﻮب ﻋﻤﻠﻬﺎ ﺷﻬﺮﻳﺎً \n   =\n      10,000\n \n ﺑﺪﻟﻪ\n× 2\n1\n \n ﺳﺎﻋﺔ\n= 5,000\n ﺳﺎﻋﺔ\n  \n        \nﺣﺠﻢ اﻟﻌاﻟﺔ اﳌﻄﻠﻮب \n= 000\n,5 \n ﺳﺎﻋﺔ\n  =\n25\n \nًﻋﺎﻣﻼ\n  \n                              \n          200\n    \n \n \n وﺣﻴﺚ أن اﻟﺘﺨﻄﻴﻂ ﻳﻜﻮن ﻟﻔﱰة ﻣﺴـﺘﻘﺒﻠﻴﺔ ﻓﺈﻧـﻪ ﻳﻨﺒﻐـﻲ أﺧـﺬ ﻋﻤﻠﻴـﺔ اﻟﺘﻨﺒـﺆ ﺑﺎﳌﺒﻴﻌـﺎت أو ﺑﺎﻹﻧﺘـﺎج ﰲ\nاﻟﺤﺴﺒﺎن، وﻳﺘﻢ اﺳﺘﺨﺪام اﻟﻌﺪﻳﺪ ﻣﻦ اﻟﻄﺮق ﰲ اﻟﺘﻨﺒﺆ ﻣﻦ أﻫﻤﻬﺎ\n   :\n-\n \n ﺗﺤﻠﻴﻞ اﻟﺴﻼﺳﻞ اﻟﺰﻣﻨﻴﺔ\n/ \nاﳌﺘﻮﺳﻄﺎت اﳌﺘﺤﺮﻛﺔ\n \n Time Series / Moving Averages  \n \n اﻟﺴﻠﺴﺔ اﻟﺰﻣﻨﻴﺔ ﻫ\nﻲ ﻣﺠﻤﻮﻋﺔ ﻣﻦ اﳌﺸﺎﻫﺪات ﳌﺘﻐر ﻣﻌن ﺛـﻢ ﺗﺴـﺠﻴﻠﻬﺎ ﻋـﲆ ﻓـﱰات زﻣﻨﻴـﺔ ﻣﺘﺘﺎﻟﻴـﺔ\n)7( \n ﺣﻴﺚ ﺗﻬﺪف ﻫﺬه اﻟﻌﻤﻠﻴﺔ إﱃ وﺻﻒ ﺳﻠﻮك اﻟﻈﺎﻫﺮة ﰲ اﳌﺎﴈ ﺑﺎﻹﺿﺎﻓﺔ إﱃ اﻟﺘﻨﺒﺆ مﺎذا ﺳـﻮف ﻳﺤـﺪث ﻟﻠﻈـﺎﻫﺮة ﰲ\nاﳌﺴﺘﻘﺒﻞ\n   . )7\n (ﺟﻮدة\n، ﻣﺤﻔﻮظ، \nأﺳﺎﻟﻴﺐ اﻟﺒﺤﺚ اﻟﻌﻠﻤﻲ ﰲ ﻣﻴﺪان اﻟﻌﻠﻮم اﻹدارﻳﺔ\n، ﻋان، دار زﻫﺮان ﻟﻠﻨﴩ واﻟﺘﻮزﻳﻊ، 2007، ص211\n.",
+          "similarity": 0.45079228639602664,
+          "raw_similarity": 0.4157922863960266,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "ae5b2053",
+            "char_length": 796,
+            "word_count": 128,
+            "created_at": "2026-06-23T10:02:36.519757"
+          },
+          "chunk_id": 345
+        }
+      ]
     }
   },
   "f10e2f284be59c98fb92489d2e9b1ae6f2461daf453f76b3537d518d04ff543b": {
@@ -868,6 +930,1299 @@
             "created_at": "2026-06-23T10:02:35.474869"
           },
           "chunk_id": 210
+        }
+      ]
+    }
+  },
+  "8a71d57aaf33d6fb8f4c5c2762257401d3a5eadf4f60442f60e18ec069943a41": {
+    "created_at": "2026-06-24T11:03:15.717875",
+    "question": "what is the policy of sexual harassemnt",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- Every organization must include a sexual harassment policy to be able to address all complaints actively.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.6522191882133485,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.3488447666168213,
+      "sources": [
+        {
+          "text": "It isn’t just a legal requirement but also a moral obligation. In India, laws \nhave also been updated to make the safety of women in workplaces a priority. . The act is well praised and has even lead to closing down of a few companies. Furthermore, \nthe act protects not just the employees and interns of an organization but also any woman \nvisiting the company or a woman customer. Every organization must include a sexual \nharassment policy to be able to address all complaints actively. We at  Rikalp Capital Private Limited created a separate policy for this in detailed manner. MATERNITY AND PATERNITY LEAVE POLICY \n  \nEvery organization employing more than 10 workers is required to follow the maternity \nbenefits (amendment) act, 2017. The maternity act is perhaps one of the most popular HR \npolicies in India Also, It outlines the benefits and the leaves that a pregnant woman who has \nworked in an organization for as per law entitled to.",
+          "similarity": 0.6522191882133485,
+          "raw_similarity": 0.5772191882133484,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f5ff3548",
+            "char_length": 948,
+            "word_count": 160,
+            "created_at": "2026-06-23T10:02:35.474940"
+          },
+          "chunk_id": 213
+        },
+        {
+          "text": "It should clearly specify the work timings, \ndeliverables and clear procedures. Though there are no laws regarding these, having a clear \nand definitive policy will be helpful. It must include the procedure through which an \nemployee can apply for the privilege of working from home and mention in detail who is \neligible for sure privileges. GRIEVANCE POLICY \n  \n In India, as per section 9C of the Industrial Disputes Act, 1947 every employer employing \nat least 20 workmen, is required to set up a Grievance Redressal Committee. Grievance \nregarding job harassment, sexual misconduct, unfair decisions, and more should be heard, \nand should have the policy to resolve the same. Meanwhile, HR policies such as the grievance \npolicy are extremely important for the growth and proper functioning of an organization.",
+          "similarity": 0.5198644518852235,
+          "raw_similarity": 0.4448644518852234,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "af2106af",
+            "char_length": 815,
+            "word_count": 127,
+            "created_at": "2026-06-23T10:02:35.475277"
+          },
+          "chunk_id": 228
+        },
+        {
+          "text": "Section 3: Code of Conduct and Ethics\n3.1 Professional Behavior Standards\nEmployees are expected to maintain professional behavior at all times. Harassment, discrimination, or any form of inappropriate conduct will not be tolerated. All employees must complete annual diversity and inclusion training. Zero Tolerance Policies: Sexual harassment Discrimination based on protected characteristics Bullying and workplace intimidation Retaliation against whistleblowers 3.2 Workplace Safety and Health\nThe company is committed to providing a safe working environment compliant with OSHA standards. Employees must report any safety hazards immediately to their supervisor or the facilities department. Emergency evacuation procedures are posted throughout the office. Safety Committees: Monthly safety inspections Incident reporting within 24 hours First aid certified employees on each floor Emergency response teams trained quarterly",
+          "similarity": 0.44210453033447267,
+          "raw_similarity": 0.36710453033447266,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "40dc977f",
+            "char_length": 930,
+            "word_count": 122,
+            "created_at": "2026-06-23T10:02:35.062544"
+          },
+          "chunk_id": 5
+        },
+        {
+          "text": "Collusion with third parties/associates to exploit the company \nk. Breach of terms and conditions of employment and rules thereof and; \nl. Any action which is likely to tarnish the image of the institution \nm. Taking or attempting to take bribe or bribe or attempting to give it to anyone \nin the organization \nn. Any act which harms someone's personal honors \no. Disobeying company policy or code of conduct \n \nAny internal or external person may report any unethical or suspected criminal activity \nmentioned above confidentially first of fall share with your reporting manager then share to \nHR Department in case of your issue not solved then share with our Vigilance Officer.",
+          "similarity": 0.4057248866558075,
+          "raw_similarity": 0.3707248866558075,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "6b5e1688",
+            "char_length": 680,
+            "word_count": 110,
+            "created_at": "2026-06-23T10:02:35.475150"
+          },
+          "chunk_id": 223
+        },
+        {
+          "text": "\n ﴐورة وﺿﻊ اﺳﱰاﺗﻴﺠﻴﺔ ادارة اﳌﻮارد اﻟﺒﴩ\nﻳﺔ واﻟﺘﻲ ﺗﻌﺪ ﺟﺰء ﻻ ﻳﺘﺠﺰأ ﻣﻦ اﺳﱰاﺗﻴﺠﻴﺔ اﳌﻨﻈﻤﺔ\n  . )\n28\n ( اﻟﺪوري، زﻛﺮﻳﺎ ﻣﻄﻠﻚ، واﺣﻤﺪ ﻋﲇ ﺻﺎﻟﺢ، اﳌﺮﺟﻊ اﻟﺴﺎﺑﻖ، ص261\n  . إدارة اﳌﻮار\nد اﻟﺒﴩﻳﺔ \n  \n \n \n44\n \n \n\n \n اﻻزدﻳﺎد اﳌﻀﻄﺮد ﰲ أﻋﺪاد اﻟﻌﺎﻣﻠن ﰲ اﳌﻨﻈات ﻧﺘﻴﺠﺔ ﻟﻜﱪ ﺣﺠﻢ اﳌـﻨﻈات وﺑـﺮوز اﻟﴩـﻛﺎت ﻣﺘﻌـﺪدة\nاﻟﺠﻨﺴﻴﺔ\n  . \n\n \n ﺗﻄﻮر وﺳﺎﺋﻞ اﻻﺳﺘﻘﻄﺎب واﻻﺧﺘﻴﺎر واﻟﺘﻌﻴن، وﺧﺎﺻﺔ ﺑﻌﺪ اﻧﺘﺸﺎر اﺳﺘﺨﺪام اﻻﻧﱰﻧﺖ ﰲ ﻋﻘـﺪ اﻻﻣﺘﺤﺎﻧـﺎت\nوإﺟﺮاء اﳌ\nﻘﺎﺑﻼت\n  . \nوﻳﺠﺐ ان ﻻ ﻳﻐﻴﺐ ﻋﻦ ﺑﺎﻟﻨﺎ ﺗـﺄﺛ\nر\n اﳌﻨﺎﻓﺴـﺔ ﰲ اﻟﻌـﺮض واﻟﻄﻠـﺐ ﻋـﲆ اﳌـﻮارد اﻟﺒﴩـﻳﺔ \nﰲ \nادارة اﳌـﻮارد \nاﻟﺒﴩﻳﺔ، وﺧﺎﺻﺔ ﺑﻌﺪ زﻳﺎدة اﻋﺪاد اﻟﺨﺮﻳﺠن ﻣﻦ ﻣﺨﺘﻠﻒ اﻟﺘﺨﺼﺼﺎت وارﺗﻔﺎع ﻣﻌﺪﻻت اﻟﺒﻄﺎﻟﺔ ﰲ ﻛﺜر ﻣﻦ اﻟﺪول\n   .",
+          "similarity": 0.38579213857650757,
+          "raw_similarity": 0.44579213857650757,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "3b9f8cf0",
+            "char_length": 602,
+            "word_count": 105,
+            "created_at": "2026-06-23T10:02:36.519005"
+          },
+          "chunk_id": 327
+        }
+      ]
+    }
+  },
+  "56c15de09ceae14e830ea2edc80de7a018b099d2f2dd3fb5177b28ca6eca0ec0": {
+    "created_at": "2026-06-24T11:03:45.708098",
+    "question": "sexual harassment",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- Harassment, discrimination, or any form of inappropriate conduct will not be tolerated.\n- Zero Tolerance Policies: Sexual harassment Discrimination based on protected characteristics Bullying and workplace intimidation Retaliation against whistleblowers 3.2 Workplace Safety and Health The company is committed to providing a safe working environment compliant with OSHA standards.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.6544626259803772,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.35878610610961914,
+      "sources": [
+        {
+          "text": "Section 3: Code of Conduct and Ethics\n3.1 Professional Behavior Standards\nEmployees are expected to maintain professional behavior at all times. Harassment, discrimination, or any form of inappropriate conduct will not be tolerated. All employees must complete annual diversity and inclusion training. Zero Tolerance Policies: Sexual harassment Discrimination based on protected characteristics Bullying and workplace intimidation Retaliation against whistleblowers 3.2 Workplace Safety and Health\nThe company is committed to providing a safe working environment compliant with OSHA standards. Employees must report any safety hazards immediately to their supervisor or the facilities department. Emergency evacuation procedures are posted throughout the office. Safety Committees: Monthly safety inspections Incident reporting within 24 hours First aid certified employees on each floor Emergency response teams trained quarterly",
+          "similarity": 0.6544626259803772,
+          "raw_similarity": 0.5394626259803772,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "40dc977f",
+            "char_length": 930,
+            "word_count": 122,
+            "created_at": "2026-06-23T10:02:35.062544"
+          },
+          "chunk_id": 5
+        },
+        {
+          "text": "It isn’t just a legal requirement but also a moral obligation. In India, laws \nhave also been updated to make the safety of women in workplaces a priority. . The act is well praised and has even lead to closing down of a few companies. Furthermore, \nthe act protects not just the employees and interns of an organization but also any woman \nvisiting the company or a woman customer. Every organization must include a sexual \nharassment policy to be able to address all complaints actively. We at  Rikalp Capital Private Limited created a separate policy for this in detailed manner. MATERNITY AND PATERNITY LEAVE POLICY \n  \nEvery organization employing more than 10 workers is required to follow the maternity \nbenefits (amendment) act, 2017. The maternity act is perhaps one of the most popular HR \npolicies in India Also, It outlines the benefits and the leaves that a pregnant woman who has \nworked in an organization for as per law entitled to.",
+          "similarity": 0.6295024061203003,
+          "raw_similarity": 0.5145024061203003,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f5ff3548",
+            "char_length": 948,
+            "word_count": 160,
+            "created_at": "2026-06-23T10:02:35.474940"
+          },
+          "chunk_id": 213
+        },
+        {
+          "text": "It should clearly specify the work timings, \ndeliverables and clear procedures. Though there are no laws regarding these, having a clear \nand definitive policy will be helpful. It must include the procedure through which an \nemployee can apply for the privilege of working from home and mention in detail who is \neligible for sure privileges. GRIEVANCE POLICY \n  \n In India, as per section 9C of the Industrial Disputes Act, 1947 every employer employing \nat least 20 workmen, is required to set up a Grievance Redressal Committee. Grievance \nregarding job harassment, sexual misconduct, unfair decisions, and more should be heard, \nand should have the policy to resolve the same. Meanwhile, HR policies such as the grievance \npolicy are extremely important for the growth and proper functioning of an organization.",
+          "similarity": 0.5494184100627899,
+          "raw_similarity": 0.4344184100627899,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "af2106af",
+            "char_length": 815,
+            "word_count": 127,
+            "created_at": "2026-06-23T10:02:35.475277"
+          },
+          "chunk_id": 228
+        },
+        {
+          "text": "Collusion with third parties/associates to exploit the company \nk. Breach of terms and conditions of employment and rules thereof and; \nl. Any action which is likely to tarnish the image of the institution \nm. Taking or attempting to take bribe or bribe or attempting to give it to anyone \nin the organization \nn. Any act which harms someone's personal honors \no. Disobeying company policy or code of conduct \n \nAny internal or external person may report any unethical or suspected criminal activity \nmentioned above confidentially first of fall share with your reporting manager then share to \nHR Department in case of your issue not solved then share with our Vigilance Officer.",
+          "similarity": 0.47069403886795047,
+          "raw_similarity": 0.43569403886795044,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "6b5e1688",
+            "char_length": 680,
+            "word_count": 110,
+            "created_at": "2026-06-23T10:02:35.475150"
+          },
+          "chunk_id": 223
+        },
+        {
+          "text": "ﻓﺒﻌﺾ اﻟﺸﻜﺎوي مﻜﻦ ﺣﻠﻬﺎ ﻓﻮراً \n ﻣﻦ \nﻗﺒﻞ ﻣﺴﺘﻠﻢ وﺛﻴﻘﺔ اﻟﺸﻜﻮى، أﻣﺎ اﻟﺒﻌﺾ اﻵﺧﺮ ﻓﻘﺪ \nﺘﻢ ﻳ\nﺗﺤﻮﻳﻠﻬﺎ إﱃ اﳌﺪﻳﺮ اﻟﻌﺎم أو ﻋﲆ ﻟﺠﻨﺔ ﻣﺘﺨﺼﺼﺔ، وﻗﺪ ﺗﻜﻮن أﺳﺎﺳﺎً ﻟﻘﻴﺎم ﻧﺰاﻋﺎت ﻋاﻟﻴﺔ\n  . ﺗﺘﻀﻤ\nﻦ اﻟﻜﺜر ﻣﻦ ﻋﻘﻮد اﻟﺘﻮﻇﻴﻒ ﻋﲆ ﺑﻨﻮد ﺗﺘﻌﻠﻖ ﺑﺈﺟﺮاءات اﻟﺸﻜﺎوى وذﻟﻚ ﻳﻨﻄﺒﻖ ﻋﲆ اﻟﻌﺎﻣﻠن \nاﳌﻨﺘﺴﺒن إﱃ ﻧﻘﺎﺑﺎت، وﺗﺸﻤﻞ إﺟﺮاءات ﺗﻘﺪﻳﻢ اﻟﺸﻜﺎوى ﻣﺎ ﻳﲇ\n)12\n(:  \n1 -\n \n إﺑﻼغ اﳌﺴﺆول ﰲ اﻟﻨﻘﺎﺑﺔ ﻋﻦ ﺗﻔﺎﺻﻴﻞ اﻟﺸﻜﻮى وذﻟﻚ ﺧﻼل ﻓﱰة ﻻ ﺗﺘﺠﺎوز ﻣﺪة ﻣﺤﺪدة ﻣﻦ ﺗﺎرﻳﺦ\nﺣﺪوث ﺳﺒﺐ اﻟﺸﻜﻮى\n   . )\n11\n (\n Carrell, Michael amd Christina Heavrin, Labor Relations and Collective Borgaining, New Jersey, Peason, 2004, \npp. 417 – 418. )\n12\n (\n Gomez – Mejia, Luis R. David B. Balkin, and Robert L. Cardy, Managing Human Resources, 3rd Edition, New \nJersey,  Prentice Hall, 2001, pp. 514 – 515. إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n  \n \n \n350\n \n \n \nوﰲ ﻫﺬه اﻟﺨ\nﻄﻮة ﻳﺮ \nﺟﻊ ﻣﺴﺆول اﻟﻨﻘﺎﺑﺔ إﱃ ﻋﻘﺪ اﻟﻌﻤﻞ ﻹﻗ\n رﺮا\nﻣﺪى ﺻﺤﺘﻬﺎ، وﻣﻦ ﺛﻢ ﻳﺘﺼﻞ ﺑﺎﳌﴩف \nاﳌﺒﺎﴍ ﳌﻘﺪم اﻟﺸﻜﻮى ﳌﺤﺎوﻟﺔ\n \nﺣﻠﻬﺎ\n  إذا . ﺗﻢ ﺣﻞ اﻟﺸﻜﻮى \n)75\n %ﻣﻦ اﻟﺸ\nﻜﺎوى ﻳﺘﻢ ﺣﻠﻬﺎ ﰲ اﻟﺨﻄﻮة \nاﻷوﱃ\n( \nﻓﻼ داﻋﻲ ﻟﻜﺘﺎﺑﺘﻬﺎ\n   .",
+          "similarity": 0.3431625986099243,
+          "raw_similarity": 0.4031625986099243,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "d7696f08",
+            "char_length": 954,
+            "word_count": 176,
+            "created_at": "2026-06-23T10:02:36.538057"
+          },
+          "chunk_id": 845
+        }
+      ]
+    }
+  },
+  "b6dec91e43f7bb5758d946e46ed4dab42df742906da8da99f059158153404709": {
+    "created_at": "2026-06-24T11:50:44.201888",
+    "question": "sexual harassment policy but as much detail as possible please",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- It isn’t just a legal requirement but also a moral obligation.\n- Furthermore, the act protects not just the employees and interns of an organization but also any woman visiting the company or a woman customer.\n- Every organization must include a sexual harassment policy to be able to address all complaints actively.\n- We at Rikalp Capital Private Limited created a separate policy for this in detailed manner.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.7612144041061402,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.5338172912597656,
+      "sources": [
+        {
+          "text": "It isn’t just a legal requirement but also a moral obligation. In India, laws \nhave also been updated to make the safety of women in workplaces a priority. . The act is well praised and has even lead to closing down of a few companies. Furthermore, \nthe act protects not just the employees and interns of an organization but also any woman \nvisiting the company or a woman customer. Every organization must include a sexual \nharassment policy to be able to address all complaints actively. We at  Rikalp Capital Private Limited created a separate policy for this in detailed manner. MATERNITY AND PATERNITY LEAVE POLICY \n  \nEvery organization employing more than 10 workers is required to follow the maternity \nbenefits (amendment) act, 2017. The maternity act is perhaps one of the most popular HR \npolicies in India Also, It outlines the benefits and the leaves that a pregnant woman who has \nworked in an organization for as per law entitled to.",
+          "similarity": 0.7612144041061402,
+          "raw_similarity": 0.6062144041061401,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f5ff3548",
+            "char_length": 948,
+            "word_count": 160,
+            "created_at": "2026-06-23T10:02:35.474940"
+          },
+          "chunk_id": 213
+        },
+        {
+          "text": "It should clearly specify the work timings, \ndeliverables and clear procedures. Though there are no laws regarding these, having a clear \nand definitive policy will be helpful. It must include the procedure through which an \nemployee can apply for the privilege of working from home and mention in detail who is \neligible for sure privileges. GRIEVANCE POLICY \n  \n In India, as per section 9C of the Industrial Disputes Act, 1947 every employer employing \nat least 20 workmen, is required to set up a Grievance Redressal Committee. Grievance \nregarding job harassment, sexual misconduct, unfair decisions, and more should be heard, \nand should have the policy to resolve the same. Meanwhile, HR policies such as the grievance \npolicy are extremely important for the growth and proper functioning of an organization.",
+          "similarity": 0.7276125240325928,
+          "raw_similarity": 0.5726125240325928,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "af2106af",
+            "char_length": 815,
+            "word_count": 127,
+            "created_at": "2026-06-23T10:02:35.475277"
+          },
+          "chunk_id": 228
+        },
+        {
+          "text": "Section 3: Code of Conduct and Ethics\n3.1 Professional Behavior Standards\nEmployees are expected to maintain professional behavior at all times. Harassment, discrimination, or any form of inappropriate conduct will not be tolerated. All employees must complete annual diversity and inclusion training. Zero Tolerance Policies: Sexual harassment Discrimination based on protected characteristics Bullying and workplace intimidation Retaliation against whistleblowers 3.2 Workplace Safety and Health\nThe company is committed to providing a safe working environment compliant with OSHA standards. Employees must report any safety hazards immediately to their supervisor or the facilities department. Emergency evacuation procedures are posted throughout the office. Safety Committees: Monthly safety inspections Incident reporting within 24 hours First aid certified employees on each floor Emergency response teams trained quarterly",
+          "similarity": 0.7045713567733765,
+          "raw_similarity": 0.5895713567733765,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "40dc977f",
+            "char_length": 930,
+            "word_count": 122,
+            "created_at": "2026-06-23T10:02:35.062544"
+          },
+          "chunk_id": 5
+        },
+        {
+          "text": "are included in the code of conduct \npolicy. Furthermore, the code of conduct must include the procedure to report a breach of the code \nof conduct. EMPLOYEE WAGES \n \nManaging employee payroll is an important part of an HR department’s job, however, \nensuring that employee salaries are competitive in the market and are compliant with \ngovernment policies is also an important part of it. In India, several acts cover the wages of an employee. One of them is the Minimum wage act, \n1948  and also It sets the minimum wages that a skilled and unskilled laborer should receive. As well as it enables employees to earn the ‘basic cost of living’. Furthermore, the Payment of Wages Act, 1936 ensures that the employee receives the right \nmonthly payment on time and without any unnecessary deductions. Therefore, it may be tempting to only focus on the competitive market rates, however, it is \nimportant to pay heed to the compliances required for every employee’s wages.",
+          "similarity": 0.4770645833015442,
+          "raw_similarity": 0.4420645833015442,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f4b98179",
+            "char_length": 969,
+            "word_count": 161,
+            "created_at": "2026-06-23T10:02:35.474804"
+          },
+          "chunk_id": 207
+        },
+        {
+          "text": "Collusion with third parties/associates to exploit the company \nk. Breach of terms and conditions of employment and rules thereof and; \nl. Any action which is likely to tarnish the image of the institution \nm. Taking or attempting to take bribe or bribe or attempting to give it to anyone \nin the organization \nn. Any act which harms someone's personal honors \no. Disobeying company policy or code of conduct \n \nAny internal or external person may report any unethical or suspected criminal activity \nmentioned above confidentially first of fall share with your reporting manager then share to \nHR Department in case of your issue not solved then share with our Vigilance Officer.",
+          "similarity": 0.4469377136230469,
+          "raw_similarity": 0.4119377136230469,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "6b5e1688",
+            "char_length": 680,
+            "word_count": 110,
+            "created_at": "2026-06-23T10:02:35.475150"
+          },
+          "chunk_id": 223
+        }
+      ]
+    }
+  },
+  "f073df0a12f7f63e794155f2b1289e46d49ad95bdf52abd62781331b7e102a35": {
+    "created_at": "2026-06-24T11:51:01.110503",
+    "question": "what should i do?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nI could not produce a confirmed English answer from the available policy information.\n\nDetails:\n- Please rephrase the question with a more specific HR or IT policy topic.\n- I will not show raw or mixed-language document excerpts.\n\nAdditional Notes:\n- For urgent or personal cases, please contact HR or IT directly.",
+      "confidence": 0.17884333789348603,
+      "mode": "general_fallback",
+      "match_type": "none",
+      "language": "en",
+      "response_time": 0.4002513885498047,
+      "sources": []
+    }
+  },
+  "610480c6850247f869cb9fa1ee3dd169661180419aa9bc9228a8f7dcd7f237ac": {
+    "created_at": "2026-06-24T11:51:15.612507",
+    "question": "what should i do if i was sexually harassed",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nI could not find enough clear policy information to answer this question confidently.\n\nDetails:\n- Please ask about a more specific HR or IT policy topic.\n- I will not show raw document text or unreadable OCR excerpts.\n\nAdditional Notes:\n- For urgent or personal cases, please contact HR or IT directly.",
+      "confidence": 0.5123920178413391,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.37838268280029297,
+      "sources": [
+        {
+          "text": "Section 3: Code of Conduct and Ethics\n3.1 Professional Behavior Standards\nEmployees are expected to maintain professional behavior at all times. Harassment, discrimination, or any form of inappropriate conduct will not be tolerated. All employees must complete annual diversity and inclusion training. Zero Tolerance Policies: Sexual harassment Discrimination based on protected characteristics Bullying and workplace intimidation Retaliation against whistleblowers 3.2 Workplace Safety and Health\nThe company is committed to providing a safe working environment compliant with OSHA standards. Employees must report any safety hazards immediately to their supervisor or the facilities department. Emergency evacuation procedures are posted throughout the office. Safety Committees: Monthly safety inspections Incident reporting within 24 hours First aid certified employees on each floor Emergency response teams trained quarterly",
+          "similarity": 0.5123920178413391,
+          "raw_similarity": 0.4773920178413391,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "40dc977f",
+            "char_length": 930,
+            "word_count": 122,
+            "created_at": "2026-06-23T10:02:35.062544"
+          },
+          "chunk_id": 5
+        },
+        {
+          "text": "It should clearly specify the work timings, \ndeliverables and clear procedures. Though there are no laws regarding these, having a clear \nand definitive policy will be helpful. It must include the procedure through which an \nemployee can apply for the privilege of working from home and mention in detail who is \neligible for sure privileges. GRIEVANCE POLICY \n  \n In India, as per section 9C of the Industrial Disputes Act, 1947 every employer employing \nat least 20 workmen, is required to set up a Grievance Redressal Committee. Grievance \nregarding job harassment, sexual misconduct, unfair decisions, and more should be heard, \nand should have the policy to resolve the same. Meanwhile, HR policies such as the grievance \npolicy are extremely important for the growth and proper functioning of an organization.",
+          "similarity": 0.43012620210647584,
+          "raw_similarity": 0.35512620210647583,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "af2106af",
+            "char_length": 815,
+            "word_count": 127,
+            "created_at": "2026-06-23T10:02:35.475277"
+          },
+          "chunk_id": 228
+        },
+        {
+          "text": "It isn’t just a legal requirement but also a moral obligation. In India, laws \nhave also been updated to make the safety of women in workplaces a priority. . The act is well praised and has even lead to closing down of a few companies. Furthermore, \nthe act protects not just the employees and interns of an organization but also any woman \nvisiting the company or a woman customer. Every organization must include a sexual \nharassment policy to be able to address all complaints actively. We at  Rikalp Capital Private Limited created a separate policy for this in detailed manner. MATERNITY AND PATERNITY LEAVE POLICY \n  \nEvery organization employing more than 10 workers is required to follow the maternity \nbenefits (amendment) act, 2017. The maternity act is perhaps one of the most popular HR \npolicies in India Also, It outlines the benefits and the leaves that a pregnant woman who has \nworked in an organization for as per law entitled to.",
+          "similarity": 0.4184249079227448,
+          "raw_similarity": 0.38342490792274475,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f5ff3548",
+            "char_length": 948,
+            "word_count": 160,
+            "created_at": "2026-06-23T10:02:35.474940"
+          },
+          "chunk_id": 213
+        },
+        {
+          "text": "Collusion with third parties/associates to exploit the company \nk. Breach of terms and conditions of employment and rules thereof and; \nl. Any action which is likely to tarnish the image of the institution \nm. Taking or attempting to take bribe or bribe or attempting to give it to anyone \nin the organization \nn. Any act which harms someone's personal honors \no. Disobeying company policy or code of conduct \n \nAny internal or external person may report any unethical or suspected criminal activity \nmentioned above confidentially first of fall share with your reporting manager then share to \nHR Department in case of your issue not solved then share with our Vigilance Officer.",
+          "similarity": 0.3905592298507691,
+          "raw_similarity": 0.35555922985076904,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "6b5e1688",
+            "char_length": 680,
+            "word_count": 110,
+            "created_at": "2026-06-23T10:02:35.475150"
+          },
+          "chunk_id": 223
+        },
+        {
+          "text": "Customers with grievance \nrelated to loan or against \nstaff can contact to: \nIf the complaint / dispute \nin not redressed within a \nperiod of 15 days, the \ncustomer may approach to \nsecond HR Department as \nunder: \n \n \nIf the complaint / dispute \nin not redressed within a \nperiod of one month, the \ncustomer may approach to \nthe our Vigilance Officer \nEmail Id as under:  \n \nBRANCH \nMANAGER/ \nREPORTING MANAGER \nHR Department \nVigilance Officer \n \nBM Name / Reporting \nManager Name: \n \n \nName: Ankit Pradhan \nName: Ramakant Tank \nCall will be taken between \n09:30 am to 6:00 pm only \nOn all working days \nDesignation: HR Manager \nDesignation: \nVigilance \nOfficer \n \nAddress - Rikalp Capital \nPrivate Limited \nEmail ID: Hr@rikalp.in  \nEmail \nID: \nVigilance@rikalp.in \n42, 2nd Floor, Monika Vihar, \nMaharani \nGarden \nRoad, \nRajat \nPath, \nMansarovar, \nJaipur - 302020 \nContact \nNumber: \n8696202041 \nContact \nNumber: \n9950004040 \n  \nCall will be taken between \n09:30 am to 6:00 pm only \nOn all working days \nCall will be taken between \n09:30 am to 6:00 pm only \nOn all working days \n  \nAddress - Rikalp Capital \nPrivate Limited \nAddress - Rikalp Capital \nPrivate Limited \n  \n42, 2nd Floor, Monika Vihar, \nMaharani \nGarden \nRoad, \nRajat \nPath, \nMansarovar, \nJaipur - 302020 \n42, 2nd Floor, Monika Vihar, \nMaharani \nGarden \nRoad, \nRajat \nPath, \nMansarovar, \nJaipur - 302020 \n \nGROOMING & DRESS CODE POLICY \n \nGooming and Dress code guidelines articulated below have been developed in order to foster \na professional environment in value and culture.",
+          "similarity": 0.3885178899765015,
+          "raw_similarity": 0.35351788997650146,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "85a49fff",
+            "char_length": 1544,
+            "word_count": 232,
+            "created_at": "2026-06-23T10:02:35.475175"
+          },
+          "chunk_id": 224
+        }
+      ]
+    }
+  },
+  "76965f7ddbe40eb233caa6cae53b10605ae44b67e34b4100307c0ac29b35973d": {
+    "created_at": "2026-06-24T11:51:40.492876",
+    "question": "can i leave early from work",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nHere is the relevant policy information for your question.\n\nDetails:\n- Working Days\n- a) The working days of the company for all employees will be from Monday to Saturday.\n- b) Employees have to ensure that the assigned tasks are completed before availing leave.\n- c) Depending on the demands of the job role and exigencies of work, the employee maybe required to work extra hours at office to complete the assigned tasks or work in a different shift subject to approval from the reporting authority/management.\n\nAdditional Notes:\n- If the policy does not fully answer your situation, please contact HR or IT for confirmation.",
+      "confidence": 0.8225255060195923,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 0.5241906642913818,
+      "sources": [
+        {
+          "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+          "similarity": 0.8225255060195923,
+          "raw_similarity": 0.5675255060195923,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "519fbbfc",
+            "char_length": 985,
+            "word_count": 155,
+            "created_at": "2026-06-23T10:02:35.474983"
+          },
+          "chunk_id": 215
+        },
+        {
+          "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+          "similarity": 0.7849324989318848,
+          "raw_similarity": 0.5299324989318848,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f4f50c37",
+            "char_length": 934,
+            "word_count": 159,
+            "created_at": "2026-06-23T10:02:35.474869"
+          },
+          "chunk_id": 210
+        },
+        {
+          "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+          "similarity": 0.6999116325378418,
+          "raw_similarity": 0.5349116325378418,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "2715a9c8",
+            "char_length": 995,
+            "word_count": 177,
+            "created_at": "2026-06-23T10:02:35.475008"
+          },
+          "chunk_id": 216
+        },
+        {
+          "text": "Failing so will be treated as absence to work and deemed as half day of  \n \nabsence to work. Repeated default will be considered as indiscipline and can lead to strict \n \ndisciplinary action from the management. 6. Absence from office \n \na) Any employee, who is outside the office during working hours, should ensure that \nhis/her immediate reporting authority and HR Department are aware of his/her \nwhereabouts and the nature of work assigned. b) Unauthorized absence form office or absence from office without prior approval from \nthe immediate reporting authority will be considered as indiscipline and will be dealt \nwith accordingly. ADAPTIVE WORK CULTURE POLICY \n  \nWork offices look a little different than they used to a few years ago. Today, more and more \nemployees seek for flexible work options such as work from home options or 6 days work \nweeks. Though it is not a legal requirement to adapt to the changing times, it isn’t smart to stick to \nthe traditional work patterns either.",
+          "similarity": 0.6352863776683808,
+          "raw_similarity": 0.43028637766838074,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "d8d97ca7",
+            "char_length": 996,
+            "word_count": 162,
+            "created_at": "2026-06-23T10:02:35.475072"
+          },
+          "chunk_id": 219
+        },
+        {
+          "text": "Office Premises \nWhen leaving office, every member of the staff should see that all files, papers, books, \nregisters, etc. in his charge are kept in proper places. (As far as possible in locked Almirahs) \npending paper should be kept together in a separate folder appropriately marked. It shall be the duty of every staff member to see that the personal computers, A/Cs, lights, \nfans etc. are used only when necessary and that they are switched off when not required \nduring office hours and also every evening before leaving the office. The telephone provided in the Office is used strictly for official calls under no circumstances; \nthe telephone should not be used for private calls except in cases of emergency. SEXUAL HARASSMENT POLICY \n \nEvery organization must take extra steps to make their workplace a safe environment for \nwomen to work in. It isn’t just a legal requirement but also a moral obligation. In India, laws \nhave also been updated to make the safety of women in workplaces a priority.",
+          "similarity": 0.6203609704971315,
+          "raw_similarity": 0.49536097049713135,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "e24892b0",
+            "char_length": 1008,
+            "word_count": 168,
+            "created_at": "2026-06-23T10:02:35.474916"
+          },
+          "chunk_id": 212
+        }
+      ]
+    }
+  },
+  "62bf958976180615b2ffea692a07f5dc1a32e4486c13e5763d33fa07fc4e446a": {
+    "created_at": "2026-06-25T09:17:16.631879",
+    "question": "how long is maternity leave?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nFemale employees are entitled to 14 weeks of paid maternity leave.\n\nDetails:\nMaternity Leave:\n- 14 weeks of paid leave.\n- This may be split as 6 weeks before delivery and 8 weeks after delivery, with flexibility based on medical advice.\n- An additional 4 weeks of unpaid leave may be available with manager approval.\n\nRelated Leave:\n- Adoption leave: 10 weeks for the primary adopting parent.\n- Paternity leave: 5 paid days, with an additional 2 weeks of unpaid leave available.\n\nAdditional Notes:\n- Employees must notify HR at least 3 months before the expected due date.\n- Return-to-work transition programs may be available.",
+      "confidence": 0.9550180006027222,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 4.34831976890564,
+      "sources": [
+        {
+          "text": "a) Female Employee with over one-year continuous service shall be entitled to 26 weeks \nmaternity leave subject to production of medical certificate being their pregnant and \nthe probable date of confinement. Not with standing anything the same female \nemployee may be allowed to combine any other kind of leave subject to availability \nof leave title along with the maternity leave provided that the total leave so availed does not exceed 60 days. Maternity leave shall be leave on full pay together with any \nother allowance that may be admissible. b) Employee who are covered under ESIC the maternity leave will be provided by the \nESIC. TERMINATION AND SEPARATION POLICY \n  \nA Termination and Separation Policy is a crucial HR guideline outlining the procedures for \nending an employee’s tenure, whether due to resignation, retirement, or involuntary \ntermination.",
+          "similarity": 0.9550180006027222,
+          "raw_similarity": 0.7500180006027222,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "6f399ca0",
+            "char_length": 868,
+            "word_count": 135,
+            "created_at": "2026-06-23T10:02:35.474960"
+          },
+          "chunk_id": 214
+        },
+        {
+          "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+          "similarity": 0.8066616439819336,
+          "raw_similarity": 0.6416616439819336,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "7df9a47c",
+            "char_length": 980,
+            "word_count": 146,
+            "created_at": "2026-06-23T10:02:35.062307"
+          },
+          "chunk_id": 1
+        },
+        {
+          "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+          "similarity": 0.743024230003357,
+          "raw_similarity": 0.6180242300033569,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "60c507e5",
+            "char_length": 896,
+            "word_count": 150,
+            "created_at": "2026-06-23T10:02:35.062100"
+          },
+          "chunk_id": 0
+        },
+        {
+          "text": "Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available Foster parent leave: 6 weeks paid leave for foster parents Employees must notify HR at least 3 months before the expected due date. Return-to-work transition programs available including phased return options. 1.4 Bereavement Leave\nEmployees are entitled to 3 days of paid bereavement leave for the death of an immediate family member (spouse, domestic partner, children, parents, siblings). For extended family members (grandparents, grandchildren, in-laws), 1 day of bereavement leave is provided. Documentation may be requested for verification purposes. Additional Support: Employee Assistance Program counseling available Additional unpaid leave negotiable with HR Compassionate leave for pet bereavement: 1 day 1.5 Additional Leave Types\nJury Duty Leave: Unlimited paid leave for jury service with court documentation required.",
+          "similarity": 0.7205711007118226,
+          "raw_similarity": 0.5955711007118225,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "4791048a",
+            "char_length": 1010,
+            "word_count": 144,
+            "created_at": "2026-06-23T10:02:35.062439"
+          },
+          "chunk_id": 2
+        },
+        {
+          "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+          "similarity": 0.6605236530303956,
+          "raw_similarity": 0.5355236530303955,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f4f50c37",
+            "char_length": 934,
+            "word_count": 159,
+            "created_at": "2026-06-23T10:02:35.474869"
+          },
+          "chunk_id": 210
+        }
+      ]
+    }
+  },
+  "22c739c8e9408ac9022b91eeb765c0c769ffe43e48593499245f9daf21e8f4a3": {
+    "created_at": "2026-06-25T09:17:35.997672",
+    "question": "how to do i apply for it?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nI could not find enough clear policy information to answer this question confidently.\n\nDetails:\n- Please ask about a more specific HR or IT policy topic.\n- I will not show raw document text or unreadable OCR excerpts.\n\nAdditional Notes:\n- For urgent or personal cases, please contact HR or IT directly.\n\nNote: These results are related but may not directly answer your question.",
+      "confidence": 0.38339194893836975,
+      "mode": "related_match",
+      "match_type": "related_match",
+      "language": "en",
+      "response_time": 2.4126758575439453,
+      "sources": [
+        {
+          "text": "٥\nمسوغات التعيين:\n :يلزم على المرشح لشغل وظيفة شاغرة تقديم مسوِّغات التعيين؛ وهي كالتالي\n•  \n.أصل شهادة الميالد المُمَيكنة\n•  \n.أصل المؤهل الدراسيّ أو مستخرَج رسميّ منه\n•  \n.)أصل شهادة الموقف من الخدمة العسكرية (للذكور\n•  \n.) شهادة القيد بمكتب القوى العاملة المختص (كعب العمل\n•  \n َّصحيفة الحالة الجنائية (الفيش) حديثة باسم المؤسسة ولم يمر\nعليه أكثر من ثالثة أشهر. •  \n.4 × ) صورة شخصية حديثة مقاس ٦4( عدد\n•  \n.صورة لبطاقة الرقم القوميّ سارية\n•  \n.شهادة نهاية الخدمة بالعمل السابق (إخالء طرف) إن وجِ دت\n•  \n.أصل النموذج (٦) تأمينات لمن سبق لهم العمل\n•  \n.الترخيص في العمل إن كان المرشح من الأجانب\n•  \n.صور من شهادات الخبرة السابقة إن وجدت\n•  \n.صور من شهادات الدورات التَّدريبيَّة إن وجدت\n•  \n.)صورة رخصة (للسائقين\n•  \n.)شهادة قياس المهارة (للوظائف الفنية\n•  \n.شهادة قيد بالنقابات المهنية التي يطالب بها القانون\n•  \n شهادة  صحية  للعاملين  بوظائف  تتعلق  بالأطعمة  والمشروبات\nوالأغذية  (كذلك  عمال  البوفيه  والكانتين).",
+          "similarity": 0.38339194893836975,
+          "raw_similarity": 0.44339194893836975,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_arabic 1",
+            "file_name": "HR_Policies_arabic 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.374524",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 29,
+            "chunk_hash": "fbc9df65",
+            "char_length": 918,
+            "word_count": 153,
+            "created_at": "2026-06-23T10:02:35.381577"
+          },
+          "chunk_id": 86
+        },
+        {
+          "text": "٢\nشروط التعيين:\n:يُشترط في كل متقدم لشغل وظيفة بالمؤسسة ما يلي\n•  \n أن يكون متمتعً ا بجنسية جمهورية مصر العربية. ويجوز الستثناء من شرط الجنسية وتقديم المبررات الكافية لذلك. وفي هذه الحالة يكون التعيين\nبموجب عقد عمل محدد المدة، مع مراعاة اشتراطات توظيف الأجانب المنظمة لذلك والواردة في نظام العمل المعمول به. •  \n.٦) عامًا. ويجوز الستثناء من شرط السن المحدَّ دة مع تقديم المبررات الكافية لذلك0( ) عامًا وأل تزيد على18( أل تقل سنُّ المتقدم عن\n•  \n أن يكون مستوفيًا للمؤهالت العلمية والعملية الالزمة لشغل الوظيفة المتقدم لها طبقًا للتوصيف الوظيفي المعتمد للوظيفة، مع ضرورة تقديم\nالمستندات الأصلية المؤيِّدة لحصوله على تلك المؤهالت. •  \n.أن يكون لئقًا طبيًّا بموجب تقرير طبى معترف به من قِبل المؤسسة\n•  \n أن يكون حسن السير والسلوك وأل يكون قد سبق الحكم عليه في جناية أو جريمة مُخلَّة بالشرف والأمانة، ويكون إثبات ذلك بموجب وثيقة رسمية\nل يتعدى تاريخ إصدارها ثالثة أشهر ميالدية. •  \n.تخضع سلطة الستثناء من أيّ/ كل الشروط المذكورة في البند السابق لالإدارة العليا\n.",
+          "similarity": 0.35753849387168884,
+          "raw_similarity": 0.41753849387168884,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_arabic 1",
+            "file_name": "HR_Policies_arabic 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.374524",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 29,
+            "chunk_hash": "fafc5e6e",
+            "char_length": 957,
+            "word_count": 165,
+            "created_at": "2026-06-23T10:02:35.381306"
+          },
+          "chunk_id": 79
+        },
+        {
+          "text": "ومﺮ إﺟﺮاءات اﳌﻘﺎﺑﻠﺔ ﺑﺎﻟﺨﻄﻮات اﻟﺘﺎﻟﻴﺔ\n:  \n1- ﺗﺤﺪﻳﺪ ﻋﺪد أﻓﺮاد اﻟﻌﻴﻨﺔ اﻟﺬﻳﻦ ﺳﻮف ﺗﺠﺮي ﻣﻌﻬﻢ اﳌﻘﺎﺑﻠﺔ\n   . 2- \n ،ﺗﺤﺪﻳﺪ ﺻﻔﺎت اﻷﻓﺮاد اﻟﺬﻳﻦ ﺳﺘﺠﺮي ﻣﻌﻬﻢ اﳌﻘﺎﺑﻠﺔ ﻣﻦ ﺣﻴﺚ اﻟﺴﻦ\nاﳌﺮﻛﺰ اﻟـﻮﻇ\nﻴﻔﻲ، ﻣﺴـﺘﻮى اﻟـﺪﺧﻞ، ﻃﺒﻴﻌـﺔ \nاﳌﻬﻨﺔ، وﻏر ذﻟﻚ ﻣﻦ اﻟﺼﻔﺎت اﻟﺘﻲ ﻳﺤﺪدﻫﺎ \nﻣﺠﺮى اﳌﻘﺎﺑﻠﺔ\n \nوﻓﻘﺎ ﻟﻄﺒﻴﻌﺔ \nاﳌﻘﺎﺑﻠﺔ\n   . 3- \n ﺗﺤﺪﻳﺪ أﺳاء اﻷﻓﺮاد أو اﻟﴩﻛﺎت اﻟﺬﻳﻦ ﻳﻨﻄﺒﻖ ﻋﻠﻴﻬﻢ اﻟﺘﺤﺪﻳﺪ اﻟﺴﺎﺑﻖ وأﻣﺎﻛﻦ ﺗﻮاﺟـﺪاﻫﻢ أو ﻋﻨـﺎوﻳﻨﻬﻢ وأرﻗـﺎم\nﻫﻮاﺗﻔﻬﻢ وﻏر ذﻟﻚ ﻣﻦ اﳌﻌﻠﻮﻣﺎت اﻟﴬورﻳﺔ\n   . 4- \n اﻹﺗﺼﺎل ﺑﺎﻷ\nﺷﺨﺎص اﳌﻌﻨﻴن اﻟﺬﻳﻦ ﺳﺘﺠﺮي ﻣﻌﻬﻢ اﳌﻘﺎﺑﻠﺔ ﻟﺘﺤﺪﻳﺪ اﳌﻮاﻋﻴﺪ اﳌﻘﱰﺣﺔ ﻟﻠﻘﺎﺋﻬﻢ وﻣﺪة اﳌﻘﺎﺑﻠﺔ\n   . 5- اﻹﻋﺪاد ﻟﻠﻤﻘﺎﺑﻠﺔ ﻣﻦ ﺣﻴﺚ وﺿﻊ اﻷﺳﺌﻠﺔ وﺗﺤﺪﻳﺪ اﳌﻮاﺿﻴﻊ اﻟﺘﻲ ﺳﻴﺘﻢ اﻟﺘﺤﺪث ﻋﻨﻬﺎ وﻣﻨﺎﻗﺸﺘﻬﺎ\n   . 6- \n اﻟﺘﺤﻀر اﳌﺴﺒﻖ ﻟﻸدوات اﳌﺴﺘﺨﺪﻣﺔ ﰲ اﳌﻘﺎﺑﻠﺔ ﻣﺜﻞ أﺟﻬﺰة اﻟﺘﺴﺠﻴﻞ أو اﻟﺘﺼﻮﻳﺮ أو\nﻏر ذﻟﻚ ﻣﻦ اﻷدوات\n   . 7- \n ﺗﺪرﻳﺐ ﺟﺎﻣﻌﻲ اﳌﻌﻠﻮﻣﺎت اﻟﺬﻳﻦ ﺳﻴﺠﺮون اﳌﻘﺎﺑﻠﺔ ﻋﲆ إﺟﺮاءات اﳌﻘﺎﺑﻠﺔ وﻛﻴﻔﻴﺔ اﻟﺘﺤﻀر ﻟﻬﺎ وإﺟﺮاءﻫﺎ ﻣﻦ أﺟﻞ\nاﻟﺨﺮوج ﺑﺄﻓﻀﻞ اﻟﻨﺘﺎﺋﺞ واﻟﺤﺼﻮل ﻋﲆ اﳌﻌﻠﻮﻣﺎت اﳌﺮاد ﺟﻤﻌﻬﺎ\n   .",
+          "similarity": 0.35377127170562744,
+          "raw_similarity": 0.41377127170562744,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "28f1468b",
+            "char_length": 870,
+            "word_count": 144,
+            "created_at": "2026-06-23T10:02:36.522683"
+          },
+          "chunk_id": 428
+        },
+        {
+          "text": ".تقدير الحتياجات التَّدريبيَّة\n2\n . .تصميم وتجهيز التدريب\n. ٣. ّمراجعة محتويات البرنامج التَّدْ ريبي\n4\n . .تنفيذ التدريب\n5\n . .متابعة وتقييم التدريب نظام إدارة الموارد البشرية\n(دليل تدريبي وتطبيقي للشركات)\n69\n :تقدير الحتياجات التَّ دريبيَّ ة\n : ّالحتياج التَّ دريبي\n هو مجموعة من المهارات والمعارف والتِّجاهات المحددة التي يحتاجها فرد في مؤسسة أو وظيفة معينة؛ من أجل القيام بأداء مهام معينة بشكل\nأكثر كفاءة وفاعلية. يحدث الحتياج التَّدريبيّ عندما تكون هناك فجوة بين الأداء الفعلي للفرد أو المؤسسة، والتِّجاهات المحددة التي يحتاجها فرد في \nمؤسسة أو وظيفية معينة من أجل القيام بأداء مهام معينة بشكل أكثر كفاءة وفاعلية.",
+          "similarity": 0.3498083972930908,
+          "raw_similarity": 0.4098083972930908,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_arabic 1",
+            "file_name": "HR_Policies_arabic 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.374524",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 29,
+            "chunk_hash": "ea7db5b5",
+            "char_length": 617,
+            "word_count": 100,
+            "created_at": "2026-06-23T10:02:35.384664"
+          },
+          "chunk_id": 192
+        },
+        {
+          "text": "تاريخ تقديم الطلب\nتُعامل المعلومات الوادرة في طلب التوظيف بسرية تامة. الرجاء إرفاق السيرة الذاتية ونسخة من الشهادة الجامعية وشهادات الخبرة مع الطلب. Information submitted in the application form is confidential. Please attach Curriculum vitae, copy of certification degree, and letters of experience نظام إدارة الموارد البشرية\n(دليل تدريبي وتطبيقي للشركات)\n34\nإدارة األداء\n تطَلع  إدارة الأداء هذه برسم الخطوط العريضة للسياسة العامة والإجراءات المتبعة للمؤسسة فيما يتعلق بقياس مستوى أداء العاملين، والتي تتحدد\nبناء على التعديالت الطارئة على نمو معدلت النمو والستثمار؛ بالإضافة إلى الستفادة القصوى من طاقات العاملين ومساعدتهم على تحقيق ذلك. تتميز إدارة الأداء بأنها عملية تقوم بالتطوير والتقييم بشكل مستمر، كما أنها تتعامل مع سلوك العاملين وليس مع شخصياتهم؛ بل وتحوِّل الأداء من دورة \nالعمل الروتينية إلى إنجاز أهداف مرسومة وواضحة تقوم بكتابتها وتوضيحها وتحديدها للعاملين. :أهداف إدارة األداء\n1\n . . ضمان تشجيع العاملين على التصرف بطريقة تسمح وتعزز عالقات عمل أفضل- إدارة السلوك\n2\n . .",
+          "similarity": 0.3465006375312805,
+          "raw_similarity": 0.4065006375312805,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_arabic 1",
+            "file_name": "HR_Policies_arabic 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.374524",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 29,
+            "chunk_hash": "27faabf4",
+            "char_length": 984,
+            "word_count": 152,
+            "created_at": "2026-06-23T10:02:35.382055"
+          },
+          "chunk_id": 107
+        }
+      ]
+    }
+  },
+  "9e25943a0f5bfd49012e9f36a7f72fe0a3c4a301839b4231893f4f54ff1e9e49": {
+    "created_at": "2026-06-25T09:18:00.209100",
+    "question": "how do i apply for maternity leave",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nFemale employees are entitled to 14 weeks of paid maternity leave.\n\nDetails:\nMaternity Leave:\n- 14 weeks of paid leave.\n- This may be split as 6 weeks before delivery and 8 weeks after delivery, with flexibility based on medical advice.\n- An additional 4 weeks of unpaid leave may be available with manager approval.\n\nRelated Leave:\n- Adoption leave: 10 weeks for the primary adopting parent.\n- Paternity leave: 5 paid days, with an additional 2 weeks of unpaid leave available.\n\nAdditional Notes:\n- Employees must notify HR at least 3 months before the expected due date.\n- Return-to-work transition programs may be available.",
+      "confidence": 0.7504847431182862,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 4.066497802734375,
+      "sources": [
+        {
+          "text": "a) Female Employee with over one-year continuous service shall be entitled to 26 weeks \nmaternity leave subject to production of medical certificate being their pregnant and \nthe probable date of confinement. Not with standing anything the same female \nemployee may be allowed to combine any other kind of leave subject to availability \nof leave title along with the maternity leave provided that the total leave so availed does not exceed 60 days. Maternity leave shall be leave on full pay together with any \nother allowance that may be admissible. b) Employee who are covered under ESIC the maternity leave will be provided by the \nESIC. TERMINATION AND SEPARATION POLICY \n  \nA Termination and Separation Policy is a crucial HR guideline outlining the procedures for \nending an employee’s tenure, whether due to resignation, retirement, or involuntary \ntermination.",
+          "similarity": 0.7504847431182862,
+          "raw_similarity": 0.5854847431182861,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "6f399ca0",
+            "char_length": 868,
+            "word_count": 135,
+            "created_at": "2026-06-23T10:02:35.474960"
+          },
+          "chunk_id": 214
+        },
+        {
+          "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+          "similarity": 0.5992804551124573,
+          "raw_similarity": 0.4342804551124573,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "7df9a47c",
+            "char_length": 980,
+            "word_count": 146,
+            "created_at": "2026-06-23T10:02:35.062307"
+          },
+          "chunk_id": 1
+        },
+        {
+          "text": "Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available Foster parent leave: 6 weeks paid leave for foster parents Employees must notify HR at least 3 months before the expected due date. Return-to-work transition programs available including phased return options. 1.4 Bereavement Leave\nEmployees are entitled to 3 days of paid bereavement leave for the death of an immediate family member (spouse, domestic partner, children, parents, siblings). For extended family members (grandparents, grandchildren, in-laws), 1 day of bereavement leave is provided. Documentation may be requested for verification purposes. Additional Support: Employee Assistance Program counseling available Additional unpaid leave negotiable with HR Compassionate leave for pet bereavement: 1 day 1.5 Additional Leave Types\nJury Duty Leave: Unlimited paid leave for jury service with court documentation required.",
+          "similarity": 0.5694772303104402,
+          "raw_similarity": 0.44447723031044006,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "4791048a",
+            "char_length": 1010,
+            "word_count": 144,
+            "created_at": "2026-06-23T10:02:35.062439"
+          },
+          "chunk_id": 2
+        },
+        {
+          "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+          "similarity": 0.4737105369567871,
+          "raw_similarity": 0.3487105369567871,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "60c507e5",
+            "char_length": 896,
+            "word_count": 150,
+            "created_at": "2026-06-23T10:02:35.062100"
+          },
+          "chunk_id": 0
+        },
+        {
+          "text": "Compassionate leave for pet bereavement: 1 day 1.5 Additional Leave Types\nJury Duty Leave: Unlimited paid leave for jury service with court documentation required. Military Leave: Up to 5 years unpaid leave for military service with position protection per USERRA. Volunteer Leave: 2 paid days per year for approved community service. Study Leave: Up to 5 days paid leave for professional examinations. Sabbatical Leave: After 7 years continuous service, employees may apply for 3-6 months unpaid sabbatical. Section 2: Confidentiality and Data Protection\n2.1 HR Policy Confidentiality\nHR policies are confidential and proprietary information of the company. Unauthorized distribution, copying, or sharing of HR documents is strictly prohibited. Employees found violating confidentiality policies may face disciplinary action up to and including termination.",
+          "similarity": 0.45095504164695743,
+          "raw_similarity": 0.2859550416469574,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "d653a055",
+            "char_length": 858,
+            "word_count": 122,
+            "created_at": "2026-06-23T10:02:35.062479"
+          },
+          "chunk_id": 3
+        }
+      ]
+    }
+  },
+  "032c7cbf703843896252cf6f8d514f6972bd0dcba1493c88048c743a97e1bfc4": {
+    "created_at": "2026-06-25T09:18:40.594509",
+    "question": "annual leave days",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+      "confidence": 0.9753466892242432,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 3.288708209991455,
+      "sources": [
+        {
+          "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+          "similarity": 0.9753466892242432,
+          "raw_similarity": 0.7203466892242432,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "60c507e5",
+            "char_length": 896,
+            "word_count": 150,
+            "created_at": "2026-06-23T10:02:35.062100"
+          },
+          "chunk_id": 0
+        },
+        {
+          "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+          "similarity": 0.8219186449050904,
+          "raw_similarity": 0.6569186449050903,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "7df9a47c",
+            "char_length": 980,
+            "word_count": 146,
+            "created_at": "2026-06-23T10:02:35.062307"
+          },
+          "chunk_id": 1
+        },
+        {
+          "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+          "similarity": 0.7885567331314087,
+          "raw_similarity": 0.6235567331314087,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f4f50c37",
+            "char_length": 934,
+            "word_count": 159,
+            "created_at": "2026-06-23T10:02:35.474869"
+          },
+          "chunk_id": 210
+        },
+        {
+          "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+          "similarity": 0.7616073274612427,
+          "raw_similarity": 0.5966073274612427,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "519fbbfc",
+            "char_length": 985,
+            "word_count": 155,
+            "created_at": "2026-06-23T10:02:35.474983"
+          },
+          "chunk_id": 215
+        },
+        {
+          "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+          "similarity": 0.7324005746841431,
+          "raw_similarity": 0.5674005746841431,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "932abf61",
+            "char_length": 954,
+            "word_count": 169,
+            "created_at": "2026-06-23T10:02:35.474848"
+          },
+          "chunk_id": 209
+        }
+      ]
+    }
+  },
+  "00f3b1a1dfb0a69dcecb9f56f2094d77d6550c1cbe049df1533024d110becd4e": {
+    "created_at": "2026-06-25T09:18:49.315123",
+    "question": "how can i apply for them",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nI could not find enough clear policy information to answer this question confidently.\n\nDetails:\n- Please ask about a more specific HR or IT policy topic.\n- I will not show raw document text or unreadable OCR excerpts.\n\nAdditional Notes:\n- For urgent or personal cases, please contact HR or IT directly.",
+      "confidence": 0.42671939969062805,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 2.128718376159668,
+      "sources": [
+        {
+          "text": "ومﺮ إﺟﺮاءات اﳌﻘﺎﺑﻠﺔ ﺑﺎﻟﺨﻄﻮات اﻟﺘﺎﻟﻴﺔ\n:  \n1- ﺗﺤﺪﻳﺪ ﻋﺪد أﻓﺮاد اﻟﻌﻴﻨﺔ اﻟﺬﻳﻦ ﺳﻮف ﺗﺠﺮي ﻣﻌﻬﻢ اﳌﻘﺎﺑﻠﺔ\n   . 2- \n ،ﺗﺤﺪﻳﺪ ﺻﻔﺎت اﻷﻓﺮاد اﻟﺬﻳﻦ ﺳﺘﺠﺮي ﻣﻌﻬﻢ اﳌﻘﺎﺑﻠﺔ ﻣﻦ ﺣﻴﺚ اﻟﺴﻦ\nاﳌﺮﻛﺰ اﻟـﻮﻇ\nﻴﻔﻲ، ﻣﺴـﺘﻮى اﻟـﺪﺧﻞ، ﻃﺒﻴﻌـﺔ \nاﳌﻬﻨﺔ، وﻏر ذﻟﻚ ﻣﻦ اﻟﺼﻔﺎت اﻟﺘﻲ ﻳﺤﺪدﻫﺎ \nﻣﺠﺮى اﳌﻘﺎﺑﻠﺔ\n \nوﻓﻘﺎ ﻟﻄﺒﻴﻌﺔ \nاﳌﻘﺎﺑﻠﺔ\n   . 3- \n ﺗﺤﺪﻳﺪ أﺳاء اﻷﻓﺮاد أو اﻟﴩﻛﺎت اﻟﺬﻳﻦ ﻳﻨﻄﺒﻖ ﻋﻠﻴﻬﻢ اﻟﺘﺤﺪﻳﺪ اﻟﺴﺎﺑﻖ وأﻣﺎﻛﻦ ﺗﻮاﺟـﺪاﻫﻢ أو ﻋﻨـﺎوﻳﻨﻬﻢ وأرﻗـﺎم\nﻫﻮاﺗﻔﻬﻢ وﻏر ذﻟﻚ ﻣﻦ اﳌﻌﻠﻮﻣﺎت اﻟﴬورﻳﺔ\n   . 4- \n اﻹﺗﺼﺎل ﺑﺎﻷ\nﺷﺨﺎص اﳌﻌﻨﻴن اﻟﺬﻳﻦ ﺳﺘﺠﺮي ﻣﻌﻬﻢ اﳌﻘﺎﺑﻠﺔ ﻟﺘﺤﺪﻳﺪ اﳌﻮاﻋﻴﺪ اﳌﻘﱰﺣﺔ ﻟﻠﻘﺎﺋﻬﻢ وﻣﺪة اﳌﻘﺎﺑﻠﺔ\n   . 5- اﻹﻋﺪاد ﻟﻠﻤﻘﺎﺑﻠﺔ ﻣﻦ ﺣﻴﺚ وﺿﻊ اﻷﺳﺌﻠﺔ وﺗﺤﺪﻳﺪ اﳌﻮاﺿﻴﻊ اﻟﺘﻲ ﺳﻴﺘﻢ اﻟﺘﺤﺪث ﻋﻨﻬﺎ وﻣﻨﺎﻗﺸﺘﻬﺎ\n   . 6- \n اﻟﺘﺤﻀر اﳌﺴﺒﻖ ﻟﻸدوات اﳌﺴﺘﺨﺪﻣﺔ ﰲ اﳌﻘﺎﺑﻠﺔ ﻣﺜﻞ أﺟﻬﺰة اﻟﺘﺴﺠﻴﻞ أو اﻟﺘﺼﻮﻳﺮ أو\nﻏر ذﻟﻚ ﻣﻦ اﻷدوات\n   . 7- \n ﺗﺪرﻳﺐ ﺟﺎﻣﻌﻲ اﳌﻌﻠﻮﻣﺎت اﻟﺬﻳﻦ ﺳﻴﺠﺮون اﳌﻘﺎﺑﻠﺔ ﻋﲆ إﺟﺮاءات اﳌﻘﺎﺑﻠﺔ وﻛﻴﻔﻴﺔ اﻟﺘﺤﻀر ﻟﻬﺎ وإﺟﺮاءﻫﺎ ﻣﻦ أﺟﻞ\nاﻟﺨﺮوج ﺑﺄﻓﻀﻞ اﻟﻨﺘﺎﺋﺞ واﻟﺤﺼﻮل ﻋﲆ اﳌﻌﻠﻮﻣﺎت اﳌﺮاد ﺟﻤﻌﻬﺎ\n   .",
+          "similarity": 0.42671939969062805,
+          "raw_similarity": 0.48671939969062805,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "28f1468b",
+            "char_length": 870,
+            "word_count": 144,
+            "created_at": "2026-06-23T10:02:36.522683"
+          },
+          "chunk_id": 428
+        },
+        {
+          "text": "٥\nمسوغات التعيين:\n :يلزم على المرشح لشغل وظيفة شاغرة تقديم مسوِّغات التعيين؛ وهي كالتالي\n•  \n.أصل شهادة الميالد المُمَيكنة\n•  \n.أصل المؤهل الدراسيّ أو مستخرَج رسميّ منه\n•  \n.)أصل شهادة الموقف من الخدمة العسكرية (للذكور\n•  \n.) شهادة القيد بمكتب القوى العاملة المختص (كعب العمل\n•  \n َّصحيفة الحالة الجنائية (الفيش) حديثة باسم المؤسسة ولم يمر\nعليه أكثر من ثالثة أشهر. •  \n.4 × ) صورة شخصية حديثة مقاس ٦4( عدد\n•  \n.صورة لبطاقة الرقم القوميّ سارية\n•  \n.شهادة نهاية الخدمة بالعمل السابق (إخالء طرف) إن وجِ دت\n•  \n.أصل النموذج (٦) تأمينات لمن سبق لهم العمل\n•  \n.الترخيص في العمل إن كان المرشح من الأجانب\n•  \n.صور من شهادات الخبرة السابقة إن وجدت\n•  \n.صور من شهادات الدورات التَّدريبيَّة إن وجدت\n•  \n.)صورة رخصة (للسائقين\n•  \n.)شهادة قياس المهارة (للوظائف الفنية\n•  \n.شهادة قيد بالنقابات المهنية التي يطالب بها القانون\n•  \n شهادة  صحية  للعاملين  بوظائف  تتعلق  بالأطعمة  والمشروبات\nوالأغذية  (كذلك  عمال  البوفيه  والكانتين).",
+          "similarity": 0.3951275968551636,
+          "raw_similarity": 0.4551275968551636,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_arabic 1",
+            "file_name": "HR_Policies_arabic 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.374524",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 29,
+            "chunk_hash": "fbc9df65",
+            "char_length": 918,
+            "word_count": 153,
+            "created_at": "2026-06-23T10:02:35.381577"
+          },
+          "chunk_id": 86
+        },
+        {
+          "text": "اﻟﻔﺼﻞ اﻟﺮاﺑﻊ\n:  \nاﻟﺘﻮﻇﻴﻒ \n \n \n \n135\n \n \nاﻟﺸﻜﻞ رﻗﻢ\n )14\n(  \nﺧﻄﻮات ﻋﻤﻠﻴﺔ اﻻﺧﺘﻴﺎر\n  \n  \n  \n \n \nوﻓﻴا ﻳﲇ\n ﺳﻨﺘﻨﺎول ﻫﺬه اﻟﺨﻄﻮات ﺑﴚء ﻣﻦ اﻟﺘﻔﺼﻴﻞ\n   :\n دراﺳﺔ ﻃﻠﺒﺎت اﻟﻌﻤﻞ\nاﳌ\nﺠﻤﻌﺔ ﻣﻦ \nﻋﻤﻠﻴﺔ اﻻﺳﺘﻘﻄﺎب \n \n ﺗﺠﻬﻴﺰ ﻗﺎمﺔ ﻣﺨﺘﴫة ﻟﻠﻤﺮﺷﺤنShort-\nListing\n  \n اﻻﺗﺼﺎل ﺑﺎﳌﺘﻘﺪﻣن اﳌﺬﻛﻮرﻳﻦ ﰲ اﻟﻘﺎمﺔ\nاﳌﺨﺘﴫة ﻻﺳﺘﻜال وﺛﺎﺋﻘﻬﻢ \n \n إﺟﺮاء اﳌﻘﺎﺑﻠﺔ اﻷوﻟﻴﺔ ﻣﻦ ﻗﺒﻞ إدارة\nاﳌﻮارد اﻟﺒﴩﻳﺔ\n \n اﺟﺮاء اﻻ\nﺧﺘﺒﺎرات \n \n اﳌﻘﺎﺑﻼت اﳌﺘﻌﻤﻘﺔ ﻣﻊ اﻟﺪواﺋﺮ\nاﳌﺴﺘﺨﺪﻣﺔ\n \nاﺧﺘﻴﺎر اﳌﻮﻇﻒ اﻷﻓﻀﻞ\n \nاﻟﻔﺤﺺ اﻟﻄﺒﻲ\n \nاﻟﺒﺪء ﺑﺎﺟﺮاءات اﻟﺘﻌﻴن\n \n اﻟﻈﻬﻮر ﰲ اﻟﻘﺎمﺔ\n \nاﺳﺘﻜال اﻻوراق \n \n  اﺟﺘﻴﺎز اﳌﻘﺎﺑﻠﺔ اﳌﺒﺪﺋﻴﺔ\n  اﻻﺗﺼﺎل ﺑﺎﳌﺮاﺟﻊ واﳌﻌﺮﻓن\n \n اﻟﺘﻮﺻﻴﺔ\n \n ﻧﺠﺎح\n \nﻧﺠﺎح \n \nاﺧﺘﻴﺎر\n \n ﻻﺋﻖ\n \n  \n ﺣﻔﻆ اﳌﻠﻔﺎت\n \nاﻷﻟﻐﺎء ﻣﻦ اﻟﻘﺎمﺔ\n \nﻋﺪم اﺳﺘﻜال اﻹدارﻳﺔ\n \nﻋﺪم اﺟﺘﻴﺎز اﳌﻘﺎﺑﻠﺔ اﳌﺒﺪﺋﻴﺔ\n \nﻋﺪم اﻟﺘﻮﺻﻴﺔ\n \nﻓﺸﻞ\n \nﻓﺸﻞ\n \nﻋﺪم اﻻﺧﺘﻴﺎر\n \nﻏرﻻﺋﻖ",
+          "similarity": 0.38030749797821045,
+          "raw_similarity": 0.44030749797821045,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "f546ca00",
+            "char_length": 725,
+            "word_count": 101,
+            "created_at": "2026-06-23T10:02:36.524452"
+          },
+          "chunk_id": 477
+        },
+        {
+          "text": "وﻟﻬﺬا اﻟﺴﺒﺐ ﻓﺈن اﻟﻐﺎﻟﺒﻴﺔ اﻟﻌﻈﻤﻰ ﻣﻦ اﳌﻨﻈات ﻻ ﺗﻜﺘﻔﻲ ﺑﺎﻟﺴرة اﻟﺬاﺗﻴﺔ ﻟﻠﻤﺘﻘﺪم وﻟﻜﻨﻬﺎ ﺗﴫ ﻋﲆ \nﺗﻌﺒﺌﺔ مﻮذج ﻃﻠﺐ اﻟﺘﻌﻴن واﻟﺘﻲ ﺗﺘﻀﻤﻦ ﻛﺎﻓﺔ اﳌﻌﻠﻮﻣﺎت اﳌﻄﻠﻮﺑﺔ واﻟﻮﺛﺎﺋﻖ اﻟﺜﺒﻮﺗﻴﺔ اﻟ\nﻼزﻣﺔ ﻻرﻓﺎﻗﻬﺎ ﻣﻊ اﻟﻄﻠﺐ\n   . 4 - \n إﺟﺮاء اﳌﻘﺎﺑﻠﺔ اﻷوﻟﻴﺔ ﻣﻦ ﻗﺒﻞ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔPreliminary Interview\n   \n \n \n ﻳﺘﻢ ﰲ ﻫﺬه اﻟﺨﻄﻮة إﺟﺮاء اﳌﻘﺎﺑﻠﺔ اﻷوﻟﻴﺔ ﻣﻦ ﻗﺒﻞ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ وذﻟﻚ ﻟﻠﺘﺄﻛﺪ ﻣﻦ ﻛﺜر ﻣﻦ\nاﻷﻣﻮر اﻟﺘﻲ ﻻ مﻜﻦ ﻣﻌﺮﻓﺘﻬﺎ ﻣﻦ ﺧﻼل ﻃﻠﺐ اﻟﺘﻌﻴن \nوﻻ ﻣﻦ \nﺧﻼل\n \nاﻟﺴرة اﻟﺬاﺗﻴﺔ ﻛﺎﳌﻈﻬﺮ اﻟﻌﺎم واﻟﺸﺨﺼﻴﺔ واﳌﻨﻄﻖ \nﰲ إﻳﺮاد اﻷﻓﻜﺎر وﺗﺮﺗﻴﺒﻬﺎ\n. وﺗﻌﺪ ﺑﻌﺾ اﳌﻨﻈات مﺎذج ﻻﺟﺮاء ﻫﺬه اﳌﻘﺎﺑﻠﺔ واﻋﻄﺎء درﺟﺎت ﻟﻜﻞ ﻋﻨﴫ ﻣﻦ ﻋﻨﺎﴏ \nاﻟﺘﻘﻴﻴﻢ ﳌﺴﺎﻋﺪﺗﻬﺎ ﰲ اﺗﺨﺎذ ﻗﺮار ﺑﺎﺳاء اﻟﺬﻳﻦ مﻜﻨﻬﻢ اﺳﺘﻜال اﺟﺮاءات اﻻﺧﺘﻴﺎر\n   . وأﻣﺎ اﻟﺬﻳﻦ ﻳﻔﺸﻠﻮن ﰲ اﳌﻘﺎﺑ\nﻠﺔ اﻷوﻟﻴﺔ ﻓﺘﺤﻮل ﻃﻠﺒﺎﺗﻬﻢ إﱃ ﺣﻔﻆ اﳌﻠﻔﺎت\n   . اﻟﻔﺼﻞ اﻟﺮاﺑﻊ\n:  \nاﻟﺘﻮﻇﻴﻒ \n \n \n \n137\n \n \n  \n  \n  \n5 - \n اﻻﺗﺼﺎل ﺑﺎﳌﺮاﺟﻊ واﳌﻌﺮﻓنReferences \n   \n \n \n ﺗﺠﺮي إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ اﺗﺼﺎﻻ ﺑﺎﳌﻌﺮﻓن اﻟﺬﻳﻦ ﻛﺎن ﻣﻘﺪﻣﻮا اﻟﻄﻠﺒﺎت ﻗﺪ ارﻓﻘﻮا اﺳاﺋﻬﻢ وﻋﻨﺎوﻳﻨﻬﻢ\nﰲ ﻃﻠﺐ اﻟﺘﻌﻴن وذﻟﻚ ﻟﻼﺳﺘﻔﺴﺎر ﻋﻦ وﺿﻊ ﻣﻘﺪم اﻟﻄﻠﺐ\n.",
+          "similarity": 0.36942970991134644,
+          "raw_similarity": 0.42942970991134644,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "40ad473c",
+            "char_length": 938,
+            "word_count": 155,
+            "created_at": "2026-06-23T10:02:36.524531"
+          },
+          "chunk_id": 479
+        },
+        {
+          "text": "٢\nشروط التعيين:\n:يُشترط في كل متقدم لشغل وظيفة بالمؤسسة ما يلي\n•  \n أن يكون متمتعً ا بجنسية جمهورية مصر العربية. ويجوز الستثناء من شرط الجنسية وتقديم المبررات الكافية لذلك. وفي هذه الحالة يكون التعيين\nبموجب عقد عمل محدد المدة، مع مراعاة اشتراطات توظيف الأجانب المنظمة لذلك والواردة في نظام العمل المعمول به. •  \n.٦) عامًا. ويجوز الستثناء من شرط السن المحدَّ دة مع تقديم المبررات الكافية لذلك0( ) عامًا وأل تزيد على18( أل تقل سنُّ المتقدم عن\n•  \n أن يكون مستوفيًا للمؤهالت العلمية والعملية الالزمة لشغل الوظيفة المتقدم لها طبقًا للتوصيف الوظيفي المعتمد للوظيفة، مع ضرورة تقديم\nالمستندات الأصلية المؤيِّدة لحصوله على تلك المؤهالت. •  \n.أن يكون لئقًا طبيًّا بموجب تقرير طبى معترف به من قِبل المؤسسة\n•  \n أن يكون حسن السير والسلوك وأل يكون قد سبق الحكم عليه في جناية أو جريمة مُخلَّة بالشرف والأمانة، ويكون إثبات ذلك بموجب وثيقة رسمية\nل يتعدى تاريخ إصدارها ثالثة أشهر ميالدية. •  \n.تخضع سلطة الستثناء من أيّ/ كل الشروط المذكورة في البند السابق لالإدارة العليا\n.",
+          "similarity": 0.368735613822937,
+          "raw_similarity": 0.428735613822937,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_arabic 1",
+            "file_name": "HR_Policies_arabic 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.374524",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 29,
+            "chunk_hash": "fafc5e6e",
+            "char_length": 957,
+            "word_count": 165,
+            "created_at": "2026-06-23T10:02:35.381306"
+          },
+          "chunk_id": 79
+        }
+      ]
+    }
+  },
+  "4a62e10851307f4f82802b58b76633fa80989da98f20229a8b68f2f6ce7bd127": {
+    "created_at": "2026-06-25T09:18:59.978570",
+    "question": "can you not see the previous question?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "I couldn't find enough information on this topic in the available documents.\n\nPlease contact HR or IT directly for assistance.",
+      "confidence": 0.0,
+      "mode": "no_information",
+      "match_type": "none",
+      "language": "en",
+      "response_time": 0.0,
+      "sources": []
+    }
+  },
+  "0e2772ab70728f14205a6544233b954e3c414d21114c7adbc676a049c7f31a1d": {
+    "created_at": "2026-06-25T09:34:54.764161",
+    "question": "how can i apply for annual leave",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+      "confidence": 0.8109767699241638,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 3.2869083881378174,
+      "sources": [
+        {
+          "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+          "similarity": 0.8109767699241638,
+          "raw_similarity": 0.5959767699241638,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "60c507e5",
+            "char_length": 896,
+            "word_count": 150,
+            "created_at": "2026-06-23T10:02:35.062100"
+          },
+          "chunk_id": 0
+        },
+        {
+          "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+          "similarity": 0.6298506855964662,
+          "raw_similarity": 0.5048506855964661,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "7df9a47c",
+            "char_length": 980,
+            "word_count": 146,
+            "created_at": "2026-06-23T10:02:35.062307"
+          },
+          "chunk_id": 1
+        },
+        {
+          "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+          "similarity": 0.5850308239459993,
+          "raw_similarity": 0.46003082394599915,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f4f50c37",
+            "char_length": 934,
+            "word_count": 159,
+            "created_at": "2026-06-23T10:02:35.474869"
+          },
+          "chunk_id": 210
+        },
+        {
+          "text": "Compassionate leave for pet bereavement: 1 day 1.5 Additional Leave Types\nJury Duty Leave: Unlimited paid leave for jury service with court documentation required. Military Leave: Up to 5 years unpaid leave for military service with position protection per USERRA. Volunteer Leave: 2 paid days per year for approved community service. Study Leave: Up to 5 days paid leave for professional examinations. Sabbatical Leave: After 7 years continuous service, employees may apply for 3-6 months unpaid sabbatical. Section 2: Confidentiality and Data Protection\n2.1 HR Policy Confidentiality\nHR policies are confidential and proprietary information of the company. Unauthorized distribution, copying, or sharing of HR documents is strictly prohibited. Employees found violating confidentiality policies may face disciplinary action up to and including termination.",
+          "similarity": 0.5844648563861847,
+          "raw_similarity": 0.4194648563861847,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "d653a055",
+            "char_length": 858,
+            "word_count": 122,
+            "created_at": "2026-06-23T10:02:35.062479"
+          },
+          "chunk_id": 3
+        },
+        {
+          "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+          "similarity": 0.577695586681366,
+          "raw_similarity": 0.41269558668136597,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "519fbbfc",
+            "char_length": 985,
+            "word_count": 155,
+            "created_at": "2026-06-23T10:02:35.474983"
+          },
+          "chunk_id": 215
         }
       ]
     }
