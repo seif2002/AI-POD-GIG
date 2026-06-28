@@ -1,5 +1,5 @@
 {
-  "current_chat_id": "dc674bc3d65f",
+  "current_chat_id": "6b5d4a1ddf4c",
   "chats": {
     "f5aab2dbe415": {
       "title": "how many annual leave days",
@@ -4480,7 +4480,7 @@
     "63f5b559e15b": {
       "title": "كم يوم إجازة أمومة أحصل عليه",
       "created_at": "2026-06-24T10:55:21.456306",
-      "updated_at": "2026-06-28T14:53:45.223701",
+      "updated_at": "2026-06-28T19:35:37.158048",
       "messages": [
         {
           "question": "كم يوم إجازة أمومة أحصل عليه",
@@ -7600,6 +7600,465 @@
                 "created_at": "2026-06-23T10:02:35.474869"
               },
               "chunk_id": 210
+            }
+          ],
+          "cached": true
+        }
+      ]
+    },
+    "6b5d4a1ddf4c": {
+      "title": "how many annual leave days",
+      "created_at": "2026-06-28T19:35:44.972276",
+      "updated_at": "2026-06-28T19:36:05.855138",
+      "messages": [
+        {
+          "question": "how many annual leave days",
+          "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+          "timestamp": "2026-06-28T19:35:44.661425",
+          "language": "en",
+          "confidence": 1.0305200862884523,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 0.0,
+          "sources": [
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 1.0305200862884523,
+              "raw_similarity": 0.7755200862884521,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-23T10:02:35.061815",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-23T10:02:35.062100"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.8753109359741211,
+              "raw_similarity": 0.7103109359741211,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-23T10:02:35.061815",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-23T10:02:35.062307"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.8328601503372193,
+              "raw_similarity": 0.6678601503372192,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-23T10:02:35.474869"
+              },
+              "chunk_id": 210
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.7649122858047486,
+              "raw_similarity": 0.5999122858047485,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-23T10:02:35.474983"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+              "similarity": 0.7414721632003785,
+              "raw_similarity": 0.5764721632003784,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "932abf61",
+                "char_length": 954,
+                "word_count": 169,
+                "created_at": "2026-06-23T10:02:35.474848"
+              },
+              "chunk_id": 209
+            }
+          ],
+          "cached": true
+        },
+        {
+          "question": "how many annual leave days",
+          "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+          "timestamp": "2026-06-28T19:35:53.842732",
+          "language": "en",
+          "confidence": 1.0305200862884523,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 0.0,
+          "sources": [
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 1.0305200862884523,
+              "raw_similarity": 0.7755200862884521,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-23T10:02:35.061815",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-23T10:02:35.062100"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.8753109359741211,
+              "raw_similarity": 0.7103109359741211,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-23T10:02:35.061815",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-23T10:02:35.062307"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.8328601503372193,
+              "raw_similarity": 0.6678601503372192,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-23T10:02:35.474869"
+              },
+              "chunk_id": 210
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.7649122858047486,
+              "raw_similarity": 0.5999122858047485,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-23T10:02:35.474983"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+              "similarity": 0.7414721632003785,
+              "raw_similarity": 0.5764721632003784,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "932abf61",
+                "char_length": 954,
+                "word_count": 169,
+                "created_at": "2026-06-23T10:02:35.474848"
+              },
+              "chunk_id": 209
+            }
+          ],
+          "cached": true
+        },
+        {
+          "question": "how many annual leave days",
+          "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+          "timestamp": "2026-06-28T19:35:59.634057",
+          "language": "en",
+          "confidence": 1.0305200862884523,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 0.0,
+          "sources": [
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 1.0305200862884523,
+              "raw_similarity": 0.7755200862884521,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-23T10:02:35.061815",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-23T10:02:35.062100"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.8753109359741211,
+              "raw_similarity": 0.7103109359741211,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-23T10:02:35.061815",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-23T10:02:35.062307"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.8328601503372193,
+              "raw_similarity": 0.6678601503372192,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-23T10:02:35.474869"
+              },
+              "chunk_id": 210
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.7649122858047486,
+              "raw_similarity": 0.5999122858047485,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-23T10:02:35.474983"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+              "similarity": 0.7414721632003785,
+              "raw_similarity": 0.5764721632003784,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "932abf61",
+                "char_length": 954,
+                "word_count": 169,
+                "created_at": "2026-06-23T10:02:35.474848"
+              },
+              "chunk_id": 209
+            }
+          ],
+          "cached": true
+        },
+        {
+          "question": "how many annual leave days",
+          "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+          "timestamp": "2026-06-28T19:36:05.577158",
+          "language": "en",
+          "confidence": 1.0305200862884523,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 0.0,
+          "sources": [
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 1.0305200862884523,
+              "raw_similarity": 0.7755200862884521,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-23T10:02:35.061815",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-23T10:02:35.062100"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.8753109359741211,
+              "raw_similarity": 0.7103109359741211,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-23T10:02:35.061815",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-23T10:02:35.062307"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.8328601503372193,
+              "raw_similarity": 0.6678601503372192,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-23T10:02:35.474869"
+              },
+              "chunk_id": 210
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.7649122858047486,
+              "raw_similarity": 0.5999122858047485,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-23T10:02:35.474983"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+              "similarity": 0.7414721632003785,
+              "raw_similarity": 0.5764721632003784,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.473741",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "932abf61",
+                "char_length": 954,
+                "word_count": 169,
+                "created_at": "2026-06-23T10:02:35.474848"
+              },
+              "chunk_id": 209
             }
           ],
           "cached": true
