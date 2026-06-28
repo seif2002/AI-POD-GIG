@@ -2226,5 +2226,364 @@
         }
       ]
     }
+  },
+  "c2898bf4617483eeb158c132d40c46896b2040313515e880524cca7eb7c187de": {
+    "created_at": "2026-06-25T10:19:15.563637",
+    "question": "how many annual leave days",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nYour annual leave entitlement depends on your years of service.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nAccrual and Carryover:\n- **Accrual:** Annual leave accrues at a rate of 1.75 days per month of service.\n- **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\nAdditional Notes:\n- Unused annual leave may be carried over only within the limits stated in the policy.",
+      "confidence": 1.0305200862884523,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 4.288201570510864,
+      "sources": [
+        {
+          "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+          "similarity": 1.0305200862884523,
+          "raw_similarity": 0.7755200862884521,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "60c507e5",
+            "char_length": 896,
+            "word_count": 150,
+            "created_at": "2026-06-23T10:02:35.062100"
+          },
+          "chunk_id": 0
+        },
+        {
+          "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+          "similarity": 0.8753109359741211,
+          "raw_similarity": 0.7103109359741211,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "7df9a47c",
+            "char_length": 980,
+            "word_count": 146,
+            "created_at": "2026-06-23T10:02:35.062307"
+          },
+          "chunk_id": 1
+        },
+        {
+          "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+          "similarity": 0.8328601503372193,
+          "raw_similarity": 0.6678601503372192,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f4f50c37",
+            "char_length": 934,
+            "word_count": 159,
+            "created_at": "2026-06-23T10:02:35.474869"
+          },
+          "chunk_id": 210
+        },
+        {
+          "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+          "similarity": 0.7649122858047486,
+          "raw_similarity": 0.5999122858047485,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "519fbbfc",
+            "char_length": 985,
+            "word_count": 155,
+            "created_at": "2026-06-23T10:02:35.474983"
+          },
+          "chunk_id": 215
+        },
+        {
+          "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+          "similarity": 0.7414721632003785,
+          "raw_similarity": 0.5764721632003784,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "932abf61",
+            "char_length": 954,
+            "word_count": 169,
+            "created_at": "2026-06-23T10:02:35.474848"
+          },
+          "chunk_id": 209
+        }
+      ]
+    }
+  },
+  "2f2bf7ecadbd0e5829b75e8af9b49b683d6ba2fb9d66ba7883276dce4edc05dc": {
+    "created_at": "2026-06-25T10:21:25.774106",
+    "question": "الاجازات المرضية؟",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "الإجابة المباشرة:\nتستحق إجازة سنوية وإجازة مرضية وأيام راحة أسبوعية وشهرية حسب ما ينطبق عليك.\n\nالتفاصيل:\nالإجازة السنوية:\n- 21 يوماً سنوياً للموظفين من 0 إلى 2 سنة خدمة.\n- 25 يوماً سنوياً للموظفين من 3 إلى 5 سنوات خدمة.\n- 30 يوماً سنوياً للموظفين من 6 إلى 10 سنوات خدمة.\n- 35 يوماً سنوياً للموظفين أكثر من 10 سنوات خدمة.\n\nالإجازة المرضية:\n- 10 أيام سنوياً للمرض الشخصي أو المواعيد الطبية.\n\nأيام الراحة الأسبوعية:\n- يوم الأحد هو يوم الراحة الأسبوعية.\n- السبت الثاني من كل شهر هو يوم راحة أيضاً.\n\nملاحظات إضافية:\n- يمكن للإدارة إلغاء الراحة الأسبوعية حسب متطلبات العمل.\n- لا توفر السياسة إجمالياً موحداً يجمع كل الإجازات وأيام الراحة في رقم واحد.",
+      "confidence": 0.47170070171356204,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "ar",
+      "response_time": 4.236082553863525,
+      "sources": [
+        {
+          "text": "................................................................................................................................................................................ ................................................................................................................................................................................ Health Information   معلومات طبية\nهل تعاني من أيّ إصابات أو حالت مرضية؟\nDo you suffer from any physical disability, hearing or vision impairment? No /           □ لYes / □ نعم\nPlease Specify  يرجى التوضيح\n................................................................................................................................................................................ ................................................................................................................................................................................",
+          "similarity": 0.47170070171356204,
+          "raw_similarity": 0.436700701713562,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_arabic 1",
+            "file_name": "HR_Policies_arabic 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.374524",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 29,
+            "chunk_hash": "82db91fe",
+            "char_length": 912,
+            "word_count": 38,
+            "created_at": "2026-06-23T10:02:35.381941"
+          },
+          "chunk_id": 102
+        },
+        {
+          "text": "ومﺎ ان اﻟﻌﻼج اﻟﻄﺒﻲ أﺻﺒﺢ ﰲ ﻏﺎﻟﺒﻴﺔ دول اﻟﻌﺎم مﺜﻞ ﻋﺒﺌﺎ ﻣﺎﻟﻴﺎً ﻛﺒراً \nﻋﲆ اﳌﻮارد اﻟﺒﴩﻳﺔ ﰲ اﻟﻌﻤﻞ، ﻓﺈن اﻟﺘﺄﻣن اﻟﺼﺤﻲ ﻳﺄﺧﺬ ﻣﻜﺎﻧﺔ ﻛﺒرة \nﻣﻦ اﻫﺘام ﻫﺬه اﳌﻮارد\nو ﻓﺄ  . ل ﳾء ﻳﺴﺄﻟﻪ \nاﻟﻔﺮد اﳌﺴﺘﻘﻄﺐ ﻟﻠﺘﻌﻴن ﰲ اﳌﻨﻈﻤﺔ ﻫﻮ\n   :\nﻫﻞ ﻟﺪى اﳌ\nﻨﻈﻤﺔ ﺗﺄﻣن ﺻﺤﻲ؟ \n  \n \n \nوﺗﻘﺪم ﺧﺪﻣﺔ اﻟﺘﺄﻣن اﻟﺼﺤﻲ ﻟﻠﻌﺎﻣﻠن ﻋﺎدة، ﻋﲆ ﺷﻜﻞ ﻋﻘﺪ ﺗﺄﻣن ﺟاﻋﻲ ﺗﱪﻣﻪ اﳌﻨﻈﻤﺔ ﻣﻊ إﺣﺪى \nﴍﻛﺎت اﻟﺘﺄﻣن، ﻟﺘﻐﻄﻲ ﻧﻔﻘﺎت اﻟﻌﻼج اﻟﻄﺒﻲ ﻟﻠﻌﺎﻣﻠن ﻟﺪﻳﻬﺎ، ﺣﻴﺚ ﺗﻘﻮم ﴍﻛﺔ اﻟﺘﺄﻣن اﳌﺘﻌﺎﻗﺪ ﻣﻌﻬﺎ ﺑﺎﻻﺗﻔﺎق ﻣﻊ \nﻣﺠﻤﻮﻋﺔ أﻃﺒﺎء ﻣﻦ ﻣﺨﺘﻠﻒ اﻟﺘﺨﺼﺼﺎت وﻋﺪد ﻣﻦ اﳌﺴﺘﺸﻔﻴﺎ\nت ودور اﻷﺷﻌﺔ وﻣﺨﺘﱪات ﺗﺤﺎﻟﻴﻞ ﻃﺒﻴﺔ وﺻﻴﺪﻟﻴﺎت، \nﻣﻦ اﺟﻞ ﺗﻘﺪﻳﻢ اﻟﻌﻼج اﻟﻄﺒﻲ ﻟﻠﻌﺎﻣﻠن\n. وﺗﻌﺪ ﴍﻛﺔ اﻟﺘﺄﻣن اﳌﺘﻌﺎﻗﺪ ﻣﻌﻬﺎ ﻋﺎدة ﻗﺎمﺔ ﺑﺄﺳاء ﻫ\nﺬه اﻟﺠﻬﺎت اﻟﻄﺒﻴﺔ \nوﺗﻌﻤﻤﻬﺎ ﻋﲆ اﻟﻌﺎﻣﻠن\n \nﻟﻼﻟﺘﺰام ﺑﻬﺎ ﻣﻦ ﻗﺒﻠﻬﻢ\n. وﻗﺴﻂ اﻟﺘﺄﻣن اﻟﺼﺤﻲ إﻣﺎ أن ﺗﻐﻄﻴﺔ اﳌﻨﻈﻤﺔ ﺑﺎﻟﻜﺎﻣﻞ، أو ﺗﺴﺎﻫﻢ \nﺑﺘﻐﻄﻴ\nﺔ ﺟﺰء ﻣﻨﻪ واﻟﺠﺰء اﻵﺧﺮ ﺣﺴﺐ \nاﻟﻘﻮاﻧن اﻟﺴﺎﺋﺪة ﻓﻴﻪ\n   . وﺗﺨﺘﻠﻒ اﻻﻗﺴﺎط اﳌﺪﻓﻮﻋﺔ ﻟﻠﺘﺄﻣن اﻟﺼﺤﻲ وﻓﻖ ﻃﺒﻴﻌﺔ اﻟﻌﻤﻞ، ﺣﻴﺚ \nﺗﺪل اﻻﺣﺼﺎءات ﻋﲆ أن\n 38\n %\n ﻣﻦ أﺻﺤﺎب اﻟﻴﺎﻗﺔ اﻟﺰرﻗﺎء\n  مﺖ\nﺗﻐﻄﻴﺘﻬﻢ مﺰاﻳﺎ اﻟﺘﺄﻣن اﻟﺼﺤﻲ، 25\n %\n ﻣﻦ اﳌﻬﻨﻴن واﻟﻔﻨﻴن ﻣﻘﺎرﻧﺔ ﺑـ28\n %\n ﻣﻦ\nاﻟﻜﺘﺒﺔ وﻣﻮﻇﻔﻲ اﳌﺒﻴﻌﺎت\n م\nﺖ ﺗﻐﻄﻴﺘﻬﻢ\n \nﻛﺬﻟﻚ\n)12\n(.",
+          "similarity": 0.4682336783409119,
+          "raw_similarity": 0.43323367834091187,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "418a147b",
+            "char_length": 998,
+            "word_count": 183,
+            "created_at": "2026-06-23T10:02:36.529823"
+          },
+          "chunk_id": 625
+        },
+        {
+          "text": ")4\n (\n اﻟﻜﺒﻴﴘ، ﻋﺎﻣﺮ\nﺧﻀر، \nإدارة اﳌﻮارد اﻟﺒﴩﻳﺔ ﰲ اﻟﺨﺪﻣﺔ اﳌﺪﻧﻴﺔ\n، اﻟﻘﺎﻫﺮة، اﳌﻨﻈﻤﺔ اﻟﻌﺮﺑﻴـﺔ ﻟﻠﺘﻨﻤﻴـﺔ اﻹدارﻳـﺔ، ﺑﺤـﻮث ودراﺳـﺎت، 2005\n ، ص\n223\n . اﻟﻔﺼﻞ\nاﻟﺤﺎدي ﻋﴩ\n: \nاﻟﺼﺤﺔ واﻟﺴﻼﻣﺔ اﳌﻬﻨﻴﺔ\n   \n \n \n369\n \n \n  \n \n وﻣﻦ ﻧﺎﻓﻠﺔ اﻟﻘﻮل أن ردود اﻟﻔﻌﻞ اﻟﻌﻨﻴﻔﺔ ﻟﺒﻌﺾ اﻟﻌﺎﻣﻠن واﻟﺘﻬﺪﻳﺪ اﻟﺸﻔﻮي واﳌﻴﻞ ﻟﺘﺨﺮﻳﺐ اﳌﻤﺘﻠﻜ\nﺎت \nﻛﻠﻬﺎ ﺗﻌﺘﱪ ﻣﺴﺒﺒﺎت ﻟﻠﺤﻮادث واﻹﺻﺎﺑﺎت اﻟﺠﺴﺪﻳﺔ واﻟﻨﻔﺴﻴﺔ، ﻣا ﻳﺸﻜﻞ ﻣﺨﺎﻃﺮ إﺿﺎﻓﻴﺔ ﰲ اﻟﻌﻤﻞ\n   . 4 - أﻣﺮاض اﳌﻬﻨﺔ\n  \n \n \nاﻟﻜﺜر ﻣﻦ اﻷﻣﺮاض اﳌﺮﺗﺒﻄﺔ ﺑﺎﳌﻬﻦ ﺗﺼﻴﺐ أﺻﺤﺎب اﳌﻬﻦ وﺗﺴﺒﺐ ﻣﺸﻜﻼت ﻟﻬﻢ وﻟﻠﻤﻨﻈات اﻟﺘﻲ \nﻳﻌﻤﻠﻮن ﻟﺪﻳﻬﺎ\n. ﻓﺎﻟﺬﻳﻦ ﻳﻌﻤﻠﻮن ﰲ ﻣﺼﺎﰲ اﻟﻨﻔﻂ وﴍﻛﺎت اﻟﺒﱰوﻛﻴاوﻳﺎت و \nاﳌﻨﺎﺟﻢ، وﰲ ﻣﺼﺎﻧﻊ اﻟﺤﺪﻳﺪ واﻟﺮﺻﺎص \nواﻟﺒﻼﺳﺘﻴﻚ، وﻣﺼﻮري اﻷﺷﻌﺔ ﰲ اﳌﺴﺘﺸﻔﻴﺎت، واﻟﺪﻫﺎﻧن، ﻳﺘﻌﺮﺿﻮن ﳌﻮاد ﺧﻄﺮة وإﺷﻌﺎﻋﺎت ﻗﺪ ﻳﻜﻮن ﻟﻬﺎ آﺛﺎر ﺳﻴﺌﺔ \nوﻣﺴﺒﺒﺔ ﻷﻣﺮاض ﻣﻌﻴﻨﺔ ﻛﺄﻣﺮاض اﻟﻜﺒﺪ، واﻟﺮﺋﺔ، وﴎﻃﺎن اﻟﻜﺒﺪ، وأﻣﺮاض اﻟﺪم، واﻟﺮﺑﻮ اﻟﺸﻌﺒﻲ، وﻏرﻫﺎ ﻣﻦ أﻣﺮاض \nاﻟﺠﻬﺎز اﻟﺘﻨﻔﴘ واﻟﺠﻬ\nﺎز اﻟﻬﻀﻤﻲ\n   .",
+          "similarity": 0.45719489812850955,
+          "raw_similarity": 0.4221948981285095,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "fc433cd4",
+            "char_length": 806,
+            "word_count": 130,
+            "created_at": "2026-06-23T10:02:36.538982"
+          },
+          "chunk_id": 875
+        },
+        {
+          "text": "ب- ﺗﺄﻣن إﺻﺎﺑﺎت اﻟﻌﻤﻞ واﻷﻣﺮاض اﳌﻬﻨﻴﺔ\n  \n \n \nﺗﺸﻤﻞ ﺧﺪﻣﺎت ﻫﺬا اﻟﺠﺎﻧﺐ ﻣﻦ اﻟﺘﺄﻣن دﻓﻊ ﺗﻜﺎﻟﻴﻒ اﻟﻌﻨﺎﻳﺔ اﻟﻄﺒﻴﺔ اﻟﺘﻲ ﺗﺴﺘﻠﺰﻣﻬﺎ اﻟﺤﺎﻟﺔ اﳌﺮﺿﻴﺔ \nﻟﻠﻤﺼﺎب مﺎ ﰲ ذﻟﻚ ﺗﻜﺎﻟﻴﻒ اﳌﻌﺎﻟﺠﺔ اﻟﻄﺒﻴﺔ واﻻﻗﺎﻣﺔ ﰲ اﳌﺴﺘﺸﻔﻰ وﻧﻔﻘﺎت اﻻﻧﺘﻘﺎل\n. ﻛا ﺗﺸﻤﻞ ﻛﺬﻟﻚ دﻓﻊ اﻻﺟﻮر \nواﻟﺮواﺗ\nﺐ ﰲ ﺣﺎﻟﺔ ﻋﺪم ﻗﺪرة اﳌﺼﺎب ﻋﲆ اﻟﻌﻤﻞ\n. وﺗﺮﻓﻖ اﻟﻜﺜر ﻣﻦ ﻗﻮاﻧن اﻟﻀان اﻻﺟﺘاﻋﻲ ﻗﺎمﺔ ﺑﺎﻷﻣﺮاض \nاﳌﻬﻨﻴﺔ اﳌﻌﺮوﻓﺔ وﺗﻀﻊ وﺻﻔﺎ ﻟﻜﻞ ﻣﻦ ﻫﺬه اﻷﻣﺮاض\n   . ﺟـ- ﺗﺄﻣن اﻟﺒﻄ\nﺎﻟ\nﺔ اﳌﺆﻗﺘﺔ\n   : \nﰲ ﺣﺎﻟﺔ ﺷﻤﻮل اﻟﻀان اﻻﺟﺘاﻋﻲ ﻟﻬﺬا اﻟﺠﺎﻧﺐ ﻣﻦ اﻟﺘﺄﻣن ﻓﺈن اﳌﺆﺳﺴﺔ ﺗﻘﻮم ﺑﺪﻓﻊ ﻧﺴﺒﺔ ﻣﺌﻮﻳﺔ ﻋﺎﻟ\nﻴﺔ \nﻣﻦ أﺟﻮر ورواﺗﺐ اﳌﺆﻣﻦ ﻋﻠﻴﻪ واﻟﺬي ﻓﺼﻞ ﻣﻦ ﻋﻤﻠﻪ ﻷﺳﺒﺎب ﺗﻌﺴﻔﻴﺔ ﻻ ﺗﺘﻌﻠﻖ ﺑﺈﻫاﻟﻪ أو ﺑﺘﺄﺧﺮه ﻋﻦ ﻋﻤﻠﻪ \nﺑﺎﻹﺿﺎﻓﺔ إﱃ ذﻟﻚ ﻗﺪ ﻳﺸﻤﻞ اﻟﻀان ﺧﻄﻄﺎً ﻟﻠﺘﺄﻣن اﻟﺠاﻋﻲ ﻛﺎﻟﺘﺄﻣن اﻟﺠاﻋﻲ ﻋﲆ ﺣﻴﺎة اﳌﻮﻇﻔن م\nﻦ \nﻓﻴﻬﻢ \nاﻟﺠﺪد، ﺑﻐﺾ اﻟﻨﻈﺮ ﻋﻦ وﺿﻌﻬﻢ اﻟﺼﺤﻲ\n. وﰲ ﻫﺬه اﻟﺤﺎﻟﺔ ﺗﻜﻮن ﻗﻴﻤﺔ \nاﻷ \nﻗﺴﺎط\n \nأﻗﻞ ﻣا ﻟﻮ ﻗﺎم ﻛﻞ ﻣﻮﻇﻒ ﺑﺎﻟﺘﺄﻣن \nﻋﲆ اﻟﺤﻴﺎة ﺑﺸﻜﻞ ﻓﺮدي\n. وﺗﺨﺘﻠﻒ ﻧﺴﺒﺔ ﻣﺴﺎﻫﻤﺔ ﻛﻞ ﻣﻦ اﳌﻨﻈﻤﺔ واﻟﻔﺮد ﰲ ﻫﺬا اﻟﻨﻮع ﻣﻦ ﺧﻄﻂ اﻟﺘﺄﻣن ﺣﻴﺚ ﻗﺪ \nﺗﺪﻓﻊ اﳌﻨﻈﻤﺔ ﻛﺎﻓﺔ أﻗﺴﺎط اﻟﺘﺄﻣن أو ﺟﺰءا ﻣﻨﻬﺎ\n   .",
+          "similarity": 0.45235303401947025,
+          "raw_similarity": 0.4173530340194702,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+            "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:36.495772",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 256,
+            "chunk_hash": "c9a5b441",
+            "char_length": 911,
+            "word_count": 174,
+            "created_at": "2026-06-23T10:02:36.529756"
+          },
+          "chunk_id": 623
+        },
+        {
+          "text": "................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................ هل أجريت عمليات جراحية؟\nHave you undergone a recent surgical operation? No /           □ لYes / □ نعم\nPlease Specify  يرجى التوضيح\n...............................................................................................................................................................................",
+          "similarity": 0.44663149476051334,
+          "raw_similarity": 0.4116314947605133,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_arabic 1",
+            "file_name": "HR_Policies_arabic 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.374524",
+            "source": "Internal Documents",
+            "language": "ar",
+            "chunk_id": 29,
+            "chunk_hash": "f405ce54",
+            "char_length": 837,
+            "word_count": 26,
+            "created_at": "2026-06-23T10:02:35.381956"
+          },
+          "chunk_id": 103
+        }
+      ]
+    }
+  },
+  "197d180d72691af4fee9246aaecce668ccca402f1e81d42b5af3b1c9b7c0479a": {
+    "created_at": "2026-06-25T13:43:08.116614",
+    "question": "how many days off do i get?",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "Direct Answer:\nYou are entitled to annual leave, sick leave, weekly offs, and the monthly 2nd Saturday off where applicable.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nSick Leave:\n- 10 days per year for personal illness or medical appointments.\n\nWeekly Offs:\n- Sunday is the weekly off day.\n- The 2nd Saturday of every month is also off.\n\nAdditional Notes:\n- Weekly offs may be cancelled by management depending on business requirements.\n- The policy does not provide one combined annual total for all leave days and weekly/monthly offs.",
+      "confidence": 0.7364352464675904,
+      "mode": "ai_enhanced",
+      "match_type": "exact_match",
+      "language": "en",
+      "response_time": 5.023532867431641,
+      "sources": [
+        {
+          "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+          "similarity": 0.7364352464675904,
+          "raw_similarity": 0.6614352464675903,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "2715a9c8",
+            "char_length": 995,
+            "word_count": 177,
+            "created_at": "2026-06-23T10:02:35.475008"
+          },
+          "chunk_id": 216
+        },
+        {
+          "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+          "similarity": 0.6509732723236085,
+          "raw_similarity": 0.5759732723236084,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "7df9a47c",
+            "char_length": 980,
+            "word_count": 146,
+            "created_at": "2026-06-23T10:02:35.062307"
+          },
+          "chunk_id": 1
+        },
+        {
+          "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+          "similarity": 0.6240810871124268,
+          "raw_similarity": 0.5490810871124268,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR data 1",
+            "file_name": "HR data 1.txt",
+            "file_type": "txt",
+            "ingested_at": "2026-06-23T10:02:35.061815",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 0,
+            "chunk_hash": "60c507e5",
+            "char_length": 896,
+            "word_count": 150,
+            "created_at": "2026-06-23T10:02:35.062100"
+          },
+          "chunk_id": 0
+        },
+        {
+          "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+          "similarity": 0.6187421584129333,
+          "raw_similarity": 0.5037421584129333,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "519fbbfc",
+            "char_length": 985,
+            "word_count": 155,
+            "created_at": "2026-06-23T10:02:35.474983"
+          },
+          "chunk_id": 215
+        },
+        {
+          "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+          "similarity": 0.5615894615650178,
+          "raw_similarity": 0.4865894615650177,
+          "metadata": {
+            "department": "Multi-Department",
+            "document": "HR_Policies_english 1",
+            "file_name": "HR_Policies_english 1.pdf",
+            "file_type": "pdf",
+            "ingested_at": "2026-06-23T10:02:35.473741",
+            "source": "Internal Documents",
+            "language": "en",
+            "chunk_id": 203,
+            "chunk_hash": "f4f50c37",
+            "char_length": 934,
+            "word_count": 159,
+            "created_at": "2026-06-23T10:02:35.474869"
+          },
+          "chunk_id": 210
+        }
+      ]
+    }
+  },
+  "36997e71f8e06ee3bfa8f276aa70f778cf315b165dea3fdbf6fafcdd49eeb2f8": {
+    "created_at": "2026-06-28T14:53:21.976341",
+    "question": "how muhc wood can a wood chuck chuck",
+    "answer_style": "detailed",
+    "result": {
+      "answer": "I couldn't find enough information on this topic in the available documents.\n\nPlease contact HR or IT directly for assistance.",
+      "confidence": 0.0,
+      "mode": "no_information",
+      "match_type": "none",
+      "language": "en",
+      "response_time": 0.0,
+      "sources": []
+    }
   }
 }

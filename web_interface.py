@@ -9,7 +9,7 @@ import sys
 import time
 import json
 import html
-from datetime import datetime
+from datetime import datetime, timedelta
 import hashlib
 import re
 import streamlit.components.v1 as components
@@ -324,6 +324,152 @@ def save_cached_answer(question: str, answer_style: str, ai_pod, result: dict):
         ordered = sorted(cache.items(), key=lambda kv: kv[1].get("created_at", ""))
         cache = dict(ordered[-ANSWER_CACHE_MAX_ITEMS:])
     _save_json(ANSWER_CACHE_PATH, cache)
+
+
+def _parse_timestamp(value):
+    try:
+        return datetime.fromisoformat(str(value)) if value else None
+    except (TypeError, ValueError):
+        return None
+
+
+def _normalize_question_for_stats(question: str) -> str:
+    return re.sub(r"\s+", " ", (question or "").strip().lower())
+
+
+def _load_user_directory() -> dict:
+    users = _load_json("users.json", {})
+    return users if isinstance(users, dict) else {}
+
+
+def _collect_chat_messages_for_dashboard(admin_user: dict) -> list:
+    """Collect saved chat messages, scoped to the admin department when possible."""
+    _ensure_cache_dirs()
+    users = _load_user_directory()
+    admin_department = (admin_user or {}).get("department")
+    messages = []
+
+    for filename in os.listdir(CHAT_SESSIONS_DIR):
+        if not filename.endswith(".json"):
+            continue
+        username = os.path.splitext(filename)[0]
+        user_record = users.get(username, {})
+        user_department = user_record.get("department")
+        if admin_department and user_department and user_department != admin_department:
+            continue
+
+        store = _load_json(os.path.join(CHAT_SESSIONS_DIR, filename), _empty_sessions_store())
+        chats = store.get("chats", {}) if isinstance(store, dict) else {}
+        for chat in chats.values():
+            for message in chat.get("messages", []):
+                if not isinstance(message, dict):
+                    continue
+                item = message.copy()
+                item["_username"] = username
+                item["_department"] = user_department or "Unknown"
+                messages.append(item)
+
+    return messages
+
+
+def _is_no_answer_message(message: dict) -> bool:
+    match_type = str(message.get("match_type", "")).lower()
+    answer = str(message.get("answer", "")).lower()
+    return (
+        match_type in {"none", "error"}
+        or "could not find" in answer
+        or "not enough information" in answer
+        or "لم أتمكن من العثور" in answer
+    )
+
+
+def _render_dashboard_table(rows: list, columns: list):
+    if not rows:
+        return
+    header = "".join(f"<th>{html.escape(column)}</th>" for column in columns)
+    body_rows = []
+    for row in rows:
+        cells = "".join(f"<td>{html.escape(str(row.get(column, '')))}</td>" for column in columns)
+        body_rows.append(f"<tr>{cells}</tr>")
+    st.markdown(
+        f"""
+        <div class="dashboard-table-wrap">
+            <table class="dashboard-table">
+                <thead><tr>{header}</tr></thead>
+                <tbody>{''.join(body_rows)}</tbody>
+            </table>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_admin_dashboard():
+    admin_user = st.session_state.get("user") or {}
+    dated_messages = []
+    for message in _collect_chat_messages_for_dashboard(admin_user):
+        timestamp = _parse_timestamp(message.get("timestamp"))
+        if timestamp:
+            dated_messages.append((timestamp, message))
+
+    now = datetime.now()
+    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    week_start = today_start - timedelta(days=today_start.weekday())
+    month_start = today_start.replace(day=1)
+
+    today_count = sum(1 for ts, _ in dated_messages if ts >= today_start)
+    week_count = sum(1 for ts, _ in dated_messages if ts >= week_start)
+    month_count = sum(1 for ts, _ in dated_messages if ts >= month_start)
+    no_answer_messages = [message for _, message in dated_messages if _is_no_answer_message(message)]
+    cache_hits = sum(1 for _, message in dated_messages if bool(message.get("cached")))
+    cache_hit_rate = (cache_hits / len(dated_messages) * 100) if dated_messages else 0
+
+    st.markdown("### Admin Dashboard")
+    st.caption(f"Department scope: {admin_user.get('department', 'All available departments')}")
+
+    metric_cols = st.columns(5)
+    metric_cols[0].metric("Today", today_count)
+    metric_cols[1].metric("This Week", week_count)
+    metric_cols[2].metric("This Month", month_count)
+    metric_cols[3].metric("No Answer", len(no_answer_messages))
+    metric_cols[4].metric("Cache Hit Rate", f"{cache_hit_rate:.1f}%")
+
+    st.markdown("#### Top 10 Most Common Questions")
+    question_counts = {}
+    question_display = {}
+    for _, message in dated_messages:
+        normalized = _normalize_question_for_stats(message.get("question", ""))
+        if not normalized:
+            continue
+        question_counts[normalized] = question_counts.get(normalized, 0) + 1
+        question_display.setdefault(normalized, message.get("question", "").strip())
+
+    top_questions = sorted(question_counts.items(), key=lambda item: item[1], reverse=True)[:10]
+    if top_questions:
+        _render_dashboard_table(
+            [{"Question": question_display[key], "Count": count} for key, count in top_questions],
+            ["Question", "Count"],
+        )
+    else:
+        st.info("No question data is available for this department yet.")
+
+    st.markdown("#### Questions Asked With No Answer")
+    if no_answer_messages:
+        recent_no_answers = sorted(no_answer_messages, key=lambda item: item.get("timestamp", ""), reverse=True)[:25]
+        _render_dashboard_table(
+            [
+                {
+                    "Time": item.get("timestamp", ""),
+                    "User": item.get("_username", ""),
+                    "Question": item.get("question", ""),
+                    "Match": item.get("match_type", "none"),
+                }
+                for item in recent_no_answers
+            ],
+            ["Time", "User", "Question", "Match"],
+        )
+    else:
+        st.success("No unanswered questions found for this department.")
 
 # --------------------------------------------------
 # Professional Answer Formatter - REAL HTML BULLETS
@@ -954,8 +1100,8 @@ st.markdown("""
 <style>
     .block-container {
         max-width: 980px;
-        height: 100vh;
-        overflow: hidden;
+        min-height: 100vh;
+        overflow: visible;
         padding-top: 1.5rem;
         padding-bottom: 0.8rem;
         color: var(--text-main);
@@ -1006,6 +1152,98 @@ st.markdown("""
         background: var(--button-hover);
         color: #FFFFFF;
         transform: translateX(-50%) translateY(-1px);
+    }
+
+    div[data-testid="stMetric"] {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.85rem 1rem;
+    }
+
+    div[data-testid="stMetric"] label,
+    div[data-testid="stMetric"] [data-testid="stMetricLabel"],
+    div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+        color: var(--text-main) !important;
+    }
+
+    div[data-testid="stMetric"] label,
+    div[data-testid="stMetric"] [data-testid="stMetricLabel"] {
+        opacity: 0.88;
+    }
+
+    div[data-testid="stDataFrame"] {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--surface) !important;
+    }
+
+    div[data-testid="stDataFrame"] * {
+        color: var(--text-main) !important;
+        border-color: var(--border) !important;
+    }
+
+    div[data-testid="stDataFrame"] [role="grid"],
+    div[data-testid="stDataFrame"] [role="row"],
+    div[data-testid="stDataFrame"] [role="columnheader"],
+    div[data-testid="stDataFrame"] [role="gridcell"] {
+        background: var(--surface) !important;
+    }
+
+    div[data-testid="stDataFrame"] [role="columnheader"] {
+        background: var(--surface-soft) !important;
+        color: var(--text-muted) !important;
+        font-weight: 700 !important;
+    }
+
+    div[data-testid="stDataFrame"] canvas,
+    div[data-testid="stDataFrame"] .glideDataEditor {
+        background: var(--surface) !important;
+    }
+
+    .dashboard-table-wrap {
+        width: 100%;
+        max-height: 420px;
+        overflow: auto;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface);
+        margin: 0.5rem 0 1.6rem 0;
+    }
+
+    .dashboard-table {
+        width: 100%;
+        border-collapse: collapse;
+        color: var(--text-main);
+        font-size: 0.92rem;
+    }
+
+    .dashboard-table th,
+    .dashboard-table td {
+        padding: 0.7rem 0.8rem;
+        border-bottom: 1px solid var(--border);
+        border-right: 1px solid var(--border);
+        vertical-align: top;
+        overflow-wrap: anywhere;
+    }
+
+    .dashboard-table th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: var(--surface-soft);
+        color: var(--text-muted);
+        text-align: left;
+        font-weight: 700;
+    }
+
+    .dashboard-table td {
+        background: var(--surface);
+    }
+
+    .dashboard-table tr:last-child td {
+        border-bottom: none;
     }
 
     .chat-scroll::-webkit-scrollbar {
@@ -1739,7 +1977,10 @@ with st.sidebar:
 # --------------------------------------------------
 # Main Area - Only for authenticated users
 # --------------------------------------------------
-tab1 = st.container()
+if check_permission(["admin"]):
+    tab1, dashboard_tab = st.tabs(["Chat", "Admin Dashboard"])
+else:
+    tab1 = st.container()
 
 with tab1:
     history_placeholder = st.empty()
@@ -1878,3 +2119,7 @@ with tab1:
 
             except Exception as e:
                 st.error(f"Error: {str(e)[:200]}")
+
+if check_permission(["admin"]):
+    with dashboard_tab:
+        render_admin_dashboard()
