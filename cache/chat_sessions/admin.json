@@ -1,5 +1,5 @@
 {
-  "current_chat_id": "6b5d4a1ddf4c",
+  "current_chat_id": "de80346afbb7",
   "chats": {
     "f5aab2dbe415": {
       "title": "how many annual leave days",
@@ -4480,7 +4480,7 @@
     "63f5b559e15b": {
       "title": "كم يوم إجازة أمومة أحصل عليه",
       "created_at": "2026-06-24T10:55:21.456306",
-      "updated_at": "2026-06-28T19:35:37.158048",
+      "updated_at": "2026-07-06T14:53:17.459598",
       "messages": [
         {
           "question": "كم يوم إجازة أمومة أحصل عليه",
@@ -4824,6 +4824,131 @@
           "match_type": "none",
           "response_time": 0.0,
           "sources": [],
+          "cached": false
+        },
+        {
+          "question": "hoq mny off dAYS I HAVE",
+          "answer": "You're asking about your leave days!\n\nAs a valued employee of GIG EGYPT LIFE TAKAFUL, you are entitled to a certain number of annual leave days, sick leave days, and weekly offs.\n\nTo confirm your specific leave days, I recommend checking your employee contract or speaking with HR directly. They can provide you with the most up-to-date information on your leave policies and any relevant company policies.\n\nWould you like to ask a specific question about your leave days or company policies?",
+          "timestamp": "2026-07-06T14:37:29.164591",
+          "language": "en",
+          "confidence": 0.30096885800361634,
+          "answer_style": "detailed",
+          "match_type": "none",
+          "response_time": 5.02506160736084,
+          "sources": [],
+          "cached": false
+        },
+        {
+          "question": "WT ARE my hlidays",
+          "answer": "Direct Answer:\nYou are entitled to the following holidays:\n\n* Independence Day (August 15th)\n* Mahatma Gandhi's Birthday (October 2nd)\n* Dussehra (October 12th)\n* Diwali (October 31st)\n* Govardhan Puja (November 2nd)\n* Bhai Duj (November 3rd)\n* New Year's Day (January 1st)\n* Republic Day (January 26th)\n* Holi (March 14th)\n\nAdditionally, you are entitled to a weekly off on Sunday, and the 2nd Saturday of every month is also off.\n\nDetails:\nWeekly Offs:\n* Sunday of the month will be the weekly off.\n* Owing to work exigencies, an employee on an exceptional basis may be expected to work either on a weekly off or on a public holiday.\n* The 2nd Saturday of every month is off.\n\nAttendance Guidelines:\n* All employees are required to mark their attendance on Bio Matric located in the reception area in the morning and evening as they walk in and walkout.\n* Failure to do so might result in an absent marked for the employee for that particular day.\n\nAdditional Notes:\n* Management has the discretion to cancel the weekly off on Sunday in case of exceptional work requirements.\n* The company allows for one hour of lunch break in the day, which can be taken anytime between 1:00 pm and 2:00 pm on a staggered schedule.",
+          "timestamp": "2026-07-06T14:38:25.262170",
+          "language": "en",
+          "confidence": 0.47464952230453494,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 16.342586755752563,
+          "sources": [
+            {
+              "text": "are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No. Holiday \nDate \nDay \n1 \nIndependence Day \n15-Aug 24 \nThursday \n2 \nMahatma Gandhi’s Birthday \n02-Oct 24 \nWednesday \n3 \nDussehra \n12-Oct 24 \nSaturday \n4 \nDiwali \n31-Oct 24 \nThursday \n5 \nGovardhan Puja \n02-Nov 24 \nSaturday \n6 \nBhai Duj \n03-Nov 24 \nSunday \n7 \nNew Year's Day \n01-Jan 25 \nWednesday \n8 \nRepublic Day \n26-Jan 25 \nSunday \n9 \nHoli \n14-Mar 25 \nFriday \n \n \n \n \n \n \nOFFICE MANAGEMENT \n \n \nAddresses of staff \nA list of the addresses of all staff members, including their contact numbers, working in \noffice/section is maintained in the Office/Section. Office Premises \nWhen leaving office, every member of the staff should see that all files, papers, books, \nregisters, etc. in his charge are kept in proper places.",
+              "similarity": 0.47464952230453494,
+              "raw_similarity": 0.4396495223045349,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:30:09.971292",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "0f3f00e1",
+                "char_length": 898,
+                "word_count": 144,
+                "created_at": "2026-07-06T14:30:09.972083"
+              },
+              "chunk_id": 211
+            },
+            {
+              "text": "وﻗﺪ ﺑـﺪأ اﻧﺘﺸـﺎر ﺣﻠﻘـﺎت اﻟﺠـﻮدة ﰲ اﻟﻴﺎﺑـﺎن ﰲ أواﺋـﻞ اﻟﺴـﺘﻴﻨﺎت ﻣـﻦ اﻟﻘـﺮن \nاﻟﻌﴩﻳﻦ، ﺣﻴﺚ أﻋﻴﺪ ﺗﺼـﺪﻳﺮ اﻟﻔﻜـﺮة واﻧﺘﴩـت ﰲ اﻟﻮﻻﻳـﺎت اﳌﺘﺤـﺪة اﻻﻣﺮﻳﻜﻴـﺔ ﰲ اواﺋـﻞ اﻟﺴـﺒﻌﻴﻨﺎت ﻣـﻦ اﻟﻘـﺮن \nاﻟﻌﴩﻳﻦ\n   . وﻳﺬﻛﺮ اﻟﻬﻴﺘﻲ \n)36\n( \n ان اﻫﺘام اﻋﻀﺎء ﺣﻠﻘﺔ اﻟﺠﻮدة ﻳﻨﺼﺐ ﻋﲆ ﺣﻞ اﳌﺸﻜﻼت ذات اﻟﻌﻼﻗﺔ مﻮاﻗﻊ اﻟﻌﻤﻞ\nاﻟﺬي ﻳﻨﺘﻤﻮن إﻟﻴﻪ\n   . ان ﻣﻌﺪل ﺳﺎﻋﺎت اﺟﺘاﻋﺎت ﺣﻠﻘﺎت اﻟﺠﻮدة ﻳﱰاوح ﺑن ﺳﺎﻋﺘن وﺛﻼث ﺳﺎﻋﺎت ﺷﻬﺮﻳﺎ، ﺣﻴﺚ ﺗﻌﻘﺪ ﻫﺬه \nاﻻﺟﺘاﻋﺎت ﻋﺎدة ﺧﺎرج أوﻗﺎت اﻟﺪوام اﻟﺮﺳﻤﻲ وﺧﺎرج ﻣﻮاﻗﻊ اﻟﻌﻤﻞ\n. وﻻ ﻳﺸﱰط ﻟﻨﺠﺎح ﺣ\nﻠﻘـﺎت اﻟﺠـﻮدة وﻓﻌﺎﻟﻴﺘﻬـﺎ \nان ﻳﻜﻮن ﻫﻨﺎك اﻧﺴﺠﺎﻣﺎً ﺑن اﻋﻀﺎءﻫﺎ \n  \n                                                 \n)\n36\n(  اﻟﻬﻴﺘﻲ، ﺧﺎﻟ\nﺪ ﻋﺒﺪ اﻟﺮﺣﻤﻦ، اﳌﺮﺟﻊ اﻟﺴﺎﺑﻖ، ص293\n. إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n  \n \n \n330\n \n \n ﻣﻦ ﺣﻴﺚ اﳌﺴﺘﻮى اﻟﺘﻌﻠﻴﻤﻲ واﳌﺮﻛﺰ اﻻداري واﻟﺨﱪة اﻟﻌﻤﻠﻴـﺔ، وﻗـﺪ ﻳﺸـﱰك ﰲ ﻟﻘـﺎءات ﺣﻠﻘـﺎت اﻟﺠـﻮدة اﳌـﻮردﻳﻦ\nواﳌﻘﺎوﻟن ﺑﺎﻹﺿﺎﻓﺔ إﱃ اﻟﻌﺎﻣﻠن ﺣﻴﺚ ﻳﻌﻘﺪون اﺟﺘاﻋﺎﺗﻬﻢ ﻋﲆ أﺳﺎس ﺗﻄﻮﻋﻲ، ﻣا ﻳﺰﻳﺪ ﻣﻦ مﺎﺳﻚ أﻋﻀﺎء اﻟﻔﺮﻳﻖ\n \nوﺗﺤﺴن ﻓﻌﺎﻟﻴﺔ اﻻﺗﺼﺎل ﻓﻴا ﺑﻴﻨﻬﻢ\n   .",
+              "similarity": 0.36241203784942627,
+              "raw_similarity": 0.42241203784942627,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:30:10.850448",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "04f0d6ae",
+                "char_length": 888,
+                "word_count": 141,
+                "created_at": "2026-07-06T14:30:10.878892"
+              },
+              "chunk_id": 811
+            },
+            {
+              "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+              "similarity": 0.3446030354499817,
+              "raw_similarity": 0.3096030354499817,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:30:09.971292",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "2715a9c8",
+                "char_length": 995,
+                "word_count": 177,
+                "created_at": "2026-07-06T14:30:09.972180"
+              },
+              "chunk_id": 216
+            },
+            {
+              "text": "4\n . .تحديد موعد بدء وانتهاء التدريب\n5\n . .تسجيل الحضور والنصراف الخاص بالمشاركين\n. ٦.تحديد فترة للراحة مع توفير وجبة خفيفة ومشروبات\n7\n . .تقييم المدرب\n                                                                                                                                     تقييم دورة تدريبيَّ ة\n وهو نموذج يُقاس به كفاءة البرامج التَّدريبيَّة ومدى نجاحها في تحقيق الأهداف، ومدى توافر الجودة المطلوبة في العملية التَّدريبيَّة، وفيها يتم تقييم\nالمُحاضِ ر، مكان التدريب، البرنامج التَّدريبيّ ككل، المعلومات المكتسبة من التدريب، تقديم مقترحات خاصة بالدورة، على أن تتم إعادة التقييم إلى إدارة \nالموارد البشرية في خالل فترة ل تتعدى أسبوعًا من تاريخ انتهاء الدورة التَّدريبيَّة. التقييم الدوريّ لجهات التدريب\n1\n . تقوم إدارة تنمية الموارد البشرية بمتابعة الجهات التَّدريبيَّة والتحقق من قيامها بأداء الخدمات التَّدريبيَّة بفاعلية بواسطة التقييمات المقدمة من\nالمُتدرِّبين وتحرير نموذج ”تقييم جهة تدريب (التقييم الدوريّ)” بعد النتهاء من كل دورة تدريبيَّة. 2\n .",
+              "similarity": 0.24615884065628052,
+              "raw_similarity": 0.3061588406562805,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:30:09.887988",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "7df686c5",
+                "char_length": 963,
+                "word_count": 129,
+                "created_at": "2026-07-06T14:30:09.894825"
+              },
+              "chunk_id": 175
+            },
+            {
+              "text": ":  تقييم ربع سنوي\nProbation period:                                                                                            : فترة االختبارMerit:                                         :زيادة سنوية\nUnsatisfactory Performance:                                                                      :أداء غير مُرضيOther:                                       :أسباب أخرى\nالتقييم العام\nGeneral Factor\nتقييم الموظف\nEmployee Rating\nتقييم المدير\nManager Rating\nملحوظه\nRemarks\nإنجاز العمل بالمستوى المطلوب\nAccomplishment of the work according \nto the required level\n5  □  100 – 90      points\n4  □  90 – 80      \n3  □  80 – 70\n2  □  70 – 60\n1  □  below     \n5  □  100 – 90      points\n4  □  90 – 80      \n3  □  80 – 70\n2  □  70 – 60\n1  □  below 60    \nالتعاون مع ومساعدة الزمالء\nCooperation and helping colleagues\n5  □  100 – 90      points\n4  □  90 – 80      \n3  □  80 – 70\n2  □  70 – 60\n1  □  below    \n5  □  100 – 90      points\n4  □  90 – 80      \n3  □  80 – 70\n2  □  70 – 60\n1  □  below 60   \nاإلخالص للشركة والمحافظة على مصالحها\nloyalty to the company and preserving \nits interests\n5  □  100 – 90      points\n4  □  90 – 80      \n3  □  80 – 70\n2  □  70 – 60\n1  □  below    \n5  □  100 – 90      points\n4  □  90 – 80      \n3  □  80 – 70\n2  □  70 – 60\n1  □  below 60",
+              "similarity": 0.23834556579589844,
+              "raw_similarity": 0.29834556579589844,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:30:09.887988",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "90a3eab7",
+                "char_length": 1263,
+                "word_count": 213,
+                "created_at": "2026-07-06T14:30:09.893547"
+              },
+              "chunk_id": 123
+            }
+          ],
           "cached": false
         }
       ]
@@ -7256,7 +7381,7 @@
     "d12899063c8f": {
       "title": "how many days off do i get?",
       "created_at": "2026-06-25T13:43:08.171396",
-      "updated_at": "2026-06-25T13:54:21.745407",
+      "updated_at": "2026-07-06T21:10:20.169290",
       "messages": [
         {
           "question": "how many days off do i get?",
@@ -7483,6 +7608,119 @@
             }
           ],
           "cached": true
+        },
+        {
+          "question": "how many days off do i get?",
+          "answer": "Direct Answer:\nYou are entitled to annual leave, sick leave, and weekly offs.\n\nDetails:\nAnnual Leave:\n- 21 days per year for 0-2 years of service.\n- 25 days per year for 3-5 years of service.\n- 30 days per year for 6-10 years of service.\n- 35 days per year for 10+ years of service.\n\nSick Leave:\n- 10 sick leave days per year for personal illness or medical appointments.\n\nWeekly Offs:\n- Sunday is the weekly off day, but it can be cancelled by management depending on workload.\n- The 2nd Saturday of every month is also off.\n\nAdditional Notes:\n- Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n- Any leave beyond this limit will be forfeited unless special approval is obtained from senior management.\n- Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.\n- The policy does not provide a combined total for all leave days and weekly/monthly offs.",
+          "timestamp": "2026-07-06T14:33:06.949290",
+          "language": "en",
+          "confidence": 0.7364352464675904,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 11.397860288619995,
+          "sources": [
+            {
+              "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+              "similarity": 0.7364352464675904,
+              "raw_similarity": 0.6614352464675903,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:30:09.971292",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "2715a9c8",
+                "char_length": 995,
+                "word_count": 177,
+                "created_at": "2026-07-06T14:30:09.972180"
+              },
+              "chunk_id": 216
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.6509732723236085,
+              "raw_similarity": 0.5759732723236084,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-07-06T14:30:09.625117",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-07-06T14:30:09.625602"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 0.6240810871124268,
+              "raw_similarity": 0.5490810871124268,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-07-06T14:30:09.625117",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-07-06T14:30:09.625558"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.6187421584129333,
+              "raw_similarity": 0.5037421584129333,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:30:09.971292",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-07-06T14:30:09.972159"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.5615894615650178,
+              "raw_similarity": 0.4865894615650177,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:30:09.971292",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-07-06T14:30:09.972065"
+              },
+              "chunk_id": 210
+            }
+          ],
+          "cached": false
         }
       ]
     },
@@ -7609,7 +7847,7 @@
     "6b5d4a1ddf4c": {
       "title": "how many annual leave days",
       "created_at": "2026-06-28T19:35:44.972276",
-      "updated_at": "2026-06-28T19:36:05.855138",
+      "updated_at": "2026-06-30T09:01:42.057176",
       "messages": [
         {
           "question": "how many annual leave days",
@@ -8059,6 +8297,1587 @@
                 "created_at": "2026-06-23T10:02:35.474848"
               },
               "chunk_id": 209
+            }
+          ],
+          "cached": true
+        },
+        {
+          "question": "السلام عليكم ش",
+          "answer": "مرحباً! أنا مساعدك الداخلي للسياسات.\n\nأنا هنا لمساعدتك في العثور على إجابات حول سياسات الشركة بسرعة ودقة. بماذا يمكنني مساعدتك؟",
+          "timestamp": "2026-06-30T08:31:16.448821",
+          "language": "ar",
+          "confidence": 1.0,
+          "answer_style": "detailed",
+          "match_type": "conversational",
+          "response_time": 0.0016911029815673828,
+          "sources": [],
+          "cached": false
+        },
+        {
+          "question": "السلام عليكم عايز اعرف ايه هي ازبل 3 حاجات ممكن تحصلي في الشغل بسبب انتهاك معين للقانون انا عملته ",
+          "answer": "مرحباً! أنا مساعدك الداخلي للسياسات.\n\nأنا هنا لمساعدتك في العثور على إجابات حول سياسات الشركة بسرعة ودقة. بماذا يمكنني مساعدتك؟",
+          "timestamp": "2026-06-30T08:31:55.156399",
+          "language": "ar",
+          "confidence": 1.0,
+          "answer_style": "detailed",
+          "match_type": "conversational",
+          "response_time": 0.00015687942504882812,
+          "sources": [],
+          "cached": false
+        },
+        {
+          "question": "منا سئلتك السؤال ",
+          "answer": "الإجابة المباشرة:\nلم أتمكن من صياغة إجابة عربية مؤكدة من المعلومات المتاحة لهذا السؤال.\n\nالتفاصيل:\n- يرجى إعادة صياغة السؤال بشكل أكثر تحديداً، مثل نوع السياسة أو نوع الإجازة أو إجراء تكنولوجيا المعلومات المطلوب.\n- لن أعرض نصوصاً خاماً أو مقتطفات غير منسقة من المستندات.\n\nملاحظات إضافية:\n- إذا كان الأمر عاجلاً أو خاصاً بحالتك الشخصية، يرجى الرجوع إلى الموارد البشرية أو تكنولوجيا المعلومات للتأكيد.",
+          "timestamp": "2026-06-30T08:32:42.060082",
+          "language": "ar",
+          "confidence": 0.5471809244155884,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 2.931502103805542,
+          "sources": [
+            {
+              "text": "47-50. اﻟﻔﺼﻞ اﻟﺮاﺑﻊ\n:  \nاﻟﺘﻮﻇﻴﻒ \n \n \n \n167\n \n \n \n  \nأﺳﺌﻠﺔ ﻟﻠﻤﻨﺎﻗﺸﺔ\n  \n  \n1 - \n وﺿﺢ ﻣﻦ وﺟﻬﺔ ﻧﻈﺮك ﻣﺎ اﳌﻘﺼﻮد\nﺑﺎﻻﺳﺘﻘﻄﺎب\n   . 2 - ﺑن ﻛﻴﻒ ﺗﺒﺪأ ﻋﻤ\n ﻠﻴﺔ\nاﺳﺘﻘﻄﺎب اﳌﺆﻫﻠن وﻛﻴﻒ ﺗﻨﺘﻬﻲ\n   . 3 - ﻫﻨﺎك ﻧﻮﻋن ﻣﻦ ﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب\n: \nﻣﺼﺎدر داﺧﻠﻴﺔ، وﻣﺼﺎدر ﺧﺎرﺟﻴﺔ، ﻧﺎﻗﺶ اﳌﺼﺎدر اﻟﺪاﺧﻠﻴﺔ ﻟﻼﺳﺘﻘﻄﺎب ﻣﻊ \nﺗﻮﺿﻴﺢ ﻣﺰاﻳﺎﻫﺎ وﻋﻴﻮﺑﻬﺎ\n   . 4 - اﻓﱰض اﻧﻚ ﺗﻘﻮم ﺑﺘﻘﺪﻳﻢ ﻃﻠﺐ ﻟﻠﻌﻤﻞ إﱃ إﺣﺪى اﳌﻨﻈات، ﺣﺎول ﻛﺘﺎﺑﺔ ﺳرﺗﻚ ا\nﻟﺬاﺗﻴﺔ ﻣﻮﺿﺤﺎ ﻓﻴﻬﺎ ﻛﻞ \nاﳌﻌﻠﻮﻣﺎت اﻟﺘﻲ ﺗﻌﺘﻘﺪ أﻧﻬﺎ ﴐورﻳﺔ\n   . 5 - ﻣﻌﺪل اﳌﺘﻘﺪﻣن ﻟﻠﻮﻇﻴﻔﺔ ﻫﻮ أﺣﺪ اﻟﻮﺳﺎﺋﻞ اﳌﺴﺘﺨﺪﻣﺔ ﻟﺘﻘﻴﻴﻢ ﺟﻬﻮد اﻻﺳﺘﻘﻄﺎب\n. وﺿﺢ ذﻟﻚ\n   . 6 - اﴍح ﺑﺈﻳﺠﺎز ﺧﻄﻮات ﻋﻤﻠﻴﺔ اﻻﺧﺘﻴﺎر ﻟﻠﻤﻮارد اﻟﺒﴩﻳﺔ\n   . 7 - \n ﻗﺎرن ﺑن اﺧﺘﺒﺎرات اﻟﺬﻛﺎء واﺧﺘﺒﺎرات اﻻﻧﺠﺎز، واﻋﻂ اﻣﺜﻠﺔ ﻋﲆ ﻛﻞ\nﻣﻨﻬا\n   . 8 - ﻳﻌﺘﱪ\n \nاﺧﺘﺒﺎر\n \nﺳﺒرﻣﺎن أﺣﺪ أﻫﻢ اﻻﺧﺘﺒﺎرات اﻟﺘﻲ ﺗﺴﺘﺨﺪم ﳌﻌﺮﻓﺔ ﻣﻮﺿﻮﻋﻴﺔ ﻫﺬه اﻻﺧﺘﺒﺎرات وﺟﻮدﺗﻬﺎ\n. ﻋﻠﻖ ﻋﲆ \nﻫﺬه اﻟﻌﺒﺎرة\n   . 9 - اذﻛﺮ ﺧﻄﻮات ﻋﻤﻠﻴﺔ اﻟﺘﻌﻴن ﻛﻤﺮﺣﻠﺔ ﻣﻦ ﻣﺮاﺣﻞ اﻟﺘﻮﻇﻴﻒ\n   . 10\n- ﺑن ﻛﻴﻒ مﻜﻦ وﺿﻊ ﺑﺮﻧﺎﻣﺞ ﻟﺘﻮﺟﻴﻪ اﳌﻮﻇﻒ اﻟﺠﺪﻳﺪ\n   . 11\n- \n ﺗﻌﺎي اﺣﺪى اﳌﻨﻈات ﻣﻦ اﺧﺘﻼ\nف ﺛﻘﺎﻓﺎت اﳌﻮﻇﻔن ﻓﻴﻬﺎ\n. ﺑﺼﻔﺘﻚ ﺧﺒراً ﰲ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ، اﻗﱰح ﺑﺮاﻣﺞ \nﺗﺮاﻫﺎ ﻣﻔﻴﺪة ﻹدارة ﻫﺬا اﻟﺘﻨﻮع اﻟﺜﻘﺎﰲ\n   .",
+              "similarity": 0.5471809244155884,
+              "raw_similarity": 0.5121809244155884,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:36.495772",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "1e48adee",
+                "char_length": 1014,
+                "word_count": 186,
+                "created_at": "2026-06-23T10:02:36.526522"
+              },
+              "chunk_id": 532
+            },
+            {
+              "text": "نظام إدارة الموارد البشرية\n(دليل تدريبي وتطبيقي للشركات)\n26\n:أسئلة إرشادية فقط للمقابلة الشخصيَّة\n1\n . .حدثني بشكل عام عن نفسك\n2\n .لماذا تريد أن تترك وظيفتك الحالية ؟ أو لماذا تركت آخر وظيفة لك ؟\n. ٣\nما الخبرة التي تتمتع بها في هذا المجال ؟\n4\n .ماذا تعرف عن منشأتنا ؟\n5\n .لماذا تريد أن تعمل معنا ؟ أو أن تعمل في هذه المنشأة ؟\n. ٦\nما توقعاتك حول الراتب ؟\n7\n .هل تفضل العمل مع المجموعة / فريق العمل ؟\n8\n .من وجهة نظرك، كيف ستكون مصدر قوة أو موظفًا مفيدً ا لمنشأتنا ؟\n9\n . لماذا باعتقادك يجب أن نوظِّفك ؟\n10\n .ما نقاط ضعفك ؟\n11\n .ما نقاط قوتك ؟\n12\n .ما طموحاتك الوظيفية ؟\n1. ٣\nأيهما أهم لديك: العمل أم الراتب ؟\n14\n .ما أكبر أو أهم مشكلة واجهتها مع مديرك أو إدارتك السابقة ؟\n15\n .ما سبب الرغبة بمغادرة وظيفتك الحالية ؟\n1. ٦\nتكلم عن قدرتك عن العمل تحت الضغط ؟\n17\n . هل تستطيع العمل في الأوقات الإضافية أو في أيام الإجازات أو في\nالأوقات المسائية؟\n18\n . هل  أنت  مستعد  لالنتقال  (قد  يكون  لمدينة  أخرى)  لأحد  فروع\nالمنشأة مستقبالً ؟\n19\n .",
+              "similarity": 0.49072763681411746,
+              "raw_similarity": 0.45572763681411743,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.374524",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "84721f86",
+                "char_length": 934,
+                "word_count": 194,
+                "created_at": "2026-06-23T10:02:35.381480"
+              },
+              "chunk_id": 84
+            },
+            {
+              "text": "............................................................................................................................................................................ .ما الأهداف الرئيسة لوظيفتك؟ برجاء الإجابة أدناه، من المفضل الإجابة عن هذا السؤال بعد استكمال هذا الستبيان\n............................................................................................................................................................................ ............................................................................................................................................................................ ............................................................................................................................................................................ ............................................................................................................................................................................",
+              "similarity": 0.48219052314758304,
+              "raw_similarity": 0.447190523147583,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.374524",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "a8b63301",
+                "char_length": 971,
+                "word_count": 22,
+                "created_at": "2026-06-23T10:02:35.380334"
+              },
+              "chunk_id": 49
+            },
+            {
+              "text": "إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n  \n \n \n90\n \n \nأﺳﺌﻠﺔ\n \nﻟﻠﻤﻨﺎﻗﺸﺔ\n  \n  \n1- ﺣﺪد ﻣﺎﻫﻴﺔ ﺗﺨﻄﻴﻂ اﳌﻮارد اﻟﺒﴩﻳﺔ وأﻫﻤﻴﺘﻬﺎ\n   .\n2- ﻟﻮ ﻃﻠﺐ ﻣﻨﻚ ان ﺗﺠﺮي ﺗﺤﻠﻴﻼً رﺑﺎﻋﻴﺎً ﻹدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n. \nﻣﺎ ﻫـﻲ اﻟﺨﻄـﻮات اﻟﺘـﻲ مﻜـﻦ ان ﺗﺘﺒﻌﻬـﺎ ﰲ ﻫـﺬا \nاﳌﺠﺎل\n   .\n3-  ﺢ وﺿ\nﻛﻴﻒ مﻜﻦ ﺗﺤﺪﻳﺪ\n \nاﻟﻄﻠﺐ ﻋﲆ اﳌﻮارد اﻟﺒﴩﻳﺔ، ﻣﻊ إﻋﻄﺎء أﻣﺜﻠـﺔ ﻋـﲆ ﺗﺤﻠﻴـﻞ اﻟﺴﻼﺳـﻞ اﻟﺰﻣﻨﻴـﺔ وﺗﺤﻠﻴـﻞ \nاﻻﻧﺤﺪار\n   .\n4- ﺑن ﻛﻴﻒ ﻳﺘﻢ ﺗﺤﺪﻳﺪ اﻟﻔﺎﺋﺾ او اﻟﻌﺠﺰ ﻣﻦ اﳌﻮارد اﻟﺒﴩﻳﺔ ﻟﻠﻤﻨﻈﻤﺔ\n   .\n5- ﻫﻨﺎﻟﻚ ﻋﺪة مﺎذج اﺳﱰاﺗﻴﺠﻴﺔ ﻹدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n. \nﺗﻜﻠﻢ ﻋﻦ اﻟﻨﻤﻮذج اﳌﺒﻨﻲ ﻋﲆ اﳌﻮارد\n   .\n6- \n وﺿﺢ دور إدار\nة اﳌﻮارد اﻟﺒﴩﻳﺔ ﰲ اﻻﺳﱰاﺗﻴﺠﻴﺔ اﻟﻌﺎﻣﺔ ﻟﻠﻤﻨﻈﻤﺔ\n   .\n7- اﴍح ﺑﺈﻳﺠﺎز ﺧﻄﻮات ﺑﻨﺎء إﺳﱰاﺗﻴﺠﻴﺔ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ ﰲ اﳌﻨﻈﻤﺔ\n   .\n8- ﺑن ﻣﻔﻬﻮم ﺗﻘﻴﻴﻢ اﻷداء اﳌﺘﻮازن ﻛﺄﺣﺪ أﻫﻢ أدوات اﻟﺮﻗﺎﺑﺔ اﻹﺳﱰاﺗﻴﺠﻴﺔ\n   .\n9- \n ﻫﻨﺎك أرﺑﻌﺔ\nﻣﻨﻈﻮرات\n \nأﺳﺎﺳﻴﺔ ﻟﺒﻄﺎﻗﺎت ﺗﻘﻴﻴﻢ اﻷداء اﳌﺘﻮازن\nﻣﺎ  . \nﻫﻮ رأﻳﻚ ﰲ إﻣﻜﺎﻧﻴﺔ إﺿﺎﻓﺔ \nﻣﻨﻈﻮر\n \nﺧﺎﻣﺲ ﻟﻬﺬا \nاﳌﻨﻈﻮرات\n، وﻣﺎ ﻫﻮ \nاﳌﻨﻈﻮر\n \nاﻟﺬي ﺗﻮد إﺿﺎﻓﺘﻪ\n   .\n10\n- ﺑن أﻫﻢ اﻟﺼﻌﻮﺑﺎت اﻟﺘﻲ مﻜﻦ ان ﺗﻮاﺟﻪ ﻋﻤﻠﻴﺔ اﻟﺘﺨﻄﻴﻂ اﻻﺳﱰاﺗﻴﺠﻲ ﻟﻠﻤﻮارد اﻟﺒﴩﻳﺔ\n   .",
+              "similarity": 0.44755718469619754,
+              "raw_similarity": 0.4125571846961975,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:36.495772",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "50e3d70c",
+                "char_length": 940,
+                "word_count": 165,
+                "created_at": "2026-06-23T10:02:36.521872"
+              },
+              "chunk_id": 405
+            },
+            {
+              "text": "اﻟﻔﺼﻞ اﻷول\n: \nﻣﻔﻬﻮم إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ وﺗﻄﻮرﻫﺎ\n \n \n \n45\n \n \n  \nأﺳﺌﻠﺔ ﻟﻠﻤﻨﺎﻗﺸﺔ\n  \n  \n1 -\n ﻋﺮف إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ ﻣﻊ اﻻﺷﺎ\nرة إﱃ اﺳﺘﺨﺪاﻣﺎت ﻣﺼﻄﻠﺢ ادارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n   . \n2 -\n ﺣﺪد اﳌﻘﺼﻮد مﺎ ﻳﲇ\n  : \n\n \n ﻣﻔﻬﻮم اﻟﻌﻤﻞ\n  \n\n \n ﻣﻔﻬﻮم اﻟﻮﻇﻴﻔﺔ\n \n\n \n ﻣﻔﻬﻮم اﳌﻬﻨﺔ\n \n3 -\n ﺗﻜﻠﻢ ﺑﺎﺳﻬﺎب ﻋﻦ أﻫﻤﻴﺔ ادارة اﳌﻮارد اﻟﺒﴩﻳﺔ ﻣﻊ اﻻﺳﺘﻌﺎﻧﺔ مﻌﺎﻳر ﺟﻮاﺋﺰ اﻟﺠﻮدة اﻟﻌﺎﳌﻴﺔ\n.  \n4 -\n وﺿﺢ ﻫﻞ مﻜﻦ اﻋﺘﺒﺎر ادارة اﳌﻮارد اﻟﺒﴩﻳﺔ ﻣﻬﻨﺔ ﻛﺒﺎﻗﻲ اﳌﻬﻦ\n.  \n5 -\n ﺻﻒ أﻫﻢ ﻧﺸﺎﻃﺎت إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n  . \n6 -\n ﺗﻜﻠﻢ ﻋﻦ ﴐورة اﻻﻟﺘﺰام ﺑﺎﻻﺧﻼﻗﻴﺎت ﰲ اﻟﻌﻤﻞ\n  . \n7 -\n اﴍح ﺑﺎﺳﻬﺎب ﻣﺼﺎدر أﺧﻼﻗﻴﺎت اﳌﻨﻈﻤﺔ\n  . \n8 -\n ﺗﻜﻠﻢ ﻋﻦ\n \nﻣﺎﻫﻴﺔ اﳌﺪاﺧﻞ اﻷﺳﺎﺳﻴﺔ ﻟﺘﺤﺪﻳﺪ اﳌﻌﺎﻳر اﻻﺧﻼﻗﻴﺔ\n  . \n9 -\n ﺗﻮاﺟﻪ ادارة اﳌﻮارد اﻟﺒﴩﻳﺔ اﻟﻜﺜر ﻣﻦ اﻟﺘﺤﺪﻳﺎت\n. \nاﴍح ﺑﺎﺳﻬﺎب ﻫﺬه اﻟﺘﺤﺪﻳﺎت\n   . إدارة اﳌﻮار\nد اﻟﺒﴩﻳﺔ \n  \n \n \n46",
+              "similarity": 0.421311948299408,
+              "raw_similarity": 0.38631194829940796,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:36.495772",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "ad1a72b0",
+                "char_length": 719,
+                "word_count": 130,
+                "created_at": "2026-06-23T10:02:36.519041"
+              },
+              "chunk_id": 328
+            }
+          ],
+          "cached": false
+        },
+        {
+          "question": "ااا",
+          "answer": "الإجابة المباشرة:\nلم أتمكن من صياغة إجابة عربية مؤكدة من المعلومات المتاحة لهذا السؤال.\n\nالتفاصيل:\n- يرجى إعادة صياغة السؤال بشكل أكثر تحديداً، مثل نوع السياسة أو نوع الإجازة أو إجراء تكنولوجيا المعلومات المطلوب.\n- لن أعرض نصوصاً خاماً أو مقتطفات غير منسقة من المستندات.\n\nملاحظات إضافية:\n- إذا كان الأمر عاجلاً أو خاصاً بحالتك الشخصية، يرجى الرجوع إلى الموارد البشرية أو تكنولوجيا المعلومات للتأكيد.",
+          "timestamp": "2026-06-30T08:33:41.213196",
+          "language": "ar",
+          "confidence": 0.3929199612140656,
+          "answer_style": "detailed",
+          "match_type": "related_match",
+          "response_time": 2.7663209438323975,
+          "sources": [
+            {
+              "text": "................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................",
+              "similarity": 0.3929199612140656,
+              "raw_similarity": 0.35791996121406555,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.374524",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "9d311090",
+                "char_length": 884,
+                "word_count": 5,
+                "created_at": "2026-06-23T10:02:35.383749"
+              },
+              "chunk_id": 158
+            },
+            {
+              "text": "................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................",
+              "similarity": 0.3929199612140656,
+              "raw_similarity": 0.35791996121406555,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.374524",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "9d311090",
+                "char_length": 884,
+                "word_count": 5,
+                "created_at": "2026-06-23T10:02:35.381924"
+              },
+              "chunk_id": 101
+            },
+            {
+              "text": "................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................ ................................................................................................................................................................................",
+              "similarity": 0.3929199612140656,
+              "raw_similarity": 0.35791996121406555,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:35.374524",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "9d311090",
+                "char_length": 884,
+                "word_count": 5,
+                "created_at": "2026-06-23T10:02:35.381899"
+              },
+              "chunk_id": 99
+            },
+            {
+              "text": ")2\n (\n،أﺑﻮ ﺷﻴﺨﻪ، ﻧﺎدر\nأﺣﻤ \nﺪ، \nإدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n: \nإﻃﺎر ﻧﻈﺮي وﺣﺎﻻت ﻋﻤﻠﻴﺔ\n، ﻋان، دار ﺻﻔﺎء ﻟﻠﻨﴩ واﻟﺘﻮزﻳﻊ، 2009\n، \n ص ص318\n-\n320\n . اﻧﺬار ﺷﻔﻮي\n  \n)\nﻏر رﺳﻤﻲ\n   (\nاﻧﺬار\nﻛﺘﺎي\n \n)\nرﺳﻤﻲ\n   ( \n اﻧﺬار\nﻛﺘﺎي ﺛﺎي+\n اﻟﺘﻬﺪﻳﺪ\nﺑﺎﻳﻘﺎف ﻋﻦ اﻟﻌﻤﻞ ﻣﺆﻗﺖ\n  \n اﻳﻘﺎف ﻣﺆﻗﺖ ﻋﻦ\nاﻟﻌﻤﻞ+\n اﺷﻌﺎر ﻛﺘﺎي ﺑﺄن\nﻫﺬه ﻫﻲ اﻟﻔﺮﺻﺔ اﻻﺧرة \nﻟﻠﺘﺤﺴﻦ\n  \n اﻟﻔﺼﻞ\nﻣﻦ \nاﻟﻌﻤﻞ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n  \n \n \n276\n \n \n  \n  \n  \nﺟـ- \n اﻟﺘﻮﺑﻴﺦReprimand\n  \n \n \n ،ﻳﻮﺟﻪ اﻟﺘﻮﺑﻴﺦ ﻟﻠﻤﻮﻇﻒ ﺑﻌﺪ أن ﻳﻜﻮن ﻗﺪ ﺳﺒﻖ ﻟﻔﺖ ﻧﻈﺮه ﺑﻌﺪم اﻟﻌﻮدة إﱃ ﻣﺨﺎﻟﻔﺎت ﻛﺎن ﻗـﺪ ارﺗﻜﺒﻬـﺎ\nوﻳﺘﻀﻤﻦ اﻟﺘﻮﺑﻴﺦ إﻳﻀﺎح\n \nﻧﻮع اﳌﺨﺎﻟﻔﺔ واﻟﺘﺤﺴﻦ اﳌﺘﻮﻗﻊ ﰲ ﺳﻠﻮك اﳌﻮﻇﻒ، ﻛـا ﻳﺘﻀـﻤﻦ ﺑﻴـﺎن اﻹﻧـﺬارات اﻟﺴـﺎﺑﻘﺔ \nاﻟﺘﻲ أﻋﻄﻴﺖ ﻟﻠﻤﻮﻇﻒ واﻟﺘﺤﺬﻳﺮات ﻣﻦ ﻋﻮاﻗﺐ ﺗﻜﺮار اﳌﺨﺎﻟﻔﺎت\n   . د- \n اﻹﻳﻘﺎف اﳌﺆﻗﺖ ﻋﻦ اﻟﻌﻤﻞTemporary Suspension\n  \n \n ﺗﺘﻔﺎوت ﻣﺪة اﻹﻳﻘﺎف ﺑن ﻳﻮم واﺣﺪ وﻋﺪة أﺳﺎﺑﻴﻊ ﻋﲆ ﺣﺴﺐ ﺧﻄﻮرة اﳌﺨﺎﻟﻔﺔ، وﺗﻜﻮن\n \nﻫﺬه اﳌﺪة ﻋﺎدة \nﺑﺪون أﺟﺮ، ﻟﻴﺘﻴﺢ اﻟﻔﺮﺻﺔ ﻟﻠﻤﻮﻇﻒ ﻟﻴﻔﻜﺮ ﰲ اﻟﺘﺰاﻣﺎﺗﻪ اﻟﻮﻇﻴﻔﻴﺔ\n   . ﻫـ- \n ﺗﻨﺰﻳﻞ اﻟﺪرﺟﺔDemotion \n  \n ﻳﺴﺘﺨﺪم ﻫﺬا اﻹﺟﺮاء ﻛﻌﻘﻮﺑـﺔ ﳌﺨﺎﻟﻔـﺎت وﻇﻴﻔﻴـﺔ، ﻋـﲆ أن ﻳـﺘﻢ ﺗﻨﺰﻳـﻞ درﺟـﺔ اﳌﻮﻇـﻒ ﻟﻠﻮﻇﻴﻔـﺔ اﻟﺘـﻲ ﺗﺘﻨﺎﺳـﺐ\nوﻣﺆﻫﻼﺗﻪ وﺧﱪاﺗﻪ\n   .",
+              "similarity": 0.38031992673873904,
+              "raw_similarity": 0.345319926738739,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:36.495772",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "a7550650",
+                "char_length": 998,
+                "word_count": 162,
+                "created_at": "2026-06-23T10:02:36.533057"
+              },
+              "chunk_id": 707
+            },
+            {
+              "text": ")\n18\n (\n  \n ،ﺑﻮﺳﻨﻴﻨﺔ، اﻟﺼﺪﻳﻖ ﻣﻨﺼﻮر، وﺳﻠﻴان اﻟﻔﺎرﳼ\nاﳌﻮارد اﻟﺒﴩﻳﺔ\n: \nاﻫﻤﻴﺘﻬﺎ، ﺗﻨﻈﻴﻤﻬﺎ، ﻣﺴﺆوﻟﻴﺘﻬﺎ، ﻣﻬﺎﻣﻬﺎ\n، اﻟﺠاﻫرﻳﺔ اﻟﻌﻈﻤﻰ، أﻛﺎدمﻴﺔ اﻟﺪراﺳـﺎت \nاﻟﻌﻠﻴﺎ، 2003، ص381\n. اﻟﻔﺼﻞ\nاﻟﺴﺎﺑﻊ\n: \nﺗﻘﻴﻴﻢ أداء اﻟﻌﺎﻣﻠن\n \n \n \n259\n \n \n  \n-\n اﻻﺣﺘال اﻟﺜﺎي\n: \nان ﻳﻜﻮن \nاﻻداء اﻟﻔﻌﲇ ﻣﺴﺎوﻳﺎ ﻟﻠﻤﺴﺘﻮى اﳌﺤﺪد ﻣﻦ ﺧﻼل اﳌﻌﺎﻳر، وﺑﺬﻟﻚ ﻳﻜﻮن \nاﳌﻮ \nﻇﻒ ﻗﺪ ﻗﺎم ﺑﻮاﺟﺒﺎﺗﻪ ﻛا ﻳﺠﺐ، وﻟﻴﺲ ﻫﻨﺎك ﺣﺎﺟﺔ إﱃ أي اﺟﺮاء ﺗﺼ\nﺤﻴﺤﻲ. -\n اﻻﺣﺘال اﻟﺜﺎﻟﺚ\n: \nان ﻳﻜﻮن اﻻداء اﻟﻔﻌﲇ اﻛﱪ ﻣﻦ اﳌﺴﺘﻮى اﳌﺤﺪد ﻣﻦ ﺧﻼل\n \nاﳌﻌﺎﻳر\n. وﰲ ﻫﺬه اﻟﺤﺎﻟﺔ \nﻳﻜﻮن ﻗﺮار اﻻدارة ﺑﺘﺤﻔﻴﺰ اﳌﻮﻇﻒ وﴏف ﻣﻜﺎﻓﺂت ﻣﺎﻟﻴﺔ أو ﻏرﻫﺎ ﻟﻠﻤﻮﻇﻒ اﳌﻌﻨﻲ\n. 5 - ﻣﻨﺎﻗﺸﺔ اﻟﻨﺘﺎﺋﺞ ﻣﻊ اﳌ\nﻮﻇﻒ\n   :\nﻫﻨﺎك اﺗﺠﺎﻫن ﰲ ﻫﺬا اﻟﺤﺎل اﻻﺗﺠﺎه اﻷول ﻳﺆﻳﺪ ﻣﻨﺎﻗﺸﺔ ﻧﺘﺎﺋﺞ اﻟﺘﻘﻴﻴﻢ ﻣﻊ اﳌﻮﻇﻒ، ﺑﻴﻨا ﻳﺆﻳﺪ اﻻﺗﺠﺎه اﻟﺜﺎي \nﺑﻘﺎء اﳌﻌﻠﻮﻣﺎت ﴎﻳﺔ وﻧﺘﺎﺋﺞ اﻟﺘﻘﻴﻴﻢ ﻏر ﻣﻌﻠﻨﺔ\n   . وﺗﺘﺒﻊ ﻛﺜرا ﻣﻦ اﳌﻨﻈات ﺳﻴﺎﺳﺔ ﻣﻘﺎﺑﻠﺔ \nاﳌ\nﻮﻇﻒ اﻟﺬي ﺗﻢ ﺗﻘﻴﻴﻢ اداﺋﻪ وﻣﻨﺎﻗﺸﺔ اﻟﻨﺘﺎﺋﺞ اﻟﺘﻲ ﺗﻢ اﻟﺘﻮﺻﻞ \nإﻟﻴﻬ\nﺎ ﻋﻦ أداﺋﻪ ﻣﻌﻪ، ﺣﻴﺚ ان اﻟﻬﺪف ﻣﻦ ذﻟﻚ ﻫﻮ اﺑﻼغ اﳌﻮﻇﻒ مﻮاﻃﻦ ﺿﻌﻔﻪ ﻷﺟﻞ ﺗﻔﺎدﻳﻬﺎ ﰲ اﳌﺴﺘﻘﺒﻞ وﻣﺤﺎوﻟﺔ \nﺗﻄﻮﻳﺮ اﻻداء\n.",
+              "similarity": 0.3780900871753693,
+              "raw_similarity": 0.34309008717536926,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-23T10:02:36.495772",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "306010c2",
+                "char_length": 914,
+                "word_count": 167,
+                "created_at": "2026-06-23T10:02:36.532277"
+              },
+              "chunk_id": 683
+            }
+          ],
+          "cached": false
+        }
+      ]
+    },
+    "b8381a90f6e0": {
+      "title": "how many annual leave days?",
+      "created_at": "2026-06-30T09:03:55.528224",
+      "updated_at": "2026-06-30T14:34:16.632460",
+      "messages": [
+        {
+          "question": "how many annual leave days?",
+          "answer": "AI answer generation is currently unavailable. Please try again later.",
+          "timestamp": "2026-06-30T09:03:55.501906",
+          "language": "en",
+          "confidence": 0.0,
+          "answer_style": "detailed",
+          "match_type": "error",
+          "response_time": 0.0,
+          "sources": [],
+          "cached": false
+        },
+        {
+          "question": "how many annual leave days",
+          "answer": "**Direct Answer:**\nEmployees are entitled to 21 annual leave days per calendar year.\n\n**Details:**\n\n* **Eligibility:** All employees are eligible for annual leave.\n* **Accrual Rate:** Annual leave accrues at a rate of 1.75 days per month of service.\n* **Accrual Details:**\n  | Years of Service | Annual Leave Days |\n  | --- | --- |\n  | 0-2 years | 21 days |\n  | 3-5 years | 25 days |\n  | 6-10 years | 30 days |\n  | 10+ years | 35 days |\n* **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n* **Cash Out:** Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.\n\n**Additional Notes:**\n\n* Leave requests must be submitted at least two weeks in advance through the HR portal.\n* Emergency leave requests will be considered on a case-by-case basis with proper documentation.\n* Any leave beyond the 15-day carryover limit will be forfeited unless special approval is obtained from senior management.",
+          "timestamp": "2026-06-30T09:14:39.601956",
+          "language": "en",
+          "confidence": 1.0305200862884523,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 10.221467971801758,
+          "sources": [
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 1.0305200862884523,
+              "raw_similarity": 0.7755200862884521,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-30T09:09:56.551686"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.8753109359741211,
+              "raw_similarity": 0.7103109359741211,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-30T09:09:56.551974"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.8328601503372193,
+              "raw_similarity": 0.6678601503372192,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-30T09:09:58.161145"
+              },
+              "chunk_id": 210
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.7649122858047486,
+              "raw_similarity": 0.5999122858047485,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-30T09:09:58.161509"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+              "similarity": 0.7414721632003785,
+              "raw_similarity": 0.5764721632003784,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "932abf61",
+                "char_length": 954,
+                "word_count": 169,
+                "created_at": "2026-06-30T09:09:58.161084"
+              },
+              "chunk_id": 209
+            }
+          ],
+          "cached": false
+        },
+        {
+          "question": "how many annual leave days",
+          "answer": "**Direct Answer:**\nEmployees are entitled to 21 annual leave days per calendar year.\n\n**Details:**\n\n* **Eligibility:** All employees are eligible for annual leave.\n* **Accrual Rate:** Annual leave accrues at a rate of 1.75 days per month of service.\n* **Accrual Details:**\n  | Years of Service | Annual Leave Days |\n  | --- | --- |\n  | 0-2 years | 21 days |\n  | 3-5 years | 25 days |\n  | 6-10 years | 30 days |\n  | 10+ years | 35 days |\n* **Carryover:** Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n* **Cash Out:** Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.\n\n**Additional Notes:**\n\n* Leave requests must be submitted at least two weeks in advance through the HR portal.\n* Emergency leave requests will be considered on a case-by-case basis with proper documentation.\n* Any leave beyond the 15-day carryover limit will be forfeited unless special approval is obtained from senior management.",
+          "timestamp": "2026-06-30T09:14:54.461535",
+          "language": "en",
+          "confidence": 1.0305200862884523,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 0.0,
+          "sources": [
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 1.0305200862884523,
+              "raw_similarity": 0.7755200862884521,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-30T09:09:56.551686"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.8753109359741211,
+              "raw_similarity": 0.7103109359741211,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-30T09:09:56.551974"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.8328601503372193,
+              "raw_similarity": 0.6678601503372192,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-30T09:09:58.161145"
+              },
+              "chunk_id": 210
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.7649122858047486,
+              "raw_similarity": 0.5999122858047485,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-30T09:09:58.161509"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+              "similarity": 0.7414721632003785,
+              "raw_similarity": 0.5764721632003784,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "932abf61",
+                "char_length": 954,
+                "word_count": 169,
+                "created_at": "2026-06-30T09:09:58.161084"
+              },
+              "chunk_id": 209
+            }
+          ],
+          "cached": true
+        }
+      ]
+    },
+    "4be15877b318": {
+      "title": "hello how are you",
+      "created_at": "2026-06-30T14:34:55.180246",
+      "updated_at": "2026-07-01T10:38:30.691781",
+      "messages": [
+        {
+          "question": "hello how are you",
+          "answer": "Hello! I'm **AI POD**, your internal assistant at **GIG Egypt Life Takaful**.\n\nI'm here to help you find answers about company policies quickly and accurately. What would you like to know?",
+          "timestamp": "2026-06-30T14:34:55.144533",
+          "language": "en",
+          "confidence": 1.0,
+          "answer_style": "detailed",
+          "match_type": "conversational",
+          "response_time": 0.0022125244140625,
+          "sources": [],
+          "cached": false
+        },
+        {
+          "question": "what can i ask about?",
+          "answer": "**Direct Answer:**\nYou can ask about various topics related to your job, company policies, and benefits. Some examples include:\n\n* Job duties and responsibilities\n* Company policies and procedures\n* Benefits and compensation\n* Career development and growth opportunities\n* Workplace accommodations and flexibility\n* Conflict of interest management\n* Media relations and communication\n* Resource management and allocation\n\n**Details:**\n\n* **Job Analysis Questionnaire:** You can ask about your job duties, responsibilities, and expectations. This questionnaire is used to gather information about your job and help your supervisor and manager understand your role.\n* **Media Relations:** You can ask about the company's media relations policy, including how to handle media inquiries, speaking engagements, and blog posts.\n* **Conflict of Interest Management:** You can ask about the company's policy on conflict of interest management, including how to disclose potential conflicts and the approval process.\n* **Workplace Flexibility and Accommodations:** You can ask about the company's policy on workplace flexibility and accommodations, including flexible work hours, lactation rooms, and ADA accommodations.\n* **Resource Management:** You can ask about the company's policy on resource management, including how to request resources, manage budgets, and allocate resources effectively.\n\n**Additional Notes:**\n\n* Please note that some information may require approval from your supervisor or manager before it can be shared.\n* If you have specific questions or concerns, please feel free to ask your supervisor or manager for guidance.\n* The company encourages open communication and transparency, so don't hesitate to ask about any topic that's on your mind.\n\n**Exceptions and Restrictions:**\n\n* Some information may be confidential or sensitive, and may not be shared with employees.\n* Certain policies or procedures may be subject to change or revision, and employees will be notified accordingly.\n* Employees are expected to respect company confidentiality and maintain the integrity of company information.\n\nNote: These results are related but may not directly answer your question.",
+          "timestamp": "2026-06-30T14:35:43.544677",
+          "language": "en",
+          "confidence": 0.3657343876361847,
+          "answer_style": "detailed",
+          "match_type": "related_match",
+          "response_time": 20.95785927772522,
+          "sources": [
+            {
+              "text": "نظام إدارة الموارد البشرية\n(دليل تدريبي وتطبيقي للشركات)\n11\nJob Analysis Questionnaire\nPurpose and instructions\nDear Colleagues,\nThe purpose of the questionnaire is to obtain current information on your job based on a review of job duties and \nresponsibilities. We need your help to get an accurate description of your job. We are asking you to complete this questionnaire that \nasks for information about your job duties. The questionnaire does not ask about your job performance; only what \nyour job requires you to do. Your supervisor and manager will also be asked about your job, but they will not be allowed to change your answers. We appreciate your active participation in this important study. If you have questions, please feel free to ask your \nsupervisor or division administrator. Please return this questionnaire to your supervisor.",
+              "similarity": 0.3657343876361847,
+              "raw_similarity": 0.3457343876361847,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:57.776586",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "3d25cc84",
+                "char_length": 846,
+                "word_count": 135,
+                "created_at": "2026-06-30T09:09:57.792281"
+              },
+              "chunk_id": 44
+            },
+            {
+              "text": "Media Relations: All media inquiries directed to PR department No unauthorized statements as company representative Speaking engagements require approval Blog posts about company work need review 10.3 Conflict of Interest Management\nEmployees must disclose any potential conflicts of interest to their manager and HR. This includes secondary employment, business relationships with competitors, or financial interests in suppliers. Annual Disclosure: Financial interests in competitors/suppliers Family members working for competitors Board positions with other organizations Consulting or freelance work Approval Process: Written disclosure submitted Ethics committee review Mitigation plan if needed Annual reconfirmation 10.4 Workplace Flexibility and Accommodations\nReasonable accommodations provided for disabilities and religious practices. Flexible work hours within core hours of 10am-3pm. Lactation rooms available in all offices. ADA Accommodations: Interactive process with employee",
+              "similarity": 0.33845327496528627,
+              "raw_similarity": 0.26345327496528625,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "9ccf2611",
+                "char_length": 993,
+                "word_count": 124,
+                "created_at": "2026-06-30T09:09:56.554327"
+              },
+              "chunk_id": 20
+            },
+            {
+              "text": "نظام إدارة الموارد البشرية\n(دليل تدريبي وتطبيقي للشركات)\n26\n:أسئلة إرشادية فقط للمقابلة الشخصيَّة\n1\n . .حدثني بشكل عام عن نفسك\n2\n .لماذا تريد أن تترك وظيفتك الحالية ؟ أو لماذا تركت آخر وظيفة لك ؟\n. ٣\nما الخبرة التي تتمتع بها في هذا المجال ؟\n4\n .ماذا تعرف عن منشأتنا ؟\n5\n .لماذا تريد أن تعمل معنا ؟ أو أن تعمل في هذه المنشأة ؟\n. ٦\nما توقعاتك حول الراتب ؟\n7\n .هل تفضل العمل مع المجموعة / فريق العمل ؟\n8\n .من وجهة نظرك، كيف ستكون مصدر قوة أو موظفًا مفيدً ا لمنشأتنا ؟\n9\n . لماذا باعتقادك يجب أن نوظِّفك ؟\n10\n .ما نقاط ضعفك ؟\n11\n .ما نقاط قوتك ؟\n12\n .ما طموحاتك الوظيفية ؟\n1. ٣\nأيهما أهم لديك: العمل أم الراتب ؟\n14\n .ما أكبر أو أهم مشكلة واجهتها مع مديرك أو إدارتك السابقة ؟\n15\n .ما سبب الرغبة بمغادرة وظيفتك الحالية ؟\n1. ٦\nتكلم عن قدرتك عن العمل تحت الضغط ؟\n17\n . هل تستطيع العمل في الأوقات الإضافية أو في أيام الإجازات أو في\nالأوقات المسائية؟\n18\n . هل  أنت  مستعد  لالنتقال  (قد  يكون  لمدينة  أخرى)  لأحد  فروع\nالمنشأة مستقبالً ؟\n19\n .",
+              "similarity": 0.31514758110046387,
+              "raw_similarity": 0.37514758110046387,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:57.776586",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "84721f86",
+                "char_length": 934,
+                "word_count": 194,
+                "created_at": "2026-06-30T09:09:57.796356"
+              },
+              "chunk_id": 84
+            },
+            {
+              "text": "47-50. اﻟﻔﺼﻞ اﻟﺮاﺑﻊ\n:  \nاﻟﺘﻮﻇﻴﻒ \n \n \n \n167\n \n \n \n  \nأﺳﺌﻠﺔ ﻟﻠﻤﻨﺎﻗﺸﺔ\n  \n  \n1 - \n وﺿﺢ ﻣﻦ وﺟﻬﺔ ﻧﻈﺮك ﻣﺎ اﳌﻘﺼﻮد\nﺑﺎﻻﺳﺘﻘﻄﺎب\n   . 2 - ﺑن ﻛﻴﻒ ﺗﺒﺪأ ﻋﻤ\n ﻠﻴﺔ\nاﺳﺘﻘﻄﺎب اﳌﺆﻫﻠن وﻛﻴﻒ ﺗﻨﺘﻬﻲ\n   . 3 - ﻫﻨﺎك ﻧﻮﻋن ﻣﻦ ﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب\n: \nﻣﺼﺎدر داﺧﻠﻴﺔ، وﻣﺼﺎدر ﺧﺎرﺟﻴﺔ، ﻧﺎﻗﺶ اﳌﺼﺎدر اﻟﺪاﺧﻠﻴﺔ ﻟﻼﺳﺘﻘﻄﺎب ﻣﻊ \nﺗﻮﺿﻴﺢ ﻣﺰاﻳﺎﻫﺎ وﻋﻴﻮﺑﻬﺎ\n   . 4 - اﻓﱰض اﻧﻚ ﺗﻘﻮم ﺑﺘﻘﺪﻳﻢ ﻃﻠﺐ ﻟﻠﻌﻤﻞ إﱃ إﺣﺪى اﳌﻨﻈات، ﺣﺎول ﻛﺘﺎﺑﺔ ﺳرﺗﻚ ا\nﻟﺬاﺗﻴﺔ ﻣﻮﺿﺤﺎ ﻓﻴﻬﺎ ﻛﻞ \nاﳌﻌﻠﻮﻣﺎت اﻟﺘﻲ ﺗﻌﺘﻘﺪ أﻧﻬﺎ ﴐورﻳﺔ\n   . 5 - ﻣﻌﺪل اﳌﺘﻘﺪﻣن ﻟﻠﻮﻇﻴﻔﺔ ﻫﻮ أﺣﺪ اﻟﻮﺳﺎﺋﻞ اﳌﺴﺘﺨﺪﻣﺔ ﻟﺘﻘﻴﻴﻢ ﺟﻬﻮد اﻻﺳﺘﻘﻄﺎب\n. وﺿﺢ ذﻟﻚ\n   . 6 - اﴍح ﺑﺈﻳﺠﺎز ﺧﻄﻮات ﻋﻤﻠﻴﺔ اﻻﺧﺘﻴﺎر ﻟﻠﻤﻮارد اﻟﺒﴩﻳﺔ\n   . 7 - \n ﻗﺎرن ﺑن اﺧﺘﺒﺎرات اﻟﺬﻛﺎء واﺧﺘﺒﺎرات اﻻﻧﺠﺎز، واﻋﻂ اﻣﺜﻠﺔ ﻋﲆ ﻛﻞ\nﻣﻨﻬا\n   . 8 - ﻳﻌﺘﱪ\n \nاﺧﺘﺒﺎر\n \nﺳﺒرﻣﺎن أﺣﺪ أﻫﻢ اﻻﺧﺘﺒﺎرات اﻟﺘﻲ ﺗﺴﺘﺨﺪم ﳌﻌﺮﻓﺔ ﻣﻮﺿﻮﻋﻴﺔ ﻫﺬه اﻻﺧﺘﺒﺎرات وﺟﻮدﺗﻬﺎ\n. ﻋﻠﻖ ﻋﲆ \nﻫﺬه اﻟﻌﺒﺎرة\n   . 9 - اذﻛﺮ ﺧﻄﻮات ﻋﻤﻠﻴﺔ اﻟﺘﻌﻴن ﻛﻤﺮﺣﻠﺔ ﻣﻦ ﻣﺮاﺣﻞ اﻟﺘﻮﻇﻴﻒ\n   . 10\n- ﺑن ﻛﻴﻒ مﻜﻦ وﺿﻊ ﺑﺮﻧﺎﻣﺞ ﻟﺘﻮﺟﻴﻪ اﳌﻮﻇﻒ اﻟﺠﺪﻳﺪ\n   . 11\n- \n ﺗﻌﺎي اﺣﺪى اﳌﻨﻈات ﻣﻦ اﺧﺘﻼ\nف ﺛﻘﺎﻓﺎت اﳌﻮﻇﻔن ﻓﻴﻬﺎ\n. ﺑﺼﻔﺘﻚ ﺧﺒراً ﰲ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ، اﻗﱰح ﺑﺮاﻣﺞ \nﺗﺮاﻫﺎ ﻣﻔﻴﺪة ﻹدارة ﻫﺬا اﻟﺘﻨﻮع اﻟﺜﻘﺎﰲ\n   .",
+              "similarity": 0.2951724851131439,
+              "raw_similarity": 0.3551724851131439,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:10:00.185182",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "1e48adee",
+                "char_length": 1014,
+                "word_count": 186,
+                "created_at": "2026-06-30T09:10:00.264478"
+              },
+              "chunk_id": 532
+            },
+            {
+              "text": "إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n  \n \n \n90\n \n \nأﺳﺌﻠﺔ\n \nﻟﻠﻤﻨﺎﻗﺸﺔ\n  \n  \n1- ﺣﺪد ﻣﺎﻫﻴﺔ ﺗﺨﻄﻴﻂ اﳌﻮارد اﻟﺒﴩﻳﺔ وأﻫﻤﻴﺘﻬﺎ\n   .\n2- ﻟﻮ ﻃﻠﺐ ﻣﻨﻚ ان ﺗﺠﺮي ﺗﺤﻠﻴﻼً رﺑﺎﻋﻴﺎً ﻹدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n. \nﻣﺎ ﻫـﻲ اﻟﺨﻄـﻮات اﻟﺘـﻲ مﻜـﻦ ان ﺗﺘﺒﻌﻬـﺎ ﰲ ﻫـﺬا \nاﳌﺠﺎل\n   .\n3-  ﺢ وﺿ\nﻛﻴﻒ مﻜﻦ ﺗﺤﺪﻳﺪ\n \nاﻟﻄﻠﺐ ﻋﲆ اﳌﻮارد اﻟﺒﴩﻳﺔ، ﻣﻊ إﻋﻄﺎء أﻣﺜﻠـﺔ ﻋـﲆ ﺗﺤﻠﻴـﻞ اﻟﺴﻼﺳـﻞ اﻟﺰﻣﻨﻴـﺔ وﺗﺤﻠﻴـﻞ \nاﻻﻧﺤﺪار\n   .\n4- ﺑن ﻛﻴﻒ ﻳﺘﻢ ﺗﺤﺪﻳﺪ اﻟﻔﺎﺋﺾ او اﻟﻌﺠﺰ ﻣﻦ اﳌﻮارد اﻟﺒﴩﻳﺔ ﻟﻠﻤﻨﻈﻤﺔ\n   .\n5- ﻫﻨﺎﻟﻚ ﻋﺪة مﺎذج اﺳﱰاﺗﻴﺠﻴﺔ ﻹدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n. \nﺗﻜﻠﻢ ﻋﻦ اﻟﻨﻤﻮذج اﳌﺒﻨﻲ ﻋﲆ اﳌﻮارد\n   .\n6- \n وﺿﺢ دور إدار\nة اﳌﻮارد اﻟﺒﴩﻳﺔ ﰲ اﻻﺳﱰاﺗﻴﺠﻴﺔ اﻟﻌﺎﻣﺔ ﻟﻠﻤﻨﻈﻤﺔ\n   .\n7- اﴍح ﺑﺈﻳﺠﺎز ﺧﻄﻮات ﺑﻨﺎء إﺳﱰاﺗﻴﺠﻴﺔ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ ﰲ اﳌﻨﻈﻤﺔ\n   .\n8- ﺑن ﻣﻔﻬﻮم ﺗﻘﻴﻴﻢ اﻷداء اﳌﺘﻮازن ﻛﺄﺣﺪ أﻫﻢ أدوات اﻟﺮﻗﺎﺑﺔ اﻹﺳﱰاﺗﻴﺠﻴﺔ\n   .\n9- \n ﻫﻨﺎك أرﺑﻌﺔ\nﻣﻨﻈﻮرات\n \nأﺳﺎﺳﻴﺔ ﻟﺒﻄﺎﻗﺎت ﺗﻘﻴﻴﻢ اﻷداء اﳌﺘﻮازن\nﻣﺎ  . \nﻫﻮ رأﻳﻚ ﰲ إﻣﻜﺎﻧﻴﺔ إﺿﺎﻓﺔ \nﻣﻨﻈﻮر\n \nﺧﺎﻣﺲ ﻟﻬﺬا \nاﳌﻨﻈﻮرات\n، وﻣﺎ ﻫﻮ \nاﳌﻨﻈﻮر\n \nاﻟﺬي ﺗﻮد إﺿﺎﻓﺘﻪ\n   .\n10\n- ﺑن أﻫﻢ اﻟﺼﻌﻮﺑﺎت اﻟﺘﻲ مﻜﻦ ان ﺗﻮاﺟﻪ ﻋﻤﻠﻴﺔ اﻟﺘﺨﻄﻴﻂ اﻻﺳﱰاﺗﻴﺠﻲ ﻟﻠﻤﻮارد اﻟﺒﴩﻳﺔ\n   .",
+              "similarity": 0.27835387229919434,
+              "raw_similarity": 0.33835387229919434,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:10:00.185182",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "50e3d70c",
+                "char_length": 940,
+                "word_count": 165,
+                "created_at": "2026-06-30T09:10:00.250854"
+              },
+              "chunk_id": 405
+            }
+          ],
+          "cached": false
+        },
+        {
+          "question": "great thank you",
+          "answer": "If you have any specific questions or need help with anything, feel free to ask me anytime. I'm here to assist you.",
+          "timestamp": "2026-06-30T14:36:04.395042",
+          "language": "en",
+          "confidence": 1.0,
+          "answer_style": "detailed",
+          "match_type": "conversational",
+          "response_time": 1.627661943435669,
+          "sources": [],
+          "cached": false
+        },
+        {
+          "question": "do i have maturnity leave",
+          "answer": "**Direct Answer:**\nYes, you are entitled to maternity leave.\n\n**Details:**\n\n* **Maternity Leave Entitlement:** As a female employee, you are entitled to 14 weeks of paid maternity leave, which includes 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice). You may also be eligible for an additional 4 weeks of unpaid leave with manager approval.\n* **Accumulative Leave:** According to the policy, female employees with over one-year continuous service are entitled to 26 weeks of maternity leave subject to production of a medical certificate.\n* **Combining Leave:** You may combine any other kind of leave with your maternity leave, subject to availability of leave titles and a total leave period not exceeding 60 days.\n* **Payment:** Maternity leave is paid leave, and you will receive any other allowances that may be admissible.\n\n**Additional Notes:**\n\n* You must notify HR at least 3 months before the expected due date.\n* Return-to-work transition programs are available, including phased return options.\n* Employee Assistance Program counseling is available for additional support.\n\n**Exceptions and Restrictions:**\n\n* Maternity leave is subject to production of a medical certificate.\n* You must meet the eligibility criteria for maternity leave, which includes having over one-year continuous service.\n* The total leave period must not exceed 60 days when combining other leave types with maternity leave.",
+          "timestamp": "2026-06-30T14:39:08.987564",
+          "language": "en",
+          "confidence": 0.6640745997428895,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 14.667529582977295,
+          "sources": [
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.6640745997428895,
+              "raw_similarity": 0.5390745997428894,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-30T09:09:56.551974"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "a) Female Employee with over one-year continuous service shall be entitled to 26 weeks \nmaternity leave subject to production of medical certificate being their pregnant and \nthe probable date of confinement. Not with standing anything the same female \nemployee may be allowed to combine any other kind of leave subject to availability \nof leave title along with the maternity leave provided that the total leave so availed does not exceed 60 days. Maternity leave shall be leave on full pay together with any \nother allowance that may be admissible. b) Employee who are covered under ESIC the maternity leave will be provided by the \nESIC. TERMINATION AND SEPARATION POLICY \n  \nA Termination and Separation Policy is a crucial HR guideline outlining the procedures for \nending an employee’s tenure, whether due to resignation, retirement, or involuntary \ntermination.",
+              "similarity": 0.6417081356048585,
+              "raw_similarity": 0.5167081356048584,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "6f399ca0",
+                "char_length": 868,
+                "word_count": 135,
+                "created_at": "2026-06-30T09:09:58.161436"
+              },
+              "chunk_id": 214
+            },
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 0.6320269107818605,
+              "raw_similarity": 0.5070269107818604,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-30T09:09:56.551686"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "However, if the employee has joined the \norganization in the middle of the calendar year, then the quantum of Earned Leaves will be \npro rata basis. In case of new joiners/employee transfer, following rules of leave credit will be applicable: \n \na) Employee joining/transferred before or on 10th of the month: 1.5 Leaves \nb) Employee joining/transferred between 11th to 18th of the month: 1 Leave \nc) Employee joining/transferred after 20th of the month: No Credit  \nd) We give 0.5 leave to the employee on his birthday. e) For Initial Three Months No Paid Leave will be allowed. f) In a Notice Period No Leave allow. g) All leaves shall be calculated from date of joining of the employee. h) The maximum period of casual leave which a staff is allowed to avail is 12 days \nin calendar year subject to a maximum of 3 days at a time, normally. The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department.",
+              "similarity": 0.605793595314026,
+              "raw_similarity": 0.4807935953140259,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "932abf61",
+                "char_length": 954,
+                "word_count": 169,
+                "created_at": "2026-06-30T09:09:58.161084"
+              },
+              "chunk_id": 209
+            },
+            {
+              "text": "Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available Foster parent leave: 6 weeks paid leave for foster parents Employees must notify HR at least 3 months before the expected due date. Return-to-work transition programs available including phased return options. 1.4 Bereavement Leave\nEmployees are entitled to 3 days of paid bereavement leave for the death of an immediate family member (spouse, domestic partner, children, parents, siblings). For extended family members (grandparents, grandchildren, in-laws), 1 day of bereavement leave is provided. Documentation may be requested for verification purposes. Additional Support: Employee Assistance Program counseling available Additional unpaid leave negotiable with HR Compassionate leave for pet bereavement: 1 day 1.5 Additional Leave Types\nJury Duty Leave: Unlimited paid leave for jury service with court documentation required.",
+              "similarity": 0.6037876009941102,
+              "raw_similarity": 0.4787876009941101,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "4791048a",
+                "char_length": 1010,
+                "word_count": 144,
+                "created_at": "2026-06-30T09:09:56.552141"
+              },
+              "chunk_id": 2
+            }
+          ],
+          "cached": false
+        },
+        {
+          "question": "how can i apply for it",
+          "answer": "**Direct Answer:**\nTo apply for a job at GIG EGYPT LIFE TAKAFUL, please submit your application with the required documents, including your Curriculum Vitae, copy of certification degree, and letters of experience.\n\n**Details:**\n\n* **Application Submission:** Information submitted in the application form is confidential. Please attach the required documents with your application.\n* **Required Documents:**\n\t+ Curriculum Vitae\n\t+ Copy of certification degree\n\t+ Letters of experience\n* **Application Process:** The application process involves submitting the required documents and information, which will be reviewed and evaluated by the HR department.\n\n**Additional Notes:**\n\n* **Confidentiality:** The information submitted in the application form is confidential and will be treated as such.\n* **Evaluation Criteria:** The application will be evaluated based on the required documents and information submitted.\n* **Selection Process:** The selection process involves a series of evaluations and assessments to determine the best candidate for the position.\n\n**Exceptions and Restrictions:**\n\n* **Confidentiality:** The information submitted in the application form is confidential and will be treated as such.\n* **Evaluation Criteria:** The application will be evaluated based on the required documents and information submitted.\n* **Selection Process:** The selection process involves a series of evaluations and assessments to determine the best candidate for the position.\n\nNote: The selection process may involve additional steps, such as interviews, tests, or assessments, which will be communicated to the candidate separately.\n\nNote: These results are related but may not directly answer your question.",
+          "timestamp": "2026-06-30T14:39:38.464856",
+          "language": "en",
+          "confidence": 0.3816472315788269,
+          "answer_style": "detailed",
+          "match_type": "related_match",
+          "response_time": 20.18106460571289,
+          "sources": [
+            {
+              "text": "٥\nمسوغات التعيين:\n :يلزم على المرشح لشغل وظيفة شاغرة تقديم مسوِّغات التعيين؛ وهي كالتالي\n•  \n.أصل شهادة الميالد المُمَيكنة\n•  \n.أصل المؤهل الدراسيّ أو مستخرَج رسميّ منه\n•  \n.)أصل شهادة الموقف من الخدمة العسكرية (للذكور\n•  \n.) شهادة القيد بمكتب القوى العاملة المختص (كعب العمل\n•  \n َّصحيفة الحالة الجنائية (الفيش) حديثة باسم المؤسسة ولم يمر\nعليه أكثر من ثالثة أشهر. •  \n.4 × ) صورة شخصية حديثة مقاس ٦4( عدد\n•  \n.صورة لبطاقة الرقم القوميّ سارية\n•  \n.شهادة نهاية الخدمة بالعمل السابق (إخالء طرف) إن وجِ دت\n•  \n.أصل النموذج (٦) تأمينات لمن سبق لهم العمل\n•  \n.الترخيص في العمل إن كان المرشح من الأجانب\n•  \n.صور من شهادات الخبرة السابقة إن وجدت\n•  \n.صور من شهادات الدورات التَّدريبيَّة إن وجدت\n•  \n.)صورة رخصة (للسائقين\n•  \n.)شهادة قياس المهارة (للوظائف الفنية\n•  \n.شهادة قيد بالنقابات المهنية التي يطالب بها القانون\n•  \n شهادة  صحية  للعاملين  بوظائف  تتعلق  بالأطعمة  والمشروبات\nوالأغذية  (كذلك  عمال  البوفيه  والكانتين).",
+              "similarity": 0.3816472315788269,
+              "raw_similarity": 0.4416472315788269,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:57.776586",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "fbc9df65",
+                "char_length": 918,
+                "word_count": 153,
+                "created_at": "2026-06-30T09:09:57.796568"
+              },
+              "chunk_id": 86
+            },
+            {
+              "text": "وﺗﺘﻀﻤﻦ \nﻃﻠﺒﺎت اﻟﺘﻮﻇﻴﻒ اﻟﺘﻲ ﺗﻜﻮن ﻋﲆ ﺷﻜﻞ مﻮذج ﻣﺤﺪد مﻸه اﳌﺘﻘﺪم ﺑﺨﻂ ﻳﺪه أو ﻣﻦ ﺧﻼل \nاﻻﻧﱰﻧﺖ\n. وﻳﺮﻓﻖ ﻣﻊ اﻟﻄﻠﺐ ﺻﻮرة اﳌﺘﻘﺪم اﻟﺸﺨﺼﻴﺔ واﳌﺴﺘﻨﺪات اﻟﺮﺳﻤﻴﺔ اﳌﻄﻠﻮﺑﺔ ﻛﺼﻮرة \nﻋﻦ ﺟﻮاز اﻟﺴﻔﺮ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n  \n \n \n126\n \n \n                              \n او اﻟﺒﻄﺎﻗﺔ اﳌﺪﻧﻴﺔ وﺻﻮر ﻋﻦ اﻟﺸﻬﺎدات اﻟﺪراﺳﻴﺔ وﺷﻬﺎدات اﻟﺨﱪة ورﺳﺎﺋﻞ اﻟﺘﻌﺮﻳﻒ ﻣﻦ\nﻣﻌﺮﻓن، إﺿﺎﻓﺔ إﱃ اﻟﺘﻌﻬﺪ ﺑﺼﺤﺔ اﳌﻌﻠﻮﻣﺎت اﳌﻘﺪﻣﺔ\n. وﰲ ﺣﺎﻟﺔ اﻟﺘﻘﺪم ﺑﻄﻠﺐ ﻣﻦ ﺧﻼل \nاﻻﻧﱰﻧﺖ ﻓﺈﻧﻪ مﻜﻦ اﺳﺘﺨﺪام Scanners \n ﻻرﻓﺎق اﳌﺴﺘﻨﺪات أﻋﻼه ﻛا أﻧﻪ مﻜﻦ اﺳ\nﺘﺨﺪام \nاﻟﺘﻮﻗﻴﻊ اﻻﻟﻜﱰوي ﻟﻠﺘﻌﻬﺪ ﺑﺼﺤﺔ اﳌﻌﻠﻮﻣﺎت اﳌﻘﺪﻣﺔ\n   . ﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب\n  \n \n \nﺗﻨﻘﺴﻢ\n \nﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب إﱃ \nﻣﺠﻤﻮﻋﺘن رﺋﻴﺴﻴﺘن\n   :ﻫا \nأ- ﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب اﻟﺪاﺧﻠﻴﺔ\n  \n \n \nﺗﺄي ﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب اﻟﺪاﺧﻠﻴﺔ ﻣﻦ ﺧﻼل ﻣﺎ ﻳﲇ\n   :\n1 - \n اﻟﱰﻗﻴﺔPromotion\n   \n \n اﻟﱰﻗﻴﺔ ﻫﻲ ﻧﻘﻞ اﳌﻮﻇﻒ ﻣﻦ وﻇﻴﻔﺔ ﻣﺤﺪد\nة إﱃ وﻇﻴﻔﺔ أﺧﺮى ذات ﻣﺴﺘﻮى إداري أﻋﲆ ﺣﻴﺚ \nاﻟﺼﻼﺣﻴﺎت\n \nأﻛر أﻫﻤﻴﺔ \nواﳌﺴﺆوﻟﻴﺔ أﻋﲆ وأﺷﻤﻞ\n. وﻳﻨﺒﻐﻲ اﻟﺘﺄﻛﻴﺪ ﰲ ﻫﺬا اﻟﺨﺼﻮص ﻋﲆ ﴐورة وﺟﻮد ﻣﻌﺎﻳر \nﻣ\nﻮﺿﻮﻋﻴﺔ وﺗﻮاﻓﺮ أﺳﺲ ﻋﺎدﻟﺔ ﻟﻠﱰﻗﻴﺔ\n. وﺳﻴﺘﻢ ﺗﻨﺎول ﻫﺬا اﳌﻮﺿﻮع ﺑﺎﻟﺘﻔﺼﻴﻞ ﰲ اﻟﻔﺼﻞ اﻟﺜﺎﻣﻦ\n \nﻣﻦ ﻫﺬا اﻟﻜﺘﺎب\n   .",
+              "similarity": 0.3794345664978027,
+              "raw_similarity": 0.39943456649780273,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:10:00.185182",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "ae35e882",
+                "char_length": 963,
+                "word_count": 157,
+                "created_at": "2026-06-30T09:10:00.256908"
+              },
+              "chunk_id": 461
+            },
+            {
+              "text": "٢\nشروط التعيين:\n:يُشترط في كل متقدم لشغل وظيفة بالمؤسسة ما يلي\n•  \n أن يكون متمتعً ا بجنسية جمهورية مصر العربية. ويجوز الستثناء من شرط الجنسية وتقديم المبررات الكافية لذلك. وفي هذه الحالة يكون التعيين\nبموجب عقد عمل محدد المدة، مع مراعاة اشتراطات توظيف الأجانب المنظمة لذلك والواردة في نظام العمل المعمول به. •  \n.٦) عامًا. ويجوز الستثناء من شرط السن المحدَّ دة مع تقديم المبررات الكافية لذلك0( ) عامًا وأل تزيد على18( أل تقل سنُّ المتقدم عن\n•  \n أن يكون مستوفيًا للمؤهالت العلمية والعملية الالزمة لشغل الوظيفة المتقدم لها طبقًا للتوصيف الوظيفي المعتمد للوظيفة، مع ضرورة تقديم\nالمستندات الأصلية المؤيِّدة لحصوله على تلك المؤهالت. •  \n.أن يكون لئقًا طبيًّا بموجب تقرير طبى معترف به من قِبل المؤسسة\n•  \n أن يكون حسن السير والسلوك وأل يكون قد سبق الحكم عليه في جناية أو جريمة مُخلَّة بالشرف والأمانة، ويكون إثبات ذلك بموجب وثيقة رسمية\nل يتعدى تاريخ إصدارها ثالثة أشهر ميالدية. •  \n.تخضع سلطة الستثناء من أيّ/ كل الشروط المذكورة في البند السابق لالإدارة العليا\n.",
+              "similarity": 0.36881137132644654,
+              "raw_similarity": 0.42881137132644653,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:57.776586",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "fafc5e6e",
+                "char_length": 957,
+                "word_count": 165,
+                "created_at": "2026-06-30T09:09:57.795828"
+              },
+              "chunk_id": 79
+            },
+            {
+              "text": "تاريخ تقديم الطلب\nتُعامل المعلومات الوادرة في طلب التوظيف بسرية تامة. الرجاء إرفاق السيرة الذاتية ونسخة من الشهادة الجامعية وشهادات الخبرة مع الطلب. Information submitted in the application form is confidential. Please attach Curriculum vitae, copy of certification degree, and letters of experience نظام إدارة الموارد البشرية\n(دليل تدريبي وتطبيقي للشركات)\n34\nإدارة األداء\n تطَلع  إدارة الأداء هذه برسم الخطوط العريضة للسياسة العامة والإجراءات المتبعة للمؤسسة فيما يتعلق بقياس مستوى أداء العاملين، والتي تتحدد\nبناء على التعديالت الطارئة على نمو معدلت النمو والستثمار؛ بالإضافة إلى الستفادة القصوى من طاقات العاملين ومساعدتهم على تحقيق ذلك. تتميز إدارة الأداء بأنها عملية تقوم بالتطوير والتقييم بشكل مستمر، كما أنها تتعامل مع سلوك العاملين وليس مع شخصياتهم؛ بل وتحوِّل الأداء من دورة \nالعمل الروتينية إلى إنجاز أهداف مرسومة وواضحة تقوم بكتابتها وتوضيحها وتحديدها للعاملين. :أهداف إدارة األداء\n1\n . . ضمان تشجيع العاملين على التصرف بطريقة تسمح وتعزز عالقات عمل أفضل- إدارة السلوك\n2\n . .",
+              "similarity": 0.3560309135913849,
+              "raw_similarity": 0.4160309135913849,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:57.776586",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "27faabf4",
+                "char_length": 984,
+                "word_count": 152,
+                "created_at": "2026-06-30T09:09:57.798263"
+              },
+              "chunk_id": 107
+            },
+            {
+              "text": "ﻛا ﺗﺠﺮي اﻹدارة اﺗﺼ\nﺎﻻ ﺑﺎﻟﴩﻛﺎت اﳌﻮﻇﻔﺔ اﻟﺘﻲ ﺳﺒﻖ \nﳌﻘﺪم اﻟﻄﻠﺐ ان ﻋﻤﻞ ﻣﻌﻬﺎ وذﻟﻚ ﻟﻠﺘﺄﻛﺪ ﻣﻦ ﺳرة ﻣﻘﺪم اﻟﻄﻠﺐ وﺳﻠﻮﻛﻪ واداﺋﻪ\n   . 6 - \n إﺟﺮاء اﻻﺧﺘﺒﺎرات\n  \n \n \nﺗﻌﺪ اﻻﺧﺘﺒﺎرات أداة ﻫﺎﻣﺔ ﻣﻦ اﻷدوات اﳌﺴﺘﺨﺪﻣﺔ ﰲ ﻋﻤﻠﻴﺔ اﻻﺧﺘﺒﺎر، ﺣﻴﺚ ﺗﻮﺟﺪ ﻋﺪة أﻧﻮاع ﻣﻦ \nاﻻﺧﺘﺒﺎرات اﻟﺘﻲ مﻜﻦ اﺟﺮاؤﻫﺎ ﻟﻠﻤﺴﺎﻋﺪة ﰲ اﺧﺘﻴﺎر\n \nاﳌﺘﻘﺪﻣن ﻟﻠﻮﻇﻴﻔﺔ اﻻﻧﺴﺐ، وﻣﻦ ﻫﺬه اﻻﺧﺘﺒﺎرات\n   :\nأ- \n اﺧﺘﺒﺎرات اﻟﺬﻛﺎءIntelligence Tests\n   \n \n \n ﺗﻬﺪف اﺧﺘﺒﺎرات اﻟﺬﻛﺎء إﱃ ﺗﺤﺪﻳﺪ ﻣﺴﺘﻮى ذﻛﺎء اﳌﺮﺷﺢ ﻟﻠﻮﻇﻴﻔﺔIntellingence Quotient (IQ)\n \nوﻣﻘﺎرﻧﺘﻪ ﻣﻊ اﳌﺴﺘﻮى اﳌﻔﺮوض ﺗﻮﻓﺮه ﻓﻴﻤﻦ ﻳﺸﻐﻞ اﻟﻮﻇﻴﻔﺔ\n. ﻓﻜﺜرا ﻣﻦ اﻟﻮﻇﺎﺋﻒ اﻟﻌﺎﻟﻴﺔ ﺗﺘﻄﻠﺐ\n \nﻣﺴﺘﻮى ﻣﻌن ﻣﻦ \nاﻟﺬﻛﺎء وأﻛر ﻣﻦ اﳌﺴﺘﻮى اﻟﻌﺎدي أو اﳌﺘﻮﺳﻂ اﻟﻌﺎم ﻟﻠﺬﻛﺎء\n. وﺗﻮﺟﻪ ﻟﻠﻤﺮﺷﺢ ﻟﻠﻮﻇﻴﻔﺔ \nاﺳﺌﻠﺔ وﻋﺒﺎرات ﺗﺘﻌﻠﻖ ﺑﺎﳌﻘﺪرة \nاﻟﻌﻘﻠﻴﺔ واﻟﺬاﻛﺮة واﳌﻼﺣﻈﺔ واﻟﺘﺤﻠﻴﻞ\n   . ب- \n اﺧﺘﺒﺎرات اﻻﻧﺠﺎزAchievement Tests\n   \n \n ﺗﺠﺮي ﻫﺬه اﻻﺧﺘﺒﺎرات ﳌﻌﺮﻓﺔ ﻗﺪرة اﳌﺮﺷﺢ ﻟﻠﻮﻇﻴﻔﺔ ﻋﲆ أداء اﻟ\nﻌﻤﻞ واﻟﺘﻨﺒﺆ مﺴﺘﻮى ﻗﻴﺎﻣﻪ مﻬﺎم \nواﺟﺒﺎﺗﻪ اﻟﺘﻲ ﺳﻴﻜﻠﻒ ﺑﻬﺎ، وذﻟﻚ ﻣﻦ ﺧﻼل ﻗﻴﺎس ﻣﺎ ﺗﻌﻠﻤﻪ اﻟﻔﺮد ﻣﻦ ﻣﻌﻠﻮﻣﺎت وﻣﺎ اﺗﻘﻨﻪ ﻣﻦ ﻣﻬﺎرات\n. وﻣﻦ أﻫﻢ \nاﻷﻣﺜﻠﺔ ﻋﲆ ﻫﺬا اﻟﻨﻮع ﻣﻦ اﻻﺧﺘﺒﺎر اﺧﺘﺒﺎرات اﻟﻄﺒﺎﻋﺔ وﻋﺪد اﻻﺧﻄﺎء\n   .",
+              "similarity": 0.35375648975372315,
+              "raw_similarity": 0.41375648975372314,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:10:00.185182",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "83606070",
+                "char_length": 991,
+                "word_count": 160,
+                "created_at": "2026-06-30T09:10:00.258951"
+              },
+              "chunk_id": 480
+            }
+          ],
+          "cached": false
+        },
+        {
+          "question": "do i get maturnity days off",
+          "answer": "**Direct Answer:**\nYes, female employees are entitled to maternity leave, which includes 14 weeks of paid leave and additional unpaid leave.\n\n**Details:**\n\n* **Maternity Leave Entitlement:**\n\t+ 14 weeks of paid maternity leave, consisting of:\n\t\t- 6 weeks pre-delivery\n\t\t- 8 weeks post-delivery (flexible based on medical advice)\n\t+ Additional 4 weeks of unpaid leave available with manager approval\n* **Eligibility:**\n\t+ Female employees with over one-year continuous service are entitled to 26 weeks of maternity leave, subject to production of a medical certificate\n\t+ Maternity leave can be combined with other types of leave, subject to availability and total leave not exceeding 60 days\n* **Payment and Allowances:**\n\t+ Maternity leave is paid leave, along with any other allowances that may be admissible\n\n**Additional Notes:**\n\n* **ESIC Coverage:**\n\t+ Employees covered under ESIC may be eligible for maternity leave provided by ESIC\n* **Termination and Separation Policy:**\n\t+ A Termination and Separation Policy is in place to outline procedures for ending an employee's tenure, including resignation, retirement, or involuntary termination\n\n**Exceptions and Restrictions:**\n\n* **Special Circumstances:**\n\t+ The limit of 3 days at a time for leave may be relaxed in special circumstances at the discretion of the HR Department\n* **Contract Termination:**\n\t+ In case of absence without intimation for more than 5 days, the contract may be liable to be terminated by the concerned authority",
+          "timestamp": "2026-06-30T14:48:49.109580",
+          "language": "en",
+          "confidence": 0.5821935057640076,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 18.848140001296997,
+          "sources": [
+            {
+              "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+              "similarity": 0.5821935057640076,
+              "raw_similarity": 0.5071935057640076,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "2715a9c8",
+                "char_length": 995,
+                "word_count": 177,
+                "created_at": "2026-06-30T09:09:58.161582"
+              },
+              "chunk_id": 216
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.5805658006668091,
+              "raw_similarity": 0.4655658006668091,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-30T09:09:58.161509"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.5721637129783631,
+              "raw_similarity": 0.49716371297836304,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-30T09:09:56.551974"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "a) Female Employee with over one-year continuous service shall be entitled to 26 weeks \nmaternity leave subject to production of medical certificate being their pregnant and \nthe probable date of confinement. Not with standing anything the same female \nemployee may be allowed to combine any other kind of leave subject to availability \nof leave title along with the maternity leave provided that the total leave so availed does not exceed 60 days. Maternity leave shall be leave on full pay together with any \nother allowance that may be admissible. b) Employee who are covered under ESIC the maternity leave will be provided by the \nESIC. TERMINATION AND SEPARATION POLICY \n  \nA Termination and Separation Policy is a crucial HR guideline outlining the procedures for \nending an employee’s tenure, whether due to resignation, retirement, or involuntary \ntermination.",
+              "similarity": 0.5691904330253601,
+              "raw_similarity": 0.4541904330253601,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "6f399ca0",
+                "char_length": 868,
+                "word_count": 135,
+                "created_at": "2026-06-30T09:09:58.161436"
+              },
+              "chunk_id": 214
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.5689356148242951,
+              "raw_similarity": 0.49393561482429504,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-30T09:09:58.161145"
+              },
+              "chunk_id": 210
+            }
+          ],
+          "cached": false
+        },
+        {
+          "question": "how can i apply for it",
+          "answer": "**Direct Answer:**\nTo apply for a job at GIG EGYPT LIFE TAKAFUL, please submit your application with the required documents, including your Curriculum Vitae, copy of certification degree, and letters of experience.\n\n**Details:**\n\n* **Application Submission:** Information submitted in the application form is confidential. Please attach the required documents with your application.\n* **Required Documents:**\n\t+ Curriculum Vitae\n\t+ Copy of certification degree\n\t+ Letters of experience\n* **Application Process:** The application process involves submitting the required documents and information, which will be reviewed and evaluated by the HR department.\n\n**Additional Notes:**\n\n* **Confidentiality:** The information submitted in the application form is confidential and will be treated as such.\n* **Evaluation Criteria:** The application will be evaluated based on the required documents and information submitted.\n* **Selection Process:** The selection process involves a series of evaluations and assessments to determine the best candidate for the position.\n\n**Exceptions and Restrictions:**\n\n* **Confidentiality:** The information submitted in the application form is confidential and will be treated as such.\n* **Evaluation Criteria:** The application will be evaluated based on the required documents and information submitted.\n* **Selection Process:** The selection process involves a series of evaluations and assessments to determine the best candidate for the position.\n\nNote: The selection process may involve additional steps, such as interviews, tests, or assessments, which will be communicated to the candidate separately.\n\nNote: These results are related but may not directly answer your question.",
+          "timestamp": "2026-06-30T14:49:07.738816",
+          "language": "en",
+          "confidence": 0.3816472315788269,
+          "answer_style": "detailed",
+          "match_type": "related_match",
+          "response_time": 0.0,
+          "sources": [
+            {
+              "text": "٥\nمسوغات التعيين:\n :يلزم على المرشح لشغل وظيفة شاغرة تقديم مسوِّغات التعيين؛ وهي كالتالي\n•  \n.أصل شهادة الميالد المُمَيكنة\n•  \n.أصل المؤهل الدراسيّ أو مستخرَج رسميّ منه\n•  \n.)أصل شهادة الموقف من الخدمة العسكرية (للذكور\n•  \n.) شهادة القيد بمكتب القوى العاملة المختص (كعب العمل\n•  \n َّصحيفة الحالة الجنائية (الفيش) حديثة باسم المؤسسة ولم يمر\nعليه أكثر من ثالثة أشهر. •  \n.4 × ) صورة شخصية حديثة مقاس ٦4( عدد\n•  \n.صورة لبطاقة الرقم القوميّ سارية\n•  \n.شهادة نهاية الخدمة بالعمل السابق (إخالء طرف) إن وجِ دت\n•  \n.أصل النموذج (٦) تأمينات لمن سبق لهم العمل\n•  \n.الترخيص في العمل إن كان المرشح من الأجانب\n•  \n.صور من شهادات الخبرة السابقة إن وجدت\n•  \n.صور من شهادات الدورات التَّدريبيَّة إن وجدت\n•  \n.)صورة رخصة (للسائقين\n•  \n.)شهادة قياس المهارة (للوظائف الفنية\n•  \n.شهادة قيد بالنقابات المهنية التي يطالب بها القانون\n•  \n شهادة  صحية  للعاملين  بوظائف  تتعلق  بالأطعمة  والمشروبات\nوالأغذية  (كذلك  عمال  البوفيه  والكانتين).",
+              "similarity": 0.3816472315788269,
+              "raw_similarity": 0.4416472315788269,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:57.776586",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "fbc9df65",
+                "char_length": 918,
+                "word_count": 153,
+                "created_at": "2026-06-30T09:09:57.796568"
+              },
+              "chunk_id": 86
+            },
+            {
+              "text": "وﺗﺘﻀﻤﻦ \nﻃﻠﺒﺎت اﻟﺘﻮﻇﻴﻒ اﻟﺘﻲ ﺗﻜﻮن ﻋﲆ ﺷﻜﻞ مﻮذج ﻣﺤﺪد مﻸه اﳌﺘﻘﺪم ﺑﺨﻂ ﻳﺪه أو ﻣﻦ ﺧﻼل \nاﻻﻧﱰﻧﺖ\n. وﻳﺮﻓﻖ ﻣﻊ اﻟﻄﻠﺐ ﺻﻮرة اﳌﺘﻘﺪم اﻟﺸﺨﺼﻴﺔ واﳌﺴﺘﻨﺪات اﻟﺮﺳﻤﻴﺔ اﳌﻄﻠﻮﺑﺔ ﻛﺼﻮرة \nﻋﻦ ﺟﻮاز اﻟﺴﻔﺮ إدارة اﳌﻮارد اﻟﺒﴩﻳﺔ\n  \n \n \n126\n \n \n                              \n او اﻟﺒﻄﺎﻗﺔ اﳌﺪﻧﻴﺔ وﺻﻮر ﻋﻦ اﻟﺸﻬﺎدات اﻟﺪراﺳﻴﺔ وﺷﻬﺎدات اﻟﺨﱪة ورﺳﺎﺋﻞ اﻟﺘﻌﺮﻳﻒ ﻣﻦ\nﻣﻌﺮﻓن، إﺿﺎﻓﺔ إﱃ اﻟﺘﻌﻬﺪ ﺑﺼﺤﺔ اﳌﻌﻠﻮﻣﺎت اﳌﻘﺪﻣﺔ\n. وﰲ ﺣﺎﻟﺔ اﻟﺘﻘﺪم ﺑﻄﻠﺐ ﻣﻦ ﺧﻼل \nاﻻﻧﱰﻧﺖ ﻓﺈﻧﻪ مﻜﻦ اﺳﺘﺨﺪام Scanners \n ﻻرﻓﺎق اﳌﺴﺘﻨﺪات أﻋﻼه ﻛا أﻧﻪ مﻜﻦ اﺳ\nﺘﺨﺪام \nاﻟﺘﻮﻗﻴﻊ اﻻﻟﻜﱰوي ﻟﻠﺘﻌﻬﺪ ﺑﺼﺤﺔ اﳌﻌﻠﻮﻣﺎت اﳌﻘﺪﻣﺔ\n   . ﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب\n  \n \n \nﺗﻨﻘﺴﻢ\n \nﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب إﱃ \nﻣﺠﻤﻮﻋﺘن رﺋﻴﺴﻴﺘن\n   :ﻫا \nأ- ﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب اﻟﺪاﺧﻠﻴﺔ\n  \n \n \nﺗﺄي ﻣﺼﺎدر اﻻﺳﺘﻘﻄﺎب اﻟﺪاﺧﻠﻴﺔ ﻣﻦ ﺧﻼل ﻣﺎ ﻳﲇ\n   :\n1 - \n اﻟﱰﻗﻴﺔPromotion\n   \n \n اﻟﱰﻗﻴﺔ ﻫﻲ ﻧﻘﻞ اﳌﻮﻇﻒ ﻣﻦ وﻇﻴﻔﺔ ﻣﺤﺪد\nة إﱃ وﻇﻴﻔﺔ أﺧﺮى ذات ﻣﺴﺘﻮى إداري أﻋﲆ ﺣﻴﺚ \nاﻟﺼﻼﺣﻴﺎت\n \nأﻛر أﻫﻤﻴﺔ \nواﳌﺴﺆوﻟﻴﺔ أﻋﲆ وأﺷﻤﻞ\n. وﻳﻨﺒﻐﻲ اﻟﺘﺄﻛﻴﺪ ﰲ ﻫﺬا اﻟﺨﺼﻮص ﻋﲆ ﴐورة وﺟﻮد ﻣﻌﺎﻳر \nﻣ\nﻮﺿﻮﻋﻴﺔ وﺗﻮاﻓﺮ أﺳﺲ ﻋﺎدﻟﺔ ﻟﻠﱰﻗﻴﺔ\n. وﺳﻴﺘﻢ ﺗﻨﺎول ﻫﺬا اﳌﻮﺿﻮع ﺑﺎﻟﺘﻔﺼﻴﻞ ﰲ اﻟﻔﺼﻞ اﻟﺜﺎﻣﻦ\n \nﻣﻦ ﻫﺬا اﻟﻜﺘﺎب\n   .",
+              "similarity": 0.3794345664978027,
+              "raw_similarity": 0.39943456649780273,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:10:00.185182",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "ae35e882",
+                "char_length": 963,
+                "word_count": 157,
+                "created_at": "2026-06-30T09:10:00.256908"
+              },
+              "chunk_id": 461
+            },
+            {
+              "text": "٢\nشروط التعيين:\n:يُشترط في كل متقدم لشغل وظيفة بالمؤسسة ما يلي\n•  \n أن يكون متمتعً ا بجنسية جمهورية مصر العربية. ويجوز الستثناء من شرط الجنسية وتقديم المبررات الكافية لذلك. وفي هذه الحالة يكون التعيين\nبموجب عقد عمل محدد المدة، مع مراعاة اشتراطات توظيف الأجانب المنظمة لذلك والواردة في نظام العمل المعمول به. •  \n.٦) عامًا. ويجوز الستثناء من شرط السن المحدَّ دة مع تقديم المبررات الكافية لذلك0( ) عامًا وأل تزيد على18( أل تقل سنُّ المتقدم عن\n•  \n أن يكون مستوفيًا للمؤهالت العلمية والعملية الالزمة لشغل الوظيفة المتقدم لها طبقًا للتوصيف الوظيفي المعتمد للوظيفة، مع ضرورة تقديم\nالمستندات الأصلية المؤيِّدة لحصوله على تلك المؤهالت. •  \n.أن يكون لئقًا طبيًّا بموجب تقرير طبى معترف به من قِبل المؤسسة\n•  \n أن يكون حسن السير والسلوك وأل يكون قد سبق الحكم عليه في جناية أو جريمة مُخلَّة بالشرف والأمانة، ويكون إثبات ذلك بموجب وثيقة رسمية\nل يتعدى تاريخ إصدارها ثالثة أشهر ميالدية. •  \n.تخضع سلطة الستثناء من أيّ/ كل الشروط المذكورة في البند السابق لالإدارة العليا\n.",
+              "similarity": 0.36881137132644654,
+              "raw_similarity": 0.42881137132644653,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:57.776586",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "fafc5e6e",
+                "char_length": 957,
+                "word_count": 165,
+                "created_at": "2026-06-30T09:09:57.795828"
+              },
+              "chunk_id": 79
+            },
+            {
+              "text": "تاريخ تقديم الطلب\nتُعامل المعلومات الوادرة في طلب التوظيف بسرية تامة. الرجاء إرفاق السيرة الذاتية ونسخة من الشهادة الجامعية وشهادات الخبرة مع الطلب. Information submitted in the application form is confidential. Please attach Curriculum vitae, copy of certification degree, and letters of experience نظام إدارة الموارد البشرية\n(دليل تدريبي وتطبيقي للشركات)\n34\nإدارة األداء\n تطَلع  إدارة الأداء هذه برسم الخطوط العريضة للسياسة العامة والإجراءات المتبعة للمؤسسة فيما يتعلق بقياس مستوى أداء العاملين، والتي تتحدد\nبناء على التعديالت الطارئة على نمو معدلت النمو والستثمار؛ بالإضافة إلى الستفادة القصوى من طاقات العاملين ومساعدتهم على تحقيق ذلك. تتميز إدارة الأداء بأنها عملية تقوم بالتطوير والتقييم بشكل مستمر، كما أنها تتعامل مع سلوك العاملين وليس مع شخصياتهم؛ بل وتحوِّل الأداء من دورة \nالعمل الروتينية إلى إنجاز أهداف مرسومة وواضحة تقوم بكتابتها وتوضيحها وتحديدها للعاملين. :أهداف إدارة األداء\n1\n . . ضمان تشجيع العاملين على التصرف بطريقة تسمح وتعزز عالقات عمل أفضل- إدارة السلوك\n2\n . .",
+              "similarity": 0.3560309135913849,
+              "raw_similarity": 0.4160309135913849,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_arabic 1",
+                "file_name": "HR_Policies_arabic 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:57.776586",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 29,
+                "chunk_hash": "27faabf4",
+                "char_length": 984,
+                "word_count": 152,
+                "created_at": "2026-06-30T09:09:57.798263"
+              },
+              "chunk_id": 107
+            },
+            {
+              "text": "ﻛا ﺗﺠﺮي اﻹدارة اﺗﺼ\nﺎﻻ ﺑﺎﻟﴩﻛﺎت اﳌﻮﻇﻔﺔ اﻟﺘﻲ ﺳﺒﻖ \nﳌﻘﺪم اﻟﻄﻠﺐ ان ﻋﻤﻞ ﻣﻌﻬﺎ وذﻟﻚ ﻟﻠﺘﺄﻛﺪ ﻣﻦ ﺳرة ﻣﻘﺪم اﻟﻄﻠﺐ وﺳﻠﻮﻛﻪ واداﺋﻪ\n   . 6 - \n إﺟﺮاء اﻻﺧﺘﺒﺎرات\n  \n \n \nﺗﻌﺪ اﻻﺧﺘﺒﺎرات أداة ﻫﺎﻣﺔ ﻣﻦ اﻷدوات اﳌﺴﺘﺨﺪﻣﺔ ﰲ ﻋﻤﻠﻴﺔ اﻻﺧﺘﺒﺎر، ﺣﻴﺚ ﺗﻮﺟﺪ ﻋﺪة أﻧﻮاع ﻣﻦ \nاﻻﺧﺘﺒﺎرات اﻟﺘﻲ مﻜﻦ اﺟﺮاؤﻫﺎ ﻟﻠﻤﺴﺎﻋﺪة ﰲ اﺧﺘﻴﺎر\n \nاﳌﺘﻘﺪﻣن ﻟﻠﻮﻇﻴﻔﺔ اﻻﻧﺴﺐ، وﻣﻦ ﻫﺬه اﻻﺧﺘﺒﺎرات\n   :\nأ- \n اﺧﺘﺒﺎرات اﻟﺬﻛﺎءIntelligence Tests\n   \n \n \n ﺗﻬﺪف اﺧﺘﺒﺎرات اﻟﺬﻛﺎء إﱃ ﺗﺤﺪﻳﺪ ﻣﺴﺘﻮى ذﻛﺎء اﳌﺮﺷﺢ ﻟﻠﻮﻇﻴﻔﺔIntellingence Quotient (IQ)\n \nوﻣﻘﺎرﻧﺘﻪ ﻣﻊ اﳌﺴﺘﻮى اﳌﻔﺮوض ﺗﻮﻓﺮه ﻓﻴﻤﻦ ﻳﺸﻐﻞ اﻟﻮﻇﻴﻔﺔ\n. ﻓﻜﺜرا ﻣﻦ اﻟﻮﻇﺎﺋﻒ اﻟﻌﺎﻟﻴﺔ ﺗﺘﻄﻠﺐ\n \nﻣﺴﺘﻮى ﻣﻌن ﻣﻦ \nاﻟﺬﻛﺎء وأﻛر ﻣﻦ اﳌﺴﺘﻮى اﻟﻌﺎدي أو اﳌﺘﻮﺳﻂ اﻟﻌﺎم ﻟﻠﺬﻛﺎء\n. وﺗﻮﺟﻪ ﻟﻠﻤﺮﺷﺢ ﻟﻠﻮﻇﻴﻔﺔ \nاﺳﺌﻠﺔ وﻋﺒﺎرات ﺗﺘﻌﻠﻖ ﺑﺎﳌﻘﺪرة \nاﻟﻌﻘﻠﻴﺔ واﻟﺬاﻛﺮة واﳌﻼﺣﻈﺔ واﻟﺘﺤﻠﻴﻞ\n   . ب- \n اﺧﺘﺒﺎرات اﻻﻧﺠﺎزAchievement Tests\n   \n \n ﺗﺠﺮي ﻫﺬه اﻻﺧﺘﺒﺎرات ﳌﻌﺮﻓﺔ ﻗﺪرة اﳌﺮﺷﺢ ﻟﻠﻮﻇﻴﻔﺔ ﻋﲆ أداء اﻟ\nﻌﻤﻞ واﻟﺘﻨﺒﺆ مﺴﺘﻮى ﻗﻴﺎﻣﻪ مﻬﺎم \nواﺟﺒﺎﺗﻪ اﻟﺘﻲ ﺳﻴﻜﻠﻒ ﺑﻬﺎ، وذﻟﻚ ﻣﻦ ﺧﻼل ﻗﻴﺎس ﻣﺎ ﺗﻌﻠﻤﻪ اﻟﻔﺮد ﻣﻦ ﻣﻌﻠﻮﻣﺎت وﻣﺎ اﺗﻘﻨﻪ ﻣﻦ ﻣﻬﺎرات\n. وﻣﻦ أﻫﻢ \nاﻷﻣﺜﻠﺔ ﻋﲆ ﻫﺬا اﻟﻨﻮع ﻣﻦ اﻻﺧﺘﺒﺎر اﺧﺘﺒﺎرات اﻟﻄﺒﺎﻋﺔ وﻋﺪد اﻻﺧﻄﺎء\n   .",
+              "similarity": 0.35375648975372315,
+              "raw_similarity": 0.41375648975372314,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1",
+                "file_name": "_إدارة الموارد البشرية - كتاب - محفوظ أحمد جودة - مكتبة كل الكتب_books_issues_1722245495 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:10:00.185182",
+                "source": "Internal Documents",
+                "language": "ar",
+                "chunk_id": 256,
+                "chunk_hash": "83606070",
+                "char_length": 991,
+                "word_count": 160,
+                "created_at": "2026-06-30T09:10:00.258951"
+              },
+              "chunk_id": 480
+            }
+          ],
+          "cached": true
+        },
+        {
+          "question": "hello pod",
+          "answer": "Hello! I'm **AI POD**, your internal assistant at **GIG Egypt Life Takaful**.\n\nI'm here to help you find answers about company policies quickly and accurately. What would you like to know?",
+          "timestamp": "2026-06-30T14:50:34.012636",
+          "language": "en",
+          "confidence": 1.0,
+          "answer_style": "detailed",
+          "match_type": "conversational",
+          "response_time": 0.000125885009765625,
+          "sources": [],
+          "cached": false
+        }
+      ]
+    },
+    "762897102d9f": {
+      "title": "how many days off do i get",
+      "created_at": "2026-07-01T10:41:35.838516",
+      "updated_at": "2026-07-06T14:08:26.874096",
+      "messages": [
+        {
+          "question": "how many days off do i get",
+          "answer": "**Direct Answer:**\nYou are entitled to 21 annual leave days per calendar year, which accrues at a rate of 1.75 days per month of service.\n\n**Details:**\n\n**Annual Leave:**\n* You are entitled to 21 annual leave days per calendar year.\n* Annual leave accrues at a rate of 1.75 days per month of service.\n* Accrual Details:\n  | Years of Service | Annual Leave Entitlement |\n  | --- | --- |\n  | 0-2 years | 21 days annually |\n  | 3-5 years | 25 days annually |\n  | 6-10 years | 30 days annually |\n  | 10+ years | 35 days annually |\n* Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n* Any leave beyond this limit will be forfeited unless special approval is obtained from senior management.\n* You may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.\n\n**Weekly Offs:**\n* Sunday of the month will be the weekly off.\n* Depending on the work load, Weekly off’s on Sunday can be cancelled by the Management on its own discretion.\n\n**Additional Notes:**\n* Please note that annual leave accrual and entitlements may vary based on your years of service.\n* It is essential to submit leave requests at least two weeks in advance through the HR portal to ensure approval.\n* Emergency leave requests will be considered on a case-by-case basis with proper documentation.",
+          "timestamp": "2026-07-01T10:41:35.804770",
+          "language": "en",
+          "confidence": 0.7677009820938111,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 13.583133697509766,
+          "sources": [
+            {
+              "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+              "similarity": 0.7677009820938111,
+              "raw_similarity": 0.692700982093811,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "2715a9c8",
+                "char_length": 995,
+                "word_count": 177,
+                "created_at": "2026-06-30T09:09:58.161582"
+              },
+              "chunk_id": 216
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.7011678934097291,
+              "raw_similarity": 0.626167893409729,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-30T09:09:56.551974"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.6770811581611633,
+              "raw_similarity": 0.5620811581611633,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-30T09:09:58.161509"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 0.6765011668205262,
+              "raw_similarity": 0.6015011668205261,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-30T09:09:56.551686"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.6175329208374024,
+              "raw_similarity": 0.5425329208374023,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-30T09:09:58.161145"
+              },
+              "chunk_id": 210
+            }
+          ],
+          "cached": false
+        },
+        {
+          "question": "how can i request the days off",
+          "answer": "**Direct Answer:**\nYou can request days off by submitting a leave request at least two weeks in advance through the HR portal.\n\n**Details:**\n\n**Leave Request Process:**\n* Leave requests must be submitted at least two weeks in advance through the HR portal.\n* Emergency leave requests will be considered on a case-by-case basis with proper documentation.\n* You can submit leave requests for annual leave, sick leave, or other types of leave as per the company's leave policies.\n\n**Annual Leave Request:**\n* Annual leave accrues at a rate of 1.75 days per month of service.\n* Accrual Details:\n  | Years of Service | Annual Leave Entitlement |\n  | --- | --- |\n  | 0-2 years | 21 days annually |\n  | 3-5 years | 25 days annually |\n  | 6-10 years | 30 days annually |\n  | 10+ years | 35 days annually |\n* Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n\n**Sick Leave Request:**\n* Employees have 10 sick leave days per year for personal illness or medical appointments.\n* Sick leave does not accrue and unused days do not carry over.\n* For absences exceeding 3 consecutive days, a medical certificate must be provided.\n\n**Additional Notes:**\n* Please note that leave requests may be subject to approval by your manager or HR department.\n* It is essential to submit leave requests in a timely manner to ensure approval.\n* You can check the HR portal for more information on leave policies and procedures.",
+          "timestamp": "2026-07-01T10:45:57.724358",
+          "language": "en",
+          "confidence": 0.7620015048980713,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 14.533678770065308,
+          "sources": [
+            {
+              "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+              "similarity": 0.7620015048980713,
+              "raw_similarity": 0.6470015048980713,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "2715a9c8",
+                "char_length": 995,
+                "word_count": 177,
+                "created_at": "2026-06-30T09:09:58.161582"
+              },
+              "chunk_id": 216
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.7145517158508301,
+              "raw_similarity": 0.5595517158508301,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-06-30T09:09:58.161509"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.6518015766143799,
+              "raw_similarity": 0.5368015766143799,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-06-30T09:09:56.551974"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 0.5885903143882751,
+              "raw_similarity": 0.47359031438827515,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-06-30T09:09:56.549034",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-06-30T09:09:56.551686"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.5625118136405945,
+              "raw_similarity": 0.4875118136405945,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-06-30T09:09:58.158170",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-06-30T09:09:58.161145"
+              },
+              "chunk_id": 210
+            }
+          ],
+          "cached": false
+        }
+      ]
+    },
+    "3237f7d67171": {
+      "title": "hey how are you",
+      "created_at": "2026-07-06T14:09:31.458853",
+      "updated_at": "2026-07-06T14:35:25.491833",
+      "messages": [
+        {
+          "question": "hey how are you",
+          "answer": "Hello! I'm **AI POD**, your internal assistant at **GIG Egypt Life Takaful**.\n\nI'm here to help you find answers about company policies quickly and accurately. What would you like to know?",
+          "timestamp": "2026-07-06T14:09:31.435864",
+          "language": "en",
+          "confidence": 1.0,
+          "answer_style": "detailed",
+          "match_type": "conversational",
+          "response_time": 0.0008230209350585938,
+          "sources": [],
+          "cached": false
+        },
+        {
+          "question": "how many days off do i get",
+          "answer": "**Direct Answer:**\nYou are entitled to 21 annual leave days per calendar year, which accrues at a rate of 1.75 days per month of service.\n\n**Details:**\n\n* **Annual Leave Entitlement:**\n + 0-2 years of service: 21 days annually\n + 3-5 years of service: 25 days annually\n + 6-10 years of service: 30 days annually\n + 10+ years of service: 35 days annually\n\n* **Accrual and Carryover:**\n + Annual leave accrues at a rate of 1.75 days per month of service.\n + Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n + Any leave beyond this limit will be forfeited unless special approval is obtained from senior management.\n\n* **Emergency Leave Requests:**\n + Leave requests must be submitted at least two weeks in advance through the HR portal.\n + Emergency leave requests will be considered on a case-by-case basis with proper documentation.\n\n**Additional Notes:**\n- You may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.\n- The HR Department may relax the limit of 3 days at a time for special circumstances.",
+          "timestamp": "2026-07-06T14:10:07.064949",
+          "language": "en",
+          "confidence": 0.7677009820938111,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 11.1405611038208,
+          "sources": [
+            {
+              "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+              "similarity": 0.7677009820938111,
+              "raw_similarity": 0.692700982093811,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:02:24.407946",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "2715a9c8",
+                "char_length": 995,
+                "word_count": 177,
+                "created_at": "2026-07-06T14:02:24.409089"
+              },
+              "chunk_id": 216
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.7011678934097291,
+              "raw_similarity": 0.626167893409729,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-07-06T14:02:23.979368",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-07-06T14:02:23.979599"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.6770811581611633,
+              "raw_similarity": 0.5620811581611633,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:02:24.407946",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-07-06T14:02:24.409057"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 0.6765011668205262,
+              "raw_similarity": 0.6015011668205261,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-07-06T14:02:23.979368",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-07-06T14:02:23.979562"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.6175329208374024,
+              "raw_similarity": 0.5425329208374023,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:02:24.407946",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-07-06T14:02:24.408912"
+              },
+              "chunk_id": 210
+            }
+          ],
+          "cached": false
+        },
+        {
+          "question": "how many days off do i get",
+          "answer": "**Direct Answer:**\nYou are entitled to 21 annual leave days per calendar year, which accrues at a rate of 1.75 days per month of service.\n\n**Details:**\n\n* **Annual Leave Entitlement:**\n + 0-2 years of service: 21 days annually\n + 3-5 years of service: 25 days annually\n + 6-10 years of service: 30 days annually\n + 10+ years of service: 35 days annually\n\n* **Accrual and Carryover:**\n + Annual leave accrues at a rate of 1.75 days per month of service.\n + Unused annual leave may be carried over to the next year, up to a maximum of 15 days.\n + Any leave beyond this limit will be forfeited unless special approval is obtained from senior management.\n\n* **Emergency Leave Requests:**\n + Leave requests must be submitted at least two weeks in advance through the HR portal.\n + Emergency leave requests will be considered on a case-by-case basis with proper documentation.\n\n**Additional Notes:**\n- You may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.\n- The HR Department may relax the limit of 3 days at a time for special circumstances.",
+          "timestamp": "2026-07-06T14:11:17.685127",
+          "language": "en",
+          "confidence": 0.7677009820938111,
+          "answer_style": "detailed",
+          "match_type": "exact_match",
+          "response_time": 0.0,
+          "sources": [
+            {
+              "text": "d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2. Weekly Offs \n \na) Sunday of the month will be the weekly off \nb) Owing to work exigencies, an employee on an exceptional basis may be expected to   \nwork either on a weekly off or on a public holiday. c) In our company, 2nd Saturday is off every month. 3. Lunch Hours \nCompany allows for one hour of lunch break in the day. Such lunch break could be taken anytime between 1:00 pm and 2:00 pm on a staggered \nschedule so that an employee’s absence does not create a problem for peers or colleagues. 4. Attendance Guidelines \n \na) All employees are required to mark their attendance on Bio Matric located in the \nreception area in the morning and evening as they walk in and walkout. Failure of \ndoing so, might result into an absent marked for the employee for that particular day. b) The branch office would maintain an attendance register to record the attendance of \nemployees.",
+              "similarity": 0.7677009820938111,
+              "raw_similarity": 0.692700982093811,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:02:24.407946",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "2715a9c8",
+                "char_length": 995,
+                "word_count": 177,
+                "created_at": "2026-07-06T14:02:24.409089"
+              },
+              "chunk_id": 216
+            },
+            {
+              "text": "1.2 Sick Leave\nEmployees have 10 sick leave days per year for personal illness or medical appointments. Sick leave does not accrue and unused days do not carry over. For absences exceeding 3 consecutive days, a medical certificate must be provided. The company reserves the right to request medical documentation for any sick leave taken. Extended Medical Leave: 11-30 days: Requires medical certification and HR approval 31+ days: May qualify for short-term disability benefits Chronic conditions: Accommodations available under ADA compliance 1.3 Maternity/Paternity Leave\nMaternity Leave: Female employees are entitled to 14 weeks of paid maternity leave 6 weeks pre-delivery and 8 weeks post-delivery (flexible based on medical advice) Additional 4 weeks unpaid leave available with manager approval Adoption leave: 10 weeks for primary adopting parent Paternity Leave: Male employees are entitled to 5 days of paid paternity leave Additional 2 weeks of unpaid leave available",
+              "similarity": 0.7011678934097291,
+              "raw_similarity": 0.626167893409729,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-07-06T14:02:23.979368",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "7df9a47c",
+                "char_length": 980,
+                "word_count": 146,
+                "created_at": "2026-07-06T14:02:23.979599"
+              },
+              "chunk_id": 1
+            },
+            {
+              "text": "This policy ensures fair, consistent, and legally compliant separations, covering \naspects like notice periods, exit interviews, property returns, final pay, and data handling. It \nis essential to safeguard the company’s interests and maintain a positive employer-employee \nrelationship during separations. ATTENDANCE \n \n1. Working Days \n \na) The working days of the company for all employees will be from Monday to Saturday. The timings would be as under. Days/Timings: Monday to Saturday \nTime In: - 9:30 am \nTime Out: - 6:00 pm \nb) Employees have to ensure that the assigned tasks are completed before availing leave. c) Depending on the demands of the job role and exigencies of work, the employee \nmaybe required to work extra hours at office to complete the assigned tasks or work \nin a different shift subject to approval from the reporting authority/management. d) Depending on the work load, Weekly off’s on Sunday can be cancelled by the \nManagement on its own discretion. 2.",
+              "similarity": 0.6770811581611633,
+              "raw_similarity": 0.5620811581611633,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:02:24.407946",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "519fbbfc",
+                "char_length": 985,
+                "word_count": 155,
+                "created_at": "2026-07-06T14:02:24.409057"
+              },
+              "chunk_id": 215
+            },
+            {
+              "text": "Human Resources Policy Manual (Comprehensive Edition)\nSection 1: Leave Policies\n1.1 Annual Leave\nEmployees are entitled to 21 annual leave days per calendar year. Annual leave accrues at a rate of 1.75 days per month of service. Leave requests must be submitted at least two weeks in advance through the HR portal. Emergency leave requests will be considered on a case-by-case basis with proper documentation. Accrual Details: 0-2 years of service: 21 days annually 3-5 years of service: 25 days annually 6-10 years of service: 30 days annually 10+ years of service: 35 days annually Unused annual leave may be carried over to the next year, up to a maximum of 15 days. Any leave beyond this limit will be forfeited unless special approval is obtained from senior management. Employees may request to cash out up to 5 days of unused annual leave each year during the designated enrollment period.",
+              "similarity": 0.6765011668205262,
+              "raw_similarity": 0.6015011668205261,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR data 1",
+                "file_name": "HR data 1.txt",
+                "file_type": "txt",
+                "ingested_at": "2026-07-06T14:02:23.979368",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 0,
+                "chunk_hash": "60c507e5",
+                "char_length": 896,
+                "word_count": 150,
+                "created_at": "2026-07-06T14:02:23.979562"
+              },
+              "chunk_id": 0
+            },
+            {
+              "text": "The limit of \n3 days at a time may be relaxed in special circumstances at the discretion of the \nHR Department. i) In case any staff remains absent from duty for more than 5 days without any \nintimation to the concerned authorities his/her contract is liable to be \nterminated by the concerned authority. All Leaves will be credited to the concerned at the beginning of each  year, and the leaves \nremaining at the end of the year will automatically lapse. We have carrying forward leaves \nto next year limits of 6 Leaves and Encashment to other leave balance for employees. Legally, India has three national holidays where no organization is allowed to be open without \npermission. However, organizations like factories, hospitals, travel agencies, etc. are exempt \nfrom this and are allowed to work for 24 hours a day. However, under the Factories Act, 1948, \nthey must be paid for those days and should be paid for overtime. S. No.",
+              "similarity": 0.6175329208374024,
+              "raw_similarity": 0.5425329208374023,
+              "metadata": {
+                "department": "Multi-Department",
+                "document": "HR_Policies_english 1",
+                "file_name": "HR_Policies_english 1.pdf",
+                "file_type": "pdf",
+                "ingested_at": "2026-07-06T14:02:24.407946",
+                "source": "Internal Documents",
+                "language": "en",
+                "chunk_id": 203,
+                "chunk_hash": "f4f50c37",
+                "char_length": 934,
+                "word_count": 159,
+                "created_at": "2026-07-06T14:02:24.408912"
+              },
+              "chunk_id": 210
             }
           ],
           "cached": true

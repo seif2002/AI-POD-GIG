@@ -13,6 +13,7 @@ from datetime import datetime, timedelta
 import hashlib
 import re
 import streamlit.components.v1 as components
+from collections import Counter
 # Add current directory to path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
@@ -383,14 +384,117 @@ def _is_no_answer_message(message: dict) -> bool:
     )
 
 
-def _render_dashboard_table(rows: list, columns: list):
+LUCIDE_PATHS = {
+    "search": '<circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path>',
+    "send": '<path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path>',
+    "plus-circle": '<circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path>',
+    "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line>',
+    "layout-dashboard": '<rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect>',
+    "database": '<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"></path><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"></path>',
+    "circle-alert": '<circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line>',
+    "file-text": '<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>',
+    "clock": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>',
+}
+
+
+def lucide_icon(name: str, class_name: str = "lucide-inline") -> str:
+    path = LUCIDE_PATHS.get(name, "")
+    return (
+        f'<svg class="{class_name}" xmlns="http://www.w3.org/2000/svg" width="18" height="18" '
+        f'viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+        f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{path}</svg>'
+    )
+
+
+def dashboard_metric_card(label: str, value, icon_name: str, detail: str = "", tone: str = "default") -> str:
+    return (
+        f'<div class="dashboard-metric-card dashboard-tone-{html.escape(tone)}">'
+        f'<div class="dashboard-metric-icon">{lucide_icon(icon_name, "dashboard-card-icon")}</div>'
+        f'<div class="dashboard-metric-label">{html.escape(label)}</div>'
+        f'<div class="dashboard-metric-value">{html.escape(str(value))}</div>'
+        f'<div class="dashboard-metric-detail">{html.escape(detail)}</div>'
+        '</div>'
+    )
+
+
+def _dashboard_status(message: dict) -> str:
+    match_type = str(message.get("match_type", "none") or "none").lower()
+    try:
+        confidence = float(message.get("confidence", 0) or 0)
+    except (TypeError, ValueError):
+        confidence = 0
+    if match_type == "error":
+        return "error"
+    if _is_no_answer_message(message):
+        return "none"
+    if confidence and confidence < 0.45:
+        return "low confidence"
+    return "matched"
+
+
+def _dashboard_status_badge(status: str) -> str:
+    normalized = str(status or "none").strip().lower()
+    label = {
+        "none": "No answer",
+        "error": "Error",
+        "matched": "Matched",
+        "low confidence": "Low confidence",
+    }.get(normalized, normalized.title() or "None")
+    badge_class = re.sub(r"[^a-z0-9]+", "-", normalized).strip("-") or "none"
+    return f'<span class="dashboard-status-badge badge-{badge_class}">{html.escape(label)}</span>'
+
+
+def _dashboard_truncate(value, limit: int = 96) -> str:
+    text = re.sub(r"\s+", " ", str(value or "")).strip()
+    if len(text) <= limit:
+        return html.escape(text)
+    return f'<span title="{html.escape(text)}">{html.escape(text[:limit - 1])}...</span>'
+
+
+def _format_dashboard_time(value) -> str:
+    ts = _parse_timestamp(value)
+    return ts.strftime("%Y-%m-%d %H:%M") if ts else str(value or "")
+
+
+def _format_dashboard_confidence(value) -> str:
+    try:
+        return f"{float(value or 0) * 100:.0f}%"
+    except (TypeError, ValueError):
+        return "0%"
+
+
+def _dashboard_panel_title(title: str, icon_name: str, subtitle: str = ""):
+    st.markdown(
+        (
+            '<div class="dashboard-panel-heading">'
+            f'<div class="dashboard-panel-title">{lucide_icon(icon_name, "dashboard-section-icon")}{html.escape(title)}</div>'
+            f'<div class="dashboard-panel-subtitle">{html.escape(subtitle)}</div>'
+            '</div>'
+        ),
+        unsafe_allow_html=True,
+    )
+
+
+def _render_dashboard_table(rows: list, columns: list, empty_message: str = "No data available."):
     if not rows:
+        st.markdown(f'<div class="dashboard-empty">{html.escape(empty_message)}</div>', unsafe_allow_html=True)
         return
     header = "".join(f"<th>{html.escape(column)}</th>" for column in columns)
     body_rows = []
     for row in rows:
-        cells = "".join(f"<td>{html.escape(str(row.get(column, '')))}</td>" for column in columns)
-        body_rows.append(f"<tr>{cells}</tr>")
+        cells = []
+        for column in columns:
+            value = row.get(column, "")
+            if column in {"Status", "Match"}:
+                rendered = _dashboard_status_badge(str(value).lower())
+            elif column in {"Question", "Latest Question"}:
+                rendered = _dashboard_truncate(value)
+            elif column == "Action":
+                rendered = f'<span class="dashboard-action-pill">{html.escape(str(value or "Review"))}</span>'
+            else:
+                rendered = html.escape(str(value))
+            cells.append(f"<td>{rendered}</td>")
+        body_rows.append(f"<tr>{''.join(cells)}</tr>")
     st.markdown(
         f"""
         <div class="dashboard-table-wrap">
@@ -404,18 +508,186 @@ def _render_dashboard_table(rows: list, columns: list):
     )
 
 
+def _render_dashboard_bar_chart(items: list, empty_message: str = "No trend data available."):
+    if not items:
+        st.markdown(f'<div class="dashboard-empty">{html.escape(empty_message)}</div>', unsafe_allow_html=True)
+        return
+    max_value = max(value for _, value in items) or 1
+    bars = []
+    for label, value in items:
+        height = max(8, int((value / max_value) * 130)) if value else 8
+        bars.append(
+            '<div class="dashboard-bar-item">'
+            f'<div class="dashboard-bar-value">{html.escape(str(value))}</div>'
+            f'<div class="dashboard-bar" style="height:{height}px"></div>'
+            f'<div class="dashboard-bar-label">{html.escape(str(label))}</div>'
+            '</div>'
+        )
+    st.markdown(f'<div class="dashboard-bar-chart">{"".join(bars)}</div>', unsafe_allow_html=True)
+
+
+def _render_dashboard_donut(segments: list):
+    total = sum(max(0, value) for _, value, _ in segments)
+    if total <= 0:
+        st.markdown('<div class="dashboard-empty">No status data available.</div>', unsafe_allow_html=True)
+        return
+    current = 0
+    gradient_parts = []
+    legend = []
+    for label, value, color in segments:
+        percentage = max(0, value) / total * 100
+        gradient_parts.append(f"{color} {current:.2f}% {current + percentage:.2f}%")
+        current += percentage
+        legend.append(
+            '<div class="dashboard-donut-legend-item">'
+            f'<span style="background:{color}"></span>'
+            f'<strong>{html.escape(label)}</strong>'
+            f'<em>{value}</em>'
+            '</div>'
+        )
+    st.markdown(
+        f"""
+        <div class="dashboard-donut-wrap">
+            <div class="dashboard-donut" style="background: conic-gradient({', '.join(gradient_parts)});">
+                <div><strong>{total}</strong><span>Total</span></div>
+            </div>
+            <div class="dashboard-donut-legend">{''.join(legend)}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def render_admin_dashboard():
+    components.html(
+        """
+        <script>
+        (() => {
+            const root = window.parent.document;
+            const updateDashboardWidth = () => {
+                const activeTab = root.querySelector('[data-testid="stTabs"] button[aria-selected="true"]');
+                const activeLabel = (activeTab?.textContent || "").trim();
+                root.body.classList.toggle("ai-pod-dashboard-active", activeLabel.includes("Admin Dashboard"));
+            };
+            updateDashboardWidth();
+            window.parent.setTimeout(updateDashboardWidth, 150);
+            window.parent.setTimeout(updateDashboardWidth, 600);
+            if (!window.parent.aiPodDashboardTabObserver) {
+                window.parent.aiPodDashboardTabObserver = new MutationObserver(updateDashboardWidth);
+                window.parent.aiPodDashboardTabObserver.observe(root.body, {
+                    attributes: true,
+                    childList: true,
+                    subtree: true,
+                    attributeFilter: ["aria-selected", "class"]
+                });
+            }
+        })();
+        </script>
+        """,
+        height=0,
+    )
+
     admin_user = st.session_state.get("user") or {}
-    dated_messages = []
+    dated_messages_all = []
     for message in _collect_chat_messages_for_dashboard(admin_user):
         timestamp = _parse_timestamp(message.get("timestamp"))
         if timestamp:
-            dated_messages.append((timestamp, message))
+            dated_messages_all.append((timestamp, message))
+    dated_messages_all.sort(key=lambda item: item[0], reverse=True)
 
     now = datetime.now()
     today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     week_start = today_start - timedelta(days=today_start.weekday())
     month_start = today_start.replace(day=1)
+
+    users = sorted({message.get("_username", "Unknown") for _, message in dated_messages_all if message.get("_username")})
+    departments = sorted({message.get("_department", "Unknown") for _, message in dated_messages_all if message.get("_department")})
+    statuses = sorted({_dashboard_status(message) for _, message in dated_messages_all})
+    languages = sorted({str(message.get("language", "") or detect_language(message.get("question", ""))).upper() for _, message in dated_messages_all})
+
+    st.markdown(
+        """
+        <div class="dashboard-hero">
+            <div>
+                <div class="dashboard-eyebrow">Admin Analytics</div>
+                <h2>Admin Dashboard</h2>
+                <p>Monitor question volume, answer quality, cache performance, and knowledge-base gaps.</p>
+            </div>
+            <div class="dashboard-scope-card">
+                <span>Department Scope</span>
+                <strong>{scope}</strong>
+            </div>
+        </div>
+        """.format(scope=html.escape(admin_user.get("department", "All available departments"))),
+        unsafe_allow_html=True,
+    )
+
+    filter_cols = st.columns([1.15, 1, 1, 1, 1])
+    date_range = filter_cols[0].selectbox(
+        "Date range",
+        ["Last 7 days", "Last 30 days", "Today", "This month", "All time", "Custom"],
+        key="dashboard_date_range",
+    )
+    selected_department = filter_cols[1].selectbox(
+        "Department",
+        ["All"] + departments,
+        key="dashboard_department_filter",
+    )
+    selected_user = filter_cols[2].selectbox(
+        "User",
+        ["All"] + users,
+        key="dashboard_user_filter",
+    )
+    selected_status = filter_cols[3].selectbox(
+        "Match status",
+        ["All"] + [status.title() for status in statuses],
+        key="dashboard_status_filter",
+    )
+    selected_language = filter_cols[4].selectbox(
+        "Language",
+        ["All"] + languages,
+        key="dashboard_language_filter",
+    )
+
+    custom_start = custom_end = None
+    if date_range == "Custom":
+        custom_cols = st.columns([1, 1, 3])
+        custom_start = custom_cols[0].date_input("Start date", value=(today_start - timedelta(days=30)).date(), key="dashboard_custom_start")
+        custom_end = custom_cols[1].date_input("End date", value=now.date(), key="dashboard_custom_end")
+
+    if date_range == "Today":
+        start_at = today_start
+    elif date_range == "Last 7 days":
+        start_at = today_start - timedelta(days=6)
+    elif date_range == "Last 30 days":
+        start_at = today_start - timedelta(days=29)
+    elif date_range == "This month":
+        start_at = month_start
+    elif date_range == "Custom" and custom_start and custom_end:
+        start_at = datetime.combine(custom_start, datetime.min.time())
+        end_at = datetime.combine(custom_end, datetime.max.time())
+    else:
+        start_at = None
+        end_at = None
+    if date_range != "Custom":
+        end_at = now
+
+    dated_messages = []
+    for ts, message in dated_messages_all:
+        if start_at and ts < start_at:
+            continue
+        if end_at and ts > end_at:
+            continue
+        if selected_department != "All" and message.get("_department", "Unknown") != selected_department:
+            continue
+        if selected_user != "All" and message.get("_username", "Unknown") != selected_user:
+            continue
+        if selected_status != "All" and _dashboard_status(message) != selected_status.lower():
+            continue
+        language = str(message.get("language", "") or detect_language(message.get("question", ""))).upper()
+        if selected_language != "All" and language != selected_language:
+            continue
+        dated_messages.append((ts, message))
 
     today_count = sum(1 for ts, _ in dated_messages if ts >= today_start)
     week_count = sum(1 for ts, _ in dated_messages if ts >= week_start)
@@ -423,18 +695,92 @@ def render_admin_dashboard():
     no_answer_messages = [message for _, message in dated_messages if _is_no_answer_message(message)]
     cache_hits = sum(1 for _, message in dated_messages if bool(message.get("cached")))
     cache_hit_rate = (cache_hits / len(dated_messages) * 100) if dated_messages else 0
+    unique_users = len({message.get("_username") for _, message in dated_messages if message.get("_username")})
+    confidences = []
+    for _, message in dated_messages:
+        try:
+            confidences.append(float(message.get("confidence", 0) or 0))
+        except (TypeError, ValueError):
+            pass
+    average_confidence = (sum(confidences) / len(confidences) * 100) if confidences else 0
+    previous_week_start = week_start - timedelta(days=7)
+    previous_week_count = sum(1 for ts, _ in dated_messages_all if previous_week_start <= ts < week_start)
+    if previous_week_count:
+        trend_value = ((week_count - previous_week_count) / previous_week_count) * 100
+        trend_text = f"{trend_value:+.0f}% vs last week"
+    elif week_count:
+        trend_text = "New activity this week"
+    else:
+        trend_text = "No activity this week"
 
-    st.markdown("### Admin Dashboard")
-    st.caption(f"Department scope: {admin_user.get('department', 'All available departments')}")
+    metric_cols = st.columns(7)
+    metric_cols[0].markdown(dashboard_metric_card("Today's questions", today_count, "clock", "Since midnight"), unsafe_allow_html=True)
+    metric_cols[1].markdown(dashboard_metric_card("This week", week_count, "clock", trend_text), unsafe_allow_html=True)
+    metric_cols[2].markdown(dashboard_metric_card("This month", month_count, "clock", "Current month"), unsafe_allow_html=True)
+    metric_cols[3].markdown(dashboard_metric_card("No-answer count", len(no_answer_messages), "circle-alert", "Needs review", "warning"), unsafe_allow_html=True)
+    metric_cols[4].markdown(dashboard_metric_card("Cache hit rate", f"{cache_hit_rate:.1f}%", "database", f"{cache_hits} cached replies"), unsafe_allow_html=True)
+    metric_cols[5].markdown(dashboard_metric_card("Unique users", unique_users, "search", "Filtered scope"), unsafe_allow_html=True)
+    metric_cols[6].markdown(dashboard_metric_card("Avg. confidence", f"{average_confidence:.0f}%", "file-text", "Mean match score"), unsafe_allow_html=True)
 
-    metric_cols = st.columns(5)
-    metric_cols[0].metric("Today", today_count)
-    metric_cols[1].metric("This Week", week_count)
-    metric_cols[2].metric("This Month", month_count)
-    metric_cols[3].metric("No Answer", len(no_answer_messages))
-    metric_cols[4].metric("Cache Hit Rate", f"{cache_hit_rate:.1f}%")
+    daily_counts = Counter(ts.date() for ts, _ in dated_messages)
+    if start_at:
+        chart_start = start_at.date()
+    elif dated_messages:
+        chart_start = min(ts.date() for ts, _ in dated_messages)
+    else:
+        chart_start = today_start.date()
+    chart_end = (end_at or now).date()
+    total_days = max(1, min(45, (chart_end - chart_start).days + 1))
+    chart_start = chart_end - timedelta(days=total_days - 1)
+    trend_items = [
+        ((chart_start + timedelta(days=offset)).strftime("%m/%d"), daily_counts.get(chart_start + timedelta(days=offset), 0))
+        for offset in range(total_days)
+    ]
 
-    st.markdown("#### Top 10 Most Common Questions")
+    status_counts = Counter(_dashboard_status(message) for _, message in dated_messages)
+    language_counts = Counter(str(message.get("language", "") or detect_language(message.get("question", ""))).upper() for _, message in dated_messages)
+    department_counts = Counter(message.get("_department", "Unknown") for _, message in dated_messages)
+    user_counts = Counter(message.get("_username", "Unknown") for _, message in dated_messages)
+
+    top_row_left, top_row_right = st.columns([1.75, 1])
+    with top_row_left:
+        with st.container(border=True):
+            _dashboard_panel_title("Questions Over Time", "clock", "Filtered daily volume")
+            _render_dashboard_bar_chart(trend_items)
+
+    with top_row_right:
+        with st.container(border=True):
+            _dashboard_panel_title("Answer Health", "circle-alert", "Answered vs knowledge gaps")
+            _render_dashboard_donut(
+                [
+                    ("Answered", max(0, len(dated_messages) - len(no_answer_messages)), "#22C55E"),
+                    ("No answer", len(no_answer_messages), "#EF4444"),
+                    ("Cached", cache_hits, "#3B82F6"),
+                ]
+            )
+
+    breakdown_left, breakdown_mid, breakdown_right = st.columns(3)
+    with breakdown_left:
+        with st.container(border=True):
+            _dashboard_panel_title("Match Status", "layout-dashboard")
+            _render_dashboard_table(
+                [{"Status": status, "Count": count} for status, count in status_counts.most_common()],
+                ["Status", "Count"],
+                "No status data available.",
+            )
+    with breakdown_mid:
+        with st.container(border=True):
+            _dashboard_panel_title("Language Split", "file-text")
+            _render_dashboard_bar_chart(language_counts.most_common(), "No language data available.")
+    with breakdown_right:
+        with st.container(border=True):
+            _dashboard_panel_title("Top Users", "search")
+            _render_dashboard_table(
+                [{"User": user, "Questions": count} for user, count in user_counts.most_common(8)],
+                ["User", "Questions"],
+                "No user activity available.",
+            )
+
     question_counts = {}
     question_display = {}
     for _, message in dated_messages:
@@ -444,32 +790,87 @@ def render_admin_dashboard():
         question_counts[normalized] = question_counts.get(normalized, 0) + 1
         question_display.setdefault(normalized, message.get("question", "").strip())
 
-    top_questions = sorted(question_counts.items(), key=lambda item: item[1], reverse=True)[:10]
-    if top_questions:
-        _render_dashboard_table(
-            [{"Question": question_display[key], "Count": count} for key, count in top_questions],
-            ["Question", "Count"],
-        )
-    else:
-        st.info("No question data is available for this department yet.")
+    table_left, table_right = st.columns(2)
+    with table_left:
+        with st.container(border=True):
+            _dashboard_panel_title("Top Questions", "search", "Most common repeated topics")
+            top_search = st.text_input("Search top questions", placeholder="Filter questions", key="dashboard_top_question_search")
+            top_limit = st.selectbox("Rows", ["Top 10", "Top 25", "All"], key="dashboard_top_question_limit")
+            top_limit_count = {"Top 10": 10, "Top 25": 25, "All": None}[top_limit]
+            top_questions = sorted(question_counts.items(), key=lambda item: item[1], reverse=True)
+            if top_search:
+                top_questions = [
+                    item for item in top_questions
+                    if top_search.lower() in question_display.get(item[0], "").lower()
+                ]
+            if top_limit_count:
+                top_questions = top_questions[:top_limit_count]
+            _render_dashboard_table(
+                [{"Question": question_display[key], "Count": count} for key, count in top_questions],
+                ["Question", "Count"],
+                "No question data is available for this scope.",
+            )
 
-    st.markdown("#### Questions Asked With No Answer")
-    if no_answer_messages:
-        recent_no_answers = sorted(no_answer_messages, key=lambda item: item.get("timestamp", ""), reverse=True)[:25]
-        _render_dashboard_table(
-            [
-                {
-                    "Time": item.get("timestamp", ""),
-                    "User": item.get("_username", ""),
-                    "Question": item.get("question", ""),
-                    "Match": item.get("match_type", "none"),
-                }
-                for item in recent_no_answers
-            ],
-            ["Time", "User", "Question", "Match"],
-        )
-    else:
-        st.success("No unanswered questions found for this department.")
+    with table_right:
+        with st.container(border=True):
+            _dashboard_panel_title("Questions With No Answer", "circle-alert", "Action queue for knowledge-base gaps")
+            no_answer_search = st.text_input("Search unanswered questions", placeholder="Filter unanswered questions", key="dashboard_no_answer_search")
+            no_answer_limit = st.selectbox("Queue rows", ["Top 10", "Top 25", "All"], key="dashboard_no_answer_limit")
+            no_answer_limit_count = {"Top 10": 10, "Top 25": 25, "All": None}[no_answer_limit]
+            recent_no_answers = sorted(no_answer_messages, key=lambda item: item.get("timestamp", ""), reverse=True)
+            if no_answer_search:
+                recent_no_answers = [
+                    item for item in recent_no_answers
+                    if no_answer_search.lower() in str(item.get("question", "")).lower()
+                ]
+            if no_answer_limit_count:
+                recent_no_answers = recent_no_answers[:no_answer_limit_count]
+            _render_dashboard_table(
+                [
+                    {
+                        "Time": _format_dashboard_time(item.get("timestamp", "")),
+                        "User": item.get("_username", ""),
+                        "Question": item.get("question", ""),
+                        "Match": _dashboard_status(item),
+                        "Department": item.get("_department", "Unknown"),
+                        "Action": "Review",
+                    }
+                    for item in recent_no_answers
+                ],
+                ["Time", "User", "Question", "Match", "Department", "Action"],
+                "No unanswered questions found.",
+            )
+
+    bottom_left, bottom_right = st.columns([1.5, 1])
+    with bottom_left:
+        with st.container(border=True):
+            _dashboard_panel_title("Recent Activity", "clock", "Latest filtered questions")
+            recent_search = st.text_input("Search recent activity", placeholder="Filter latest questions", key="dashboard_recent_search")
+            recent_rows = dated_messages[:50]
+            if recent_search:
+                recent_rows = [
+                    (ts, item) for ts, item in recent_rows
+                    if recent_search.lower() in str(item.get("question", "")).lower()
+                ]
+            _render_dashboard_table(
+                [
+                    {
+                        "Time": ts.strftime("%Y-%m-%d %H:%M"),
+                        "User": item.get("_username", "Unknown"),
+                        "Latest Question": item.get("question", ""),
+                        "Status": _dashboard_status(item),
+                        "Confidence": _format_dashboard_confidence(item.get("confidence", 0)),
+                    }
+                    for ts, item in recent_rows[:20]
+                ],
+                ["Time", "User", "Latest Question", "Status", "Confidence"],
+                "No recent activity in this scope.",
+            )
+
+    with bottom_right:
+        with st.container(border=True):
+            _dashboard_panel_title("Department Breakdown", "layout-dashboard", "Questions by department")
+            _render_dashboard_bar_chart(department_counts.most_common(8), "No department data available.")
 
 # --------------------------------------------------
 # Professional Answer Formatter - REAL HTML BULLETS
@@ -795,7 +1196,10 @@ def render_chat_history(transient_chat=None):
         lang_class = "arabic-answer" if chat_lang == "ar" else "english-answer"
         source_label = format_inline(format_source_names(chat.get("sources", [])))
         time_label = format_inline(format_response_time(chat.get("response_time", 0)))
+        source_icon = lucide_icon("file-text", "chat-meta-icon")
+        time_icon = lucide_icon("clock", "chat-meta-icon")
         is_streaming = bool(chat.get("streaming"))
+        is_conversational = chat.get("match_type") == "conversational" or chat.get("mode") in {"general_chat", "conversational"}
         if raw_answer:
             formatted_answer = format_answer(raw_answer)
             if is_streaming:
@@ -806,7 +1210,7 @@ def render_chat_history(transient_chat=None):
         chat_markup.append(
             '<div class="chat-row assistant-row"><div class="assistant-bubble">'
             f'<div class="answer-box {lang_class}" dir="{direction}">{formatted_answer}</div>'
-            + ("" if is_streaming else f'<div class="chat-meta {lang_class}" dir="{direction}">Source: {source_label} | Time: {time_label}</div>')
+            + ("" if is_streaming or is_conversational else f'<div class="chat-meta {lang_class}" dir="{direction}"><span>{source_icon} Source: {source_label}</span><span>{time_icon} Time: {time_label}</span></div>')
             + '</div></div>'
         )
     chat_markup.append('<div id="aiPodChatBottom" class="chat-bottom-anchor"></div></div>')
@@ -985,61 +1389,8 @@ st.markdown(f"""
         padding: 4.5rem 1.25rem 1.25rem 1.25rem;
     }}
 
-    button[data-testid="collapsedControl"],
-    button[data-testid="baseButton-headerNoPadding"] {{
-        opacity: 0 !important;
-        pointer-events: none !important;
-    }}
-
-    button[data-testid="collapsedControl"]:hover,
-    button[data-testid="baseButton-headerNoPadding"]:hover {{
-        opacity: 0 !important;
-    }}
-
     [data-testid="stTabs"] button {{
         color: var(--text-main);
-    }}
-
-    #aiPodSidebarToggle {{
-        position: fixed;
-        top: 18px;
-        left: 246px;
-        z-index: 9999;
-        width: 28px;
-        height: 28px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background: transparent;
-        color: var(--text-muted);
-        border: none;
-        border-radius: 999px;
-        cursor: pointer;
-        font-size: 22px;
-        line-height: 1;
-        font-weight: 700;
-        transition: background 0.15s ease, color 0.15s ease, left 0.2s ease;
-    }}
-
-    #aiPodSidebarToggle:hover {{
-        background: var(--button-bg);
-        color: var(--text-main);
-    }}
-
-    body.ai-pod-sidebar-collapsed [data-testid="stSidebar"] {{
-        transform: translateX(-100%) !important;
-        min-width: 0 !important;
-        width: 0 !important;
-        margin-left: 0 !important;
-        overflow: hidden !important;
-    }}
-
-    body.ai-pod-sidebar-collapsed [data-testid="stSidebar"] * {{
-        pointer-events: none !important;
-    }}
-
-    body.ai-pod-sidebar-collapsed #aiPodSidebarToggle {{
-        left: 14px !important;
     }}
 
 </style>
@@ -1049,49 +1400,50 @@ components.html("""
 <script>
 (() => {
     const root = window.parent.document;
-    const STORAGE_KEY = "aiPodSidebarCollapsed";
-    let toggleBtn = root.getElementById("aiPodSidebarToggle");
+    root.getElementById("aiPodSidebarToggle")?.remove();
+    root.getElementById("aiPodSidebarToggleStyle")?.remove();
+    root.body.classList.remove("ai-pod-sidebar-collapsed");
+    window.parent.localStorage.removeItem("aiPodSidebarCollapsed");
+})();
+</script>
+""", height=0)
 
-    if (!toggleBtn) {
-        toggleBtn = root.createElement("button");
-        toggleBtn.id = "aiPodSidebarToggle";
-        toggleBtn.type = "button";
-        toggleBtn.setAttribute("aria-label", "Toggle sidebar");
-        root.body.appendChild(toggleBtn);
+components.html("""
+<script>
+(() => {
+    const root = window.parent.document;
+    const icons = {
+        "New Chat": '<svg class="ai-pod-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>',
+        "Logout": '<svg class="ai-pod-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg>',
+        "Ask": '<svg class="ai-pod-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>',
+        "Admin Dashboard": '<svg class="ai-pod-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>'
+    };
+
+    const enhance = () => {
+        root.querySelectorAll('button, [role="tab"]').forEach((el) => {
+            const text = (el.textContent || "").trim();
+            const icon = icons[text];
+            if (!icon || el.dataset.aiPodIcon === "true") return;
+            el.dataset.aiPodIcon = "true";
+            const target = el.querySelector("p, span") || el;
+            target.insertAdjacentHTML("afterbegin", icon);
+            target.style.display = "inline-flex";
+            target.style.alignItems = "center";
+            target.style.justifyContent = "center";
+            target.style.gap = "0.4rem";
+        });
+    };
+
+    if (!root.getElementById("ai-pod-icon-style")) {
+        const style = root.createElement("style");
+        style.id = "ai-pod-icon-style";
+        style.textContent = ".ai-pod-button-icon{width:16px;height:16px;flex:0 0 auto;}";
+        root.head.appendChild(style);
     }
 
-    const sidebarIsOpen = () => {
-        return !root.body.classList.contains("ai-pod-sidebar-collapsed");
-    };
-
-    const positionToggle = () => {
-        const sidebar = root.querySelector('[data-testid="stSidebar"]');
-        const open = sidebarIsOpen();
-        if (open && sidebar) {
-            const rect = sidebar.getBoundingClientRect();
-            toggleBtn.style.left = Math.max(14, rect.right - 34) + "px";
-            toggleBtn.textContent = "«";
-        } else {
-            toggleBtn.style.left = "14px";
-            toggleBtn.textContent = "»";
-        }
-    };
-
-    const setCollapsed = (collapsed) => {
-        root.body.classList.toggle("ai-pod-sidebar-collapsed", collapsed);
-        window.parent.localStorage.setItem(STORAGE_KEY, collapsed ? "true" : "false");
-        positionToggle();
-    };
-
-    toggleBtn.onclick = () => {
-        setCollapsed(sidebarIsOpen());
-    };
-
-    setCollapsed(window.parent.localStorage.getItem(STORAGE_KEY) === "true");
-    positionToggle();
-    window.parent.addEventListener("resize", positionToggle);
-    window.parent.setTimeout(positionToggle, 300);
-    window.parent.setTimeout(positionToggle, 900);
+    enhance();
+    window.parent.setTimeout(enhance, 250);
+    window.parent.setTimeout(enhance, 900);
 })();
 </script>
 """, height=0)
@@ -1105,6 +1457,11 @@ st.markdown("""
         padding-top: 1.5rem;
         padding-bottom: 0.8rem;
         color: var(--text-main);
+    }
+
+    body.ai-pod-dashboard-active .block-container {
+        max-width: 95vw;
+        width: 95vw;
     }
 
     .chat-scroll {
@@ -1152,6 +1509,166 @@ st.markdown("""
         background: var(--button-hover);
         color: #FFFFFF;
         transform: translateX(-50%) translateY(-1px);
+    }
+
+    .lucide-inline,
+    .chat-meta-icon,
+    .dashboard-title-icon,
+    .dashboard-section-icon,
+    .dashboard-card-icon {
+        flex: 0 0 auto;
+        vertical-align: -0.2em;
+    }
+
+    .dashboard-hero {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 0.5rem 0 1rem 0;
+        padding: 1rem 1.1rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+    }
+
+    .dashboard-eyebrow {
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 0.25rem;
+    }
+
+    .dashboard-hero h2 {
+        margin: 0;
+        color: var(--text-main);
+        font-size: 1.65rem;
+        line-height: 1.15;
+    }
+
+    .dashboard-hero p {
+        margin: 0.35rem 0 0 0;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+    }
+
+    .dashboard-scope-card {
+        min-width: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.75rem 0.9rem;
+        background: var(--surface-soft);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+    }
+
+    .dashboard-scope-card span,
+    .dashboard-panel-subtitle,
+    .dashboard-metric-detail {
+        color: var(--text-muted);
+        font-size: 0.78rem;
+    }
+
+    .dashboard-scope-card strong {
+        color: var(--text-main);
+        font-size: 1rem;
+        margin-top: 0.15rem;
+    }
+
+    .dashboard-panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        padding: 1rem;
+        margin: 0.9rem 0;
+        min-height: 100%;
+    }
+
+    .dashboard-panel-compact {
+        padding-bottom: 0.5rem;
+    }
+
+    .dashboard-panel-heading {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 0.85rem;
+    }
+
+    .dashboard-panel-title {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-main);
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .dashboard-title-icon,
+    .dashboard-section-icon {
+        color: var(--accent);
+    }
+
+    .dashboard-metric-card {
+        position: relative;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.85rem 0.9rem;
+        min-height: 122px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+    }
+
+    .dashboard-metric-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 4px;
+        background: var(--accent);
+        opacity: 0.9;
+    }
+
+    .dashboard-tone-warning::before {
+        background: #EF4444;
+    }
+
+    .dashboard-metric-icon {
+        width: 32px;
+        height: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: var(--surface-soft);
+        color: var(--accent);
+        margin-bottom: 0.65rem;
+    }
+
+    .dashboard-metric-label {
+        color: var(--text-muted);
+        font-size: 0.78rem;
+        line-height: 1.25;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+    }
+
+    .dashboard-card-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .dashboard-metric-value {
+        color: var(--text-main);
+        font-size: 1.7rem;
+        line-height: 1.1;
+        font-weight: 800;
     }
 
     div[data-testid="stMetric"] {
@@ -1204,12 +1721,12 @@ st.markdown("""
 
     .dashboard-table-wrap {
         width: 100%;
-        max-height: 420px;
+        max-height: 360px;
         overflow: auto;
         border: 1px solid var(--border);
         border-radius: 8px;
         background: var(--surface);
-        margin: 0.5rem 0 1.6rem 0;
+        margin: 0.5rem 0 0 0;
     }
 
     .dashboard-table {
@@ -1244,6 +1761,239 @@ st.markdown("""
 
     .dashboard-table tr:last-child td {
         border-bottom: none;
+    }
+
+    .dashboard-empty {
+        color: var(--text-muted);
+        background: var(--surface-soft);
+        border: 1px dashed var(--border);
+        border-radius: 8px;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .dashboard-status-badge,
+    .dashboard-action-pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        border-radius: 999px;
+        padding: 0.22rem 0.55rem;
+        font-size: 0.76rem;
+        font-weight: 800;
+        border: 1px solid transparent;
+    }
+
+    .badge-matched {
+        background: rgba(34, 197, 94, 0.14);
+        color: #16A34A;
+        border-color: rgba(34, 197, 94, 0.26);
+    }
+
+    .badge-none {
+        background: rgba(100, 116, 139, 0.14);
+        color: var(--text-muted);
+        border-color: rgba(100, 116, 139, 0.22);
+    }
+
+    .badge-error {
+        background: rgba(239, 68, 68, 0.14);
+        color: #EF4444;
+        border-color: rgba(239, 68, 68, 0.28);
+    }
+
+    .badge-low-confidence {
+        background: rgba(245, 158, 11, 0.16);
+        color: #D97706;
+        border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .dashboard-action-pill {
+        background: rgba(37, 99, 235, 0.12);
+        color: var(--accent);
+        border-color: rgba(37, 99, 235, 0.24);
+    }
+
+    .dashboard-bar-chart {
+        min-height: 190px;
+        display: flex;
+        align-items: flex-end;
+        gap: 0.45rem;
+        padding: 0.65rem 0.25rem 0.25rem 0.25rem;
+        overflow-x: auto;
+    }
+
+    .dashboard-bar-item {
+        min-width: 34px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.25rem;
+    }
+
+    .dashboard-bar {
+        width: 100%;
+        max-width: 42px;
+        border-radius: 6px 6px 2px 2px;
+        background: linear-gradient(180deg, var(--accent), #1D4ED8);
+        min-height: 8px;
+    }
+
+    .dashboard-bar-value {
+        color: var(--text-muted);
+        font-size: 0.72rem;
+        font-weight: 800;
+    }
+
+    .dashboard-bar-label {
+        color: var(--text-muted);
+        font-size: 0.72rem;
+        white-space: nowrap;
+    }
+
+    .dashboard-donut-wrap {
+        display: grid;
+        grid-template-columns: minmax(150px, 210px) 1fr;
+        align-items: center;
+        gap: 1rem;
+        min-height: 220px;
+    }
+
+    .dashboard-donut {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin: 0 auto;
+        box-shadow: inset 0 0 0 1px var(--border);
+    }
+
+    .dashboard-donut > div {
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        text-align: center;
+    }
+
+    .dashboard-donut strong {
+        color: var(--text-main);
+        font-size: 1.65rem;
+        line-height: 1;
+    }
+
+    .dashboard-donut span {
+        color: var(--text-muted);
+        font-size: 0.75rem;
+        display: block;
+    }
+
+    .dashboard-donut-legend {
+        display: grid;
+        gap: 0.55rem;
+    }
+
+    .dashboard-donut-legend-item {
+        display: grid;
+        grid-template-columns: 12px 1fr auto;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-main);
+        font-size: 0.86rem;
+    }
+
+    .dashboard-donut-legend-item span {
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+    }
+
+    .dashboard-donut-legend-item em {
+        color: var(--text-muted);
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    body.ai-pod-dashboard-active [data-testid="stTabs"] button {
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        font-weight: 800;
+    }
+
+    body.ai-pod-dashboard-active [data-testid="stTabs"] button[aria-selected="true"] {
+        color: var(--accent) !important;
+        border-bottom-color: var(--accent) !important;
+    }
+
+    @media (max-width: 1100px) {
+        body.ai-pod-dashboard-active .block-container {
+            max-width: 96vw;
+            width: 96vw;
+        }
+
+        .dashboard-hero,
+        .dashboard-donut-wrap {
+            grid-template-columns: 1fr;
+            display: grid;
+        }
+
+        .dashboard-scope-card {
+            min-width: 0;
+        }
+
+        .dashboard-metric-card {
+            min-height: 112px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        body.ai-pod-dashboard-active .block-container {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .dashboard-hero,
+        .dashboard-panel {
+            padding: 0.85rem;
+        }
+
+        .dashboard-hero h2 {
+            font-size: 1.35rem;
+        }
+
+        .dashboard-panel-heading {
+            display: block;
+        }
+
+        .dashboard-panel-subtitle {
+            margin-top: 0.25rem;
+        }
+
+        .dashboard-table {
+            font-size: 0.82rem;
+        }
+
+        .dashboard-table th,
+        .dashboard-table td {
+            padding: 0.55rem 0.6rem;
+        }
+
+        .dashboard-donut {
+            width: 150px;
+            height: 150px;
+        }
+
+        .dashboard-donut > div {
+            width: 92px;
+            height: 92px;
+        }
     }
 
     .chat-scroll::-webkit-scrollbar {
@@ -1361,6 +2111,22 @@ st.markdown("""
         border-top: 1px solid var(--border);
         padding-top: 0.45rem;
         line-height: 1.4;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem 0.8rem;
+        align-items: center;
+    }
+
+    .chat-meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.28rem;
+    }
+
+    .chat-meta-icon {
+        width: 14px;
+        height: 14px;
+        color: var(--accent);
     }
 
     .chat-meta.arabic-answer {

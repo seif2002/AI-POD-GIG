@@ -67,14 +67,48 @@ ABOUT_BOT_PATTERNS = re.compile(
     re.IGNORECASE
 )
 
+POLICY_QUERY_PATTERNS = re.compile(
+    r'(\b(policy|procedure|hr|human resources|it|employee|manager|approval|portal|'
+    r'annual leave|sick leave|leave days|days off|maternity|paternity|adoption|'
+    r'notice period|bonus|salary|benefit|attendance|disciplinary|performance|'
+    r'password|remote work|work from home|confidential|insurance|vacation)\b|'
+    r'سياسة|إجراء|اجراء|الموارد البشرية|تقنية المعلومات|تكنولوجيا المعلومات|'
+    r'موظف|مدير|موافقة|بوابة|إجاز|اجاز|سنوية|مرضية|أمومة|امومة|أبوة|ابوة|'
+    r'تبني|فترة الإخطار|اخطار|مكافأة|راتب|حضور|تأديب|أداء|كلمة المرور|'
+    r'العمل عن بعد|سرية|تأمين)',
+    re.IGNORECASE
+)
+
+GENERAL_CHAT_PATTERNS = re.compile(
+    r'(\b(how are you|how\'?s it going|thanks|thank you|thx|lol|haha|bye|goodbye|'
+    r'capital of|weather|write (an? )?email|draft (an? )?email|help me write|'
+    r'translate|summarize|explain|what do you think|opinion|joke|recipe|'
+    r'calculate|math|code|python|story|poem)\b|'
+    r'شكرا|شكرًا|عامل ايه|كيف حالك|وداعا|اكتب.*ايميل|اكتب.*بريد|'
+    r'ترجم|لخص|اشرح|نكتة|رأيك|طقس|عاصمة)',
+    re.IGNORECASE
+)
+
 
 def classify_intent(question: str) -> str:
-    """Classify question as: greeting | about_bot | policy_query"""
+    """Classify question as: greeting | about_bot | general_chat | policy_query."""
     if GREETING_PATTERNS.match(question):
         return "greeting"
     if ABOUT_BOT_PATTERNS.search(question):
         return "about_bot"
+    if POLICY_QUERY_PATTERNS.search(question):
+        return "policy_query"
+    if GENERAL_CHAT_PATTERNS.search(question):
+        return "general_chat"
     return "policy_query"
+
+
+# Quick classifier sanity checks:
+# - "what's the capital of France" -> general_chat
+# - "can you help me write an email" -> general_chat
+# - "what's the weather like" -> general_chat
+# - "lol thanks" -> general_chat
+# - "how many sick days do I get" -> policy_query
 
 
 def _terms(text: str) -> set:
@@ -350,6 +384,66 @@ class AIPodQuerySystem:
 
     # --------------------------------------------------
 
+    def _resolve_followup_query(self, question: str) -> str:
+        """Rewrite short follow-ups into standalone retrieval queries."""
+        question = (question or "").strip()
+        if not question or self.memory.is_empty():
+            return question
+
+        words = re.findall(r"\w+", question, re.UNICODE)
+        clear_topic_pattern = re.compile(
+            r"\b(leave|password|remote|bonus|sick|annual|maternity|paternity|notice|salary|policy|"
+            r"confidential|attendance|disciplinary|performance|vacation|hr|it)\b|"
+            r"إجاز|اجاز|كلمة المرور|عن بعد|مكافأة|مرض|سنوي|أمومة|امومة|أبوة|ابوة|"
+            r"إخطار|اخطار|راتب|سياسة|سرية|حضور|تأديب|أداء|الموارد البشرية",
+            re.IGNORECASE,
+        )
+        if len(words) > 8 or clear_topic_pattern.search(question):
+            return question
+
+        followup_pattern = re.compile(
+            r"(^\s*(what about|how about|and for|how do i|can i|does it|is it|what if)\b|"
+            r"\b(it|that|this|them|they|those|there|same)\b|"
+            r"ماذا عنه|ماذا عنها|ماذا بالنسبة|هل يمكن|كيف|نفس الشيء|ذلك|هذه|هذا)",
+            re.IGNORECASE,
+        )
+        if not followup_pattern.search(question):
+            return question
+        if not self.groq_client:
+            return question
+
+        try:
+            recent_messages = self.memory.get_messages()[-6:]
+            conversation = "\n".join(
+                f"{message.get('role', 'user')}: {message.get('content', '')}"
+                for message in recent_messages
+            )
+            prompt = (
+                "Given this recent conversation:\n"
+                f"{conversation}\n\n"
+                "Rewrite the user's latest message as a standalone, fully-specified question "
+                "that includes any topic or subject implied by the conversation. Keep it in the "
+                "same language as the latest message. Output ONLY the rewritten question, nothing else.\n\n"
+                f"Latest message: {question}"
+            )
+            resp = self._groq_completion(
+                model=AIPodConfig.LLM_MODEL_FAST,
+                messages=[
+                    {"role": "system", "content": "You rewrite follow-up questions for search retrieval."},
+                    {"role": "user", "content": prompt},
+                ],
+                temperature=0,
+                max_tokens=60,
+            )
+            rewritten = resp.choices[0].message.content.strip().strip('"').strip("'")
+            if rewritten and 3 <= len(rewritten) <= 300:
+                return rewritten
+        except Exception as e:
+            print(f"Follow-up query rewrite skipped: {e}")
+        return question
+
+    # --------------------------------------------------
+
     def _call_groq_policy(self, question: str, chunks: List[Dict], answer_style: str = "summary", stream: bool = False):
         """
         Answer a policy question strictly from document chunks.
@@ -466,7 +560,7 @@ class AIPodQuerySystem:
             print(f"Groq error: {e}")
             if stream:
                 raise
-            return self._basic_policy_answer(question, chunks, answer_style)
+            raise
 
     def _basic_policy_answer(self, question: str, chunks: List[Dict], answer_style: str = "summary") -> str:
         """Readable local fallback used when the LLM is unavailable."""
@@ -835,8 +929,43 @@ class AIPodQuerySystem:
             print(f"Groq error: {e}")
             if stream:
                 raise
-            answer = ABOUT_EN if lang == "en" else ABOUT_AR
-            return self._enforce_answer_language(answer, lang, bilingual)
+            raise
+
+    def _call_groq_chat(self, question: str, stream: bool = False):
+        """Handle open conversation without document retrieval."""
+        lang = detect_language(question)
+        bilingual = wants_bilingual_response(question)
+        if bilingual:
+            language_instruction = (
+                "The user explicitly requested both Arabic and English. Answer in both languages clearly."
+            )
+        elif lang == "ar":
+            language_instruction = "Answer only in professional, natural Arabic. Do not include English unless explicitly requested."
+        else:
+            language_instruction = "Answer only in natural English. Do not include Arabic unless explicitly requested."
+
+        system = (
+            f"You are AI POD, the internal assistant for {AIPodConfig.COMPANY_NAME}.\n"
+            "You can have normal, friendly conversation on any topic. You are not limited to company policy. "
+            "Answer general questions naturally and helpfully, the way a knowledgeable assistant would.\n"
+            "If the user asks about company HR, IT, internal procedures, or official policies, tell them you can help and ask for the specific policy question.\n"
+            f"{language_instruction}"
+        )
+
+        messages = [{"role": "system", "content": system}]
+        messages.extend(self.memory.get_messages())
+        messages.append({"role": "user", "content": question})
+
+        request = {
+            "model": AIPodConfig.LLM_MODEL_FAST,
+            "messages": messages,
+            "temperature": 0.6,
+            "max_tokens": 650,
+        }
+        if stream:
+            return self._groq_stream(**request)
+        resp = self._groq_completion(**request)
+        return resp.choices[0].message.content.strip()
 
     # --------------------------------------------------
 
@@ -864,9 +993,28 @@ class AIPodQuerySystem:
             self.memory.add(question, answer)
             return self._friendly_response(answer, lang, time.time() - start)
 
+        if intent == "general_chat":
+            if not self.groq_client:
+                return self._chat_unavailable_response(question)
+            try:
+                answer = self._call_groq_chat(question)
+            except Exception as e:
+                print(f"general_chat unavailable: {e}")
+                return self._chat_unavailable_response(question)
+            answer = self._enforce_answer_language(answer, lang, bilingual)
+            self.memory.add(question, answer)
+            return {
+                "answer": answer, "sources": [], "confidence": 1.0,
+                "mode": "general_chat", "match_type": "conversational",
+                "language": lang, "response_time": time.time() - start,
+            }
+
         # ── Policy question — semantic search ─────────────────────
         try:
-            results = self.search_semantic(question)
+            search_query = self._resolve_followup_query(question)
+            if search_query != question:
+                print(f"Resolved follow-up query: '{question}' -> '{search_query}'")
+            results = self.search_semantic(search_query)
             if not results:
                 return self._no_info_response(question)
 
@@ -876,10 +1024,9 @@ class AIPodQuerySystem:
             print(f"'{question[:50]}' | best={best:.1%} | high={self.thresholds['high']:.1%} | med={self.thresholds['medium']:.1%}")
 
             if best >= self.thresholds["high"]:
-                if self.groq_client:
-                    answer = self._call_groq_policy(question, top, answer_style)
-                else:
-                    answer = self._basic_policy_answer(question, top, answer_style)
+                if not self.groq_client:
+                    return self._api_unavailable_response(question)
+                answer = self._call_groq_policy(question, top, answer_style)
                 answer = self._enforce_answer_language(answer, lang, bilingual)
                 self.memory.add(question, answer)
                 return {
@@ -889,17 +1036,15 @@ class AIPodQuerySystem:
                 }
 
             elif best >= self.thresholds["medium"]:
-                if self.groq_client:
-                    answer = self._call_groq_policy(question, top, answer_style)
-                    answer = self._enforce_answer_language(answer, lang, bilingual)
-                    answer += (
-                        "\n\nملاحظة: قد لا تكون هذه المعلومات إجابة مباشرة لسؤالك."
-                        if lang == "ar"
-                        else "\n\nNote: These results are related but may not directly answer your question."
-                    )
-                else:
-                    answer = self._basic_policy_answer(question, top, answer_style)
-                    answer = self._enforce_answer_language(answer, lang, bilingual)
+                if not self.groq_client:
+                    return self._api_unavailable_response(question)
+                answer = self._call_groq_policy(question, top, answer_style)
+                answer = self._enforce_answer_language(answer, lang, bilingual)
+                answer += (
+                    "\n\nملاحظة: قد لا تكون هذه المعلومات إجابة مباشرة لسؤالك."
+                    if lang == "ar"
+                    else "\n\nNote: These results are related but may not directly answer your question."
+                )
                 self.memory.add(question, answer)
                 return {
                     "answer": answer, "sources": top, "confidence": best,
@@ -909,21 +1054,20 @@ class AIPodQuerySystem:
 
             else:
                 # Nothing found in documents — try Groq as general fallback
-                if self.groq_client:
-                    answer = self._call_groq_general(question)
-                    answer = self._enforce_answer_language(answer, lang, bilingual)
-                    self.memory.add(question, answer)
-                    return {
-                        "answer": answer, "sources": [], "confidence": best,
-                        "mode": "general_fallback", "match_type": "none",
-                        "language": lang, "response_time": time.time() - start,
-                    }
-                return self._no_info_response(question)
+                if not self.groq_client:
+                    return self._api_unavailable_response(question)
+                answer = self._call_groq_general(question)
+                answer = self._enforce_answer_language(answer, lang, bilingual)
+                self.memory.add(question, answer)
+                return {
+                    "answer": answer, "sources": [], "confidence": best,
+                    "mode": "general_fallback", "match_type": "none",
+                    "language": lang, "response_time": time.time() - start,
+                }
 
         except Exception as e:
-            print(f"ask() error: {e}")
-            import traceback; traceback.print_exc()
-            return self._error_response(question)
+            print(f"ask() API generation unavailable: {e}")
+            return self._api_unavailable_response(question)
 
     # --------------------------------------------------
 
@@ -972,8 +1116,45 @@ class AIPodQuerySystem:
             yield from emit_static(self._friendly_response(answer, lang, time.time() - start))
             return
 
+        if intent == "general_chat":
+            if not self.groq_client:
+                yield from emit_static(self._chat_unavailable_response(question))
+                return
+            answer = ""
+            try:
+                for delta in self._call_groq_chat(question, stream=True):
+                    answer += delta
+                    yield {"type": "delta", "text": delta}
+            except Exception as e:
+                print(f"general_chat stream unavailable: {e}")
+                if not answer:
+                    yield from emit_static(self._chat_unavailable_response(question))
+                    return
+                note = self._stream_interrupted_note(lang)
+                answer += note
+                yield {"type": "delta", "text": note}
+
+            answer = self._enforce_answer_language(answer.strip(), lang, bilingual)
+            self.memory.add(question, answer)
+            yield {
+                "type": "done",
+                "result": {
+                    "answer": answer,
+                    "sources": [],
+                    "confidence": 1.0,
+                    "mode": "general_chat",
+                    "match_type": "conversational",
+                    "language": lang,
+                    "response_time": time.time() - start,
+                },
+            }
+            return
+
         try:
-            results = self.search_semantic(question)
+            search_query = self._resolve_followup_query(question)
+            if search_query != question:
+                print(f"Resolved follow-up query: '{question}' -> '{search_query}'")
+            results = self.search_semantic(search_query)
             if not results:
                 yield from emit_static(self._no_info_response(question))
                 return
@@ -997,17 +1178,17 @@ class AIPodQuerySystem:
                     except Exception as e:
                         print(f"Groq stream error: {e}")
                         if not answer:
-                            answer = self._basic_policy_answer(question, top, answer_style)
-                            for delta in self._stream_static_answer(answer):
-                                yield {"type": "delta", "text": delta}
+                            result = self._api_unavailable_response(question)
+                            yield from emit_static(result)
+                            return
                         else:
                             note = self._stream_interrupted_note(lang)
                             answer += note
                             yield {"type": "delta", "text": note}
                 else:
-                    answer = self._basic_policy_answer(question, top, answer_style)
-                    for delta in self._stream_static_answer(answer):
-                        yield {"type": "delta", "text": delta}
+                    result = self._api_unavailable_response(question)
+                    yield from emit_static(result)
+                    return
 
             elif best >= self.thresholds["medium"]:
                 mode = "related_match"
@@ -1020,9 +1201,9 @@ class AIPodQuerySystem:
                     except Exception as e:
                         print(f"Groq stream error: {e}")
                         if not answer:
-                            answer = self._basic_policy_answer(question, top, answer_style)
-                            for delta in self._stream_static_answer(answer):
-                                yield {"type": "delta", "text": delta}
+                            result = self._api_unavailable_response(question)
+                            yield from emit_static(result)
+                            return
                         else:
                             note = self._stream_interrupted_note(lang)
                             answer += note
@@ -1035,9 +1216,9 @@ class AIPodQuerySystem:
                     answer += related_note
                     yield {"type": "delta", "text": related_note}
                 else:
-                    answer = self._basic_policy_answer(question, top, answer_style)
-                    for delta in self._stream_static_answer(answer):
-                        yield {"type": "delta", "text": delta}
+                    result = self._api_unavailable_response(question)
+                    yield from emit_static(result)
+                    return
 
             else:
                 top = []
@@ -1049,14 +1230,14 @@ class AIPodQuerySystem:
                     except Exception as e:
                         print(f"Groq stream error: {e}")
                         if not answer:
-                            result = self._no_info_response(question)
+                            result = self._api_unavailable_response(question)
                             yield from emit_static(result)
                             return
                         note = self._stream_interrupted_note(lang)
                         answer += note
                         yield {"type": "delta", "text": note}
                 else:
-                    result = self._no_info_response(question)
+                    result = self._api_unavailable_response(question)
                     yield from emit_static(result)
                     return
 
@@ -1076,9 +1257,8 @@ class AIPodQuerySystem:
             }
 
         except Exception as e:
-            print(f"ask_stream() error: {e}")
-            import traceback; traceback.print_exc()
-            result = self._error_response(question)
+            print(f"ask_stream() API generation unavailable: {e}")
+            result = self._api_unavailable_response(question)
             yield from emit_static(result)
 
     # --------------------------------------------------
@@ -1124,6 +1304,32 @@ class AIPodQuerySystem:
         return {
             "answer": answer, "sources": [], "confidence": 0.0,
             "mode": "no_information", "match_type": "none",
+            "language": lang, "response_time": 0.0,
+        }
+
+    def _api_unavailable_response(self, question: str) -> Dict:
+        lang = detect_language(question)
+        answer = (
+            "خدمة توليد الإجابات غير متاحة حالياً. يرجى المحاولة مرة أخرى لاحقاً."
+            if lang == "ar"
+            else "AI answer generation is currently unavailable. Please try again later."
+        )
+        return {
+            "answer": answer, "sources": [], "confidence": 0.0,
+            "mode": "api_unavailable", "match_type": "error",
+            "language": lang, "response_time": 0.0,
+        }
+
+    def _chat_unavailable_response(self, question: str) -> Dict:
+        lang = detect_language(question)
+        answer = (
+            "لا أستطيع الدردشة بحرية حالياً، لكن يمكنني مساعدتك في العثور على معلومات السياسات."
+            if lang == "ar"
+            else "I'm currently unable to chat freely, but I can help you find policy information."
+        )
+        return {
+            "answer": answer, "sources": [], "confidence": 0.0,
+            "mode": "general_chat", "match_type": "conversational",
             "language": lang, "response_time": 0.0,
         }
 
