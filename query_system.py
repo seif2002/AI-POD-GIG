@@ -214,8 +214,8 @@ ABOUT_AR = """أنا المساعد الذكي الداخلي لسياسات ا�
 # -------------------------------------------------------
 
 class ConversationMemory:
-    MAX_TURNS = 6
-    MAX_CHARS = 3000
+    MAX_TURNS = AIPodConfig.CONVERSATION_MAX_TURNS
+    MAX_CHARS = AIPodConfig.CONVERSATION_MAX_CHARS
 
     def __init__(self):
         self.turns: List[Dict[str, str]] = []
@@ -896,19 +896,7 @@ class AIPodQuerySystem:
         No document grounding needed.
         """
         lang = detect_language(question)
-        bilingual = wants_bilingual_response(question)
-        if lang == "ar":
-            system = (
-                "أنت المساعد الذكي الودود لسياسات الشركة.\n"
-                "أجب على الأسئلة العامة بأسلوب ودي ومفيد وبالعربية فقط. "
-                "إذا سألوا عن الشركة أو سياساتها، شجعهم على طرح سؤال محدد."
-            )
-        else:
-            system = (
-                f"You are AI POD, the friendly internal AI assistant for {AIPodConfig.COMPANY_NAME}.\n"
-                "Answer general questions warmly and helpfully. "
-                "If they ask about company policies, encourage them to ask a specific question."
-            )
+        system = self._conversation_system_prompt(lang, wants_bilingual_response(question))
 
         messages = [{"role": "system", "content": system}]
         messages.extend(self.memory.get_messages())
@@ -918,8 +906,8 @@ class AIPodQuerySystem:
             request = {
                 "model": AIPodConfig.LLM_MODEL_FAST,
                 "messages": messages,
-                "temperature": 0.5,
-                "max_tokens": 400,
+                "temperature": AIPodConfig.GENERAL_CHAT_TEMPERATURE,
+                "max_tokens": AIPodConfig.GENERAL_CHAT_MAX_TOKENS,
             }
             if stream:
                 return self._groq_stream(**request)
@@ -931,26 +919,36 @@ class AIPodQuerySystem:
                 raise
             raise
 
-    def _call_groq_chat(self, question: str, stream: bool = False):
-        """Handle open conversation without document retrieval."""
-        lang = detect_language(question)
-        bilingual = wants_bilingual_response(question)
+    def _conversation_system_prompt(self, lang: str, bilingual: bool = False) -> str:
         if bilingual:
             language_instruction = (
                 "The user explicitly requested both Arabic and English. Answer in both languages clearly."
             )
+            persona = f"{AIPodConfig.CHAT_PERSONA_EN}\n{AIPodConfig.CHAT_PERSONA_AR}"
+            style_rules = f"{AIPodConfig.CHAT_STYLE_RULES_EN}\n{AIPodConfig.CHAT_STYLE_RULES_AR}"
         elif lang == "ar":
             language_instruction = "Answer only in professional, natural Arabic. Do not include English unless explicitly requested."
+            persona = AIPodConfig.CHAT_PERSONA_AR
+            style_rules = AIPodConfig.CHAT_STYLE_RULES_AR
         else:
             language_instruction = "Answer only in natural English. Do not include Arabic unless explicitly requested."
+            persona = AIPodConfig.CHAT_PERSONA_EN
+            style_rules = AIPodConfig.CHAT_STYLE_RULES_EN
 
-        system = (
+        return (
             f"You are AI POD, the internal assistant for {AIPodConfig.COMPANY_NAME}.\n"
-            "You can have normal, friendly conversation on any topic. You are not limited to company policy. "
-            "Answer general questions naturally and helpfully, the way a knowledgeable assistant would.\n"
-            "If the user asks about company HR, IT, internal procedures, or official policies, tell them you can help and ask for the specific policy question.\n"
+            "You can have normal, friendly conversation on any topic. You are not limited to company policy.\n"
+            f"{persona}\n"
+            f"{style_rules}\n"
+            "If the user asks about company HR, IT, internal procedures, or official policies, "
+            "tell them you can help and ask for the specific policy question.\n"
             f"{language_instruction}"
         )
+
+    def _call_groq_chat(self, question: str, stream: bool = False):
+        """Handle open conversation without document retrieval."""
+        lang = detect_language(question)
+        system = self._conversation_system_prompt(lang, wants_bilingual_response(question))
 
         messages = [{"role": "system", "content": system}]
         messages.extend(self.memory.get_messages())
@@ -959,8 +957,8 @@ class AIPodQuerySystem:
         request = {
             "model": AIPodConfig.LLM_MODEL_FAST,
             "messages": messages,
-            "temperature": 0.6,
-            "max_tokens": 650,
+            "temperature": AIPodConfig.GENERAL_CHAT_TEMPERATURE,
+            "max_tokens": AIPodConfig.GENERAL_CHAT_MAX_TOKENS,
         }
         if stream:
             return self._groq_stream(**request)

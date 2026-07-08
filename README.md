@@ -66,6 +66,13 @@ Create a `.env` file in the project root:
 
 ```env
 GROQ_API_KEY=gsk_your_key_here
+
+# Optional conversation tuning
+AI_POD_CONVERSATION_MAX_TURNS=10
+AI_POD_GENERAL_CHAT_TEMPERATURE=0.75
+AI_POD_CHAT_TITLE_MAX_CHARS=56
+AI_POD_CHAT_PERSONA_EN=You speak like a warm, capable colleague: natural, concise, and present.
+AI_POD_CHAT_STYLE_RULES_EN=For casual conversation, acknowledge the user's tone before answering. Ask one short follow-up question when the message is vague or emotional.
 ```
 
 Get a free Groq API key at [console.groq.com](https://console.groq.com).  
@@ -138,12 +145,18 @@ AIpod/
 | `DEFAULT_SEARCH_K` | `15` | FAISS candidates retrieved per query |
 | `TOP_K_RESULTS` | `3` | Chunks sent to the LLM |
 | `MAX_FILE_SIZE` | `10 MB` | Per-file ingestion limit |
+| `AI_POD_CONVERSATION_MAX_TURNS` | `10` | Number of prior conversation turns used for context |
+| `AI_POD_GENERAL_CHAT_TEMPERATURE` | `0.75` | Creativity/warmth level for regular conversation |
+| `AI_POD_GENERAL_CHAT_MAX_TOKENS` | `650` | Maximum response length for regular conversation |
+| `AI_POD_CHAT_TITLE_MAX_CHARS` | `56` | Maximum length for summarized recent-chat titles |
+| `AI_POD_CHAT_PERSONA_EN` / `AI_POD_CHAT_PERSONA_AR` | Warm colleague style | Configurable assistant persona |
+| `AI_POD_CHAT_STYLE_RULES_EN` / `AI_POD_CHAT_STYLE_RULES_AR` | Friendly, concise style | Configurable conversation behavior rules |
 
 ---
 
 ## Conversation Memory
 
-`query_system.py` maintains a rolling window of the last **6 turns** (configurable via `ConversationMemory.MAX_TURNS`). The history is injected into every Groq API call so the model understands follow-up questions:
+`query_system.py` maintains a rolling window of recent turns using `AI_POD_CONVERSATION_MAX_TURNS` from `.env` / `config.py`. The history is injected into every Groq API call so the model understands follow-up questions:
 
 ```
 Employee: What is the annual leave policy?
@@ -174,8 +187,12 @@ In the CLI, type `clear` to reset memory. In the web UI, clearing chat history a
 Create this file in the repo root so new developers know what variables are needed:
 
 ```env
-# .env.example — copy to .env and fill in your values
 GROQ_API_KEY=gsk_your_key_here
+AI_POD_CONVERSATION_MAX_TURNS=10
+AI_POD_GENERAL_CHAT_TEMPERATURE=0.75
+AI_POD_CHAT_TITLE_MAX_CHARS=56
+AI_POD_CHAT_PERSONA_EN=You speak like a warm, capable colleague: natural, concise, and present.
+AI_POD_CHAT_STYLE_RULES_EN=For casual conversation, acknowledge the user's tone before answering. Ask one short follow-up question when the message is vague or emotional.
 ```
 
 ---

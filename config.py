@@ -33,6 +33,25 @@ def load_environment():
 # Load environment variables
 load_environment()
 
+
+def _env_int(name: str, default: int) -> int:
+    try:
+        return int(os.getenv(name, default))
+    except (TypeError, ValueError):
+        return default
+
+
+def _env_float(name: str, default: float) -> float:
+    try:
+        return float(os.getenv(name, default))
+    except (TypeError, ValueError):
+        return default
+
+
+def _env_text(name: str, default: str) -> str:
+    value = os.getenv(name)
+    return value.strip() if value and value.strip() else default
+
 class AIPodConfig:
     """Configuration for AI POD system - Single source of truth"""
 
@@ -86,6 +105,35 @@ class AIPodConfig:
     # ── TOKEN LIMITS ─────────────────────────────────────────────────────────
     MAX_TOKENS_PER_QUERY = 4000
     MAX_CHUNKS_PER_QUERY = 5
+
+    # ── CONVERSATION STYLE CONFIGURATION ────────────────────────────────────
+    CONVERSATION_MAX_TURNS = _env_int("AI_POD_CONVERSATION_MAX_TURNS", 10)
+    CONVERSATION_MAX_CHARS = _env_int("AI_POD_CONVERSATION_MAX_CHARS", 5000)
+    GENERAL_CHAT_MAX_TOKENS = _env_int("AI_POD_GENERAL_CHAT_MAX_TOKENS", 650)
+    GENERAL_CHAT_TEMPERATURE = _env_float("AI_POD_GENERAL_CHAT_TEMPERATURE", 0.75)
+    CHAT_TITLE_MAX_CHARS = _env_int("AI_POD_CHAT_TITLE_MAX_CHARS", 56)
+
+    CHAT_PERSONA_EN = _env_text(
+        "AI_POD_CHAT_PERSONA_EN",
+        "You speak like a warm, capable colleague: natural, concise, and present."
+    )
+    CHAT_PERSONA_AR = _env_text(
+        "AI_POD_CHAT_PERSONA_AR",
+        "تحدث كمساعد ودود وقريب من المستخدم: طبيعي، مختصر، وحاضر في الحوار."
+    )
+    CHAT_STYLE_RULES_EN = _env_text(
+        "AI_POD_CHAT_STYLE_RULES_EN",
+        "For casual conversation, acknowledge the user's tone before answering. "
+        "Ask one short follow-up question when the message is vague or emotional. "
+        "Do not over-explain, do not sound corporate unless the topic requires it, "
+        "and never say you are just an AI language model."
+    )
+    CHAT_STYLE_RULES_AR = _env_text(
+        "AI_POD_CHAT_STYLE_RULES_AR",
+        "في المحادثات العادية، تفاعل مع نبرة المستخدم قبل الإجابة. "
+        "اسأل سؤال متابعة قصير واحد عندما تكون الرسالة غير واضحة أو عاطفية. "
+        "لا تكثر الشرح، ولا تستخدم أسلوباً رسمياً إلا إذا احتاج الموضوع لذلك."
+    )
 
     # ── DIRECTORY CREATION ───────────────────────────────────────────────────
     @classmethod

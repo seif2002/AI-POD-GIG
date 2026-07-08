@@ -19,7 +19,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import from config and query system
 try:
-    from query_system import AIPodQuerySystem, detect_language, wants_bilingual_response
+    from query_system import AIPodQuerySystem, classify_intent, detect_language, wants_bilingual_response
     from config import AIPodConfig
     from auth import AuthManager, init_session_state, login_required, logout, check_permission
     AI_POD_AVAILABLE = True
@@ -128,6 +128,116 @@ def _empty_sessions_store() -> dict:
     return {"current_chat_id": None, "chats": {}}
 
 
+def _clip_chat_title(title: str, limit: int = None) -> str:
+    limit = limit or getattr(AIPodConfig, "CHAT_TITLE_MAX_CHARS", 56)
+    title = re.sub(r"\s+", " ", (title or "").strip(" .?!؟،,;:"))
+    if not title:
+        return "New chat"
+    if len(title) <= limit:
+        return title
+    clipped = title[:limit].rsplit(" ", 1)[0].strip(" .?!؟،,;:")
+    return clipped or title[:limit].strip(" .?!؟،,;:")
+
+
+def _summarize_english_chat_title(text: str) -> str:
+    text = re.sub(r"https?://\S+", "", text or "")
+    text = re.sub(r"[_*`#>\[\]{}()]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip(" .?!,;:")
+    if not text:
+        return ""
+
+    cleanup_patterns = [
+        r"^(please|pls)\s+",
+        r"^(can|could|would)\s+you\s+(please\s+)?",
+        r"^(i\s+want\s+to\s+know|i\s+need\s+to\s+know)\s+",
+        r"^(tell\s+me|show\s+me|explain\s+to\s+me|explain)\s+",
+        r"^(give\s+me\s+details\s+about|give\s+me\s+information\s+about)\s+",
+        r"^(what\s+about)\s+",
+    ]
+    for pattern in cleanup_patterns:
+        text = re.sub(pattern, "", text, flags=re.IGNORECASE).strip(" .?!,;:")
+
+    replacements = {
+        r"\bmaturnity\b": "maternity",
+        r"\bmaternaty\b": "maternity",
+        r"\bharrasment\b": "harassment",
+        r"\bharasment\b": "harassment",
+        r"\bressigning\b": "resigning",
+    }
+    for pattern, replacement in replacements.items():
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+
+    if re.match(r"^policy\s+", text, flags=re.IGNORECASE):
+        text = re.sub(r"^policy\s+(.+)$", r"\1 Policy", text, flags=re.IGNORECASE)
+    if re.match(r"^process\s+", text, flags=re.IGNORECASE):
+        text = re.sub(r"^process\s+(.+)$", r"\1 Process", text, flags=re.IGNORECASE)
+
+    small_words = {"a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "of", "on", "or", "the", "to", "with"}
+    acronyms = {"ai", "hr", "it", "pod", "id", "ceo", "cfo", "cto"}
+    words = re.findall(r"[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)?", text)
+    titled = []
+    for index, word in enumerate(words):
+        lower = word.lower()
+        if lower in acronyms:
+            titled.append(lower.upper())
+        elif 0 < index < len(words) - 1 and lower in small_words:
+            titled.append(lower)
+        elif lower == "i":
+            titled.append("I")
+        else:
+            titled.append(lower[:1].upper() + lower[1:])
+    return " ".join(titled)
+
+
+def _summarize_chat_title(messages: list) -> str:
+    user_messages = [
+        message for message in messages
+        if str(message.get("question", "")).strip()
+    ]
+    if not user_messages:
+        return "New chat"
+
+    title_question = ""
+    for message in user_messages:
+        question = str(message.get("question", "")).strip()
+        match_type = str(message.get("match_type", "")).lower()
+        has_sources = bool(message.get("sources"))
+        is_conversational = match_type == "conversational" or str(message.get("mode", "")).lower() in {"general_chat", "conversational"}
+        if has_sources or (not is_conversational and classify_intent(question) == "policy_query"):
+            title_question = question
+            break
+
+    if not title_question:
+        title_question = str(user_messages[0].get("question", "")).strip()
+
+    if detect_language(title_question) == "ar":
+        title_question = re.sub(r"\s+", " ", title_question)
+        title_question = re.sub(r"^(من فضلك|لو سمحت|ممكن|هل يمكنك|اريد|عايز|اشرحلي)\s+", "", title_question)
+        return _clip_chat_title(title_question)
+
+    summarized = _summarize_english_chat_title(title_question)
+    if summarized:
+        return _clip_chat_title(summarized)
+    return _clip_chat_title(title_question)
+
+
+def _chat_title(messages: list) -> str:
+    return _summarize_chat_title(messages)
+
+
+def _refresh_chat_titles(store: dict) -> bool:
+    changed = False
+    for chat in store.get("chats", {}).values():
+        messages = chat.get("messages", [])
+        if not messages:
+            continue
+        new_title = _chat_title(messages)
+        if chat.get("title") != new_title:
+            chat["title"] = new_title
+            changed = True
+    return changed
+
+
 def load_chat_sessions() -> dict:
     store = _load_json(_sessions_path(), _empty_sessions_store())
     if not isinstance(store, dict) or not isinstance(store.get("chats"), dict):
@@ -138,7 +248,7 @@ def load_chat_sessions() -> dict:
         chat_id = _new_chat_id()
         store["current_chat_id"] = chat_id
         store["chats"][chat_id] = {
-            "title": old_history[0].get("question", "Previous chat")[:60],
+            "title": _chat_title(old_history),
             "created_at": old_history[0].get("timestamp", datetime.now().isoformat()),
             "updated_at": old_history[-1].get("timestamp", datetime.now().isoformat()),
             "messages": old_history[-100:],
@@ -157,17 +267,14 @@ def load_chat_sessions() -> dict:
             store["current_chat_id"] = None
         _save_json(_sessions_path(), store)
 
+    if _refresh_chat_titles(store):
+        _save_json(_sessions_path(), store)
+
     return store
 
 
 def save_chat_sessions(store: dict):
     _save_json(_sessions_path(), store)
-
-
-def _chat_title(messages: list) -> str:
-    if messages:
-        return messages[0].get("question", "New chat")[:60]
-    return "New chat"
 
 
 def load_persisted_chat_history():
@@ -479,7 +586,15 @@ def _render_dashboard_table(rows: list, columns: list, empty_message: str = "No 
     if not rows:
         st.markdown(f'<div class="dashboard-empty">{html.escape(empty_message)}</div>', unsafe_allow_html=True)
         return
-    header = "".join(f"<th>{html.escape(column)}</th>" for column in columns)
+
+    def column_class(column_name: str) -> str:
+        slug = re.sub(r"[^a-z0-9]+", "-", column_name.lower()).strip("-")
+        return f"dashboard-col-{slug or 'value'}"
+
+    header = "".join(
+        f'<th class="{column_class(column)}">{html.escape(column)}</th>'
+        for column in columns
+    )
     body_rows = []
     for row in rows:
         cells = []
@@ -493,7 +608,7 @@ def _render_dashboard_table(rows: list, columns: list, empty_message: str = "No 
                 rendered = f'<span class="dashboard-action-pill">{html.escape(str(value or "Review"))}</span>'
             else:
                 rendered = html.escape(str(value))
-            cells.append(f"<td>{rendered}</td>")
+            cells.append(f'<td class="{column_class(column)}">{rendered}</td>')
         body_rows.append(f"<tr>{''.join(cells)}</tr>")
     st.markdown(
         f"""
@@ -1730,7 +1845,8 @@ st.markdown("""
     }
 
     .dashboard-table {
-        width: 100%;
+        width: max(100%, 900px);
+        table-layout: fixed;
         border-collapse: collapse;
         color: var(--text-main);
         font-size: 0.92rem;
@@ -1742,7 +1858,8 @@ st.markdown("""
         border-bottom: 1px solid var(--border);
         border-right: 1px solid var(--border);
         vertical-align: top;
-        overflow-wrap: anywhere;
+        overflow-wrap: normal;
+        word-break: normal;
     }
 
     .dashboard-table th {
@@ -1753,10 +1870,39 @@ st.markdown("""
         color: var(--text-muted);
         text-align: left;
         font-weight: 700;
+        white-space: nowrap;
     }
 
     .dashboard-table td {
         background: var(--surface);
+    }
+
+    .dashboard-table .dashboard-col-time {
+        width: 130px;
+        white-space: nowrap;
+    }
+
+    .dashboard-table .dashboard-col-user {
+        width: 96px;
+        white-space: nowrap;
+    }
+
+    .dashboard-table .dashboard-col-status,
+    .dashboard-table .dashboard-col-match {
+        width: 130px;
+        white-space: nowrap;
+    }
+
+    .dashboard-table .dashboard-col-confidence {
+        width: 110px;
+        white-space: nowrap;
+    }
+
+    .dashboard-table .dashboard-col-question,
+    .dashboard-table .dashboard-col-latest-question {
+        width: auto;
+        white-space: normal;
+        overflow-wrap: break-word;
     }
 
     .dashboard-table tr:last-child td {
@@ -1978,6 +2124,7 @@ st.markdown("""
 
         .dashboard-table {
             font-size: 0.82rem;
+            width: max(100%, 780px);
         }
 
         .dashboard-table th,
